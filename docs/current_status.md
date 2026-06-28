@@ -158,3 +158,18 @@ It reports `can_train_here: false` because this project environment does not
 currently have `torch`, `transformers`, `mlx`, or `mlx_lm` installed. The real
 training command is wired, but the first Qwen-small head training run needs the
 ML stack installed or GPU/MLX access.
+
+A clean current-environment live comparison is now recorded:
+
+- `research/evals/20260628-evaluable-live-comparison-prompts.json`
+- `research/evals/20260628-evaluable-live-comparison.json`
+- `research/evals/20260628-evaluable-live-comparison-outcomes.jsonl`
+- `research/evals/20260628-evaluable-live-comparison-evaluation.jsonl`
+- `research/evals/20260628-evaluable-live-comparison-evaluation-report.json`
+
+All rows were locally evaluable. The trained orchestrator solved 1/3 tasks while
+the fixed `ollama-cloud-qwen3-coder-480b` baseline solved 0/3. The positive was
+again `bigcodebench-hard-BigCodeBench-339`, where the router selected
+`ollama-cloud-glm-5.2` and passed all tests. This is clean specialist-routing
+evidence, but still not a promotion signal because the sample is tiny and the
+router's mean latency was 7507 ms versus 2897 ms for fixed Qwen.

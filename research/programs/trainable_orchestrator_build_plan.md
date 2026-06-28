@@ -781,3 +781,11 @@ decision hidden state. Train worker, workflow, verifier, and abstain heads
 against measured soft routing targets first, with the backbone frozen; only try
 LoRA/adapters after the heads beat the linear router on held-out task-level
 routing.
+
+The first live comparison drawn from the current-environment evaluable task
+manifest produced six fully evaluable rows. The trained router solved 1/3 while
+fixed Qwen solved 0/3, again through GLM on `BigCodeBench-339`; however mean
+latency was much worse for the router. Keep this as clean specialist evidence,
+not a promotion signal. Since Qwen-small head training is blocked locally by
+missing ML dependencies, the next best progress is either installing
+`torch`/`transformers` or continuing clean task-level acquisition.
