@@ -20,6 +20,7 @@ def build_job_command(
     batch_size: int,
     learning_rate: float,
     max_length: int,
+    base_model: str,
 ) -> str:
     return "\n".join(
         [
@@ -41,6 +42,7 @@ def build_job_command(
             f"  --batch-size {batch_size} \\",
             f"  --learning-rate {learning_rate} \\",
             f"  --max-length {max_length} \\",
+            f"  --base-model {base_model} \\",
             "  --device cuda \\",
             f"  --output-dir research/models/{output_name} \\",
             f"  --plan-output research/models/{plan_name}",
@@ -118,6 +120,7 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=4)
     parser.add_argument("--learning-rate", type=float, default=2e-4)
     parser.add_argument("--max-length", type=int, default=1536)
+    parser.add_argument("--base-model", default="Qwen/Qwen3-0.6B")
     parser.add_argument("--max-runtime", type=int, default=3 * 60 * 60)
     parser.add_argument("--user")
     parser.add_argument("--teamspace")
@@ -133,8 +136,8 @@ def main() -> int:
         default=ROOT / "research/lightning_artifacts/qwen-full",
     )
     args = parser.parse_args()
-    output_name = "20260628-qwen-small-logits-orchestrator-full-gpu"
-    plan_name = "20260628-qwen-small-logits-orchestrator-full-gpu-plan.json"
+    output_name = "20260628-qwen3-0p6b-logits-orchestrator-full-gpu"
+    plan_name = "20260628-qwen3-0p6b-logits-orchestrator-full-gpu-plan.json"
     command = build_job_command(
         repo_url=args.repo_url,
         git_ref=args.git_ref,
@@ -144,6 +147,7 @@ def main() -> int:
         batch_size=args.batch_size,
         learning_rate=args.learning_rate,
         max_length=args.max_length,
+        base_model=args.base_model,
     )
     result = submit_lightning_job(
         name=args.name,

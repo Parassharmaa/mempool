@@ -17,7 +17,7 @@ def main() -> int:
         "--checkpoint",
         type=Path,
         default=ROOT
-        / "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+        / "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
     )
     parser.add_argument("--text", action="append", help="Text/task to route. Can be passed multiple times.")
     parser.add_argument("--input-jsonl", type=Path, help="Optional JSONL file with `text` fields.")

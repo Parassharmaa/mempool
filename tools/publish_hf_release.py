@@ -36,7 +36,7 @@ def publish_hf_release(
     export_root: Path,
     namespace: str | None = None,
     dataset_name: str = "mempool-qwen-logits-orchestrator-rows",
-    model_name: str = "mempool-qwen-logits-orchestrator-v0",
+    model_name: str = "mempool-qwen3-0p6b-logits-orchestrator-v1",
 ) -> dict[str, str]:
     owner = namespace or hf_whoami()
     dataset_repo = f"{owner}/{dataset_name}"
@@ -58,10 +58,10 @@ def publish_hf_release(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Create and upload mempool Hugging Face dataset/model repos.")
-    parser.add_argument("--export-root", type=Path, default=ROOT / "research/hf_export/qwen-logits-v0")
+    parser.add_argument("--export-root", type=Path, default=ROOT / "research/hf_export/qwen3-0p6b-logits-v1")
     parser.add_argument("--namespace")
     parser.add_argument("--dataset-name", default="mempool-qwen-logits-orchestrator-rows")
-    parser.add_argument("--model-name", default="mempool-qwen-logits-orchestrator-v0")
+    parser.add_argument("--model-name", default="mempool-qwen3-0p6b-logits-orchestrator-v1")
     args = parser.parse_args()
     result = publish_hf_release(
         export_root=args.export_root,

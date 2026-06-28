@@ -12,7 +12,7 @@ from .multi_head_orchestrator import read_substrate, validate_substrate_records
 
 
 SCHEMA_VERSION = "mempool.qwen_logits_orchestrator_plan.v1"
-DEFAULT_BASE_MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
+DEFAULT_BASE_MODEL = "Qwen/Qwen3-0.6B"
 
 
 @dataclass(frozen=True)
@@ -66,7 +66,7 @@ def audit_qwen_training_readiness(
             recommendations.append("create a Python 3.11 or 3.12 environment and install `.[qwen-train]`")
         if not python_supported:
             reasons.append(f"current Python {python_version} may not have stable PyTorch wheels")
-            recommendations.append("prefer Python 3.11 or 3.12 for the first Qwen-small training run")
+            recommendations.append("prefer Python 3.11 or 3.12 for the first Qwen 0.6B training run")
     else:
         missing = [name for name in ["mlx", "mlx_lm"] if not dependency_status[name]]
         if missing:
@@ -170,7 +170,7 @@ def build_qwen_logits_training_plan(
         "dependency_status": dependency_status,
         "can_train_here": can_train_here,
         "training_order": [
-            "freeze Qwen-small backbone",
+            "freeze Qwen 0.6B backbone",
             "train worker/workflow/verifier/abstain heads on measured soft targets",
             "compare held-out routing against the linear multi-head baseline",
             "only enable LoRA/backbone updates after the heads beat the baseline",
@@ -211,7 +211,7 @@ def build_qwen_logits_training_plan_from_rows(
         "dependency_status": dependency_status,
         "can_train_here": training_dependencies_available(config.backend),
         "training_order": [
-            "freeze Qwen-small backbone",
+            "freeze Qwen 0.6B backbone",
             "train worker/workflow/verifier/abstain heads on measured soft targets",
             "compare held-out routing against the linear multi-head baseline",
             "only enable LoRA/backbone updates after the heads beat the baseline",

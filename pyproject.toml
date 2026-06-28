@@ -8,7 +8,7 @@ dependencies = []
 [project.optional-dependencies]
 qwen-train = [
   "torch>=2.3",
-  "transformers>=4.45",
+  "transformers>=4.51",
 ]
 mlx-train = [
   "mlx>=0.18",

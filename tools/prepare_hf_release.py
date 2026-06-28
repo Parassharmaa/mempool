@@ -81,6 +81,8 @@ def write_model_card(
     sample_prediction_name: str | None = None,
 ) -> None:
     worker_ids = "\n".join(f"- `{worker}`" for worker in report.get("worker_ids", []))
+    base_model = str(report.get("base_model") or "Qwen/Qwen3-0.6B")
+    release_name = "mempool Qwen3 0.6B Logits Orchestrator v1" if "Qwen3" in base_model else "mempool Qwen Logits Orchestrator"
     eval_lines = []
     if train_eval_report:
         eval_lines = [
@@ -115,20 +117,20 @@ def write_model_card(
             [
                 "---",
                 "license: apache-2.0",
-                "base_model: Qwen/Qwen2.5-0.5B-Instruct",
+                f"base_model: {base_model}",
                 "library_name: transformers",
                 "tags:",
                 "- orchestration",
                 "- routing",
                 "- qwen",
                 "- logits-head",
-                "pretty_name: mempool Qwen Logits Orchestrator v0",
+                f"pretty_name: {release_name}",
                 "---",
                 "",
-                "# mempool Qwen Logits Orchestrator v0",
+                f"# {release_name}",
                 "",
-                "This repository contains the first usable checkpoint for the `mempool`",
-                "Qwen-small logits-head orchestrator path with a deterministic held-out gate.",
+                "This repository contains a usable checkpoint for the `mempool`",
+                "Qwen 0.6B logits-head orchestrator path with a deterministic held-out gate.",
                 "",
                 "The checkpoint stores only the trained routing heads, not the Qwen base",
                 "model weights. Load the base model separately and attach the heads.",
@@ -143,7 +145,7 @@ def write_model_card(
                 *eval_lines,
                 *sample_lines,
                 "",
-                "This is a v0 research artifact. It is usable for routing experiments,",
+                "This is a research artifact. It is usable for routing experiments,",
                 "but it is not yet a promoted production policy.",
                 "",
             ]
@@ -270,7 +272,7 @@ def main() -> int:
     parser.add_argument(
         "--plan",
         type=Path,
-        default=ROOT / "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s-plan.json",
+        default=ROOT / "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s-plan.json",
     )
     parser.add_argument(
         "--readiness",
@@ -280,9 +282,9 @@ def main() -> int:
     parser.add_argument(
         "--model-dir",
         type=Path,
-        default=ROOT / "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s",
+        default=ROOT / "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s",
     )
-    parser.add_argument("--output-root", type=Path, default=ROOT / "research/hf_export/qwen-logits-v0")
+    parser.add_argument("--output-root", type=Path, default=ROOT / "research/hf_export/qwen3-0p6b-logits-v1")
     args = parser.parse_args()
     manifest = prepare_hf_release(
         rows_path=args.rows,

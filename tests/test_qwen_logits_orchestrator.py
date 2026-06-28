@@ -69,7 +69,7 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
         self.assertEqual(plan["worker_ids"], ["glm", "qwen"])
         self.assertEqual(rows[0]["text"], "route this task")
         self.assertIn("torch", plan["dependency_status"])
-        self.assertIn("freeze Qwen-small backbone", plan["training_order"])
+        self.assertIn("freeze Qwen 0.6B backbone", plan["training_order"])
 
     def test_builds_training_plan_from_prepared_rows(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:

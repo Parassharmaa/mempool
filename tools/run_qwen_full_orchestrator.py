@@ -47,6 +47,7 @@ def run_full_orchestrator(
     max_length: int,
     device: str,
     base_model: str,
+    sample_text: str,
 ) -> dict:
     output_dir.mkdir(parents=True, exist_ok=True)
     train_result = run(
@@ -101,6 +102,18 @@ def run_full_orchestrator(
             str(output_dir / "heldout_eval_report.json"),
         ]
     )
+    sample_prediction = run(
+        [
+            sys.executable,
+            "tools/predict_qwen_logits_orchestrator.py",
+            "--checkpoint",
+            str(checkpoint),
+            "--text",
+            sample_text,
+            "--output",
+            str(output_dir / "sample_prediction.json"),
+        ]
+    )
     manifest = {
         "schema_version": "mempool.qwen_full_orchestrator_run.v1",
         "base_model": base_model,
@@ -116,6 +129,7 @@ def run_full_orchestrator(
         "train_result": train_result["stdout"],
         "train_eval_report": train_eval["stdout"],
         "heldout_eval_report": heldout_eval["stdout"],
+        "sample_prediction": sample_prediction["stdout"],
     }
     manifest_path = output_dir / "full_run_manifest.json"
     manifest_path.write_text(
@@ -152,7 +166,11 @@ def main() -> int:
     parser.add_argument("--learning-rate", type=float, default=2e-4)
     parser.add_argument("--max-length", type=int, default=1536)
     parser.add_argument("--device", default="auto")
-    parser.add_argument("--base-model", default="Qwen/Qwen2.5-0.5B-Instruct")
+    parser.add_argument("--base-model", default="Qwen/Qwen3-0.6B")
+    parser.add_argument(
+        "--sample-text",
+        default="Write Python code to scrape the first HTML table from a URL into a pandas DataFrame, handling HTTP errors and empty tables.",
+    )
     args = parser.parse_args()
     manifest = run_full_orchestrator(
         train_rows=args.train_rows,
@@ -165,6 +183,7 @@ def main() -> int:
         max_length=args.max_length,
         device=args.device,
         base_model=args.base_model,
+        sample_text=args.sample_text,
     )
     print(json.dumps(manifest, indent=2, sort_keys=True))
     return 0
