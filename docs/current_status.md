@@ -73,3 +73,16 @@ PYTHONPATH=src python3 tools/predict_multi_head_orchestrator.py \
   --categories filesystem,text \
   --libraries pathlib
 ```
+
+The checkpoint can also route and prepare an OpenAI-compatible worker call:
+
+```bash
+PYTHONPATH=src python3 tools/run_orchestrated_prompt.py \
+  --dry-run \
+  --model research/models/20260628-m5-current-task-66task-multihead.json \
+  --worker-pool research/evals/ollama_cloud_worker_pool_top4.json \
+  --prompt "Write Python code that reads files from a directory." \
+  --task-family bigcodebench_hard \
+  --categories filesystem,text \
+  --libraries pathlib
+```
