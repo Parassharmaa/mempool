@@ -1,0 +1,83 @@
+{
+  "checkpoint": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+  "device": "cuda",
+  "mean_worker_loss": 1.2073683018954295,
+  "mean_workflow_loss": 0.23352967146432624,
+  "prediction_sample": [
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_workflow": "direct"
+    },
+    {
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "predicted_workflow": "direct",
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "target_workflow": "direct"
+    }
+  ],
+  "record_count": 53,
+  "rows": "/teamspace/studios/this_studio/mempool-qwen3-v1/research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl",
+  "schema_version": "mempool.qwen_logits_orchestrator_eval_report.v1",
+  "worker_accuracy": 0.8113207547169812,
+  "worker_ids": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "workflow_accuracy": 0.8867924528301887,
+  "workflow_labels": [
+    "direct",
+    "verify_then_fallback"
+  ]
+}

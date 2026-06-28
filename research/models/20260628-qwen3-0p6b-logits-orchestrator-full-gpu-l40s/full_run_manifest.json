@@ -1,0 +1,392 @@
+{
+  "base_model": "Qwen/Qwen3-0.6B",
+  "batch_size": 4,
+  "device": "cuda",
+  "epochs": 40,
+  "heldout_eval_report": {
+    "checkpoint": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+    "device": "cuda",
+    "mean_worker_loss": 1.3018739131780772,
+    "mean_workflow_loss": 0.6372018387684455,
+    "prediction_sample": [
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "verify_then_fallback"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-glm-5.2",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      }
+    ],
+    "record_count": 13,
+    "rows": "/teamspace/studios/this_studio/mempool-qwen3-v1/research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl",
+    "schema_version": "mempool.qwen_logits_orchestrator_eval_report.v1",
+    "worker_accuracy": 0.6923076923076923,
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_accuracy": 0.7692307692307693,
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ]
+  },
+  "heldout_rows": "/teamspace/studios/this_studio/mempool-qwen3-v1/research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl",
+  "learning_rate": 0.0002,
+  "max_length": 1536,
+  "output_dir": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s",
+  "plan_output": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s-plan.json",
+  "sample_prediction": {
+    "checkpoint": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+    "device": "cuda",
+    "predictions": [
+      {
+        "abstain_probability": 0.15652944147586823,
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "text": "Write Python code to scrape the first HTML table from a URL into a pandas DataFrame, handling HTTP errors and empty tables.",
+        "verifier_probability": 0.647490382194519,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.013431944884359837,
+          "ollama-cloud-glm-5.2": 0.049255188554525375,
+          "ollama-cloud-kimi-k2.7-code": 0.2999081015586853,
+          "ollama-cloud-qwen3-coder-480b": 0.63740473985672
+        },
+        "workflow_distribution": {
+          "direct": 0.9044448137283325,
+          "verify_then_fallback": 0.09555521607398987
+        }
+      }
+    ],
+    "schema_version": "mempool.qwen_logits_orchestrator_prediction.v1",
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ]
+  },
+  "schema_version": "mempool.qwen_full_orchestrator_run.v1",
+  "train_eval_report": {
+    "checkpoint": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+    "device": "cuda",
+    "mean_worker_loss": 1.2073683018954295,
+    "mean_workflow_loss": 0.23352967146432624,
+    "prediction_sample": [
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "target_workflow": "direct"
+      }
+    ],
+    "record_count": 53,
+    "rows": "/teamspace/studios/this_studio/mempool-qwen3-v1/research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl",
+    "schema_version": "mempool.qwen_logits_orchestrator_eval_report.v1",
+    "worker_accuracy": 0.8113207547169812,
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_accuracy": 0.8867924528301887,
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ]
+  },
+  "train_result": {
+    "device": "cuda",
+    "history": [
+      {
+        "epoch": 0,
+        "loss": 3.11750134399959
+      },
+      {
+        "epoch": 1,
+        "loss": 2.809019318648747
+      },
+      {
+        "epoch": 2,
+        "loss": 2.8290022100721086
+      },
+      {
+        "epoch": 3,
+        "loss": 2.817454559462411
+      },
+      {
+        "epoch": 4,
+        "loss": 2.805349017892565
+      },
+      {
+        "epoch": 5,
+        "loss": 2.7349614586148943
+      },
+      {
+        "epoch": 6,
+        "loss": 2.7246988671166554
+      },
+      {
+        "epoch": 7,
+        "loss": 2.7136061021259854
+      },
+      {
+        "epoch": 8,
+        "loss": 2.687513675008501
+      },
+      {
+        "epoch": 9,
+        "loss": 2.7999841826302663
+      },
+      {
+        "epoch": 10,
+        "loss": 2.7054038047790527
+      },
+      {
+        "epoch": 11,
+        "loss": 2.659690465245928
+      },
+      {
+        "epoch": 12,
+        "loss": 2.848549485206604
+      },
+      {
+        "epoch": 13,
+        "loss": 2.659048242228372
+      },
+      {
+        "epoch": 14,
+        "loss": 2.6345216717038835
+      },
+      {
+        "epoch": 15,
+        "loss": 2.6133223516600474
+      },
+      {
+        "epoch": 16,
+        "loss": 2.5888123171670094
+      },
+      {
+        "epoch": 17,
+        "loss": 2.580440470150539
+      },
+      {
+        "epoch": 18,
+        "loss": 2.6477542349270413
+      },
+      {
+        "epoch": 19,
+        "loss": 2.6182081358773366
+      },
+      {
+        "epoch": 20,
+        "loss": 2.5893647926194325
+      },
+      {
+        "epoch": 21,
+        "loss": 2.591572182519095
+      },
+      {
+        "epoch": 22,
+        "loss": 2.5323841656957353
+      },
+      {
+        "epoch": 23,
+        "loss": 2.544121095112392
+      },
+      {
+        "epoch": 24,
+        "loss": 2.5288875699043274
+      },
+      {
+        "epoch": 25,
+        "loss": 2.5025893364633833
+      },
+      {
+        "epoch": 26,
+        "loss": 2.603824121611459
+      },
+      {
+        "epoch": 27,
+        "loss": 2.543979917253767
+      },
+      {
+        "epoch": 28,
+        "loss": 2.4952145644596646
+      },
+      {
+        "epoch": 29,
+        "loss": 2.539324470928737
+      },
+      {
+        "epoch": 30,
+        "loss": 2.5138033287865773
+      },
+      {
+        "epoch": 31,
+        "loss": 2.4722729665892467
+      },
+      {
+        "epoch": 32,
+        "loss": 2.408249352659498
+      },
+      {
+        "epoch": 33,
+        "loss": 2.4780009303774153
+      },
+      {
+        "epoch": 34,
+        "loss": 2.4572549717766896
+      },
+      {
+        "epoch": 35,
+        "loss": 2.393418550491333
+      },
+      {
+        "epoch": 36,
+        "loss": 2.4449552042143687
+      },
+      {
+        "epoch": 37,
+        "loss": 2.616686258997236
+      },
+      {
+        "epoch": 38,
+        "loss": 2.4797831092561995
+      },
+      {
+        "epoch": 39,
+        "loss": 2.474162220954895
+      }
+    ],
+    "output_dir": "research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s",
+    "record_count": 53,
+    "schema_version": "mempool.qwen_logits_orchestrator_train_report.v1",
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ],
+    "base_model": "Qwen/Qwen3-0.6B"
+  },
+  "train_rows": "/teamspace/studios/this_studio/mempool-qwen3-v1/research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl"
+}

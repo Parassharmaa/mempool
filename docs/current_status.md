@@ -240,3 +240,24 @@ files, which made the Hub dataset viewer fail with a schema cast error. The
 dataset export now keeps only the train and held-out row JSONL files plus the
 dataset card; plan, readiness, eval, and sample-prediction JSON stay in the
 model repo.
+
+The Qwen3 0.6B v1 run has now superseded the Qwen2.5 v0 checkpoint as the
+current default orchestrator artifact:
+
+- base model: `Qwen/Qwen3-0.6B`
+- checkpoint: `research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt`
+- full manifest: `research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/full_run_manifest.json`
+- final training loss: 2.4742
+- train worker accuracy: 0.8113
+- train workflow accuracy: 0.8868
+- held-out worker accuracy: 0.6923
+- held-out workflow accuracy: 0.7692
+
+The v1 checkpoint is published as:
+
+- dataset: `https://huggingface.co/datasets/blazeofchi/mempool-qwen-logits-orchestrator-rows`
+- model: `https://huggingface.co/blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1`
+
+The sample router prediction for a table-scraping task selects
+`ollama-cloud-qwen3-coder-480b` with `direct` workflow, verifier probability
+0.6475, and abstain probability 0.1565.

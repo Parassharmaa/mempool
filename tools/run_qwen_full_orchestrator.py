@@ -102,6 +102,7 @@ def run_full_orchestrator(
             str(output_dir / "heldout_eval_report.json"),
         ]
     )
+    sample_prediction_path = output_dir / "sample_prediction.json"
     sample_prediction = run(
         [
             sys.executable,
@@ -111,9 +112,12 @@ def run_full_orchestrator(
             "--text",
             sample_text,
             "--output",
-            str(output_dir / "sample_prediction.json"),
+            str(sample_prediction_path),
         ]
     )
+    sample_prediction_payload = sample_prediction["stdout"]
+    if sample_prediction_payload == {"stdout": ""} and sample_prediction_path.exists():
+        sample_prediction_payload = json.loads(sample_prediction_path.read_text(encoding="utf-8"))
     manifest = {
         "schema_version": "mempool.qwen_full_orchestrator_run.v1",
         "base_model": base_model,
@@ -129,7 +133,7 @@ def run_full_orchestrator(
         "train_result": train_result["stdout"],
         "train_eval_report": train_eval["stdout"],
         "heldout_eval_report": heldout_eval["stdout"],
-        "sample_prediction": sample_prediction["stdout"],
+        "sample_prediction": sample_prediction_payload,
     }
     manifest_path = output_dir / "full_run_manifest.json"
     manifest_path.write_text(

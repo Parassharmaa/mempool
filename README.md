@@ -48,10 +48,11 @@ and future systems through the same interface.
 Published artifacts:
 
 - Dataset: [blazeofchi/mempool-qwen-logits-orchestrator-rows](https://huggingface.co/datasets/blazeofchi/mempool-qwen-logits-orchestrator-rows)
-- Model: [blazeofchi/mempool-qwen-logits-orchestrator-v0](https://huggingface.co/blazeofchi/mempool-qwen-logits-orchestrator-v0)
+- Model v1: [blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1](https://huggingface.co/blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1)
+- Model v0: [blazeofchi/mempool-qwen-logits-orchestrator-v0](https://huggingface.co/blazeofchi/mempool-qwen-logits-orchestrator-v0)
 
-The v0 model stores only the trained routing heads. It uses
-`Qwen/Qwen2.5-0.5B-Instruct` as the frozen base model and attaches lightweight
+The v1 model stores only the trained routing heads. It uses
+`Qwen/Qwen3-0.6B` as the frozen base model and attaches lightweight
 heads at inference time.
 
 ## Current Results
@@ -68,10 +69,10 @@ The repository now has an end-to-end measured-data loop:
 8. Qwen-small logits-head orchestrator training and prediction.
 9. Adaptive refresh records with quarantine/rollback discipline.
 
-The current Qwen v0 orchestrator artifact is:
+The current Qwen3 0.6B v1 orchestrator artifact is:
 
 ```text
-research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt
+research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt
 ```
 
 It was trained for 40 epochs on a Lightning AI L40S GPU over 53 train rows and evaluated on 13
@@ -79,12 +80,13 @@ held-out rows:
 
 | Split | Worker Accuracy | Workflow Accuracy | Mean Worker Loss | Mean Workflow Loss |
 | --- | ---: | ---: | ---: | ---: |
-| train | 0.7358 | 0.9434 | 1.1248 | 0.1422 |
-| held-out | 0.5385 | 0.7692 | 1.3367 | 0.6724 |
+| train | 0.8113 | 0.8868 | 1.2074 | 0.2335 |
+| held-out | 0.6923 | 0.7692 | 1.3019 | 0.6372 |
 
 The earlier one-epoch split smoke reached 0.3077 held-out worker accuracy, and
-the 20-epoch Apple MPS run reached 0.3846. The L40S v0 improves this to 0.5385,
-but it is still small-data and not a production policy.
+the 20-epoch Apple MPS run reached 0.3846. The Qwen2.5 L40S v0 reached 0.5385;
+the Qwen3 0.6B L40S v1 improves this to 0.6923, but it is still small-data and
+not a production policy.
 
 The source split is:
 
@@ -104,20 +106,20 @@ source .venv-qwen-train/bin/activate
 python3 -m pip install -e '.[qwen-train]'
 ```
 
-Route a task with the v0 checkpoint:
+Route a task with the v1 checkpoint:
 
 ```bash
 PYTHONPATH=src python3 tools/predict_qwen_logits_orchestrator.py \
-  --checkpoint research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt \
+  --checkpoint research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt \
   --text "Write Python code to scrape the first HTML table from a URL into a pandas DataFrame."
 ```
 
 Example output includes:
 
 ```text
-predicted_worker_id: ollama-cloud-deepseek-v4-pro
+predicted_worker_id: ollama-cloud-qwen3-coder-480b
 predicted_workflow: direct
-verifier_probability: 0.9339
+verifier_probability: 0.6475
 ```
 
 Train and evaluate a full local/MPS/CUDA run:

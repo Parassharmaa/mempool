@@ -369,6 +369,7 @@ def run_transformers_training(
     )
     report = {
         "schema_version": "mempool.qwen_logits_orchestrator_train_report.v1",
+        "base_model": config.base_model,
         "output_dir": str(output_dir),
         "record_count": len(rows),
         "worker_ids": worker_ids,
