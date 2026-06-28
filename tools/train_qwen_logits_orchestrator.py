@@ -8,6 +8,7 @@ from mempool.qwen_logits_orchestrator import (
     DEFAULT_BASE_MODEL,
     QwenLogitsTrainingConfig,
     build_qwen_logits_training_plan,
+    build_qwen_logits_training_plan_from_rows,
     run_transformers_training,
 )
 
@@ -23,6 +24,11 @@ def main() -> int:
         "--substrate",
         type=Path,
         default=ROOT / "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+    )
+    parser.add_argument(
+        "--training-rows",
+        type=Path,
+        help="Use an existing qwen_logits_orchestrator_row JSONL file instead of rebuilding rows from substrate.",
     )
     parser.add_argument("--base-model", default=DEFAULT_BASE_MODEL)
     parser.add_argument("--backend", choices=["transformers", "mlx"], default="transformers")
@@ -48,12 +54,21 @@ def main() -> int:
         batch_size=args.batch_size,
         max_length=args.max_length,
     )
-    plan = build_qwen_logits_training_plan(
-        substrate_path=args.substrate,
-        output_path=args.plan_output,
-        rows_output_path=args.rows_output,
-        config=config,
-    )
+    if args.training_rows:
+        plan = build_qwen_logits_training_plan_from_rows(
+            rows_path=args.training_rows,
+            output_path=args.plan_output,
+            config=config,
+        )
+        training_rows = args.training_rows
+    else:
+        plan = build_qwen_logits_training_plan(
+            substrate_path=args.substrate,
+            output_path=args.plan_output,
+            rows_output_path=args.rows_output,
+            config=config,
+        )
+        training_rows = args.rows_output
     if not args.train:
         print(json.dumps(plan, indent=2, sort_keys=True))
         return 0
@@ -62,7 +77,7 @@ def main() -> int:
     if not args.output_dir:
         raise SystemExit("--output-dir is required with --train")
     report = run_transformers_training(
-        training_rows_path=args.rows_output,
+        training_rows_path=training_rows,
         output_dir=args.output_dir,
         config=config,
     )

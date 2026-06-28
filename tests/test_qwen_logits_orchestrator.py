@@ -8,6 +8,7 @@ from mempool.qwen_logits_orchestrator import (
     align_hidden_dtype,
     audit_qwen_training_readiness,
     build_qwen_logits_training_plan,
+    build_qwen_logits_training_plan_from_rows,
     decision_text,
     run_transformers_evaluation,
     training_dependencies_available,
@@ -67,6 +68,36 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
         self.assertEqual(rows[0]["text"], "route this task")
         self.assertIn("torch", plan["dependency_status"])
         self.assertIn("freeze Qwen-small backbone", plan["training_order"])
+
+    def test_builds_training_plan_from_prepared_rows(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            rows = root / "rows.jsonl"
+            rows.write_text(
+                json.dumps(
+                    {
+                        "task_id": "task-1",
+                        "text": "route",
+                        "target": {
+                            "worker_distribution": {"glm": 1.0},
+                            "workflow_distribution": {"direct": 1.0},
+                            "verifier_probability": 0.0,
+                            "abstain_probability": 0.0,
+                        },
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            plan = build_qwen_logits_training_plan_from_rows(
+                rows_path=rows,
+                output_path=root / "plan.json",
+                config=QwenLogitsTrainingConfig(base_model="Qwen/test"),
+            )
+
+        self.assertEqual(plan["record_count"], 1)
+        self.assertEqual(plan["worker_ids"], ["glm"])
+        self.assertEqual(plan["rows_output"], str(rows))
 
     def test_audits_training_readiness(self) -> None:
         report = audit_qwen_training_readiness(backend="transformers")

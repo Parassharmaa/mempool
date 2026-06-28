@@ -803,3 +803,9 @@ Reloading that checkpoint and evaluating it on the same rows gives worker
 accuracy 0.3182 and workflow accuracy 0.8636. Next, publish the prepared Hugging
 Face dataset/model artifacts once auth is available, then run longer training
 and held-out evaluation before any promotion discussion.
+
+A deterministic Qwen-row split now gives 53 train rows and 13 held-out rows.
+The first one-epoch split smoke reaches worker accuracy 0.4717 on train and
+0.3077 on held-out. Treat this as a baseline gate, not a candidate policy. The
+next Qwen-head experiment should increase epochs and compare held-out worker
+accuracy/loss against the linear multi-head router.

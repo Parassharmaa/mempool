@@ -210,3 +210,13 @@ training plus held-out evaluation before it can compete with the linear router.
 Hugging Face export folders are prepared under
 `research/hf_export/qwen-logits-smoke/`. Remote dataset/model creation is
 pending Hugging Face authentication.
+
+A deterministic held-out split for Qwen logits rows now exists:
+
+- `research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl`
+- `research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl`
+- `research/datasets/20260628-qwen-small-logits-orchestrator-split-manifest.json`
+
+The split is 53 train rows and 13 held-out rows. A one-epoch split smoke reached
+0.4717 worker accuracy on train and 0.3077 on held-out. This confirms the
+held-out gate works, but the Qwen head is not yet competitive.

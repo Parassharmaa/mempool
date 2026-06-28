@@ -1,0 +1,26 @@
+{
+  "heldout_count": 13,
+  "heldout_fraction": 0.2,
+  "heldout_output": "research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl",
+  "heldout_task_ids": [
+    "bigcodebench-hard-BigCodeBench-162",
+    "bigcodebench-hard-BigCodeBench-1006",
+    "bigcodebench-hard-BigCodeBench-322",
+    "bigcodebench-hard-BigCodeBench-123",
+    "bigcodebench-hard-BigCodeBench-760",
+    "bigcodebench-hard-BigCodeBench-897",
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-963",
+    "bigcodebench-hard-BigCodeBench-928",
+    "bigcodebench-hard-BigCodeBench-678",
+    "bigcodebench-hard-BigCodeBench-1022",
+    "bigcodebench-hard-BigCodeBench-139",
+    "bigcodebench-hard-BigCodeBench-955"
+  ],
+  "record_count": 66,
+  "schema_version": "mempool.qwen_logits_split.v1",
+  "seed": 7,
+  "source": "research/datasets/20260628-qwen-small-logits-orchestrator-smoke-rows.jsonl",
+  "train_count": 53,
+  "train_output": "research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl"
+}

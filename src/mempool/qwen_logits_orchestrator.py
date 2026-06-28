@@ -174,6 +174,42 @@ def build_qwen_logits_training_plan(
     return plan
 
 
+def build_qwen_logits_training_plan_from_rows(
+    *,
+    rows_path: Path,
+    output_path: Path,
+    config: QwenLogitsTrainingConfig,
+) -> dict[str, Any]:
+    rows = [
+        json.loads(line)
+        for line in rows_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    worker_ids = sorted({worker_id for row in rows for worker_id in row["target"]["worker_distribution"]})
+    workflow_labels = sorted({label for row in rows for label in row["target"]["workflow_distribution"]})
+    dependency_status = optional_dependency_status()
+    plan = {
+        "schema_version": SCHEMA_VERSION,
+        "prepared_rows": str(rows_path),
+        "rows_output": str(rows_path),
+        "record_count": len(rows),
+        "worker_ids": worker_ids,
+        "workflow_labels": workflow_labels,
+        "config": asdict(config),
+        "dependency_status": dependency_status,
+        "can_train_here": training_dependencies_available(config.backend),
+        "training_order": [
+            "freeze Qwen-small backbone",
+            "train worker/workflow/verifier/abstain heads on measured soft targets",
+            "compare held-out routing against the linear multi-head baseline",
+            "only enable LoRA/backbone updates after the heads beat the baseline",
+        ],
+    }
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(plan, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return plan
+
+
 def run_transformers_training(
     *,
     training_rows_path: Path,
