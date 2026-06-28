@@ -794,3 +794,11 @@ The Qwen training readiness audit now records the exact local blocker:
 `research/models/20260628-qwen-training-readiness.json`. The active Python is
 3.14.4 and the ML stack is absent, so the first real head-training run should
 use Python 3.11/3.12 with `.[qwen-train]`, or move to a GPU/MLX machine.
+
+That local path now works: `.venv-qwen-train` uses Python 3.11.14 with PyTorch,
+Transformers, and Apple MPS available. The first Qwen-small frozen-head smoke
+trained one epoch over 66 rows and wrote
+`research/models/20260628-qwen-small-logits-orchestrator-smoke/qwen_logits_heads.pt`.
+Next, publish the prepared Hugging Face dataset/model artifacts once auth is
+available, then add held-out evaluation for the Qwen-head checkpoint before any
+promotion discussion.

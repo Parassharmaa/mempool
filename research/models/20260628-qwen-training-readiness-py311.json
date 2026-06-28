@@ -1,0 +1,21 @@
+{
+  "backend": "transformers",
+  "backend_ready": true,
+  "dependency_status": {
+    "mlx": false,
+    "mlx_lm": false,
+    "torch": true,
+    "transformers": true
+  },
+  "machine": "arm64",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "python_supported_for_torch": true,
+  "python_version": "3.11.14",
+  "ready_for_local_head_training": true,
+  "reasons": [],
+  "recommendations": [
+    "run a frozen-backbone head-training smoke before enabling LoRA or backbone updates"
+  ],
+  "require_gpu": false,
+  "schema_version": "mempool.qwen_training_readiness.v1"
+}

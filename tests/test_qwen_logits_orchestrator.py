@@ -5,6 +5,7 @@ from pathlib import Path
 
 from mempool.qwen_logits_orchestrator import (
     QwenLogitsTrainingConfig,
+    align_hidden_dtype,
     audit_qwen_training_readiness,
     build_qwen_logits_training_plan,
     decision_text,
@@ -72,6 +73,23 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
         self.assertIn("python_version", report)
         self.assertIn("torch", report["dependency_status"])
         self.assertIsInstance(report["recommendations"], list)
+
+    def test_aligns_hidden_dtype_to_head_weight(self) -> None:
+        class TensorLike:
+            def __init__(self) -> None:
+                self.requested_dtype = None
+
+            def to(self, *, dtype):
+                self.requested_dtype = dtype
+                return self
+
+        class Weight:
+            dtype = "float32"
+
+        hidden = TensorLike()
+
+        self.assertIs(align_hidden_dtype(hidden, Weight()), hidden)
+        self.assertEqual(hidden.requested_dtype, "float32")
 
 
 if __name__ == "__main__":

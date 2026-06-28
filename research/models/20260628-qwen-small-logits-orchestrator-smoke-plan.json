@@ -1,0 +1,40 @@
+{
+  "can_train_here": true,
+  "config": {
+    "backend": "transformers",
+    "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "batch_size": 1,
+    "epochs": 1,
+    "learning_rate": 0.0002,
+    "lora_rank": 0,
+    "max_length": 512,
+    "seed": 7,
+    "train_backbone": false
+  },
+  "dependency_status": {
+    "mlx": false,
+    "mlx_lm": false,
+    "torch": true,
+    "transformers": true
+  },
+  "record_count": 66,
+  "rows_output": "research/datasets/20260628-qwen-small-logits-orchestrator-smoke-rows.jsonl",
+  "schema_version": "mempool.qwen_logits_orchestrator_plan.v1",
+  "substrate": "/Users/paras/projects/mempool/research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+  "training_order": [
+    "freeze Qwen-small backbone",
+    "train worker/workflow/verifier/abstain heads on measured soft targets",
+    "compare held-out routing against the linear multi-head baseline",
+    "only enable LoRA/backbone updates after the heads beat the baseline"
+  ],
+  "worker_ids": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "workflow_labels": [
+    "direct",
+    "verify_then_fallback"
+  ]
+}

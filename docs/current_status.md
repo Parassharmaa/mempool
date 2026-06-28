@@ -182,3 +182,21 @@ again `bigcodebench-hard-BigCodeBench-339`, where the router selected
 `ollama-cloud-glm-5.2` and passed all tests. This is clean specialist-routing
 evidence, but still not a promotion signal because the sample is tiny and the
 router's mean latency was 7507 ms versus 2897 ms for fixed Qwen.
+
+The first real Qwen-small frozen-head training smoke has completed in an
+isolated Python 3.11 environment:
+
+- `research/models/20260628-qwen-training-readiness-py311.json`
+- `research/datasets/20260628-qwen-small-logits-orchestrator-smoke-rows.jsonl`
+- `research/models/20260628-qwen-small-logits-orchestrator-smoke-plan.json`
+- `research/models/20260628-qwen-small-logits-orchestrator-smoke/train_report.json`
+- `research/models/20260628-qwen-small-logits-orchestrator-smoke/qwen_logits_heads.pt`
+
+The smoke trained explicit worker, workflow, verifier, and abstain heads for one
+epoch over 66 rows using `Qwen/Qwen2.5-0.5B-Instruct` as the frozen backbone.
+The final smoke loss was 4.53756536136974. This is a real training artifact,
+but not yet a promoted policy.
+
+Hugging Face export folders are prepared under
+`research/hf_export/qwen-logits-smoke/`. Remote dataset/model creation is
+pending Hugging Face authentication.

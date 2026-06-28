@@ -127,6 +127,10 @@ def build_training_rows(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return rows
 
 
+def align_hidden_dtype(hidden: Any, reference_weight: Any) -> Any:
+    return hidden.to(dtype=reference_weight.dtype)
+
+
 def build_qwen_logits_training_plan(
     *,
     substrate_path: Path,
@@ -215,6 +219,7 @@ def run_transformers_training(
             outputs = self.backbone(input_ids=input_ids, attention_mask=attention_mask)
             lengths = attention_mask.sum(dim=1).clamp(min=1) - 1
             hidden = outputs.last_hidden_state[torch.arange(input_ids.shape[0]), lengths]
+            hidden = align_hidden_dtype(hidden, self.worker_head.weight)
             return {
                 "worker_logits": self.worker_head(hidden),
                 "workflow_logits": self.workflow_head(hidden),

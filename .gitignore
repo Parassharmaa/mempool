@@ -2,6 +2,7 @@
 .env
 .env.*
 __pycache__/
+*.egg-info/
 .venv/
 .venv-*/
 venv/

@@ -73,6 +73,7 @@ Prepared Qwen-small artifacts:
 ```text
 research/models/20260628-qwen-small-logits-orchestrator-plan.json
 research/datasets/20260628-qwen-small-logits-orchestrator-rows.jsonl
+research/models/20260628-qwen-small-logits-orchestrator-smoke/qwen_logits_heads.pt
 ```
 
 The plan currently reports `can_train_here: false` because this checkout does
@@ -100,6 +101,19 @@ To check the current machine:
 ```bash
 PYTHONPATH=src python3 tools/audit_qwen_training_readiness.py \
   --output research/models/local-qwen-training-readiness.json
+```
+
+The first local smoke checkpoint has been trained in `.venv-qwen-train`. To
+prepare Hugging Face upload folders:
+
+```bash
+PYTHONPATH=src python3 tools/prepare_hf_release.py
+```
+
+After `hf auth login`, publish the dataset and model repos:
+
+```bash
+PYTHONPATH=src python3 tools/publish_hf_release.py
 ```
 
 For bounded autonomous improvement runs, see
