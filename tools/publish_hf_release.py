@@ -15,7 +15,15 @@ def run(cmd: list[str]) -> subprocess.CompletedProcess[str]:
 
 def hf_whoami() -> str:
     completed = run(["hf", "auth", "whoami"])
-    return completed.stdout.strip().splitlines()[-1].strip()
+    return parse_hf_whoami(completed.stdout)
+
+
+def parse_hf_whoami(output: str) -> str:
+    line = output.strip().splitlines()[-1].strip()
+    for part in line.split():
+        if part.startswith("user="):
+            return part.split("=", 1)[1].strip()
+    return line
 
 
 def create_and_upload(*, repo_id: str, repo_type: str, folder: Path) -> None:

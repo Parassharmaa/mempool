@@ -19,6 +19,7 @@ research/evals/results/*.jsonl
 research/runs/*/
 !research/runs/.gitkeep
 research/hf_export/
+research/lightning_artifacts/
 
 # Reference checkouts can be large and should not be committed by default.
 external_repos/*/

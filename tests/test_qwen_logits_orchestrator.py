@@ -10,6 +10,7 @@ from mempool.qwen_logits_orchestrator import (
     build_qwen_logits_training_plan,
     build_qwen_logits_training_plan_from_rows,
     decision_text,
+    resolve_torch_device,
     run_transformers_evaluation,
     training_dependencies_available,
     target_summary,
@@ -123,6 +124,9 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
 
         self.assertIs(align_hidden_dtype(hidden, Weight()), hidden)
         self.assertEqual(hidden.requested_dtype, "float32")
+
+    def test_resolves_requested_torch_device(self) -> None:
+        self.assertEqual(resolve_torch_device(object(), "cuda"), "cuda")
 
     def test_transformers_evaluation_requires_dependencies(self) -> None:
         if training_dependencies_available("transformers"):

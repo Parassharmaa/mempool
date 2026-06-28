@@ -36,6 +36,7 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=2)
     parser.add_argument("--learning-rate", type=float, default=2e-4)
     parser.add_argument("--max-length", type=int, default=1536)
+    parser.add_argument("--device", default="auto")
     parser.add_argument("--train-backbone", action="store_true")
     parser.add_argument("--lora-rank", type=int, default=0)
     parser.add_argument("--plan-output", type=Path, required=True)
@@ -53,6 +54,7 @@ def main() -> int:
         epochs=args.epochs,
         batch_size=args.batch_size,
         max_length=args.max_length,
+        device=args.device,
     )
     if args.training_rows:
         plan = build_qwen_logits_training_plan_from_rows(

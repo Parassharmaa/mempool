@@ -26,6 +26,7 @@ class QwenLogitsTrainingConfig:
     batch_size: int = 2
     max_length: int = 1536
     seed: int = 7
+    device: str = "auto"
 
 
 def optional_dependency_status() -> dict[str, bool]:
@@ -131,6 +132,17 @@ def align_hidden_dtype(hidden: Any, reference_weight: Any) -> Any:
     return hidden.to(dtype=reference_weight.dtype)
 
 
+def resolve_torch_device(torch_module: Any, requested: str = "auto") -> str:
+    if requested != "auto":
+        return requested
+    if torch_module.cuda.is_available():
+        return "cuda"
+    mps = getattr(torch_module.backends, "mps", None)
+    if mps is not None and mps.is_available():
+        return "mps"
+    return "cpu"
+
+
 def build_qwen_logits_training_plan(
     *,
     substrate_path: Path,
@@ -226,6 +238,7 @@ def run_transformers_training(
     from torch.utils.data import DataLoader  # type: ignore[import-not-found]
     from transformers import AutoModel, AutoTokenizer  # type: ignore[import-not-found]
 
+    device = resolve_torch_device(torch, config.device)
     rows = [
         json.loads(line)
         for line in training_rows_path.read_text(encoding="utf-8").splitlines()
@@ -302,7 +315,7 @@ def run_transformers_training(
         }
 
     torch.manual_seed(config.seed)
-    model = HeadModel()
+    model = HeadModel().to(device)
     optimizer = torch.optim.AdamW(
         [parameter for parameter in model.parameters() if parameter.requires_grad],
         lr=config.learning_rate,
@@ -312,6 +325,10 @@ def run_transformers_training(
     for epoch in range(config.epochs):
         total_loss = 0.0
         for batch in loader:
+            batch = {
+                key: value.to(device) if hasattr(value, "to") else value
+                for key, value in batch.items()
+            }
             outputs = model(batch["input_ids"], batch["attention_mask"])
             worker_log_probs = torch.log_softmax(outputs["worker_logits"], dim=-1)
             workflow_log_probs = torch.log_softmax(outputs["workflow_logits"], dim=-1)
@@ -354,6 +371,7 @@ def run_transformers_training(
         "record_count": len(rows),
         "worker_ids": worker_ids,
         "workflow_labels": workflow_labels,
+        "device": device,
         "history": history,
     }
     (output_dir / "train_report.json").write_text(
@@ -379,6 +397,7 @@ def run_transformers_evaluation(
 
     checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
     config = QwenLogitsTrainingConfig(**checkpoint["config"])
+    device = resolve_torch_device(torch, config.device)
     rows = [
         json.loads(line)
         for line in training_rows_path.read_text(encoding="utf-8").splitlines()
@@ -442,7 +461,7 @@ def run_transformers_evaluation(
             "workflow_targets": workflow_targets,
         }
 
-    model = HeadModel()
+    model = HeadModel().to(device)
     model.load_state_dict(checkpoint["head_state_dict"], strict=False)
     model.eval()
     loader = DataLoader(rows, batch_size=config.batch_size, shuffle=False, collate_fn=collate)
@@ -455,6 +474,10 @@ def run_transformers_evaluation(
     predictions = []
     with torch.no_grad():
         for batch in loader:
+            batch = {
+                key: value.to(device) if hasattr(value, "to") else value
+                for key, value in batch.items()
+            }
             outputs = model(batch["input_ids"], batch["attention_mask"])
             worker_probs = torch.softmax(outputs["worker_logits"], dim=-1)
             workflow_probs = torch.softmax(outputs["workflow_logits"], dim=-1)
@@ -486,6 +509,7 @@ def run_transformers_evaluation(
         "checkpoint": str(checkpoint_path),
         "rows": str(training_rows_path),
         "record_count": total,
+        "device": device,
         "worker_accuracy": worker_correct / total if total else 0.0,
         "workflow_accuracy": workflow_correct / total if total else 0.0,
         "mean_worker_loss": worker_loss_total / total if total else 0.0,
