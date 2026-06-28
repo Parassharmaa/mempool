@@ -1,0 +1,11 @@
+{
+  "max_pass_latency_ms": 6000.0,
+  "output": "research/evals/20260628-qwen-first-rejection-specialist-tasks.json",
+  "selected": 3,
+  "task_ids": [
+    "bigcodebench-hard-BigCodeBench-327",
+    "bigcodebench-hard-BigCodeBench-322",
+    "bigcodebench-hard-BigCodeBench-271"
+  ],
+  "worker_id": "ollama-cloud-qwen3-coder-480b"
+}

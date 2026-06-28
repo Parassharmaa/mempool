@@ -1,0 +1,46 @@
+{
+  "candidate_count": 0,
+  "max_pass_latency_ms": 6000.0,
+  "max_universal_fail_similarity": 4.0,
+  "min_gate_score": 0.0,
+  "positive_seed_count": 5,
+  "prior_outcomes": [
+    "research/evals/results/20260628-qwen-resistant-rank1-specialist-top4-positive.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-rank1-top4-positive.jsonl",
+    "research/evals/results/20260628-qwen-first-rejection-specialist-screen.jsonl",
+    "research/evals/results/20260628-prospective-solvability-gate-specialist-screen.jsonl"
+  ],
+  "qwen_outcomes": "research/evals/results/20260628-prospective-solvability-gate-qwen-screen.jsonl",
+  "ranked_candidates": [],
+  "rejected_by_score": 1,
+  "rejected_by_universal_fail_cap": 0,
+  "rejected_task_count": 1,
+  "rejected_worker_id": "ollama-cloud-qwen3-coder-480b",
+  "scored_rejections": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "collections",
+        "random",
+        "json"
+      ],
+      "plausibility_score": 2.304,
+      "positive_similarity": 11.4679,
+      "score": -5.8268,
+      "task_id": "bigcodebench-hard-BigCodeBench-365",
+      "universal_fail_similarity": 11.4313
+    }
+  ],
+  "selected": [],
+  "selected_task_ids": [],
+  "specialist_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "task_source": "research/evals/20260628-prospective-solvability-gate-candidate-tasks.json",
+  "universal_fail_seed_count": 5
+}

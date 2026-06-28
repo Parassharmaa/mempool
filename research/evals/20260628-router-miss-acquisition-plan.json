@@ -1,0 +1,275 @@
+{
+  "dataset": "research/datasets/20260628-contrast-aware-26task-routing.jsonl",
+  "miss_count": 8,
+  "misses": [
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "libraries": [
+        "os",
+        "requests",
+        "zipfile"
+      ],
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-1006"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "libraries": [
+        "random",
+        "statistics"
+      ],
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-2"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "libraries": [
+        "os",
+        "random",
+        "shutil"
+      ],
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-368"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_id": "bigcodebench-hard-BigCodeBench-5"
+    },
+    {
+      "categories": [
+        "datasci",
+        "subprocess"
+      ],
+      "libraries": [
+        "codecs",
+        "datetime",
+        "numpy",
+        "pandas",
+        "re"
+      ],
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-760"
+    },
+    {
+      "categories": [
+        "datasci",
+        "filesystem"
+      ],
+      "libraries": [
+        "collections",
+        "csv",
+        "json",
+        "numpy"
+      ],
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-763"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "libraries": [
+        "glob",
+        "os",
+        "pathlib",
+        "zipfile"
+      ],
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_id": "bigcodebench-hard-BigCodeBench-963"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "libraries": [
+        "collections",
+        "csv",
+        "os",
+        "urllib"
+      ],
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-999"
+    }
+  ],
+  "neighborhood_count": 8,
+  "neighborhoods": [
+    {
+      "category_key": "filesystem",
+      "example_prompts": [
+        "Moves a random file from the source directory to the specified destination directory. The function should output with: str: The name of the file moved. Format: 'filename.extension' (e.g., 'file1.txt'). You should write self-contained code s"
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-368"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "os+random+shutil"
+        }
+      ]
+    },
+    {
+      "category_key": "datasci+filesystem",
+      "example_prompts": [
+        "Read a list of dictionaries from a JSON file, calculate the mean and median for each key, and write the results to a CSV file. The function should output with: dict: A dictionary where each key is a field from the input JSON and each value "
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-763"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "collections+csv+json+numpy"
+        }
+      ]
+    },
+    {
+      "category_key": "filesystem",
+      "example_prompts": [
+        "Zip files with certain extensions from a source directory and save it as a zip file saved to a target directory. Note that: The valid extensions are: ['.txt', '.docx', '.xlsx', '.csv']. The function should raise the exception for: OSError: "
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-963"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "glob+os+pathlib+zipfile"
+        }
+      ]
+    },
+    {
+      "category_key": "general",
+      "example_prompts": [
+        "Create a dictionary where keys are letters from a predefined list LETTERS and values are lists of random integers. Then, calculates the population standard deviation for each list of integers and returns a dictionary of these values. The ra"
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-5"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "math+random"
+        }
+      ]
+    },
+    {
+      "category_key": "filesystem+subprocess",
+      "example_prompts": [
+        "Downloads and extracts a ZIP file from a specified URL to a given directory. The function should raise the exception for: Network Issues or Invalid URL: Returns \"Error: Unable to download the file from the provided URL.\" if there are issues"
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1006"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "os+requests+zipfile"
+        }
+      ]
+    },
+    {
+      "category_key": "datasci+subprocess",
+      "example_prompts": [
+        "Creates a random DataFrame with 100 records. Each record consists of an ID (ranging from 1 to 100), Name (randomly selected from provided lists of Latin and other names), Date of Birth (randomly generated dates between the specified years),"
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-760"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "codecs+datetime+numpy+pandas"
+        }
+      ]
+    },
+    {
+      "category_key": "filesystem+subprocess",
+      "example_prompts": [
+        "Download a CSV file from a given URL, save it to a specified path, and count the occurrences of each value in a particular column. The function handles various scenarios including missing columns and file download errors. Note that: Notes: "
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-999"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "collections+csv+os+urllib"
+        }
+      ]
+    },
+    {
+      "category_key": "general",
+      "example_prompts": [
+        "Create a dictionary in which keys are random letters and values are lists of random integers. The dictionary is then sorted by the mean of the values in descending order, demonstrating the use of the statistics library. The function should "
+      ],
+      "miss_count": 1,
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "recommended_action": "mine repeated examples where the target worker is plausible and the predicted worker is currently over-selected",
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-2"
+      ],
+      "top_library_keys": [
+        {
+          "count": 1,
+          "libraries": "random+statistics"
+        }
+      ]
+    }
+  ],
+  "router_report": "research/datasets/20260628-contrast-aware-26task-reward-t0p1-logits-router-report.json",
+  "schema_version": "mempool.router_miss_acquisition.v1",
+  "task_count": 26
+}

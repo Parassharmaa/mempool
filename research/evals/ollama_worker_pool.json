@@ -1,0 +1,23 @@
+{
+  "base_url": "http://localhost:11434/v1",
+  "workers": [
+    {
+      "id": "qwen3-1.7b",
+      "model": "qwen3:1.7b",
+      "strengths": ["general", "code_easy"],
+      "cost_usd": 0.0
+    },
+    {
+      "id": "qwen3-4b-instruct",
+      "model": "qwen3:4b-instruct",
+      "strengths": ["general", "code_easy", "code_text", "code_data"],
+      "cost_usd": 0.0
+    },
+    {
+      "id": "lfm2.5-1.2b",
+      "model": "LiquidAI/lfm2.5-1.2b-instruct:latest",
+      "strengths": ["general", "code_easy"],
+      "cost_usd": 0.0
+    }
+  ]
+}

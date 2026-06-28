@@ -1,0 +1,110 @@
+{
+  "current_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask"
+  ],
+  "current_profile_path": "research/evals/bigcodebench_dependency_profile_next.txt",
+  "expanded_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask",
+    "openpyxl",
+    "pytz",
+    "legacy-cgi",
+    "rsa"
+  ],
+  "gap_report": "research/evals/bigcodebench_hard_next_profile_dependency_gap_report.json",
+  "profile_output": "research/evals/bigcodebench_dependency_profile_next2.txt",
+  "projected_unique_unlocks": 9,
+  "selected_package_count": 4,
+  "selected_packages": [
+    {
+      "blocked_task_count": 3,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-360",
+        "bigcodebench-hard-BigCodeBench-374",
+        "bigcodebench-hard-BigCodeBench-409"
+      ],
+      "incremental_unique_tasks": 3,
+      "modules": [
+        "openpyxl"
+      ],
+      "package": "openpyxl",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-360",
+        "bigcodebench-hard-BigCodeBench-374",
+        "bigcodebench-hard-BigCodeBench-409"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1077",
+        "bigcodebench-hard-BigCodeBench-199"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "pytz"
+      ],
+      "package": "pytz",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1077",
+        "bigcodebench-hard-BigCodeBench-199"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-273",
+        "bigcodebench-hard-BigCodeBench-274"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "cgi"
+      ],
+      "package": "legacy-cgi",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-273",
+        "bigcodebench-hard-BigCodeBench-274"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-583",
+        "bigcodebench-hard-BigCodeBench-587"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "rsa"
+      ],
+      "package": "rsa",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-583",
+        "bigcodebench-hard-BigCodeBench-587"
+      ]
+    }
+  ],
+  "source_eligible_tasks": 102,
+  "source_scanned_tasks": 143,
+  "source_unique_dependency_blocked_tasks": 26
+}

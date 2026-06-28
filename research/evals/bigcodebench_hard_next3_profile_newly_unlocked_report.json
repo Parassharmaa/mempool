@@ -1,0 +1,19 @@
+{
+  "current_count": 118,
+  "previous_count": 108,
+  "newly_unlocked_count": 10,
+  "newly_unlocked_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1003",
+    "bigcodebench-hard-BigCodeBench-1008",
+    "bigcodebench-hard-BigCodeBench-1015",
+    "bigcodebench-hard-BigCodeBench-214",
+    "bigcodebench-hard-BigCodeBench-34",
+    "bigcodebench-hard-BigCodeBench-424",
+    "bigcodebench-hard-BigCodeBench-454",
+    "bigcodebench-hard-BigCodeBench-458",
+    "bigcodebench-hard-BigCodeBench-477",
+    "bigcodebench-hard-BigCodeBench-917"
+  ],
+  "previous_absent_count": 0,
+  "previous_absent_task_ids": []
+}

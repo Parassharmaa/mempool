@@ -1,0 +1,25 @@
+{
+  "dropped_previous_count": 3,
+  "dropped_previous_task_ids": [
+    "bigcodebench-hard-BigCodeBench-454",
+    "bigcodebench-hard-BigCodeBench-458",
+    "bigcodebench-hard-BigCodeBench-477"
+  ],
+  "newly_unlocked_count": 9,
+  "newly_unlocked_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1077",
+    "bigcodebench-hard-BigCodeBench-199",
+    "bigcodebench-hard-BigCodeBench-273",
+    "bigcodebench-hard-BigCodeBench-274",
+    "bigcodebench-hard-BigCodeBench-360",
+    "bigcodebench-hard-BigCodeBench-374",
+    "bigcodebench-hard-BigCodeBench-409",
+    "bigcodebench-hard-BigCodeBench-916",
+    "bigcodebench-hard-BigCodeBench-928"
+  ],
+  "next2_profile_task_count": 108,
+  "next2_profile_tasks": "research/evals/bigcodebench_hard_next2_profile_eligible_merged_tasks.json",
+  "output": "research/evals/bigcodebench_hard_next2_profile_newly_unlocked_tasks.json",
+  "previous_profile_task_count": 102,
+  "previous_tasks": "research/evals/bigcodebench_hard_next_profile_eligible_merged_tasks.json"
+}

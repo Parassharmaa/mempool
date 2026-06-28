@@ -1,0 +1,347 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "candidate_count": 5,
+  "excluded_count": 123,
+  "excluded_outcomes": [
+    "research/evals/results/20260627-offset125-stable-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-bigcodebench-minipilot.jsonl",
+    "research/evals/results/20260627-deepseek-candidate-368-repeat-compare.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1.jsonl",
+    "research/evals/results/20260627-kimi-qwen-negative-mining-12.jsonl",
+    "research/evals/results/20260627-heldout-both-repeat-compare-env.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1.jsonl",
+    "research/evals/results/20260627-glm-deepseek-qwen-kimi-negative-mining.jsonl",
+    "research/evals/results/20260627-heldout-hard-active-policy.jsonl",
+    "research/evals/results/20260627-top4-hard-specialist-repeat-compare.jsonl",
+    "research/evals/results/20260627-qwen-offset99-mining-8.jsonl",
+    "research/evals/results/20260627-m3-expanded-real-workers.jsonl",
+    "research/evals/results/20260627-acquisition-to-50-wave1.jsonl",
+    "research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl",
+    "research/evals/results/20260627-bigcodebench-hard-smoke-1.jsonl",
+    "research/evals/results/20260628-direct-deepseek-like-remaining1.jsonl",
+    "research/evals/results/20260627-postrefresh-heldout-hard.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-smoke.jsonl",
+    "research/evals/results/20260628-next3-917-neighborhood-positive-repeat.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-first-screen1.jsonl",
+    "research/evals/results/20260627-top4-fresh-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-kimi-offset99-mining-8.jsonl",
+    "research/evals/results/20260627-fallback-error-neighborhood-screen4.jsonl",
+    "research/evals/results/20260628-positive-neighborhood-kimi-screen1.jsonl",
+    "research/evals/results/20260627-ollama-cloud-smoke-1.jsonl",
+    "research/evals/results/20260627-cloud-positive-compare-4.jsonl",
+    "research/evals/results/20260627-ollama-cloud-smoke-3.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-remaining.jsonl",
+    "research/evals/results/20260627-offset125-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4.jsonl",
+    "research/evals/results/20260628-next3-nonqwen-screen1.jsonl",
+    "research/evals/results/20260628-next3-917-neighborhood-screen1.jsonl",
+    "research/evals/results/20260627-top4-hard-nonqwen-mining-8.jsonl",
+    "research/evals/results/20260627-fallback-opportunity-top2-repeat.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4b.jsonl",
+    "research/evals/results/20260627-top4-specialist-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-top4-fresh-qwen-mining-8.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave2.jsonl",
+    "research/evals/results/20260628-next2-profile-fallback-opportunity-screen1.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-4task.jsonl",
+    "research/evals/results/20260627-acquisition-to-50-wave2-specialist.jsonl",
+    "research/evals/results/20260627-qwen-offset125-mining-5.jsonl",
+    "research/evals/results/20260627-qwen-positive-mining-16.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-limit1.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-provenance.jsonl",
+    "research/evals/results/20260628-next-profile-positive-repeat.jsonl",
+    "research/evals/results/20260627-bigcodebench-eligible-8.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-batch1.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices.jsonl",
+    "research/evals/results/20260627-kimi-candidate-repeat-compare.jsonl",
+    "research/evals/results/20260627-expanded-profile-fresh-batch6.jsonl",
+    "research/evals/results/20260627-top4-fresh-nonqwen-mining-8.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4c.jsonl",
+    "research/evals/results/20260627-fallback-solvability-screen4.jsonl",
+    "research/evals/results/20260628-solvability-aware-kimi-screen1.jsonl",
+    "research/evals/results/20260627-qwen-only-offset99-repeat-compare.jsonl",
+    "research/evals/results/20260627-positive-neighborhood-screen2.jsonl",
+    "research/evals/results/20260627-m1-real-workers.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave3.jsonl",
+    "research/evals/results/20260627-offset99-neither-specialist-repeat.jsonl",
+    "research/evals/results/20260628-next-profile-fallback-opportunity-screen1.jsonl",
+    "research/evals/results/20260628-next3-positive-repeat.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-top4env.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1.jsonl"
+  ],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-mixed-winner-16task-routing.jsonl",
+    "research/datasets/20260627-cloud-positive-compare-4-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-45task-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-merged-33task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-merge-ready-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-smoke-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-merge-ready-routing.jsonl",
+    "research/datasets/20260627-postrefresh-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-top4-fresh-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-4task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-14task-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-40task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-49task-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-1-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-merge-ready-routing.jsonl",
+    "research/datasets/20260627-top4-hard-specialist-repeat-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4b-routing.jsonl",
+    "research/datasets/20260628-next-profile-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-featurefix-38task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+    "research/datasets/20260627-real-ollama-routing.jsonl",
+    "research/datasets/20260627-expanded-ollama-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-merge-ready-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-merge-ready-routing.jsonl",
+    "research/datasets/20260627-fallback-error-neighborhood-screen4-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4c-merge-ready-routing.jsonl",
+    "research/datasets/20260627-heldout-hard-active-policy-routing.jsonl",
+    "research/datasets/20260628-next-profile-fallback-opportunity-screen1-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4b-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-38task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-merge-ready-routing.jsonl",
+    "research/datasets/20260627-fallback-opportunity-top2-repeat-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-3-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-6task-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-eligible-8-routing.jsonl",
+    "research/datasets/20260628-next2-profile-fallback-opportunity-screen1-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-hard-smoke-1-routing.jsonl",
+    "research/datasets/20260627-deepseek-368-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+    "research/datasets/20260627-heldout-both-repeat-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-minipilot-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4c-routing.jsonl",
+    "research/datasets/20260628-next3-917-neighborhood-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-46task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-routing.jsonl",
+    "research/datasets/20260627-catalog-candidate-regression-slices-provenance-routing.jsonl",
+    "research/datasets/20260627-qwen-only-offset99-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-positive-neighborhood-screen2-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-merged-32task-routing.jsonl",
+    "research/datasets/20260627-top4-specialist-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-kimi-candidate-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-routing.jsonl",
+    "research/datasets/20260628-next3-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-fallback-solvability-screen4-routing.jsonl",
+    "research/datasets/20260627-offset125-stable-positive-routing.jsonl"
+  ],
+  "preferred_second_workers": [
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "ranked_candidates": [
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 5,
+      "first_second_margin": 0.07264262043761277,
+      "libraries": [
+        "pandas",
+        "lxml",
+        "urllib"
+      ],
+      "plausibility_score": 10.551,
+      "score": 14.5265,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-1003",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "first_second_margin": 0.057859525122323396,
+      "libraries": [
+        "matplotlib",
+        "re",
+        "wordcloud"
+      ],
+      "plausibility_score": 12.6853,
+      "score": 12.6313,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-34",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "first_second_margin": 0.034047591254094844,
+      "libraries": [
+        "sqlite3",
+        "pandas",
+        "lxml",
+        "requests"
+      ],
+      "plausibility_score": 12.8037,
+      "score": 11.7099,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015",
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.09634214026735888,
+      "libraries": [
+        "http",
+        "cgi",
+        "json"
+      ],
+      "plausibility_score": 9.7843,
+      "score": 8.8135,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-273",
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "first_second_margin": 0.175995910885562,
+      "libraries": [
+        "pandas",
+        "io",
+        "bs4",
+        "requests"
+      ],
+      "plausibility_score": 13.2363,
+      "score": 8.5311,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-1008",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    }
+  ],
+  "registry": "research/policies/active_policy.json",
+  "seed_routing_datasets": [
+    "research/datasets/20260628-next3-positive-repeat-routing.jsonl"
+  ],
+  "seed_task_ids": [
+    "bigcodebench-hard-BigCodeBench-917"
+  ],
+  "selected": [
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 5,
+      "first_second_margin": 0.07264262043761277,
+      "libraries": [
+        "pandas",
+        "lxml",
+        "urllib"
+      ],
+      "plausibility_score": 10.551,
+      "score": 14.5265,
+      "second_probability": 0.2910258107883358,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-1003",
+      "top_probability": 0.36366843122594855,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "first_second_margin": 0.057859525122323396,
+      "libraries": [
+        "matplotlib",
+        "re",
+        "wordcloud"
+      ],
+      "plausibility_score": 12.6853,
+      "score": 12.6313,
+      "second_probability": 0.28266492889441225,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-34",
+      "top_probability": 0.34052445401673564,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "first_second_margin": 0.034047591254094844,
+      "libraries": [
+        "sqlite3",
+        "pandas",
+        "lxml",
+        "requests"
+      ],
+      "plausibility_score": 12.8037,
+      "score": 11.7099,
+      "second_probability": 0.35856258356744447,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015",
+      "top_probability": 0.3926101748215393,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.09634214026735888,
+      "libraries": [
+        "http",
+        "cgi",
+        "json"
+      ],
+      "plausibility_score": 9.7843,
+      "score": 8.8135,
+      "second_probability": 0.2791881770189351,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-273",
+      "top_probability": 0.375530317286294,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1003",
+    "bigcodebench-hard-BigCodeBench-34",
+    "bigcodebench-hard-BigCodeBench-1015",
+    "bigcodebench-hard-BigCodeBench-273"
+  ],
+  "task_sources": [
+    "research/evals/bigcodebench_hard_next3_profile_eligible_merged_tasks.json"
+  ]
+}

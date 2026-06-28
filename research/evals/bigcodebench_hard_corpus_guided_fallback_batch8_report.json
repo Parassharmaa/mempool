@@ -1,0 +1,1928 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "candidate_count": 65,
+  "corpus": "research/datasets/20260628-fallback-opportunity-corpus.jsonl",
+  "corpus_record_count": 322,
+  "corpus_unique_task_count": 86,
+  "excluded_count": 171,
+  "excluded_outcomes": [],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-acquisition-to-50-wave1-merge-ready-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-merged-32task-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-merged-33task-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-merge-ready-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-eligible-8-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-hard-smoke-1-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-minipilot-routing.jsonl",
+    "research/datasets/20260627-catalog-candidate-regression-slices-provenance-routing.jsonl",
+    "research/datasets/20260627-cloud-positive-compare-4-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-4task-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-smoke-routing.jsonl",
+    "research/datasets/20260627-deepseek-368-routing.jsonl",
+    "research/datasets/20260627-expanded-ollama-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-38task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-featurefix-38task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-40task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-45task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-46task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-49task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4b-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4b-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4c-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4c-routing.jsonl",
+    "research/datasets/20260627-fallback-error-neighborhood-screen4-routing.jsonl",
+    "research/datasets/20260627-fallback-opportunity-top2-repeat-routing.jsonl",
+    "research/datasets/20260627-fallback-solvability-screen4-routing.jsonl",
+    "research/datasets/20260627-heldout-both-repeat-routing.jsonl",
+    "research/datasets/20260627-heldout-hard-active-policy-routing.jsonl",
+    "research/datasets/20260627-kimi-candidate-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-14task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-16task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-6task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+    "research/datasets/20260627-offset125-stable-positive-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-1-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-3-routing.jsonl",
+    "research/datasets/20260627-positive-neighborhood-screen2-routing.jsonl",
+    "research/datasets/20260627-postrefresh-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-qwen-only-offset99-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-real-ollama-routing.jsonl",
+    "research/datasets/20260627-top4-fresh-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-top4-hard-specialist-repeat-routing.jsonl",
+    "research/datasets/20260627-top4-specialist-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-contrast-aware-26task-routing.jsonl",
+    "research/datasets/20260628-contrast-aware-top4-repeat-merge-ready-routing.jsonl",
+    "research/datasets/20260628-contrast-aware-top4-repeat-routing.jsonl",
+    "research/datasets/20260628-fresh-acquisition-54task-routing.jsonl",
+    "research/datasets/20260628-fresh-acquisition-outcomes-routing.jsonl",
+    "research/datasets/20260628-known-positive-live-top4-repeat2-routing.jsonl",
+    "research/datasets/20260628-latency-safe-head-37task-routing.jsonl",
+    "research/datasets/20260628-latency-safe-matched-controls-top4-routing.jsonl",
+    "research/datasets/20260628-live-augmented-30task-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-25task-qwen-fail-contrast-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+    "research/datasets/20260628-next-profile-fallback-opportunity-screen1-routing.jsonl",
+    "research/datasets/20260628-next-profile-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-next2-profile-fallback-opportunity-screen1-routing.jsonl",
+    "research/datasets/20260628-next3-917-neighborhood-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-next3-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-positive-repeat-merge-ready-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-top3-screen-merge-ready-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-top3-screen-routing.jsonl",
+    "research/datasets/20260628-nonqwen-specialist-rank1-top4-positive-routing.jsonl",
+    "research/datasets/20260628-normal-offset156-guarded-58task-routing.jsonl",
+    "research/datasets/20260628-normal-offset156-guarded-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p1-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p5-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-56task-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-heldout27-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-heldout38-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-54task-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-heldout31-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-routing.jsonl",
+    "research/datasets/20260628-probe-gated-live-validation-top4-routing.jsonl",
+    "research/datasets/20260628-qwen-fail-contrast-selector-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-qwen-fail-specialist-mining-screen1-routing.jsonl",
+    "research/datasets/20260628-qwen-resistant-rank1-specialist-top4-positive-routing.jsonl",
+    "research/datasets/20260628-router-miss-repeat-24task-routing.jsonl",
+    "research/datasets/20260628-router-miss-repeat4-top4-merge-ready-routing.jsonl",
+    "research/datasets/20260628-router-miss-repeat4-top4-routing.jsonl"
+  ],
+  "hard_negative_seed_count": 173,
+  "hard_negative_top_counts": {
+    "ollama-cloud-deepseek-v4-pro": 1,
+    "ollama-cloud-kimi-k2.7-code": 22,
+    "ollama-cloud-qwen3-coder-480b": 150
+  },
+  "positive_alternate_counts": {
+    "ollama-cloud-deepseek-v4-pro": 54,
+    "ollama-cloud-glm-5.2": 39,
+    "ollama-cloud-kimi-k2.7-code": 47,
+    "ollama-cloud-qwen3-coder-480b": 9
+  },
+  "positive_seed_count": 149,
+  "preferred_alternate_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "preferred_second_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "ranked_candidates": [
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.024053301182939635,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "csv",
+        "collections",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 11.4,
+      "score": 29.9819,
+      "second_positive_similarity": 11.4,
+      "second_probability": 0.29141881800375014,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-327",
+      "top_probability": 0.31547211918668977,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1485868521725513,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "collections",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 9.9,
+      "score": 24.4828,
+      "second_positive_similarity": 9.9,
+      "second_probability": 0.2578630016134239,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-281",
+      "top_probability": 0.4064498537859752,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.061477955327335576,
+      "hard_negative_similarity": 11.3,
+      "libraries": [
+        "subprocess",
+        "shutil",
+        "os",
+        "sys"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 9.8,
+      "score": 21.782,
+      "second_positive_similarity": 9.8,
+      "second_probability": 0.32689189573140054,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-322",
+      "top_probability": 0.3883698510587361,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "network",
+        "text"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.043407779525356405,
+      "hard_negative_similarity": 8.3,
+      "libraries": [
+        "urllib",
+        "hmac",
+        "hashlib",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 8.4,
+      "score": 21.4182,
+      "second_positive_similarity": 8.4,
+      "second_probability": 0.3085221932410048,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-339",
+      "top_probability": 0.35192997276636123,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11813554078777116,
+      "hard_negative_similarity": 9.35,
+      "libraries": [
+        "json",
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 10.0,
+      "score": 20.5987,
+      "second_positive_similarity": 4.85,
+      "second_probability": 0.2687525360181225,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-671",
+      "top_probability": 0.38688807680589365,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11445563448764395,
+      "hard_negative_similarity": 9.25,
+      "libraries": [
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 9.9,
+      "score": 20.4361,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.27964479327453384,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-675",
+      "top_probability": 0.3941004277621778,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.04041272803703827,
+      "hard_negative_similarity": 9.45,
+      "libraries": [
+        "sqlite3",
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 9.9,
+      "score": 20.4242,
+      "second_positive_similarity": 4.95,
+      "second_probability": 0.3507669004947168,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-539",
+      "top_probability": 0.3911796285317551,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12388735324786088,
+      "hard_negative_similarity": 9.25,
+      "libraries": [
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 9.9,
+      "score": 20.4172,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.2889689173588153,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-673",
+      "top_probability": 0.4128562706066762,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.08109262877356455,
+      "hard_negative_similarity": 12.9,
+      "libraries": [
+        "json",
+        "collections",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 9.9,
+      "score": 20.1178,
+      "second_positive_similarity": 9.9,
+      "second_probability": 0.266870325455537,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-283",
+      "top_probability": 0.34796295422910156,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.015630755082094827,
+      "hard_negative_similarity": 10.0,
+      "libraries": [
+        "collections",
+        "random",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 8.5,
+      "score": 19.7287,
+      "second_positive_similarity": 8.5,
+      "second_probability": 0.31041787505692603,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-365",
+      "top_probability": 0.32604863013902086,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.14999431505470673,
+      "hard_negative_similarity": 10.0,
+      "libraries": [
+        "queue",
+        "collections",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 8.5,
+      "score": 19.46,
+      "second_positive_similarity": 8.5,
+      "second_probability": 0.2662911167664109,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-335",
+      "top_probability": 0.4162854318211176,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.023018326787345444,
+      "hard_negative_similarity": 10.0,
+      "libraries": [
+        "unicodedata",
+        "hashlib",
+        "pathlib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 5.5,
+      "positive_similarity": 8.5,
+      "score": 19.289,
+      "second_positive_similarity": 8.5,
+      "second_probability": 0.33422968569962075,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-577",
+      "top_probability": 0.3572480124869662,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12492833133203057,
+      "hard_negative_similarity": 7.5,
+      "libraries": [
+        "shutil",
+        "itertools",
+        "fnmatch",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 7.4,
+      "score": 18.8801,
+      "second_positive_similarity": 6.9,
+      "second_probability": 0.269440737623197,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-665",
+      "top_probability": 0.39436906895522755,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.14638310560894013,
+      "hard_negative_similarity": 7.75,
+      "libraries": [
+        "shutil",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 8.4,
+      "score": 18.8722,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.26809155562719206,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-344",
+      "top_probability": 0.4144746612361322,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1353388776711386,
+      "hard_negative_similarity": 10.5,
+      "libraries": [
+        "glob",
+        "ctypes",
+        "shutil",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 5.0,
+      "positive_similarity": 9.8,
+      "score": 18.3793,
+      "second_positive_similarity": 4.95,
+      "second_probability": 0.26970177841665505,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-563",
+      "top_probability": 0.40504065608779366,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.08238276129901517,
+      "hard_negative_similarity": 11.5,
+      "libraries": [
+        "subprocess",
+        "time",
+        "signal",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 5.5,
+      "positive_similarity": 8.9,
+      "score": 18.3202,
+      "second_positive_similarity": 8.9,
+      "second_probability": 0.3449657237784002,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-348",
+      "top_probability": 0.42734848507741535,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1512652778658966,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "collections",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 8.4,
+      "score": 17.7875,
+      "second_positive_similarity": 8.4,
+      "second_probability": 0.26896465227157934,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-279",
+      "top_probability": 0.42022993013747595,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.15199059310862384,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "collections",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 8.4,
+      "score": 17.786,
+      "second_positive_similarity": 8.4,
+      "second_probability": 0.25709368273727007,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-268",
+      "top_probability": 0.4090842758458939,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.39259992878265737,
+      "hard_negative_similarity": 12.8,
+      "libraries": [
+        "glob",
+        "shutil",
+        "subprocess",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 9.8,
+      "score": 17.3698,
+      "second_positive_similarity": 9.8,
+      "second_probability": 0.19766476440284564,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-350",
+      "top_probability": 0.590264693185503,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11144855867124503,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "io",
+        "hashlib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 7.75,
+      "score": 17.0621,
+      "second_positive_similarity": 7.75,
+      "second_probability": 0.30905307023818746,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-508",
+      "top_probability": 0.4205016289094325,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.10139338090266409,
+      "hard_negative_similarity": 5.8,
+      "libraries": [
+        "csv",
+        "sys"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 5.9,
+      "score": 16.7872,
+      "second_positive_similarity": 5.9,
+      "second_probability": 0.26276520273538023,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-672",
+      "top_probability": 0.3641585836380443,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.018971273276624456,
+      "hard_negative_similarity": 8.4,
+      "libraries": [
+        "subprocess",
+        "logging"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.5,
+      "positive_similarity": 6.9,
+      "score": 16.1571,
+      "second_positive_similarity": 6.9,
+      "second_probability": 0.3594395432645385,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-604",
+      "top_probability": 0.37841081654116293,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.027579851361998087,
+      "hard_negative_similarity": 10.0,
+      "libraries": [
+        "queue",
+        "collections",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 7.0,
+      "score": 14.4548,
+      "second_positive_similarity": 7.0,
+      "second_probability": 0.3262382510718863,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-328",
+      "top_probability": 0.3538181024338844,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.21286237735668678,
+      "hard_negative_similarity": 12.9,
+      "libraries": [
+        "subprocess",
+        "time",
+        "datetime",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 8.8,
+      "score": 14.0793,
+      "second_positive_similarity": 8.8,
+      "second_probability": 0.2897980203421249,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-459",
+      "top_probability": 0.5026603976988117,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1543179170216917,
+      "hard_negative_similarity": 5.4,
+      "libraries": [
+        "collections",
+        "heapq"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 5.4,
+      "score": 14.0314,
+      "second_positive_similarity": 5.4,
+      "second_probability": 0.24183308668699707,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-667",
+      "top_probability": 0.3961510037086888,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.26532708714460956,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "glob",
+        "json",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 7.75,
+      "score": 13.8493,
+      "second_positive_similarity": 6.8,
+      "second_probability": 0.2502174866749141,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-370",
+      "top_probability": 0.5155445738195237,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.06452278488407776,
+      "hard_negative_similarity": 7.4,
+      "libraries": [
+        "json",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 6.0,
+      "score": 13.561,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.2919551293002553,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-398",
+      "top_probability": 0.35647791418433306,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.09234864300670376,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "math",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 5.4,
+      "score": 13.4053,
+      "second_positive_similarity": 5.4,
+      "second_probability": 0.2745787456090271,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-670",
+      "top_probability": 0.3669273886157309,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11417127477806055,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "math",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 5.4,
+      "score": 13.3617,
+      "second_positive_similarity": 5.4,
+      "second_probability": 0.2759657523791551,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-666",
+      "top_probability": 0.39013702715721565,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.19189399803934531,
+      "hard_negative_similarity": 10.5,
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 8.4,
+      "score": 13.2962,
+      "second_positive_similarity": 4.95,
+      "second_probability": 0.24566980689396778,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-380",
+      "top_probability": 0.4375638049333131,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.31196818847820795,
+      "hard_negative_similarity": 10.5,
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 8.4,
+      "score": 13.0561,
+      "second_positive_similarity": 4.95,
+      "second_probability": 0.20614179279061814,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-389",
+      "top_probability": 0.5181099812688261,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0698669321325876,
+      "hard_negative_similarity": 5.4,
+      "libraries": [
+        "types",
+        "inspect",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 12.5203,
+      "second_positive_similarity": 4.5,
+      "second_probability": 0.28899023611513597,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-570",
+      "top_probability": 0.35885716824772357,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.030518323480527576,
+      "hard_negative_similarity": 5.3,
+      "libraries": [
+        "difflib",
+        "gzip"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.4,
+      "score": 12.429,
+      "second_positive_similarity": 4.4,
+      "second_probability": 0.3121961066185604,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-510",
+      "top_probability": 0.342714430099088,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.08147943796821305,
+      "hard_negative_similarity": 5.3,
+      "libraries": [
+        "enum",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.4,
+      "score": 12.327,
+      "second_positive_similarity": 4.4,
+      "second_probability": 0.289738235970172,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-466",
+      "top_probability": 0.37121767393838506,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0560223175451775,
+      "hard_negative_similarity": 5.35,
+      "libraries": [
+        "math",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.4,
+      "score": 12.303,
+      "second_positive_similarity": 4.4,
+      "second_probability": 0.28656759572590773,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-254",
+      "top_probability": 0.34258991327108523,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.10357550040818297,
+      "hard_negative_similarity": 4.5,
+      "libraries": [
+        "random",
+        "string",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 12.3028,
+      "second_positive_similarity": 3.0,
+      "second_probability": 0.298397364529491,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-453",
+      "top_probability": 0.401972864937674,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.18273603947063388,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "itertools",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 5.4,
+      "score": 11.7245,
+      "second_positive_similarity": 5.4,
+      "second_probability": 0.252882072253885,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-358",
+      "top_probability": 0.43561811172451886,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.20257834536564573,
+      "hard_negative_similarity": 5.4,
+      "libraries": [
+        "glob",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 5.4,
+      "score": 11.5048,
+      "second_positive_similarity": 3.0,
+      "second_probability": 0.2507603508330487,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-400",
+      "top_probability": 0.45333869619869444,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "network",
+        "text"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.04957316159292252,
+      "hard_negative_similarity": 8.4,
+      "libraries": [
+        "urllib",
+        "re",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 5.5,
+      "positive_similarity": 5.5,
+      "score": 11.1359,
+      "second_positive_similarity": 5.5,
+      "second_probability": 0.3157149396657717,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-397",
+      "top_probability": 0.3652881012586942,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.10359147301519184,
+      "hard_negative_similarity": 8.4,
+      "libraries": [
+        "collections",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 5.4,
+      "score": 11.1328,
+      "second_positive_similarity": 5.4,
+      "second_probability": 0.2473035744520638,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-297",
+      "top_probability": 0.35089504746725564,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.06096312615988542,
+      "hard_negative_similarity": 4.5,
+      "libraries": [
+        "bisect",
+        "random",
+        "array"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 10.8881,
+      "second_positive_similarity": 1.5,
+      "second_probability": 0.324449705127895,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-595",
+      "top_probability": 0.3854128312877804,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.08708099866823521,
+      "hard_negative_similarity": 2.8,
+      "libraries": [
+        "struct",
+        "zlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 2.9,
+      "score": 10.8158,
+      "second_positive_similarity": 2.9,
+      "second_probability": 0.2764148287535527,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-544",
+      "top_probability": 0.36349582742178793,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.16335093811152718,
+      "hard_negative_similarity": 4.5,
+      "libraries": [
+        "codecs",
+        "struct",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 10.6833,
+      "second_positive_similarity": 3.0,
+      "second_probability": 0.27828532744617934,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-545",
+      "top_probability": 0.4416362655577065,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12982910750344862,
+      "hard_negative_similarity": 4.4,
+      "libraries": [
+        "bisect",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.4,
+      "score": 10.5803,
+      "second_positive_similarity": 1.4,
+      "second_probability": 0.29209520121552346,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-331",
+      "top_probability": 0.4219243087189721,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.23840842487035036,
+      "hard_negative_similarity": 4.5,
+      "libraries": [
+        "random",
+        "string",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 10.5332,
+      "second_positive_similarity": 3.0,
+      "second_probability": 0.2532377902220604,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-342",
+      "top_probability": 0.49164621509241074,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.06524619474596471,
+      "hard_negative_similarity": 11.3,
+      "libraries": [
+        "base64",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 6.9,
+      "score": 9.9595,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.3225960111745335,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-543",
+      "top_probability": 0.38784220592049823,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.022532004849262655,
+      "hard_negative_similarity": 6.0,
+      "libraries": [
+        "base64",
+        "random",
+        "string",
+        "zlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 4.4,
+      "score": 9.8349,
+      "second_positive_similarity": 2.9,
+      "second_probability": 0.3216583149835755,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-548",
+      "top_probability": 0.34419031983283815,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.124976989434544,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "random",
+        "heapq"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.4,
+      "score": 9.34,
+      "second_positive_similarity": 3.9,
+      "second_probability": 0.2788341011564489,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-330",
+      "top_probability": 0.4038110905909929,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12943074711699498,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "random",
+        "heapq"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.4,
+      "score": 9.3311,
+      "second_positive_similarity": 3.9,
+      "second_probability": 0.27893445388954213,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-333",
+      "top_probability": 0.4083652010065371,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.18170156836757514,
+      "hard_negative_similarity": 9.8,
+      "libraries": [
+        "json",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 6.2,
+      "score": 8.8666,
+      "second_positive_similarity": 4.95,
+      "second_probability": 0.2461243278826674,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-329",
+      "top_probability": 0.42782589625024253,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.16430940632497804,
+      "hard_negative_similarity": 5.9,
+      "libraries": [
+        "struct",
+        "hashlib",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 8.5814,
+      "second_positive_similarity": 3.0,
+      "second_probability": 0.29072929697453936,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-542",
+      "top_probability": 0.4550387032995174,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11759792969392358,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "math",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 3.9,
+      "score": 8.1048,
+      "second_positive_similarity": 3.9,
+      "second_probability": 0.25250859743678494,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-669",
+      "top_probability": 0.3701065271307085,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.05233568349619333,
+      "hard_negative_similarity": 8.4,
+      "libraries": [
+        "base64",
+        "unicodedata",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 8.0553,
+      "second_positive_similarity": 4.5,
+      "second_probability": 0.29856684918022525,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-412",
+      "top_probability": 0.3509025326764186,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1316573396773132,
+      "hard_negative_similarity": 1.5,
+      "libraries": [
+        "types",
+        "math",
+        "inspect"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 1.5,
+      "score": 7.7467,
+      "second_positive_similarity": 1.5,
+      "second_probability": 0.27168233575381384,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-569",
+      "top_probability": 0.40333967543112703,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.127967817049697,
+      "hard_negative_similarity": 1.4,
+      "libraries": [
+        "types",
+        "inspect"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 1.4,
+      "score": 7.5841,
+      "second_positive_similarity": 1.4,
+      "second_probability": 0.2610153460489344,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-566",
+      "top_probability": 0.3889831630986314,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0010091739806732947,
+      "hard_negative_similarity": 10.0,
+      "libraries": [
+        "ctypes",
+        "hashlib",
+        "binascii"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 4.85,
+      "score": 6.953,
+      "second_positive_similarity": 4.85,
+      "second_probability": 0.33132515206776536,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-565",
+      "top_probability": 0.33233432604843866,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1944147946817639,
+      "hard_negative_similarity": 6.9,
+      "libraries": [
+        "math",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 3.9,
+      "score": 6.4512,
+      "second_positive_similarity": 3.9,
+      "second_probability": 0.23621832501024612,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-668",
+      "top_probability": 0.43063311969201,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datetime",
+        "general",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.07003777309223791,
+      "hard_negative_similarity": 6.75,
+      "libraries": [
+        "hashlib",
+        "random",
+        "string",
+        "time"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 3.65,
+      "score": 6.3149,
+      "second_positive_similarity": 2.9,
+      "second_probability": 0.31640688385724797,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-271",
+      "top_probability": 0.3864446569494859,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1201958391364139,
+      "hard_negative_similarity": 5.8,
+      "libraries": [
+        "hmac",
+        "hashlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 2.9,
+      "score": 6.2496,
+      "second_positive_similarity": 2.9,
+      "second_probability": 0.2649576694273148,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-505",
+      "top_probability": 0.3851535085637287,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.02566503420283045,
+      "hard_negative_similarity": 10.0,
+      "libraries": [
+        "math",
+        "random",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 4.5,
+      "score": 5.2087,
+      "second_positive_similarity": 4.0,
+      "second_probability": 0.32362591632841126,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-277",
+      "top_probability": 0.3492909505312417,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.061257504121787154,
+      "hard_negative_similarity": 11.5,
+      "libraries": [
+        "hashlib",
+        "re",
+        "binascii"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 4.85,
+      "score": 4.5825,
+      "second_positive_similarity": 4.85,
+      "second_probability": 0.29140515041074816,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-642",
+      "top_probability": 0.3526626545325353,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.24683568466993414,
+      "hard_negative_similarity": 14.4,
+      "libraries": [
+        "glob",
+        "shutil",
+        "os",
+        "time"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 7.5,
+      "score": 4.5363,
+      "second_positive_similarity": 4.4,
+      "second_probability": 0.24672877206429308,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-263",
+      "top_probability": 0.4935644567342272,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.025107131676079697,
+      "hard_negative_similarity": 11.3,
+      "libraries": [
+        "base64",
+        "hashlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 4.65,
+      "score": 4.3148,
+      "second_positive_similarity": 4.65,
+      "second_probability": 0.3018981862145777,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-644",
+      "top_probability": 0.3270053178906574,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.24118707832111344,
+      "hard_negative_similarity": 2.9,
+      "libraries": [
+        "math",
+        "multiprocessing"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.5,
+      "positive_similarity": 1.4,
+      "score": 3.2126,
+      "second_positive_similarity": 1.4,
+      "second_probability": 0.24727514439767576,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-363",
+      "top_probability": 0.4884622227187892,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.15061416445002612,
+      "hard_negative_similarity": 10.5,
+      "libraries": [
+        "base64",
+        "hashlib",
+        "hmac",
+        "binascii"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 2.35,
+      "score": -4.3462,
+      "second_positive_similarity": 2.35,
+      "second_probability": 0.2664283547615128,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-433",
+      "top_probability": 0.4170425192115389,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    }
+  ],
+  "registry": "research/policies/active_policy.json",
+  "second_positive_seed_count": 78,
+  "selected": [
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.024053301182939635,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "csv",
+        "collections",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 11.4,
+      "score": 29.9819,
+      "second_positive_similarity": 11.4,
+      "second_probability": 0.29141881800375014,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-327",
+      "top_probability": 0.31547211918668977,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.1485868521725513,
+      "hard_negative_similarity": 9.9,
+      "libraries": [
+        "collections",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 9.9,
+      "score": 24.4828,
+      "second_positive_similarity": 9.9,
+      "second_probability": 0.2578630016134239,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-281",
+      "top_probability": 0.4064498537859752,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.061477955327335576,
+      "hard_negative_similarity": 11.3,
+      "libraries": [
+        "subprocess",
+        "shutil",
+        "os",
+        "sys"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 9.8,
+      "score": 21.782,
+      "second_positive_similarity": 9.8,
+      "second_probability": 0.32689189573140054,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-322",
+      "top_probability": 0.3883698510587361,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "network",
+        "text"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.043407779525356405,
+      "hard_negative_similarity": 8.3,
+      "libraries": [
+        "urllib",
+        "hmac",
+        "hashlib",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 6.5,
+      "positive_similarity": 8.4,
+      "score": 21.4182,
+      "second_positive_similarity": 8.4,
+      "second_probability": 0.3085221932410048,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-339",
+      "top_probability": 0.35192997276636123,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11813554078777116,
+      "hard_negative_similarity": 9.35,
+      "libraries": [
+        "json",
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0,
+      "positive_similarity": 10.0,
+      "score": 20.5987,
+      "second_positive_similarity": 4.85,
+      "second_probability": 0.2687525360181225,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-671",
+      "top_probability": 0.38688807680589365,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.11445563448764395,
+      "hard_negative_similarity": 9.25,
+      "libraries": [
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 9.9,
+      "score": 20.4361,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.27964479327453384,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-675",
+      "top_probability": 0.3941004277621778,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.04041272803703827,
+      "hard_negative_similarity": 9.45,
+      "libraries": [
+        "sqlite3",
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.0,
+      "positive_similarity": 9.9,
+      "score": 20.4242,
+      "second_positive_similarity": 4.95,
+      "second_probability": 0.3507669004947168,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-539",
+      "top_probability": 0.3911796285317551,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12388735324786088,
+      "hard_negative_similarity": 9.25,
+      "libraries": [
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.0,
+      "positive_similarity": 9.9,
+      "score": 20.4172,
+      "second_positive_similarity": 4.75,
+      "second_probability": 0.2889689173588153,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-673",
+      "top_probability": 0.4128562706066762,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-327",
+    "bigcodebench-hard-BigCodeBench-281",
+    "bigcodebench-hard-BigCodeBench-322",
+    "bigcodebench-hard-BigCodeBench-339",
+    "bigcodebench-hard-BigCodeBench-671",
+    "bigcodebench-hard-BigCodeBench-675",
+    "bigcodebench-hard-BigCodeBench-539",
+    "bigcodebench-hard-BigCodeBench-673"
+  ],
+  "task_sources": [
+    "research/evals/20260628-normal-offset316-eligible-tasks.json",
+    "research/evals/20260628-normal-offset519-eligible-tasks.json",
+    "research/evals/20260628-normal-offset596-eligible-tasks.json",
+    "research/evals/20260628-normal-offset359-eligible-tasks.json",
+    "research/evals/20260628-normal-offset236-eligible-tasks.json",
+    "research/evals/20260628-normal-offset439-eligible-tasks.json"
+  ]
+}

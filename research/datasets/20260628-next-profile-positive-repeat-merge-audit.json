@@ -1,0 +1,20 @@
+{
+  "all_fail_tasks": [],
+  "allow_all_fail_tasks": false,
+  "min_target_pass_rate": 1.0,
+  "ready_to_merge": false,
+  "reasons": [
+    "dataset contains unstable target workers"
+  ],
+  "record_count": 2,
+  "solvable_task_count": 2,
+  "target_failure_tasks": [],
+  "unstable_target_tasks": [
+    {
+      "target_pass_rate": 0.5,
+      "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-865"
+    }
+  ],
+  "validation_errors": []
+}

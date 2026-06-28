@@ -1,0 +1,114 @@
+{
+  "current_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask",
+    "openpyxl",
+    "pytz",
+    "legacy-cgi",
+    "rsa"
+  ],
+  "current_profile_path": "research/evals/bigcodebench_dependency_profile_next2.txt",
+  "expanded_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask",
+    "openpyxl",
+    "pytz",
+    "legacy-cgi",
+    "rsa",
+    "statsmodels",
+    "opencv-python",
+    "lxml",
+    "wordcloud"
+  ],
+  "gap_report": "research/evals/bigcodebench_hard_next2_profile_dependency_gap_report.json",
+  "profile_output": "research/evals/bigcodebench_dependency_profile_next3.txt",
+  "projected_unique_unlocks": 7,
+  "selected_package_count": 4,
+  "selected_packages": [
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-108",
+        "bigcodebench-hard-BigCodeBench-917"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "statsmodels"
+      ],
+      "package": "statsmodels",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-108",
+        "bigcodebench-hard-BigCodeBench-917"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-214",
+        "bigcodebench-hard-BigCodeBench-424"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "cv2"
+      ],
+      "package": "opencv-python",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-214",
+        "bigcodebench-hard-BigCodeBench-424"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1003",
+        "bigcodebench-hard-BigCodeBench-1015"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "lxml"
+      ],
+      "package": "lxml",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1003",
+        "bigcodebench-hard-BigCodeBench-1015"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-34"
+      ],
+      "incremental_unique_tasks": 1,
+      "modules": [
+        "wordcloud"
+      ],
+      "package": "wordcloud",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-34"
+      ]
+    }
+  ],
+  "source_eligible_tasks": 109,
+  "source_scanned_tasks": 145,
+  "source_unique_dependency_blocked_tasks": 22
+}

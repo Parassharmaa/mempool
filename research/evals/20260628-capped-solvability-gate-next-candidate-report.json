@@ -1,0 +1,126 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "candidate_count": 1,
+  "excluded_count": 74,
+  "excluded_outcomes": [
+    "research/evals/results/20260628-qwen-first-rejection-qwen-screen.jsonl",
+    "research/evals/results/20260628-qwen-first-rejection-specialist-screen.jsonl",
+    "research/evals/results/20260628-prospective-solvability-gate-qwen-screen.jsonl",
+    "research/evals/results/20260628-prospective-solvability-gate-specialist-screen.jsonl"
+  ],
+  "excluded_routing_datasets": [
+    "research/datasets/20260628-normal-offset16-contrast-56task-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-54task-routing.jsonl",
+    "research/datasets/20260628-normal-offset156-guarded-58task-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl"
+  ],
+  "max_specialist_rank": 1,
+  "qwen_anchor_seed_datasets": [
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl"
+  ],
+  "qwen_anchor_seed_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1085",
+    "bigcodebench-hard-BigCodeBench-123",
+    "bigcodebench-hard-BigCodeBench-139",
+    "bigcodebench-hard-BigCodeBench-172",
+    "bigcodebench-hard-BigCodeBench-178",
+    "bigcodebench-hard-BigCodeBench-19",
+    "bigcodebench-hard-BigCodeBench-205",
+    "bigcodebench-hard-BigCodeBench-308",
+    "bigcodebench-hard-BigCodeBench-445",
+    "bigcodebench-hard-BigCodeBench-454",
+    "bigcodebench-hard-BigCodeBench-502",
+    "bigcodebench-hard-BigCodeBench-530",
+    "bigcodebench-hard-BigCodeBench-532",
+    "bigcodebench-hard-BigCodeBench-574",
+    "bigcodebench-hard-BigCodeBench-618",
+    "bigcodebench-hard-BigCodeBench-678",
+    "bigcodebench-hard-BigCodeBench-777",
+    "bigcodebench-hard-BigCodeBench-854",
+    "bigcodebench-hard-BigCodeBench-870",
+    "bigcodebench-hard-BigCodeBench-98",
+    "bigcodebench-hard-BigCodeBench-990"
+  ],
+  "qwen_fail_seed_datasets": [
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl"
+  ],
+  "qwen_fail_seed_task_ids": [
+    "bigcodebench-hard-BigCodeBench-100",
+    "bigcodebench-hard-BigCodeBench-1004",
+    "bigcodebench-hard-BigCodeBench-1006",
+    "bigcodebench-hard-BigCodeBench-1013",
+    "bigcodebench-hard-BigCodeBench-1022",
+    "bigcodebench-hard-BigCodeBench-129",
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-192",
+    "bigcodebench-hard-BigCodeBench-310",
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-526",
+    "bigcodebench-hard-BigCodeBench-592",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-955",
+    "bigcodebench-hard-BigCodeBench-963"
+  ],
+  "qwen_worker": "ollama-cloud-qwen3-coder-480b",
+  "ranked_candidates": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0062349275273612115,
+      "libraries": [
+        "difflib",
+        "gzip"
+      ],
+      "plausibility_score": 1.982,
+      "qwen_anchor_similarity": 2.4955,
+      "qwen_fail_similarity": 2.4946,
+      "score": 7.4305,
+      "second_probability": 0.2727228596912557,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.278958,
+      "specialist_rank": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-510",
+      "top_probability": 0.2789577872186169,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    }
+  ],
+  "registry": "research/policies/active_policy.json",
+  "selected": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0062349275273612115,
+      "libraries": [
+        "difflib",
+        "gzip"
+      ],
+      "plausibility_score": 1.982,
+      "qwen_anchor_similarity": 2.4955,
+      "qwen_fail_similarity": 2.4946,
+      "score": 7.4305,
+      "second_probability": 0.2727228596912557,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.278958,
+      "specialist_rank": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-510",
+      "top_probability": 0.2789577872186169,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-510"
+  ],
+  "specialist_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "task_sources": [
+    "research/evals/20260628-normal-offset439-eligible-tasks.json"
+  ]
+}

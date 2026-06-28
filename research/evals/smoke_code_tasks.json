@@ -1,0 +1,112 @@
+[
+  {
+    "id": "smoke-add-numbers",
+    "family": "code_easy",
+    "prompt": "Write a Python function add_numbers(a, b) that returns the sum of two numbers.",
+    "function_name": "add_numbers",
+    "tests": [
+      "assert add_numbers(2, 3) == 5",
+      "assert add_numbers(-4, 10) == 6",
+      "assert add_numbers(0, 0) == 0"
+    ]
+  },
+  {
+    "id": "smoke-reverse-words",
+    "family": "code_text",
+    "prompt": "Write a Python function reverse_words(text) that reverses word order while keeping each word unchanged.",
+    "function_name": "reverse_words",
+    "tests": [
+      "assert reverse_words('one two three') == 'three two one'",
+      "assert reverse_words('solo') == 'solo'",
+      "assert reverse_words('  spaced   words ') == 'words spaced'"
+    ]
+  },
+  {
+    "id": "smoke-normalize-records",
+    "family": "code_data",
+    "prompt": "Write a Python function normalize_records(records) that lowercases keys and strips whitespace from string values in each dict.",
+    "function_name": "normalize_records",
+    "tests": [
+      "records = [{' Name ': ' Ada ', 'AGE': 37}]",
+      "assert normalize_records(records) == [{' name ': 'Ada', 'age': 37}]",
+      "assert normalize_records([{'X': ' y '}]) == [{'x': 'y'}]"
+    ]
+  },
+  {
+    "id": "smoke-top-k-frequent",
+    "family": "code_data",
+    "prompt": "Write a Python function top_k_frequent(items, k) that returns the k most frequent items, sorted by descending count then item.",
+    "function_name": "top_k_frequent",
+    "tests": [
+      "assert top_k_frequent(['b', 'a', 'b', 'c', 'a', 'b'], 2) == ['b', 'a']",
+      "assert top_k_frequent([3, 3, 2, 2, 1], 2) == [2, 3]",
+      "assert top_k_frequent([], 3) == []"
+    ]
+  },
+  {
+    "id": "smoke-flatten-list",
+    "family": "code_data",
+    "prompt": "Write a Python function flatten_once(items) that flattens one level of nested lists while preserving order.",
+    "function_name": "flatten_once",
+    "tests": [
+      "assert flatten_once([1, [2, 3], 4]) == [1, 2, 3, 4]",
+      "assert flatten_once([[1], [], [2, 3]]) == [1, 2, 3]",
+      "assert flatten_once(['a', ['b']]) == ['a', 'b']"
+    ]
+  },
+  {
+    "id": "smoke-safe-int",
+    "family": "code_easy",
+    "prompt": "Write a Python function safe_int(value, default=0) that converts value to int and returns default when conversion fails.",
+    "function_name": "safe_int",
+    "tests": [
+      "assert safe_int('42') == 42",
+      "assert safe_int('nope') == 0",
+      "assert safe_int(None, default=-1) == -1"
+    ]
+  },
+  {
+    "id": "smoke-group-by-key",
+    "family": "code_data",
+    "prompt": "Write a Python function group_by_key(records, key) that groups a list of dicts by the given key value.",
+    "function_name": "group_by_key",
+    "tests": [
+      "records = [{'team': 'a', 'n': 1}, {'team': 'b', 'n': 2}, {'team': 'a', 'n': 3}]",
+      "assert group_by_key(records, 'team') == {'a': [records[0], records[2]], 'b': [records[1]]}",
+      "assert group_by_key([{'x': 1}, {'y': 2}], 'x') == {1: [{'x': 1}], None: [{'y': 2}]}"
+    ]
+  },
+  {
+    "id": "smoke-title-case",
+    "family": "code_text",
+    "prompt": "Write a Python function title_case_words(text) that lowercases text then title-cases each whitespace-separated word.",
+    "function_name": "title_case_words",
+    "tests": [
+      "assert title_case_words('hELLO wORLD') == 'Hello World'",
+      "assert title_case_words('  multiple   spaces ') == 'Multiple Spaces'",
+      "assert title_case_words('') == ''"
+    ]
+  },
+  {
+    "id": "smoke-windowed",
+    "family": "code_data",
+    "prompt": "Write a Python function windowed(items, size) that returns consecutive windows of the given size as tuples.",
+    "function_name": "windowed",
+    "tests": [
+      "assert windowed([1, 2, 3, 4], 2) == [(1, 2), (2, 3), (3, 4)]",
+      "assert windowed([1, 2], 3) == []",
+      "assert windowed([1, 2, 3], 1) == [(1,), (2,), (3,)]"
+    ]
+  },
+  {
+    "id": "smoke-parse-kv",
+    "family": "code_data",
+    "prompt": "Write a Python function parse_kv_pairs(text) that parses comma-separated key=value pairs into a dict with stripped keys and values.",
+    "function_name": "parse_kv_pairs",
+    "tests": [
+      "assert parse_kv_pairs('a=1, b = two') == {'a': '1', 'b': 'two'}",
+      "assert parse_kv_pairs('') == {}",
+      "assert parse_kv_pairs('bad, x= ok ') == {'x': 'ok'}"
+    ]
+  }
+]

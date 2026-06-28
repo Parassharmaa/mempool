@@ -1,0 +1,709 @@
+{
+  "cumulative_unlock": [
+    {
+      "packages": [
+        "pandas"
+      ],
+      "unique_blocked_tasks": 42
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy"
+      ],
+      "unique_blocked_tasks": 65
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "unique_blocked_tasks": 80
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests"
+      ],
+      "unique_blocked_tasks": 89
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk"
+      ],
+      "unique_blocked_tasks": 92
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker"
+      ],
+      "unique_blocked_tasks": 95
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4"
+      ],
+      "unique_blocked_tasks": 98
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil"
+      ],
+      "unique_blocked_tasks": 100
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask"
+      ],
+      "unique_blocked_tasks": 102
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi"
+      ],
+      "unique_blocked_tasks": 104
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa"
+      ],
+      "unique_blocked_tasks": 106
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud"
+      ],
+      "unique_blocked_tasks": 107
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex"
+      ],
+      "unique_blocked_tasks": 108
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn"
+      ],
+      "unique_blocked_tasks": 109
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow"
+      ],
+      "unique_blocked_tasks": 110
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python"
+      ],
+      "unique_blocked_tasks": 111
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python",
+        "xlwt"
+      ],
+      "unique_blocked_tasks": 112
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "scipy"
+      ],
+      "unique_blocked_tasks": 113
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "scipy",
+        "pyquery"
+      ],
+      "unique_blocked_tasks": 114
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "scipy",
+        "pyquery",
+        "lxml"
+      ],
+      "unique_blocked_tasks": 115
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "scipy",
+        "pyquery",
+        "lxml",
+        "pillow"
+      ],
+      "unique_blocked_tasks": 116
+    },
+    {
+      "packages": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "requests",
+        "nltk",
+        "faker",
+        "bs4",
+        "psutil",
+        "flask",
+        "cgi",
+        "rsa",
+        "wordcloud",
+        "regex",
+        "scikit-learn",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "scipy",
+        "pyquery",
+        "lxml",
+        "pillow",
+        "pytz"
+      ],
+      "unique_blocked_tasks": 117
+    }
+  ],
+  "dependency_blocked_tasks": 117,
+  "eligible": 29,
+  "non_dependency_failure_count": 2,
+  "non_dependency_failures": [
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_eligible_offset99_report.json",
+      "stderr_tail": "case_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp1uwlcpil/candidate.py\", line 84, in test_case_6\n    self.assertTrue(creation_datetime <= modification_datetime)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 10 tests in 0.008s\n\nFAILED (failures=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-971"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_eligible_offset125_report.json",
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-1040"
+    }
+  ],
+  "ranked_packages": [
+    {
+      "blocked_task_count": 42,
+      "modules": [
+        "pandas"
+      ],
+      "package": "pandas",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1022",
+        "bigcodebench-hard-BigCodeBench-1053",
+        "bigcodebench-hard-BigCodeBench-1057",
+        "bigcodebench-hard-BigCodeBench-108",
+        "bigcodebench-hard-BigCodeBench-120",
+        "bigcodebench-hard-BigCodeBench-123",
+        "bigcodebench-hard-BigCodeBench-139",
+        "bigcodebench-hard-BigCodeBench-161",
+        "bigcodebench-hard-BigCodeBench-184",
+        "bigcodebench-hard-BigCodeBench-199",
+        "bigcodebench-hard-BigCodeBench-302",
+        "bigcodebench-hard-BigCodeBench-308",
+        "bigcodebench-hard-BigCodeBench-341",
+        "bigcodebench-hard-BigCodeBench-360",
+        "bigcodebench-hard-BigCodeBench-37",
+        "bigcodebench-hard-BigCodeBench-409",
+        "bigcodebench-hard-BigCodeBench-458",
+        "bigcodebench-hard-BigCodeBench-486",
+        "bigcodebench-hard-BigCodeBench-492",
+        "bigcodebench-hard-BigCodeBench-502",
+        "bigcodebench-hard-BigCodeBench-509",
+        "bigcodebench-hard-BigCodeBench-511",
+        "bigcodebench-hard-BigCodeBench-513",
+        "bigcodebench-hard-BigCodeBench-526",
+        "bigcodebench-hard-BigCodeBench-528",
+        "bigcodebench-hard-BigCodeBench-530",
+        "bigcodebench-hard-BigCodeBench-567",
+        "bigcodebench-hard-BigCodeBench-678",
+        "bigcodebench-hard-BigCodeBench-752",
+        "bigcodebench-hard-BigCodeBench-760",
+        "bigcodebench-hard-BigCodeBench-865",
+        "bigcodebench-hard-BigCodeBench-870",
+        "bigcodebench-hard-BigCodeBench-879",
+        "bigcodebench-hard-BigCodeBench-914",
+        "bigcodebench-hard-BigCodeBench-916",
+        "bigcodebench-hard-BigCodeBench-917",
+        "bigcodebench-hard-BigCodeBench-92",
+        "bigcodebench-hard-BigCodeBench-942",
+        "bigcodebench-hard-BigCodeBench-945",
+        "bigcodebench-hard-BigCodeBench-952",
+        "bigcodebench-hard-BigCodeBench-964",
+        "bigcodebench-hard-BigCodeBench-985"
+      ]
+    },
+    {
+      "blocked_task_count": 23,
+      "modules": [
+        "numpy"
+      ],
+      "package": "numpy",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-187",
+        "bigcodebench-hard-BigCodeBench-208",
+        "bigcodebench-hard-BigCodeBench-214",
+        "bigcodebench-hard-BigCodeBench-227",
+        "bigcodebench-hard-BigCodeBench-239",
+        "bigcodebench-hard-BigCodeBench-241",
+        "bigcodebench-hard-BigCodeBench-267",
+        "bigcodebench-hard-BigCodeBench-399",
+        "bigcodebench-hard-BigCodeBench-443",
+        "bigcodebench-hard-BigCodeBench-445",
+        "bigcodebench-hard-BigCodeBench-477",
+        "bigcodebench-hard-BigCodeBench-503",
+        "bigcodebench-hard-BigCodeBench-532",
+        "bigcodebench-hard-BigCodeBench-553",
+        "bigcodebench-hard-BigCodeBench-582",
+        "bigcodebench-hard-BigCodeBench-763",
+        "bigcodebench-hard-BigCodeBench-845",
+        "bigcodebench-hard-BigCodeBench-89",
+        "bigcodebench-hard-BigCodeBench-897",
+        "bigcodebench-hard-BigCodeBench-915",
+        "bigcodebench-hard-BigCodeBench-93",
+        "bigcodebench-hard-BigCodeBench-955",
+        "bigcodebench-hard-BigCodeBench-969"
+      ]
+    },
+    {
+      "blocked_task_count": 15,
+      "modules": [
+        "matplotlib"
+      ],
+      "package": "matplotlib",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-100",
+        "bigcodebench-hard-BigCodeBench-1004",
+        "bigcodebench-hard-BigCodeBench-101",
+        "bigcodebench-hard-BigCodeBench-1085",
+        "bigcodebench-hard-BigCodeBench-124",
+        "bigcodebench-hard-BigCodeBench-162",
+        "bigcodebench-hard-BigCodeBench-367",
+        "bigcodebench-hard-BigCodeBench-560",
+        "bigcodebench-hard-BigCodeBench-579",
+        "bigcodebench-hard-BigCodeBench-593",
+        "bigcodebench-hard-BigCodeBench-618",
+        "bigcodebench-hard-BigCodeBench-636",
+        "bigcodebench-hard-BigCodeBench-637",
+        "bigcodebench-hard-BigCodeBench-654",
+        "bigcodebench-hard-BigCodeBench-99"
+      ]
+    },
+    {
+      "blocked_task_count": 9,
+      "modules": [
+        "requests"
+      ],
+      "package": "requests",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1006",
+        "bigcodebench-hard-BigCodeBench-1008",
+        "bigcodebench-hard-BigCodeBench-1012",
+        "bigcodebench-hard-BigCodeBench-1013",
+        "bigcodebench-hard-BigCodeBench-1015",
+        "bigcodebench-hard-BigCodeBench-1020",
+        "bigcodebench-hard-BigCodeBench-1129",
+        "bigcodebench-hard-BigCodeBench-129",
+        "bigcodebench-hard-BigCodeBench-211"
+      ]
+    },
+    {
+      "blocked_task_count": 3,
+      "modules": [
+        "nltk"
+      ],
+      "package": "nltk",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-177",
+        "bigcodebench-hard-BigCodeBench-655",
+        "bigcodebench-hard-BigCodeBench-657"
+      ]
+    },
+    {
+      "blocked_task_count": 3,
+      "modules": [
+        "faker"
+      ],
+      "package": "faker",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-287",
+        "bigcodebench-hard-BigCodeBench-313",
+        "bigcodebench-hard-BigCodeBench-826"
+      ]
+    },
+    {
+      "blocked_task_count": 3,
+      "modules": [
+        "bs4"
+      ],
+      "package": "bs4",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1124",
+        "bigcodebench-hard-BigCodeBench-1137",
+        "bigcodebench-hard-BigCodeBench-723"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "psutil"
+      ],
+      "package": "psutil",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-17",
+        "bigcodebench-hard-BigCodeBench-461"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "flask"
+      ],
+      "package": "flask",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-401",
+        "bigcodebench-hard-BigCodeBench-82"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "cgi"
+      ],
+      "package": "cgi",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-273",
+        "bigcodebench-hard-BigCodeBench-274"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "rsa"
+      ],
+      "package": "rsa",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-583",
+        "bigcodebench-hard-BigCodeBench-587"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "wordcloud"
+      ],
+      "package": "wordcloud",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-34"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "regex"
+      ],
+      "package": "regex",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-374"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "sklearn"
+      ],
+      "package": "scikit-learn",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-417"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "tensorflow"
+      ],
+      "package": "tensorflow",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-418"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "cv2"
+      ],
+      "package": "opencv-python",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-424"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "xlwt"
+      ],
+      "package": "xlwt",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-501"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "scipy"
+      ],
+      "package": "scipy",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-574"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "pyquery"
+      ],
+      "package": "pyquery",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-590"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "lxml"
+      ],
+      "package": "lxml",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1003"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "PIL"
+      ],
+      "package": "pillow",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1019"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "pytz"
+      ],
+      "package": "pytz",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1077"
+      ]
+    }
+  ],
+  "reports": [
+    "research/evals/bigcodebench_hard_eligible_report.json",
+    "research/evals/bigcodebench_hard_eligible_offset44_report.json",
+    "research/evals/bigcodebench_hard_eligible_offset99_report.json",
+    "research/evals/bigcodebench_hard_eligible_offset125_report.json"
+  ],
+  "scanned": 148,
+  "unique_dependency_blocked_tasks": 117
+}

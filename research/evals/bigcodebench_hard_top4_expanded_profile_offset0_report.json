@@ -1,0 +1,564 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "subprocess",
+        "ftplib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.9987,
+      "primary_category": "network",
+      "prompt_length": 1416,
+      "task_id": "bigcodebench-hard-BigCodeBench-13",
+      "test_length": 3098
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.224,
+      "primary_category": "subprocess",
+      "prompt_length": 973,
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "test_length": 3603
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "zipfile",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.6707,
+      "primary_category": "filesystem",
+      "prompt_length": 673,
+      "task_id": "bigcodebench-hard-BigCodeBench-19",
+      "test_length": 2843
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "sklearn",
+        "matplotlib",
+        "seaborn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0573,
+      "primary_category": "plotting",
+      "prompt_length": 1028,
+      "task_id": "bigcodebench-hard-BigCodeBench-37",
+      "test_length": 2938
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.4347,
+      "primary_category": "plotting",
+      "prompt_length": 835,
+      "task_id": "bigcodebench-hard-BigCodeBench-92",
+      "test_length": 1649
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0163,
+      "primary_category": "filesystem",
+      "prompt_length": 750,
+      "task_id": "bigcodebench-hard-BigCodeBench-93",
+      "test_length": 2599
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "seaborn",
+        "matplotlib",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.8493,
+      "primary_category": "plotting",
+      "prompt_length": 1071,
+      "task_id": "bigcodebench-hard-BigCodeBench-99",
+      "test_length": 1135
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random",
+        "matplotlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.95,
+      "primary_category": "filesystem",
+      "prompt_length": 874,
+      "task_id": "bigcodebench-hard-BigCodeBench-100",
+      "test_length": 2028
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.771,
+      "primary_category": "datasci",
+      "prompt_length": 1497,
+      "task_id": "bigcodebench-hard-BigCodeBench-120",
+      "test_length": 6672
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "pandas",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.5767,
+      "primary_category": "filesystem",
+      "prompt_length": 773,
+      "task_id": "bigcodebench-hard-BigCodeBench-123",
+      "test_length": 2261
+    },
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "random",
+        "matplotlib",
+        "time"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0047,
+      "primary_category": "subprocess",
+      "prompt_length": 1478,
+      "task_id": "bigcodebench-hard-BigCodeBench-124",
+      "test_length": 1430
+    },
+    {
+      "categories": [
+        "network",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "bs4",
+        "requests"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 8.0207,
+      "primary_category": "network",
+      "prompt_length": 1394,
+      "task_id": "bigcodebench-hard-BigCodeBench-129",
+      "test_length": 3230
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.6503,
+      "primary_category": "plotting",
+      "prompt_length": 822,
+      "task_id": "bigcodebench-hard-BigCodeBench-139",
+      "test_length": 2335
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "threading",
+        "socket",
+        "ipaddress"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.398,
+      "primary_category": "general",
+      "prompt_length": 643,
+      "task_id": "bigcodebench-hard-BigCodeBench-147",
+      "test_length": 2115
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.2943,
+      "primary_category": "network",
+      "prompt_length": 871,
+      "task_id": "bigcodebench-hard-BigCodeBench-161",
+      "test_length": 2620
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.5607,
+      "primary_category": "plotting",
+      "prompt_length": 740,
+      "task_id": "bigcodebench-hard-BigCodeBench-162",
+      "test_length": 2312
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "re",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.552,
+      "primary_category": "subprocess",
+      "prompt_length": 1558,
+      "task_id": "bigcodebench-hard-BigCodeBench-184",
+      "test_length": 2832
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.58,
+      "primary_category": "plotting",
+      "prompt_length": 976,
+      "task_id": "bigcodebench-hard-BigCodeBench-208",
+      "test_length": 1662
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 8.306,
+      "primary_category": "network",
+      "prompt_length": 507,
+      "task_id": "bigcodebench-hard-BigCodeBench-211",
+      "test_length": 6747
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-13"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.026s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-15"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp95ph8pvs/candidate.py\", line 2, in <module>\n    import psutil\nModuleNotFoundError: No module named 'psutil'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-17"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-19"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp399c25d8/candidate.py\", line 2, in <module>\n    from wordcloud import WordCloud\nModuleNotFoundError: No module named 'wordcloud'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-34"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.484s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-37"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmppolrp4mi/candidate.py\", line 1, in <module>\n    from flask import Flask, render_template, redirect, url_for\nModuleNotFoundError: No module named 'flask'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-82"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "passed": false,
+      "stderr_tail": "",
+      "task_id": "bigcodebench-hard-BigCodeBench-89"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.220s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-92"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.181s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-93"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 2.563s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-99"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.227s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-100"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "passed": false,
+      "stderr_tail": "/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp9ko06yg1/candidate.py:15: SyntaxWarning: \"\\s\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\s\"? A raw string is also an option.\n  raw_df = pd.read_csv(data_url, sep=\"\\s+\", skiprows=22, header=None)\n.FE",
+      "task_id": "bigcodebench-hard-BigCodeBench-101"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpnfb5sokq/candidate.py\", line 3, in <module>\n    from statsmodels.tsa.seasonal import seasonal_decompose\nModuleNotFoundError: No module named 'statsmodels'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-108"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-120"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.009s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-123"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.166s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-124"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-129"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.269s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-139"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 1.040s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-147"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.011s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-161"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.256s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-162"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp3jsy2203/candidate.py\", line 2, in <module>\n    import nltk\nModuleNotFoundError: No module named 'nltk'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-177"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-184"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpcwaayz0c/candidate.py\", line 2, in <module>\n    import geopandas as gpd\nModuleNotFoundError: No module named 'geopandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-187"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpk514eh8f/candidate.py\", line 2, in <module>\n    import pytz\nModuleNotFoundError: No module named 'pytz'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-199"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.179s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-208"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-211"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpa6l_m7aq/candidate.py\", line 3, in <module>\n    import cv2\nModuleNotFoundError: No module named 'cv2'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-214"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpjq3v4v1o/candidate.py\", line 3, in <module>\n    import soundfile as sf\nModuleNotFoundError: No module named 'soundfile'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-227"
+    }
+  ],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 19,
+  "max_rows": 30,
+  "mode": "instruct",
+  "next_offset": 30,
+  "offset": 0,
+  "output": "research/evals/bigcodebench_hard_top4_expanded_profile_offset0_tasks.json",
+  "scanned": 30,
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-13",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-19",
+    "bigcodebench-hard-BigCodeBench-37",
+    "bigcodebench-hard-BigCodeBench-92",
+    "bigcodebench-hard-BigCodeBench-93",
+    "bigcodebench-hard-BigCodeBench-99",
+    "bigcodebench-hard-BigCodeBench-100",
+    "bigcodebench-hard-BigCodeBench-120",
+    "bigcodebench-hard-BigCodeBench-123",
+    "bigcodebench-hard-BigCodeBench-124",
+    "bigcodebench-hard-BigCodeBench-129",
+    "bigcodebench-hard-BigCodeBench-139",
+    "bigcodebench-hard-BigCodeBench-147",
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-162",
+    "bigcodebench-hard-BigCodeBench-184",
+    "bigcodebench-hard-BigCodeBench-208",
+    "bigcodebench-hard-BigCodeBench-211"
+  ],
+  "split": "v0.1.4",
+  "target_passes": 20
+}

@@ -1,0 +1,848 @@
+{
+  "cumulative_unlock": [
+    {
+      "packages": [
+        "scikit-learn"
+      ],
+      "unique_blocked_tasks": 12
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy"
+      ],
+      "unique_blocked_tasks": 23
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn"
+      ],
+      "unique_blocked_tasks": 31
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4"
+      ],
+      "unique_blocked_tasks": 37
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk"
+      ],
+      "unique_blocked_tasks": 40
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker"
+      ],
+      "unique_blocked_tasks": 43
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil"
+      ],
+      "unique_blocked_tasks": 45
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask"
+      ],
+      "unique_blocked_tasks": 47
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels"
+      ],
+      "unique_blocked_tasks": 49
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz"
+      ],
+      "unique_blocked_tasks": 51
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python"
+      ],
+      "unique_blocked_tasks": 53
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi"
+      ],
+      "unique_blocked_tasks": 55
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl"
+      ],
+      "unique_blocked_tasks": 57
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa"
+      ],
+      "unique_blocked_tasks": 59
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml"
+      ],
+      "unique_blocked_tasks": 61
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud"
+      ],
+      "unique_blocked_tasks": 62
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas"
+      ],
+      "unique_blocked_tasks": 63
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile"
+      ],
+      "unique_blocked_tasks": 64
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex"
+      ],
+      "unique_blocked_tasks": 65
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow"
+      ],
+      "unique_blocked_tasks": 66
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow",
+        "xlwt"
+      ],
+      "unique_blocked_tasks": 67
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow",
+        "xlwt",
+        "pyquery"
+      ],
+      "unique_blocked_tasks": 68
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow",
+        "xlwt",
+        "pyquery",
+        "Levenshtein"
+      ],
+      "unique_blocked_tasks": 69
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow",
+        "xlwt",
+        "pyquery",
+        "Levenshtein",
+        "docx"
+      ],
+      "unique_blocked_tasks": 70
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow",
+        "xlwt",
+        "pyquery",
+        "Levenshtein",
+        "docx",
+        "pytesseract"
+      ],
+      "unique_blocked_tasks": 71
+    },
+    {
+      "packages": [
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "bs4",
+        "nltk",
+        "faker",
+        "psutil",
+        "flask",
+        "statsmodels",
+        "pytz",
+        "opencv-python",
+        "cgi",
+        "openpyxl",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "geopandas",
+        "soundfile",
+        "regex",
+        "tensorflow",
+        "xlwt",
+        "pyquery",
+        "Levenshtein",
+        "docx",
+        "pytesseract",
+        "chardet"
+      ],
+      "unique_blocked_tasks": 72
+    }
+  ],
+  "dependency_blocked_tasks": 72,
+  "eligible": 69,
+  "non_dependency_failure_count": 7,
+  "non_dependency_failures": [
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_top4_offset44_full_report.json",
+      "stderr_tail": "test_case_3\n    all(df.applymap(lambda x: isinstance(x, (int, float)))),\n        ^^^^^^^^^^^\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/pandas/core/generic.py\", line 6206, in __getattr__\n    return object.__getattribute__(self, name)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAttributeError: 'DataFrame' object has no attribute 'applymap'\n\n----------------------------------------------------------------------\nRan 8 tests in 0.004s\n\nFAILED (errors=3)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-503"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_top4_offset44_full_report.json",
+      "stderr_tail": "in kwargs.items()})\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/matplotlib/axes/_axes.py\", line 3661, in pie\n    if not np.all(np.isfinite(x)):\n                  ~~~~~~~~~~~^^^\nTypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''\n\n----------------------------------------------------------------------\nRan 7 tests in 0.200s\n\nFAILED (errors=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-511"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_top4_offset44_full_report.json",
+      "stderr_tail": "",
+      "task_id": "bigcodebench-hard-BigCodeBench-553"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_top4_offset44_full_report.json",
+      "stderr_tail": "",
+      "task_id": "bigcodebench-hard-BigCodeBench-567"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_top4_offset44_full_report.json",
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-593"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_top4_offset99_report.json",
+      "stderr_tail": "case_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpebcgsn0a/candidate.py\", line 84, in test_case_6\n    self.assertTrue(creation_datetime <= modification_datetime)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 10 tests in 0.010s\n\nFAILED (failures=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-971"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_top4_offset125_report.json",
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-1040"
+    }
+  ],
+  "ranked_packages": [
+    {
+      "blocked_task_count": 12,
+      "modules": [
+        "sklearn"
+      ],
+      "package": "scikit-learn",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1053",
+        "bigcodebench-hard-BigCodeBench-184",
+        "bigcodebench-hard-BigCodeBench-241",
+        "bigcodebench-hard-BigCodeBench-37",
+        "bigcodebench-hard-BigCodeBench-417",
+        "bigcodebench-hard-BigCodeBench-443",
+        "bigcodebench-hard-BigCodeBench-752",
+        "bigcodebench-hard-BigCodeBench-914",
+        "bigcodebench-hard-BigCodeBench-92",
+        "bigcodebench-hard-BigCodeBench-93",
+        "bigcodebench-hard-BigCodeBench-945",
+        "bigcodebench-hard-BigCodeBench-969"
+      ]
+    },
+    {
+      "blocked_task_count": 11,
+      "modules": [
+        "scipy"
+      ],
+      "package": "scipy",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-239",
+        "bigcodebench-hard-BigCodeBench-267",
+        "bigcodebench-hard-BigCodeBench-445",
+        "bigcodebench-hard-BigCodeBench-532",
+        "bigcodebench-hard-BigCodeBench-574",
+        "bigcodebench-hard-BigCodeBench-582",
+        "bigcodebench-hard-BigCodeBench-654",
+        "bigcodebench-hard-BigCodeBench-865",
+        "bigcodebench-hard-BigCodeBench-879",
+        "bigcodebench-hard-BigCodeBench-89",
+        "bigcodebench-hard-BigCodeBench-915"
+      ]
+    },
+    {
+      "blocked_task_count": 8,
+      "modules": [
+        "seaborn"
+      ],
+      "package": "seaborn",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-101",
+        "bigcodebench-hard-BigCodeBench-302",
+        "bigcodebench-hard-BigCodeBench-341",
+        "bigcodebench-hard-BigCodeBench-502",
+        "bigcodebench-hard-BigCodeBench-530",
+        "bigcodebench-hard-BigCodeBench-618",
+        "bigcodebench-hard-BigCodeBench-916",
+        "bigcodebench-hard-BigCodeBench-99"
+      ]
+    },
+    {
+      "blocked_task_count": 6,
+      "modules": [
+        "bs4"
+      ],
+      "package": "bs4",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1008",
+        "bigcodebench-hard-BigCodeBench-1013",
+        "bigcodebench-hard-BigCodeBench-1124",
+        "bigcodebench-hard-BigCodeBench-1137",
+        "bigcodebench-hard-BigCodeBench-129",
+        "bigcodebench-hard-BigCodeBench-723"
+      ]
+    },
+    {
+      "blocked_task_count": 3,
+      "modules": [
+        "nltk"
+      ],
+      "package": "nltk",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-177",
+        "bigcodebench-hard-BigCodeBench-655",
+        "bigcodebench-hard-BigCodeBench-657"
+      ]
+    },
+    {
+      "blocked_task_count": 3,
+      "modules": [
+        "faker"
+      ],
+      "package": "faker",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-287",
+        "bigcodebench-hard-BigCodeBench-313",
+        "bigcodebench-hard-BigCodeBench-826"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "psutil"
+      ],
+      "package": "psutil",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-17",
+        "bigcodebench-hard-BigCodeBench-461"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "flask"
+      ],
+      "package": "flask",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-401",
+        "bigcodebench-hard-BigCodeBench-82"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "statsmodels"
+      ],
+      "package": "statsmodels",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-108",
+        "bigcodebench-hard-BigCodeBench-917"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "pytz"
+      ],
+      "package": "pytz",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1077",
+        "bigcodebench-hard-BigCodeBench-199"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "cv2"
+      ],
+      "package": "opencv-python",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-214",
+        "bigcodebench-hard-BigCodeBench-424"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "cgi"
+      ],
+      "package": "cgi",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-273",
+        "bigcodebench-hard-BigCodeBench-274"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "openpyxl"
+      ],
+      "package": "openpyxl",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-360",
+        "bigcodebench-hard-BigCodeBench-409"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "rsa"
+      ],
+      "package": "rsa",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-583",
+        "bigcodebench-hard-BigCodeBench-587"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "lxml"
+      ],
+      "package": "lxml",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1003",
+        "bigcodebench-hard-BigCodeBench-1015"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "wordcloud"
+      ],
+      "package": "wordcloud",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-34"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "geopandas"
+      ],
+      "package": "geopandas",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-187"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "soundfile"
+      ],
+      "package": "soundfile",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-227"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "regex"
+      ],
+      "package": "regex",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-374"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "tensorflow"
+      ],
+      "package": "tensorflow",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-418"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "xlwt"
+      ],
+      "package": "xlwt",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-501"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "pyquery"
+      ],
+      "package": "pyquery",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-590"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "Levenshtein"
+      ],
+      "package": "Levenshtein",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-845"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "docx"
+      ],
+      "package": "docx",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-964"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "pytesseract"
+      ],
+      "package": "pytesseract",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1019"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "chardet"
+      ],
+      "package": "chardet",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1020"
+      ]
+    }
+  ],
+  "reports": [
+    "research/evals/bigcodebench_hard_top4_offset0_report.json",
+    "research/evals/bigcodebench_hard_top4_offset44_full_report.json",
+    "research/evals/bigcodebench_hard_top4_offset99_report.json",
+    "research/evals/bigcodebench_hard_top4_offset125_report.json"
+  ],
+  "scanned": 148,
+  "unique_dependency_blocked_tasks": 72
+}

@@ -1,0 +1,80 @@
+{
+  "benchmark_id": "bigcodebench-hard-direct-specialist-mining",
+  "call_count": 1,
+  "candidate_count": 1,
+  "excluded_count": 70,
+  "excluded_outcomes": [
+    "research/evals/results/20260627-glm-deepseek-qwen-kimi-negative-mining.jsonl",
+    "research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl"
+  ],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl"
+  ],
+  "excluded_screening_summaries": [
+    "research/evals/results/20260627-positive-neighborhood-screen2-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-limit1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-batch1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1-summary.json"
+  ],
+  "max_environment_risk": 2,
+  "outcomes": "research/evals/results/20260628-direct-deepseek-like-remaining1.jsonl",
+  "output": "research/evals/results/20260628-direct-deepseek-like-remaining1.json",
+  "preferred_categories": [
+    "filesystem",
+    "datasci",
+    "plotting",
+    "subprocess",
+    "general"
+  ],
+  "purpose": "Mine actual one-sample specialist positives from a fresh low-risk task pool before full comparison.",
+  "ranked_candidates": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-800"
+    }
+  ],
+  "repeat_count": 1,
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_deepseek_v4_pro_single_pool.json --tasks research/evals/20260628-direct-deepseek-like-remaining1-tasks.json --repeat-count 1 --eval-timeout-seconds 20 --run-id 20260628-direct-deepseek-like-remaining1 --output research/evals/results/20260628-direct-deepseek-like-remaining1.json --outcomes research/evals/results/20260628-direct-deepseek-like-remaining1.jsonl --resume --progress --quiet",
+  "run_id": "20260628-direct-deepseek-like-remaining1",
+  "selected": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-800"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-800"
+  ],
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-direct-deepseek-like-remaining1.jsonl --output research/evals/results/20260628-direct-deepseek-like-remaining1-summary.json",
+  "task_count": 1,
+  "task_sources": [
+    "research/evals/bigcodebench_hard_deepseek_like_remaining_tasks.json"
+  ],
+  "tasks_output": "research/evals/20260628-direct-deepseek-like-remaining1-tasks.json",
+  "worker_ids_to_run": [
+    "ollama-cloud-deepseek-v4-pro"
+  ]
+}

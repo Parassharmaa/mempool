@@ -1,0 +1,19 @@
+{
+  "base_url": "https://ollama.com/v1",
+  "api_key_env": "OLLAMA_API_KEY",
+  "timeout_seconds": 240,
+  "workers": [
+    {
+      "id": "ollama-cloud-gpt-oss-120b",
+      "model": "gpt-oss:120b",
+      "strengths": ["general", "code_easy", "code_text", "code_data", "bigcodebench_hard"],
+      "cost_usd": 0.0
+    },
+    {
+      "id": "ollama-cloud-qwen3-coder",
+      "model": "qwen3-coder:latest",
+      "strengths": ["code_easy", "code_text", "code_data", "bigcodebench_hard"],
+      "cost_usd": 0.0
+    }
+  ]
+}

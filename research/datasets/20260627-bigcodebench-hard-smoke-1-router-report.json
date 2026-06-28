@@ -1,0 +1,93 @@
+{
+  "baselines": {
+    "fastest_worker": "lfm2.5-1.2b",
+    "strongest_worker": "lfm2.5-1.2b"
+  },
+  "dataset": "research/datasets/20260627-bigcodebench-hard-smoke-1-routing.jsonl",
+  "evaluations": [
+    {
+      "cost_per_solved_task": null,
+      "matched_target": 1,
+      "mean_latency_ms": 4983.0,
+      "pass_at_1": 0.0,
+      "policy": "family-router",
+      "solved": 0,
+      "target_accuracy": 1.0,
+      "task_count": 1,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 4983
+    },
+    {
+      "cost_per_solved_task": null,
+      "matched_target": 1,
+      "mean_latency_ms": 4983.0,
+      "pass_at_1": 0.0,
+      "policy": "nearest-neighbor-router",
+      "solved": 0,
+      "target_accuracy": 1.0,
+      "task_count": 1,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 4983
+    },
+    {
+      "available": false,
+      "policy": "family-router-loo",
+      "reason": "leave-one-out requires at least two records",
+      "task_count": 1
+    },
+    {
+      "available": false,
+      "policy": "nearest-neighbor-router-loo",
+      "reason": "leave-one-out requires at least two records",
+      "task_count": 1
+    },
+    {
+      "cost_per_solved_task": null,
+      "matched_target": 1,
+      "mean_latency_ms": 4983.0,
+      "pass_at_1": 0.0,
+      "policy": "strongest-worker",
+      "solved": 0,
+      "target_accuracy": 1.0,
+      "task_count": 1,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 4983
+    },
+    {
+      "cost_per_solved_task": null,
+      "matched_target": 1,
+      "mean_latency_ms": 4983.0,
+      "pass_at_1": 0.0,
+      "policy": "fastest-worker",
+      "solved": 0,
+      "target_accuracy": 1.0,
+      "task_count": 1,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 4983
+    },
+    {
+      "cost_per_solved_task": null,
+      "matched_target": 1,
+      "mean_latency_ms": 4983.0,
+      "pass_at_1": 0.0,
+      "policy": "oracle-target",
+      "solved": 0,
+      "target_accuracy": 1.0,
+      "task_count": 1,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 4983
+    }
+  ],
+  "nearest_router": {
+    "default_worker_id": "lfm2.5-1.2b",
+    "example_count": 1,
+    "policy": "nearest-neighbor-router"
+  },
+  "router": {
+    "default_worker_id": "lfm2.5-1.2b",
+    "family_to_worker": {
+      "bigcodebench_hard": "lfm2.5-1.2b"
+    },
+    "policy": "family-router"
+  }
+}

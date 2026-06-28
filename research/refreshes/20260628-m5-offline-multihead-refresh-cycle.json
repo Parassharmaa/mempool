@@ -1,0 +1,199 @@
+{
+  "artifacts": {
+    "active_registry": "research/policies/active_policy.json",
+    "candidate_model": "research/models/20260628-m5-offline-multihead-50task.json",
+    "candidate_report": "research/evals/results/20260628-m5-offline-multihead-50task-report.json",
+    "distilled_dataset": "research/datasets/20260628-m5-small-orchestrator-substrate-50task.jsonl",
+    "ledger": "research/runs/20260628-adaptive-refresh-cycle/events.jsonl",
+    "policy_gate": "research/evals/results/20260628-m5-offline-multihead-50task-policy-gate.json",
+    "privacy_manifest": "research/refreshes/20260628-m5-offline-multihead-privacy.json"
+  },
+  "candidate_metrics": {
+    "evaluation": {
+      "abstain_accuracy": 0.94,
+      "matched_target": 37,
+      "mean_abstain_bce": 0.21187757804869403,
+      "mean_kl": 0.415616583264765,
+      "mean_latency_ms": 6409.12,
+      "mean_latency_regret_ms": 1516.82,
+      "mean_target_latency_ms": 5095.72,
+      "mean_verifier_bce": 0.5841298686750818,
+      "mean_worker_kl": 0.415616583264765,
+      "mean_workflow_kl": 0.17814729883528957,
+      "pass_at_1": 0.9,
+      "policy": "linear-multi-head-orchestrator",
+      "solvable_pass_at_1": 0.9574468085106383,
+      "solvable_solved": 45,
+      "solvable_target_accuracy": 0.7446808510638298,
+      "solvable_task_count": 47,
+      "solved": 45,
+      "target_accuracy": 0.74,
+      "task_count": 50,
+      "workflow_accuracy": 0.94
+    },
+    "leave_one_out": {
+      "abstain_accuracy": 0.94,
+      "available": true,
+      "matched_target": 31,
+      "mean_abstain_bce": 0.2840746091365072,
+      "mean_kl": 0.6779629880507287,
+      "mean_latency_ms": 8141.12,
+      "mean_latency_regret_ms": 3609.63,
+      "mean_target_latency_ms": 5095.72,
+      "mean_verifier_bce": 0.6707647043128493,
+      "mean_worker_kl": 0.6779629880507287,
+      "mean_workflow_kl": 0.29037836367914727,
+      "pass_at_1": 0.82,
+      "policy": "linear-multi-head-orchestrator-loo",
+      "solvable_pass_at_1": 0.8723404255319149,
+      "solvable_solved": 41,
+      "solvable_target_accuracy": 0.6170212765957447,
+      "solvable_task_count": 47,
+      "solved": 41,
+      "target_accuracy": 0.62,
+      "task_count": 50,
+      "workflow_accuracy": 0.94
+    }
+  },
+  "created_at": "2026-06-27T15:14:54.139292+00:00",
+  "cycle_id": "20260628-m5-offline-multihead-refresh",
+  "decision": "quarantine",
+  "gate": {
+    "baseline": {
+      "available": true,
+      "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+      "loo": {
+        "available": true,
+        "mean_kl": 0.46096494805709975,
+        "mean_latency_regret_ms": 501.0869565217391,
+        "pass_at_1": 0.6956521739130435,
+        "solvable_pass_at_1": 0.8,
+        "solvable_target_accuracy": 0.75,
+        "solvable_task_count": 20,
+        "target_accuracy": 0.782608695652174,
+        "task_count": 23
+      },
+      "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+      "target_mix": {
+        "target_counts": {
+          "ollama-cloud-deepseek-v4-pro": 2,
+          "ollama-cloud-glm-5.2": 1,
+          "ollama-cloud-kimi-k2.7-code": 4,
+          "ollama-cloud-qwen3-coder-480b": 16
+        },
+        "target_worker_count": 4,
+        "task_count": 23
+      }
+    },
+    "candidate": {
+      "dataset": "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+      "loo": {
+        "available": true,
+        "mean_kl": 0.6779629880507287,
+        "mean_latency_regret_ms": 3609.63,
+        "pass_at_1": 0.82,
+        "solvable_pass_at_1": 0.8723404255319149,
+        "solvable_target_accuracy": 0.6170212765957447,
+        "solvable_task_count": 47,
+        "target_accuracy": 0.62,
+        "task_count": 50
+      },
+      "report": "research/models/20260628-m5-offline-multihead-50task.json",
+      "target_mix": {
+        "target_counts": {
+          "ollama-cloud-deepseek-v4-pro": 9,
+          "ollama-cloud-glm-5.2": 3,
+          "ollama-cloud-kimi-k2.7-code": 8,
+          "ollama-cloud-qwen3-coder-480b": 30
+        },
+        "target_worker_count": 4,
+        "task_count": 50
+      }
+    },
+    "decision": "quarantine",
+    "reasons": [
+      "candidate LOO target accuracy 0.620 is below minimum 0.700",
+      "candidate LOO target accuracy drop 0.163 exceeds allowed 0.100",
+      "candidate LOO mean latency regret increase 3108.5 ms exceeds allowed 500.0 ms",
+      "candidate LOO mean latency regret 3609.6 ms exceeds maximum 750.0 ms"
+    ],
+    "thresholds": {
+      "max_loo_accuracy_drop": 0.1,
+      "max_loo_latency_regret_increase_ms": 500.0,
+      "max_loo_latency_regret_ms": 750.0,
+      "min_loo_accuracy": 0.7,
+      "min_loo_solvable_pass_at_1": 0.8
+    },
+    "timestamp": "2026-06-27T15:10:28.554509+00:00",
+    "warnings": []
+  },
+  "gate_decision": "quarantine",
+  "guardrails": [
+    {
+      "evidence": "research/runs/20260628-adaptive-refresh-cycle/events.jsonl",
+      "name": "immutable_raw_traces",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "evidence": "research/datasets/20260628-m5-small-orchestrator-substrate-50task.jsonl",
+      "name": "versioned_distilled_dataset",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "evidence": "research/evals/results/20260628-m5-offline-multihead-50task-policy-gate.json",
+      "name": "evaluation_before_promotion",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "evidence": "research/policies/active_policy.json",
+      "name": "rollback_point",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "evidence": {
+        "contains_raw_private_text": false,
+        "explicit_private_training_approval": false,
+        "manifest": "research/refreshes/20260628-m5-offline-multihead-privacy.json",
+        "redaction_policy": "benchmark prompts and aggregate worker metadata only"
+      },
+      "name": "privacy_filter",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "evidence": {
+        "manifest": "research/refreshes/20260628-m5-offline-multihead-privacy.json",
+        "memory_scope": "benchmark",
+        "training_scope": "general"
+      },
+      "name": "separate_user_memory",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "evidence": "research/models/20260628-m5-offline-multihead-50task.json",
+      "name": "candidate_artifact",
+      "passed": true,
+      "reason": null
+    }
+  ],
+  "promotion": {
+    "allowed": false,
+    "command": "PYTHONPATH=src python3 tools/policy_registry.py --registry research/policies/active_policy.json apply-refresh --refresh research/evals/results/20260628-m5-offline-multihead-50task-policy-gate.json"
+  },
+  "reasons": [
+    "candidate LOO target accuracy 0.620 is below minimum 0.700",
+    "candidate LOO target accuracy drop 0.163 exceeds allowed 0.100",
+    "candidate LOO mean latency regret increase 3108.5 ms exceeds allowed 500.0 ms",
+    "candidate LOO mean latency regret 3609.6 ms exceeds maximum 750.0 ms"
+  ],
+  "rollback": {
+    "available": true,
+    "command": "PYTHONPATH=src python3 tools/policy_registry.py --registry research/policies/active_policy.json rollback"
+  },
+  "schema_version": "mempool.adaptive_refresh_cycle.v1"
+}

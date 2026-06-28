@@ -1,0 +1,49 @@
+{
+  "benchmark_id": "bigcodebench-hard-instruct",
+  "status": "planned",
+  "reason_for_choice": "Practical code generation with executable evaluation, a manageable hard subset, and enough difficulty to test orchestration.",
+  "ladder": [
+    {
+      "name": "smoke",
+      "target_tasks": 10,
+      "purpose": "Validate prompt normalization, output capture, evaluation, logging, and resumability."
+    },
+    {
+      "name": "pilot",
+      "target_tasks": 50,
+      "purpose": "Estimate whether orchestration improves pass rate or cost per solved task before full evaluation."
+    },
+    {
+      "name": "full_hard",
+      "target_tasks": 150,
+      "purpose": "Compare against baselines on the full hard subset."
+    }
+  ],
+  "baselines": [
+    "best_single_top_tier_worker",
+    "cheapest_acceptable_worker",
+    "strongest_open_or_local_worker",
+    "rule_router",
+    "learned_coordinator",
+    "learned_coordinator_with_conditional_verifier"
+  ],
+  "primary_metrics": [
+    "pass_at_1",
+    "cost_per_solved_task",
+    "latency_per_solved_task",
+    "abstention_rate"
+  ],
+  "secondary_metrics": [
+    "verifier_intervention_rate",
+    "routing_distribution",
+    "failure_mode",
+    "improvement_over_best_single_worker",
+    "orchestration_degradation_cases"
+  ],
+  "run_rules": [
+    "Do not run the full hard subset until the smoke set is stable.",
+    "Compare every orchestration run to single-worker baselines.",
+    "Record prompts, worker ids, workflow kind, latency, cost, code output, evaluation result, and failures.",
+    "Treat failed or timed-out evaluations as first-class outcomes, not missing data."
+  ]
+}

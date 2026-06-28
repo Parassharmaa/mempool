@@ -1,0 +1,333 @@
+{
+  "baseline_without_reliability": {
+    "feature_count": 89,
+    "in_sample": {
+      "accuracy": 0.8648648648648649,
+      "positive_count": 16,
+      "precision": 1.0,
+      "predicted_positive_count": 11,
+      "recall": 0.6875
+    },
+    "leave_one_out": {
+      "accuracy": 0.6216216216216216,
+      "false_negative": 10,
+      "false_positive": 4,
+      "positive_count": 16,
+      "precision": 0.6,
+      "predicted_positive_count": 10,
+      "recall": 0.375,
+      "true_negative": 17,
+      "true_positive": 6
+    },
+    "positive_weight": 1.0,
+    "report": "research/evals/20260628-latency-safe-head-37task-pw1-th0.7.json",
+    "threshold": 0.7
+  },
+  "best_by_accuracy": {
+    "feature_count": 95,
+    "in_sample": {
+      "accuracy": 0.8648648648648649,
+      "positive_count": 16,
+      "precision": 1.0,
+      "predicted_positive_count": 11,
+      "recall": 0.6875
+    },
+    "leave_one_out": {
+      "accuracy": 0.6216216216216216,
+      "false_negative": 10,
+      "false_positive": 4,
+      "positive_count": 16,
+      "precision": 0.6,
+      "predicted_positive_count": 10,
+      "recall": 0.375,
+      "true_negative": 17,
+      "true_positive": 6
+    },
+    "positive_weight": 1.0,
+    "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw1-th0.7.json",
+    "threshold": 0.7,
+    "use_reliability_features": true
+  },
+  "best_by_precision": {
+    "feature_count": 95,
+    "in_sample": {
+      "accuracy": 0.8648648648648649,
+      "positive_count": 16,
+      "precision": 1.0,
+      "predicted_positive_count": 11,
+      "recall": 0.6875
+    },
+    "leave_one_out": {
+      "accuracy": 0.6216216216216216,
+      "false_negative": 10,
+      "false_positive": 4,
+      "positive_count": 16,
+      "precision": 0.6,
+      "predicted_positive_count": 10,
+      "recall": 0.375,
+      "true_negative": 17,
+      "true_positive": 6
+    },
+    "positive_weight": 1.0,
+    "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw1-th0.7.json",
+    "threshold": 0.7,
+    "use_reliability_features": true
+  },
+  "dataset": "research/datasets/20260628-latency-safe-head-37task-routing.jsonl",
+  "decision": "discard",
+  "reason": "historical worker reliability features did not improve leave-one-out precision over the 37-task baseline",
+  "router_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "rows": [
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.8648648648648649,
+        "positive_count": 16,
+        "precision": 1.0,
+        "predicted_positive_count": 11,
+        "recall": 0.6875
+      },
+      "leave_one_out": {
+        "accuracy": 0.6216216216216216,
+        "false_negative": 10,
+        "false_positive": 4,
+        "positive_count": 16,
+        "precision": 0.6,
+        "predicted_positive_count": 10,
+        "recall": 0.375,
+        "true_negative": 17,
+        "true_positive": 6
+      },
+      "positive_weight": 1.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw1-th0.7.json",
+      "threshold": 0.7,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.7837837837837838,
+        "positive_count": 16,
+        "precision": 1.0,
+        "predicted_positive_count": 8,
+        "recall": 0.5
+      },
+      "leave_one_out": {
+        "accuracy": 0.6216216216216216,
+        "false_negative": 10,
+        "false_positive": 4,
+        "positive_count": 16,
+        "precision": 0.6,
+        "predicted_positive_count": 10,
+        "recall": 0.375,
+        "true_negative": 17,
+        "true_positive": 6
+      },
+      "positive_weight": 1.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw1-th0.8.json",
+      "threshold": 0.8,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.7297297297297297,
+        "positive_count": 16,
+        "precision": 1.0,
+        "predicted_positive_count": 6,
+        "recall": 0.375
+      },
+      "leave_one_out": {
+        "accuracy": 0.5945945945945946,
+        "false_negative": 13,
+        "false_positive": 2,
+        "positive_count": 16,
+        "precision": 0.6,
+        "predicted_positive_count": 5,
+        "recall": 0.1875,
+        "true_negative": 19,
+        "true_positive": 3
+      },
+      "positive_weight": 1.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw1-th0.9.json",
+      "threshold": 0.9,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.9459459459459459,
+        "positive_count": 16,
+        "precision": 0.9375,
+        "predicted_positive_count": 16,
+        "recall": 0.9375
+      },
+      "leave_one_out": {
+        "accuracy": 0.5945945945945946,
+        "false_negative": 10,
+        "false_positive": 5,
+        "positive_count": 16,
+        "precision": 0.5454545454545454,
+        "predicted_positive_count": 11,
+        "recall": 0.375,
+        "true_negative": 16,
+        "true_positive": 6
+      },
+      "positive_weight": 2.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw2-th0.7.json",
+      "threshold": 0.7,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.918918918918919,
+        "positive_count": 16,
+        "precision": 1.0,
+        "predicted_positive_count": 13,
+        "recall": 0.8125
+      },
+      "leave_one_out": {
+        "accuracy": 0.6216216216216216,
+        "false_negative": 10,
+        "false_positive": 4,
+        "positive_count": 16,
+        "precision": 0.6,
+        "predicted_positive_count": 10,
+        "recall": 0.375,
+        "true_negative": 17,
+        "true_positive": 6
+      },
+      "positive_weight": 2.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw2-th0.8.json",
+      "threshold": 0.8,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.7567567567567568,
+        "positive_count": 16,
+        "precision": 1.0,
+        "predicted_positive_count": 7,
+        "recall": 0.4375
+      },
+      "leave_one_out": {
+        "accuracy": 0.6216216216216216,
+        "false_negative": 10,
+        "false_positive": 4,
+        "positive_count": 16,
+        "precision": 0.6,
+        "predicted_positive_count": 10,
+        "recall": 0.375,
+        "true_negative": 17,
+        "true_positive": 6
+      },
+      "positive_weight": 2.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw2-th0.9.json",
+      "threshold": 0.9,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.972972972972973,
+        "positive_count": 16,
+        "precision": 0.9411764705882353,
+        "predicted_positive_count": 17,
+        "recall": 1.0
+      },
+      "leave_one_out": {
+        "accuracy": 0.5405405405405406,
+        "false_negative": 10,
+        "false_positive": 7,
+        "positive_count": 16,
+        "precision": 0.46153846153846156,
+        "predicted_positive_count": 13,
+        "recall": 0.375,
+        "true_negative": 14,
+        "true_positive": 6
+      },
+      "positive_weight": 4.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw4-th0.7.json",
+      "threshold": 0.7,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.9459459459459459,
+        "positive_count": 16,
+        "precision": 0.9375,
+        "predicted_positive_count": 16,
+        "recall": 0.9375
+      },
+      "leave_one_out": {
+        "accuracy": 0.5945945945945946,
+        "false_negative": 10,
+        "false_positive": 5,
+        "positive_count": 16,
+        "precision": 0.5454545454545454,
+        "predicted_positive_count": 11,
+        "recall": 0.375,
+        "true_negative": 16,
+        "true_positive": 6
+      },
+      "positive_weight": 4.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw4-th0.8.json",
+      "threshold": 0.8,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.8648648648648649,
+        "positive_count": 16,
+        "precision": 1.0,
+        "predicted_positive_count": 11,
+        "recall": 0.6875
+      },
+      "leave_one_out": {
+        "accuracy": 0.6216216216216216,
+        "false_negative": 10,
+        "false_positive": 4,
+        "positive_count": 16,
+        "precision": 0.6,
+        "predicted_positive_count": 10,
+        "recall": 0.375,
+        "true_negative": 17,
+        "true_positive": 6
+      },
+      "positive_weight": 4.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-pw4-th0.9.json",
+      "threshold": 0.9,
+      "use_reliability_features": true
+    },
+    {
+      "feature_count": 95,
+      "in_sample": {
+        "accuracy": 0.972972972972973,
+        "positive_count": 16,
+        "precision": 0.9411764705882353,
+        "predicted_positive_count": 17,
+        "recall": 1.0
+      },
+      "leave_one_out": {
+        "accuracy": 0.4864864864864865,
+        "false_negative": 9,
+        "false_positive": 10,
+        "positive_count": 16,
+        "precision": 0.4117647058823529,
+        "predicted_positive_count": 17,
+        "recall": 0.4375,
+        "true_negative": 11,
+        "true_positive": 7
+      },
+      "positive_weight": 2.0,
+      "report": "research/evals/20260628-latency-safe-head-37task-reliability-report.json",
+      "threshold": 0.5,
+      "use_reliability_features": true
+    }
+  ],
+  "schema_version": "mempool.latency_safe_reliability_features.v1"
+}

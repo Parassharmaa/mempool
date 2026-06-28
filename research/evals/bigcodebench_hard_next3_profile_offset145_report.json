@@ -1,0 +1,94 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "network"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "re",
+        "urllib",
+        "bs4",
+        "requests"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.465,
+      "primary_category": "network",
+      "prompt_length": 818,
+      "task_id": "bigcodebench-hard-BigCodeBench-1124",
+      "test_length": 2241
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "os",
+        "datetime",
+        "requests",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.846,
+      "primary_category": "network",
+      "prompt_length": 837,
+      "task_id": "bigcodebench-hard-BigCodeBench-1129",
+      "test_length": 3327
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "re",
+        "bs4",
+        "requests",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.8713,
+      "primary_category": "filesystem",
+      "prompt_length": 503,
+      "task_id": "bigcodebench-hard-BigCodeBench-1137",
+      "test_length": 2905
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1124"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1129"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1137"
+    }
+  ],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 3,
+  "max_rows": 30,
+  "mode": "instruct",
+  "next_offset": 148,
+  "offset": 145,
+  "output": "research/evals/bigcodebench_hard_next3_profile_offset145_tasks.json",
+  "scanned": 3,
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1124",
+    "bigcodebench-hard-BigCodeBench-1129",
+    "bigcodebench-hard-BigCodeBench-1137"
+  ],
+  "split": "v0.1.4",
+  "target_passes": 30
+}

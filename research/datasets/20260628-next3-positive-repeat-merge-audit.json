@@ -1,0 +1,12 @@
+{
+  "all_fail_tasks": [],
+  "allow_all_fail_tasks": false,
+  "min_target_pass_rate": 1.0,
+  "ready_to_merge": true,
+  "reasons": [],
+  "record_count": 1,
+  "solvable_task_count": 1,
+  "target_failure_tasks": [],
+  "unstable_target_tasks": [],
+  "validation_errors": []
+}

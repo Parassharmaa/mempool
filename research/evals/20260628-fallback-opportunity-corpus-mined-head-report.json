@@ -1,0 +1,3515 @@
+{
+  "baselines": {
+    "always_fallback": {
+      "accuracy": 0.18604651162790697,
+      "f1": 0.3137254901960785,
+      "false_negative": 0,
+      "false_positive": 70,
+      "negative_count": 70,
+      "positive_count": 16,
+      "precision": 0.18604651162790697,
+      "predicted_positive_count": 86,
+      "recall": 1.0,
+      "task_count": 86,
+      "true_negative": 0,
+      "true_positive": 16
+    },
+    "never_fallback": {
+      "accuracy": 0.813953488372093,
+      "f1": 0.0,
+      "false_negative": 16,
+      "false_positive": 0,
+      "negative_count": 70,
+      "positive_count": 16,
+      "precision": 0.0,
+      "predicted_positive_count": 0,
+      "recall": 0.0,
+      "task_count": 86,
+      "true_negative": 70,
+      "true_positive": 0
+    }
+  },
+  "dataset": "research/datasets/20260628-fallback-opportunity-corpus.jsonl",
+  "dedupe_task_id": true,
+  "label_field": "useful_any_fallback",
+  "leave_one_out": {
+    "folds": [
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 8.27079716896722e-11,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-161",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5384615384615384,
+          "predicted_positive_count": 13,
+          "recall": 0.4666666666666667,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 0.9997284372661497,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-526",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5384615384615384,
+          "predicted_positive_count": 13,
+          "recall": 0.4666666666666667,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.3229608554119007e-07,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-100",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.3832643336444415e-05,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-1022",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.5714285714285715,
+          "false_negative": 8,
+          "false_positive": 4,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6666666666666666,
+          "predicted_positive_count": 12,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 65,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 0.0183279236576548,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-368",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.6,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.8524197974144754,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-955",
+        "train_metrics": {
+          "accuracy": 0.9058823529411765,
+          "f1": 0.7333333333333334,
+          "false_negative": 5,
+          "false_positive": 3,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.7857142857142857,
+          "predicted_positive_count": 14,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 66,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 9.21322942433535e-17,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-963",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.4444444444444445,
+          "false_negative": 9,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5,
+          "predicted_positive_count": 12,
+          "recall": 0.4,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 6
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9954733817364728,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-1012",
+        "train_metrics": {
+          "accuracy": 0.8705882352941177,
+          "f1": 0.6451612903225806,
+          "false_negative": 6,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6666666666666666,
+          "predicted_positive_count": 15,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 4.861929389043847e-13,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-1039",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 3.331630724443711e-13,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-1042",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 6.443488569775502e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-1057",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6470588235294118,
+          "false_negative": 5,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6111111111111112,
+          "predicted_positive_count": 18,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 2.0387835950723335e-30,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-1129",
+        "train_metrics": {
+          "accuracy": 0.8941176470588236,
+          "f1": 0.64,
+          "false_negative": 7,
+          "false_positive": 2,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.8,
+          "predicted_positive_count": 10,
+          "recall": 0.5333333333333333,
+          "task_count": 85,
+          "true_negative": 68,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.2580288568370298,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-120",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.806783883468599e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-124",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.6405344783234745e-14,
+        "selected_threshold": 0.3,
+        "task_id": "bigcodebench-hard-BigCodeBench-147",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 1.6861491391122024e-11,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-15",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5185185185185186,
+          "false_negative": 8,
+          "false_positive": 5,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5833333333333334,
+          "predicted_positive_count": 12,
+          "recall": 0.4666666666666667,
+          "task_count": 85,
+          "true_negative": 65,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9999997746868506,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-211",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6000000000000001,
+          "false_negative": 7,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6428571428571429,
+          "predicted_positive_count": 14,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.4232211243288397e-07,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-399",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 1.766959221052277e-10,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-458",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6285714285714286,
+          "false_negative": 4,
+          "false_positive": 9,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.55,
+          "predicted_positive_count": 20,
+          "recall": 0.7333333333333333,
+          "task_count": 85,
+          "true_negative": 61,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.698403919003024e-16,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-486",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6000000000000001,
+          "false_negative": 7,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6428571428571429,
+          "predicted_positive_count": 14,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.3822507641975544e-08,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-492",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.6941735123282125e-28,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-509",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.8029751987921173e-13,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-513",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.6111111111111112,
+          "false_negative": 5,
+          "false_positive": 9,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.55,
+          "predicted_positive_count": 20,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 60,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.9345981103546772e-18,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-528",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6060606060606061,
+          "false_negative": 6,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5882352941176471,
+          "predicted_positive_count": 17,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.192875637049624e-09,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-560",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.6689330693411475e-11,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-579",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.02763364378298079,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-594",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 3.058853405113049e-11,
+        "selected_threshold": 0.3,
+        "task_id": "bigcodebench-hard-BigCodeBench-636",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9916588418211605,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-720",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6000000000000001,
+          "false_negative": 7,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6428571428571429,
+          "predicted_positive_count": 14,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 6.055787579430936e-06,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-765",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6470588235294118,
+          "false_negative": 5,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6111111111111112,
+          "predicted_positive_count": 18,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.0030455124520663572,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-771",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5625,
+          "false_negative": 7,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5625,
+          "predicted_positive_count": 16,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.991719821240807e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-785",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 4.586762648516331e-06,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-800",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6060606060606061,
+          "false_negative": 6,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5882352941176471,
+          "predicted_positive_count": 17,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.9148762080044202e-12,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-857",
+        "train_metrics": {
+          "accuracy": 0.8705882352941177,
+          "f1": 0.6451612903225806,
+          "false_negative": 6,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6666666666666666,
+          "predicted_positive_count": 15,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.7829722977654848e-16,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-942",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.4827586206896552,
+          "false_negative": 9,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5384615384615384,
+          "predicted_positive_count": 13,
+          "recall": 0.4375,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.0472107412606114e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-952",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.4827586206896552,
+          "false_negative": 9,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5384615384615384,
+          "predicted_positive_count": 13,
+          "recall": 0.4375,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.3178637390913247e-38,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-985",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6000000000000001,
+          "false_negative": 7,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6428571428571429,
+          "predicted_positive_count": 14,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.0594725960062546e-25,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-988",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 8.604070989493271e-09,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-998",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.5384615384615385,
+          "false_negative": 8,
+          "false_positive": 4,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.6363636363636364,
+          "predicted_positive_count": 11,
+          "recall": 0.4666666666666667,
+          "task_count": 85,
+          "true_negative": 66,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 8.002500785566469e-13,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-208",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.4827586206896552,
+          "false_negative": 9,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5384615384615384,
+          "predicted_positive_count": 13,
+          "recall": 0.4375,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 2.2429268118206124e-09,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-129",
+        "train_metrics": {
+          "accuracy": 0.8705882352941177,
+          "f1": 0.6206896551724138,
+          "false_negative": 6,
+          "false_positive": 5,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.6428571428571429,
+          "predicted_positive_count": 14,
+          "recall": 0.6,
+          "task_count": 85,
+          "true_negative": 65,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.845925169541765e-13,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-93",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5625,
+          "false_negative": 7,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5625,
+          "predicted_positive_count": 16,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.130141082361336e-05,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-239",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.6361536610166122e-08,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-241",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.003406237842733473,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-267",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 2.1801984405170006e-05,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-341",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6470588235294118,
+          "false_negative": 5,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6111111111111112,
+          "predicted_positive_count": 18,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.793924493884367e-08,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-443",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 1.2941995510594473e-08,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-582",
+        "train_metrics": {
+          "accuracy": 0.9294117647058824,
+          "f1": 0.8000000000000002,
+          "false_negative": 3,
+          "false_positive": 3,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.8,
+          "predicted_positive_count": 15,
+          "recall": 0.8,
+          "task_count": 85,
+          "true_negative": 67,
+          "true_positive": 12
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.2270874810828933e-24,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-723",
+        "train_metrics": {
+          "accuracy": 0.8705882352941177,
+          "f1": 0.6666666666666667,
+          "false_negative": 5,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6470588235294118,
+          "predicted_positive_count": 17,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.988155122423121e-56,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-914",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.922044833934863e-09,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-915",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.996395442230082e-07,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-916",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5882352941176471,
+          "false_negative": 6,
+          "false_positive": 8,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5555555555555556,
+          "predicted_positive_count": 18,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 61,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9984687693440285,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-1137",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 7.957958615665257e-07,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-346",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.5454545454545455,
+          "false_negative": 7,
+          "false_positive": 8,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5294117647058824,
+          "predicted_positive_count": 17,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 61,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 8.82113258731686e-13,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-8",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 0.8794517752835788,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-7",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 7,
+          "false_positive": 7,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5333333333333333,
+          "predicted_positive_count": 15,
+          "recall": 0.5333333333333333,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.955463431559743e-15,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-12",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6060606060606061,
+          "false_negative": 6,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5882352941176471,
+          "predicted_positive_count": 17,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.2896364349777772e-07,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-6",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 2.7232173654908725e-12,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-266",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 5,
+          "false_positive": 7,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5882352941176471,
+          "predicted_positive_count": 17,
+          "recall": 0.6666666666666666,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.1471965548442172e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-305",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 4.9782796318059916e-30,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-320",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 2.3832818993888666e-11,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-917",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.6,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 0.999999999479313,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-1008",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5517241379310344,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5333333333333333,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.000359147306504419,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-17",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.23025977268944228,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-287",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 3.702646161704307e-30,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-313",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 4.4622951660262945e-06,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-655",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6285714285714286,
+          "false_negative": 5,
+          "false_positive": 8,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5789473684210527,
+          "predicted_positive_count": 19,
+          "recall": 0.6875,
+          "task_count": 85,
+          "true_negative": 61,
+          "true_positive": 11
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 3.0175693860902885e-07,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-865",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5384615384615384,
+          "predicted_positive_count": 13,
+          "recall": 0.4666666666666667,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 7
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 9.313876117712891e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-274",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 1.0908248272582919e-06,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-360",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.7666413476582424,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-409",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.7628904990943116,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-130",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 7.015763776657195e-05,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-131",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.5161290322580646,
+          "false_negative": 8,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5333333333333333,
+          "predicted_positive_count": 15,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.083209050087143,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-288",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6060606060606061,
+          "false_negative": 6,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5882352941176471,
+          "predicted_positive_count": 17,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": true,
+        "heldout_probability": 1.920836830335025e-08,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-192",
+        "train_metrics": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.4444444444444445,
+          "false_negative": 9,
+          "false_positive": 6,
+          "negative_count": 70,
+          "positive_count": 15,
+          "precision": 0.5,
+          "predicted_positive_count": 12,
+          "recall": 0.4,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 6
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9999999992682072,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-158",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5517241379310345,
+          "false_negative": 8,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6153846153846154,
+          "predicted_positive_count": 13,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.00046636325570952237,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-203",
+        "train_metrics": {
+          "accuracy": 0.8705882352941177,
+          "f1": 0.6451612903225806,
+          "false_negative": 6,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6666666666666666,
+          "predicted_positive_count": 15,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 6.533325972754104e-08,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-202",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5333333333333333,
+          "false_negative": 8,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5714285714285714,
+          "predicted_positive_count": 14,
+          "recall": 0.5,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 8
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.0018640238455147782,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-306",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.00013202904841424034,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-314",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9999981741715654,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-145",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.6000000000000001,
+          "false_negative": 7,
+          "false_positive": 5,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6428571428571429,
+          "predicted_positive_count": 14,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 64,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.424012887087024e-21,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-146",
+        "train_metrics": {
+          "accuracy": 0.8352941176470589,
+          "f1": 0.5882352941176471,
+          "false_negative": 6,
+          "false_positive": 8,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5555555555555556,
+          "predicted_positive_count": 18,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 61,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 4.5299044224010635e-15,
+        "selected_threshold": 0.3,
+        "task_id": "bigcodebench-hard-BigCodeBench-324",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.5806451612903225,
+          "false_negative": 7,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.6,
+          "predicted_positive_count": 15,
+          "recall": 0.5625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 9
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 5.83410672890812e-12,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-1015",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 3.840104344711733e-10,
+        "selected_threshold": 0.1,
+        "task_id": "bigcodebench-hard-BigCodeBench-273",
+        "train_metrics": {
+          "accuracy": 0.8470588235294118,
+          "f1": 0.6060606060606061,
+          "false_negative": 6,
+          "false_positive": 7,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.5882352941176471,
+          "predicted_positive_count": 17,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 62,
+          "true_positive": 10
+        }
+      },
+      {
+        "actual_useful_fallback": false,
+        "heldout_probability": 0.9876219358092626,
+        "selected_threshold": 0.2,
+        "task_id": "bigcodebench-hard-BigCodeBench-763",
+        "train_metrics": {
+          "accuracy": 0.8588235294117647,
+          "f1": 0.625,
+          "false_negative": 6,
+          "false_positive": 6,
+          "negative_count": 69,
+          "positive_count": 16,
+          "precision": 0.625,
+          "predicted_positive_count": 16,
+          "recall": 0.625,
+          "task_count": 85,
+          "true_negative": 63,
+          "true_positive": 10
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.7558139534883721,
+      "examples": [
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "predicted_fallback": false,
+          "probability": 8.27079716896722e-11,
+          "task_id": "bigcodebench-hard-BigCodeBench-161",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "predicted_fallback": true,
+          "probability": 0.9997284372661497,
+          "task_id": "bigcodebench-hard-BigCodeBench-526",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.3229608554119007e-07,
+          "task_id": "bigcodebench-hard-BigCodeBench-100",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.3832643336444415e-05,
+          "task_id": "bigcodebench-hard-BigCodeBench-1022",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "predicted_fallback": false,
+          "probability": 0.0183279236576548,
+          "task_id": "bigcodebench-hard-BigCodeBench-368",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.8524197974144754,
+          "task_id": "bigcodebench-hard-BigCodeBench-955",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+          "predicted_fallback": false,
+          "probability": 9.21322942433535e-17,
+          "task_id": "bigcodebench-hard-BigCodeBench-963",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9954733817364728,
+          "task_id": "bigcodebench-hard-BigCodeBench-1012",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 4.861929389043847e-13,
+          "task_id": "bigcodebench-hard-BigCodeBench-1039",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 3.331630724443711e-13,
+          "task_id": "bigcodebench-hard-BigCodeBench-1042",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 6.443488569775502e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-1057",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+          "predicted_fallback": false,
+          "probability": 2.0387835950723335e-30,
+          "task_id": "bigcodebench-hard-BigCodeBench-1129",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.2580288568370298,
+          "task_id": "bigcodebench-hard-BigCodeBench-120",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.806783883468599e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-124",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.6405344783234745e-14,
+          "task_id": "bigcodebench-hard-BigCodeBench-147",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "predicted_fallback": false,
+          "probability": 1.6861491391122024e-11,
+          "task_id": "bigcodebench-hard-BigCodeBench-15",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9999997746868506,
+          "task_id": "bigcodebench-hard-BigCodeBench-211",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.4232211243288397e-07,
+          "task_id": "bigcodebench-hard-BigCodeBench-399",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "predicted_fallback": false,
+          "probability": 1.766959221052277e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-458",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.698403919003024e-16,
+          "task_id": "bigcodebench-hard-BigCodeBench-486",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.3822507641975544e-08,
+          "task_id": "bigcodebench-hard-BigCodeBench-492",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.6941735123282125e-28,
+          "task_id": "bigcodebench-hard-BigCodeBench-509",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.8029751987921173e-13,
+          "task_id": "bigcodebench-hard-BigCodeBench-513",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.9345981103546772e-18,
+          "task_id": "bigcodebench-hard-BigCodeBench-528",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.192875637049624e-09,
+          "task_id": "bigcodebench-hard-BigCodeBench-560",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.6689330693411475e-11,
+          "task_id": "bigcodebench-hard-BigCodeBench-579",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.02763364378298079,
+          "task_id": "bigcodebench-hard-BigCodeBench-594",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 3.058853405113049e-11,
+          "task_id": "bigcodebench-hard-BigCodeBench-636",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9916588418211605,
+          "task_id": "bigcodebench-hard-BigCodeBench-720",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 6.055787579430936e-06,
+          "task_id": "bigcodebench-hard-BigCodeBench-765",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.0030455124520663572,
+          "task_id": "bigcodebench-hard-BigCodeBench-771",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.991719821240807e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-785",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 4.586762648516331e-06,
+          "task_id": "bigcodebench-hard-BigCodeBench-800",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.9148762080044202e-12,
+          "task_id": "bigcodebench-hard-BigCodeBench-857",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.7829722977654848e-16,
+          "task_id": "bigcodebench-hard-BigCodeBench-942",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.0472107412606114e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-952",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.3178637390913247e-38,
+          "task_id": "bigcodebench-hard-BigCodeBench-985",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.0594725960062546e-25,
+          "task_id": "bigcodebench-hard-BigCodeBench-988",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "predicted_fallback": false,
+          "probability": 8.604070989493271e-09,
+          "task_id": "bigcodebench-hard-BigCodeBench-998",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 8.002500785566469e-13,
+          "task_id": "bigcodebench-hard-BigCodeBench-208",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "predicted_fallback": false,
+          "probability": 2.2429268118206124e-09,
+          "task_id": "bigcodebench-hard-BigCodeBench-129",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.845925169541765e-13,
+          "task_id": "bigcodebench-hard-BigCodeBench-93",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.130141082361336e-05,
+          "task_id": "bigcodebench-hard-BigCodeBench-239",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.6361536610166122e-08,
+          "task_id": "bigcodebench-hard-BigCodeBench-241",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.003406237842733473,
+          "task_id": "bigcodebench-hard-BigCodeBench-267",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 2.1801984405170006e-05,
+          "task_id": "bigcodebench-hard-BigCodeBench-341",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.793924493884367e-08,
+          "task_id": "bigcodebench-hard-BigCodeBench-443",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+          "predicted_fallback": false,
+          "probability": 1.2941995510594473e-08,
+          "task_id": "bigcodebench-hard-BigCodeBench-582",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.2270874810828933e-24,
+          "task_id": "bigcodebench-hard-BigCodeBench-723",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.988155122423121e-56,
+          "task_id": "bigcodebench-hard-BigCodeBench-914",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.922044833934863e-09,
+          "task_id": "bigcodebench-hard-BigCodeBench-915",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.996395442230082e-07,
+          "task_id": "bigcodebench-hard-BigCodeBench-916",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9984687693440285,
+          "task_id": "bigcodebench-hard-BigCodeBench-1137",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 7.957958615665257e-07,
+          "task_id": "bigcodebench-hard-BigCodeBench-346",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 8.82113258731686e-13,
+          "task_id": "bigcodebench-hard-BigCodeBench-8",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "predicted_fallback": true,
+          "probability": 0.8794517752835788,
+          "task_id": "bigcodebench-hard-BigCodeBench-7",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.955463431559743e-15,
+          "task_id": "bigcodebench-hard-BigCodeBench-12",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.2896364349777772e-07,
+          "task_id": "bigcodebench-hard-BigCodeBench-6",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "predicted_fallback": false,
+          "probability": 2.7232173654908725e-12,
+          "task_id": "bigcodebench-hard-BigCodeBench-266",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.1471965548442172e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-305",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 4.9782796318059916e-30,
+          "task_id": "bigcodebench-hard-BigCodeBench-320",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "predicted_fallback": false,
+          "probability": 2.3832818993888666e-11,
+          "task_id": "bigcodebench-hard-BigCodeBench-917",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "predicted_fallback": true,
+          "probability": 0.999999999479313,
+          "task_id": "bigcodebench-hard-BigCodeBench-1008",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.000359147306504419,
+          "task_id": "bigcodebench-hard-BigCodeBench-17",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.23025977268944228,
+          "task_id": "bigcodebench-hard-BigCodeBench-287",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 3.702646161704307e-30,
+          "task_id": "bigcodebench-hard-BigCodeBench-313",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 4.4622951660262945e-06,
+          "task_id": "bigcodebench-hard-BigCodeBench-655",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "predicted_fallback": false,
+          "probability": 3.0175693860902885e-07,
+          "task_id": "bigcodebench-hard-BigCodeBench-865",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 9.313876117712891e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-274",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 1.0908248272582919e-06,
+          "task_id": "bigcodebench-hard-BigCodeBench-360",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.7666413476582424,
+          "task_id": "bigcodebench-hard-BigCodeBench-409",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.7628904990943116,
+          "task_id": "bigcodebench-hard-BigCodeBench-130",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 7.015763776657195e-05,
+          "task_id": "bigcodebench-hard-BigCodeBench-131",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.083209050087143,
+          "task_id": "bigcodebench-hard-BigCodeBench-288",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": true,
+          "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+          "predicted_fallback": false,
+          "probability": 1.920836830335025e-08,
+          "task_id": "bigcodebench-hard-BigCodeBench-192",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9999999992682072,
+          "task_id": "bigcodebench-hard-BigCodeBench-158",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.00046636325570952237,
+          "task_id": "bigcodebench-hard-BigCodeBench-203",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 6.533325972754104e-08,
+          "task_id": "bigcodebench-hard-BigCodeBench-202",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.0018640238455147782,
+          "task_id": "bigcodebench-hard-BigCodeBench-306",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 0.00013202904841424034,
+          "task_id": "bigcodebench-hard-BigCodeBench-314",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9999981741715654,
+          "task_id": "bigcodebench-hard-BigCodeBench-145",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.424012887087024e-21,
+          "task_id": "bigcodebench-hard-BigCodeBench-146",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 4.5299044224010635e-15,
+          "task_id": "bigcodebench-hard-BigCodeBench-324",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 5.83410672890812e-12,
+          "task_id": "bigcodebench-hard-BigCodeBench-1015",
+          "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": false,
+          "probability": 3.840104344711733e-10,
+          "task_id": "bigcodebench-hard-BigCodeBench-273",
+          "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+        },
+        {
+          "actual_useful_fallback": false,
+          "best_ranked_alternate_worker_id": null,
+          "predicted_fallback": true,
+          "probability": 0.9876219358092626,
+          "task_id": "bigcodebench-hard-BigCodeBench-763",
+          "top_worker_id": "ollama-cloud-deepseek-v4-pro"
+        }
+      ],
+      "f1": 0.2222222222222222,
+      "false_negative": 13,
+      "false_positive": 8,
+      "negative_count": 70,
+      "positive_count": 16,
+      "precision": 0.2727272727272727,
+      "predicted_positive_count": 11,
+      "recall": 0.1875,
+      "task_count": 86,
+      "true_negative": 62,
+      "true_positive": 3
+    },
+    "selected_global_threshold": 0.8,
+    "task_count": 86
+  },
+  "model": {
+    "dataset": "research/datasets/20260628-fallback-opportunity-corpus.jsonl",
+    "head": {
+      "feature_names": [
+        "alternate_count",
+        "bias",
+        "category_algorithmic",
+        "category_concurrency",
+        "category_datasci",
+        "category_datetime",
+        "category_filesystem",
+        "category_general",
+        "category_network",
+        "category_plotting",
+        "category_subprocess",
+        "category_text",
+        "combo_network_archive",
+        "combo_network_filesystem",
+        "combo_network_plotting",
+        "environment_risk",
+        "family_bigcodebench_hard",
+        "first_second_margin",
+        "kw_archive",
+        "kw_base64",
+        "kw_count",
+        "kw_dict",
+        "kw_download",
+        "kw_fetch",
+        "kw_file",
+        "kw_files",
+        "kw_frequent",
+        "kw_hex",
+        "kw_http",
+        "kw_key",
+        "kw_list",
+        "kw_lowercase",
+        "kw_number",
+        "kw_plot",
+        "kw_request",
+        "kw_requests",
+        "kw_scan",
+        "kw_sorted",
+        "kw_string",
+        "kw_strip",
+        "kw_subprocess",
+        "kw_sum",
+        "kw_url",
+        "kw_word",
+        "kw_zip",
+        "length_chars",
+        "length_tokens",
+        "lib_base64",
+        "lib_binascii",
+        "lib_bs4",
+        "lib_cgi",
+        "lib_collections",
+        "lib_csv",
+        "lib_datetime",
+        "lib_difflib",
+        "lib_email",
+        "lib_getpass",
+        "lib_glob",
+        "lib_gzip",
+        "lib_hashlib",
+        "lib_http",
+        "lib_io",
+        "lib_ipaddress",
+        "lib_itertools",
+        "lib_json",
+        "lib_logging",
+        "lib_lxml",
+        "lib_math",
+        "lib_matplotlib",
+        "lib_nltk",
+        "lib_numpy",
+        "lib_operator",
+        "lib_os",
+        "lib_pandas",
+        "lib_pathlib",
+        "lib_psutil",
+        "lib_random",
+        "lib_re",
+        "lib_requests",
+        "lib_scipy",
+        "lib_seaborn",
+        "lib_shutil",
+        "lib_sklearn",
+        "lib_smtplib",
+        "lib_socket",
+        "lib_sqlite3",
+        "lib_ssl",
+        "lib_statsmodels",
+        "lib_subprocess",
+        "lib_sys",
+        "lib_tarfile",
+        "lib_threading",
+        "lib_time",
+        "lib_typing",
+        "lib_unicodedata",
+        "lib_urllib",
+        "lib_warnings",
+        "lib_zipfile",
+        "library_count",
+        "missing_library_count",
+        "plausibility_score",
+        "second_latency_s",
+        "second_probability",
+        "second_worker_ollama_cloud_deepseek_v4_pro",
+        "second_worker_ollama_cloud_kimi_k2_7_code",
+        "second_worker_ollama_cloud_qwen3_coder_480b",
+        "signal_algorithmic",
+        "signal_archive",
+        "signal_concurrency",
+        "signal_datasci",
+        "signal_datetime",
+        "signal_filesystem",
+        "signal_general",
+        "signal_network",
+        "signal_plotting",
+        "signal_subprocess",
+        "signal_text",
+        "top_latency_s",
+        "top_probability",
+        "top_worker_ollama_cloud_deepseek_v4_pro",
+        "top_worker_ollama_cloud_kimi_k2_7_code",
+        "top_worker_ollama_cloud_qwen3_coder_480b"
+      ],
+      "label_field": "useful_any_fallback",
+      "policy": "mined-fallback-logit-head",
+      "threshold": 0.1,
+      "weights": [
+        0.5859041602424712,
+        0.09966458110002199,
+        4.042982262256996,
+        -1.4890939403503909e-05,
+        0.6748530011312486,
+        -1.4890939403503909e-05,
+        1.6594955617895701,
+        -3.924153728454456,
+        2.129763657093449,
+        -2.6785382199554864,
+        -3.0076784697019705,
+        -1.6991251265893974,
+        -1.1692591224583198,
+        0.7666714969508697,
+        -1.0060757245862064,
+        2.9363920305019215,
+        0.09966458110002199,
+        1.8321314066168262,
+        -0.5176820064632622,
+        -1.6991251265893974,
+        -1.8035162378363738,
+        -7.312193300320872,
+        -0.12414651523730064,
+        0.0,
+        3.8786884535022894,
+        -5.452377045501595,
+        0.0,
+        -1.6991251265893974,
+        1.0711693759592673,
+        0.8097183844432074,
+        1.8715757889186195,
+        -0.5439831214853423,
+        -6.718270501316938,
+        -2.7105003621687103,
+        2.257241368494825,
+        1.945648387491377,
+        0.0,
+        0.00027140866795975007,
+        2.15221795840535,
+        0.0,
+        0.5564985206609119,
+        -2.119700479864202,
+        2.406863434168514,
+        -1.0931398669057355,
+        0.0927350531362424,
+        1.5515329925133756,
+        0.3253928110917633,
+        -1.6991251265893974,
+        -1.6991251265893974,
+        0.4184035628769668,
+        -0.17932837270030935,
+        1.4104754699004296,
+        1.2558310088364897,
+        1.1795757437603287,
+        -0.9965738420386366,
+        -0.33066652252532736,
+        -0.15197767044704066,
+        2.076801099910605,
+        -1.5890957287063605,
+        1.8899865805720244,
+        -0.6610328608768102,
+        8.048045055539603e-07,
+        -2.5825531252269043,
+        -0.4375193000016951,
+        -2.6245945286854253,
+        -0.5877557759688468,
+        -0.4099465850101633,
+        -1.807149290279902,
+        -1.1106962197286885,
+        -0.5439831214853423,
+        -3.0114927407863545,
+        1.2788088815756435,
+        2.329418073055171,
+        1.372857461733177,
+        -0.13625052419348324,
+        -0.5722938933113196,
+        -6.069029057914253,
+        5.181125793601899,
+        2.132694911271739,
+        4.801774285852032,
+        -0.3805598416957732,
+        -2.5563881302180063,
+        0.46756750286582266,
+        1.8859811536420967,
+        -1.4942435455912186,
+        -0.4099465850101633,
+        -0.4894226392565571,
+        3.7565912105963135,
+        0.5564985206609119,
+        -0.00027988039964525025,
+        3.5968298582414895,
+        -1.0125539483541257,
+        -2.321122754420219,
+        3.7565912105963135,
+        -0.834851300027633,
+        0.7761254075253912,
+        -0.6752451987558217,
+        0.0927350531362424,
+        0.28418703582208193,
+        0.8135281107631255,
+        2.7448770254856854,
+        -0.9904052453960247,
+        -0.697595236999953,
+        2.7371806630719058,
+        -5.267999419427207,
+        2.630483337455312,
+        4.042982262256996,
+        -0.9736009540099108,
+        -1.4890939403503909e-05,
+        0.6748530011312486,
+        -1.4890939403503909e-05,
+        1.6594955617895701,
+        -3.924153728454456,
+        2.8044248544258874,
+        -2.6785382199554864,
+        -3.0076784697019705,
+        -1.6991251265893974,
+        -1.5716542486782348,
+        1.134536169616872,
+        -0.7446877799931666,
+        3.088260700506092,
+        -2.243908339412882
+      ]
+    },
+    "leave_one_out_metrics": {
+      "accuracy": 0.7558139534883721,
+      "f1": 0.2222222222222222,
+      "false_negative": 13,
+      "false_positive": 8,
+      "negative_count": 70,
+      "positive_count": 16,
+      "precision": 0.2727272727272727,
+      "predicted_positive_count": 11,
+      "recall": 0.1875,
+      "task_count": 86,
+      "true_negative": 62,
+      "true_positive": 3
+    },
+    "policy": "mined-fallback-logit-head",
+    "selected_threshold": 0.1,
+    "training_metrics": {
+      "accuracy": 0.8488372093023255,
+      "f1": 0.5806451612903225,
+      "false_negative": 7,
+      "false_positive": 6,
+      "negative_count": 70,
+      "positive_count": 16,
+      "precision": 0.6,
+      "predicted_positive_count": 15,
+      "recall": 0.5625,
+      "task_count": 86,
+      "true_negative": 64,
+      "true_positive": 9
+    }
+  },
+  "positive_count": 16,
+  "raw_record_count": 322,
+  "record_count": 86,
+  "selected_threshold": 0.1,
+  "threshold_selection_metrics": {
+    "accuracy": 0.8488372093023255,
+    "f1": 0.5806451612903225,
+    "false_negative": 7,
+    "false_positive": 6,
+    "negative_count": 70,
+    "positive_count": 16,
+    "precision": 0.6,
+    "predicted_positive_count": 15,
+    "recall": 0.5625,
+    "task_count": 86,
+    "true_negative": 64,
+    "true_positive": 9
+  },
+  "thresholds": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "training": {
+    "epochs": 80,
+    "history": [
+      {
+        "epoch": 1.0,
+        "mean_loss": 11.8054736709155
+      },
+      {
+        "epoch": 16.0,
+        "mean_loss": 4.972450729239285
+      },
+      {
+        "epoch": 32.0,
+        "mean_loss": 8.00936628522495
+      },
+      {
+        "epoch": 48.0,
+        "mean_loss": 7.007568203387767
+      },
+      {
+        "epoch": 64.0,
+        "mean_loss": 2.1643431664535195
+      },
+      {
+        "epoch": 80.0,
+        "mean_loss": 6.123556774175175
+      }
+    ],
+    "l2": 0.0001,
+    "learning_rate": 0.02
+  },
+  "training_metrics": {
+    "accuracy": 0.8488372093023255,
+    "examples": [
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_fallback": true,
+        "probability": 0.1665137287210688,
+        "task_id": "bigcodebench-hard-BigCodeBench-161",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "predicted_fallback": true,
+        "probability": 0.9998805311586213,
+        "task_id": "bigcodebench-hard-BigCodeBench-526",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.0326833499483356e-09,
+        "task_id": "bigcodebench-hard-BigCodeBench-100",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.6731497740256036e-08,
+        "task_id": "bigcodebench-hard-BigCodeBench-1022",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "predicted_fallback": true,
+        "probability": 0.14931989256537342,
+        "task_id": "bigcodebench-hard-BigCodeBench-368",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.3763966135756833e-05,
+        "task_id": "bigcodebench-hard-BigCodeBench-955",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+        "predicted_fallback": false,
+        "probability": 0.0018254381858409646,
+        "task_id": "bigcodebench-hard-BigCodeBench-963",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": true,
+        "probability": 0.8680121831984555,
+        "task_id": "bigcodebench-hard-BigCodeBench-1012",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 4.1634113207237926e-15,
+        "task_id": "bigcodebench-hard-BigCodeBench-1039",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.1703043249337013e-13,
+        "task_id": "bigcodebench-hard-BigCodeBench-1042",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 7.74532614963785e-12,
+        "task_id": "bigcodebench-hard-BigCodeBench-1057",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+        "predicted_fallback": false,
+        "probability": 2.532535654559849e-16,
+        "task_id": "bigcodebench-hard-BigCodeBench-1129",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.6254741439246203e-06,
+        "task_id": "bigcodebench-hard-BigCodeBench-120",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.4455804543484956e-15,
+        "task_id": "bigcodebench-hard-BigCodeBench-124",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.6597971999856218e-18,
+        "task_id": "bigcodebench-hard-BigCodeBench-147",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "predicted_fallback": false,
+        "probability": 0.00014426485048254996,
+        "task_id": "bigcodebench-hard-BigCodeBench-15",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": true,
+        "probability": 0.999504027777246,
+        "task_id": "bigcodebench-hard-BigCodeBench-211",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.9298185590528073e-10,
+        "task_id": "bigcodebench-hard-BigCodeBench-399",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_fallback": false,
+        "probability": 4.877985822075395e-13,
+        "task_id": "bigcodebench-hard-BigCodeBench-458",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 8.2925038720738e-19,
+        "task_id": "bigcodebench-hard-BigCodeBench-486",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.004472576738898e-11,
+        "task_id": "bigcodebench-hard-BigCodeBench-492",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 3.0610852662506857e-34,
+        "task_id": "bigcodebench-hard-BigCodeBench-509",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 5.932385779955666e-17,
+        "task_id": "bigcodebench-hard-BigCodeBench-513",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 4.395805720070232e-18,
+        "task_id": "bigcodebench-hard-BigCodeBench-528",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 7.716549026572786e-13,
+        "task_id": "bigcodebench-hard-BigCodeBench-560",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 4.2306935961136175e-14,
+        "task_id": "bigcodebench-hard-BigCodeBench-579",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 0.0006255043734023661,
+        "task_id": "bigcodebench-hard-BigCodeBench-594",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 5.036031022183742e-13,
+        "task_id": "bigcodebench-hard-BigCodeBench-636",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": true,
+        "probability": 0.9203266584475607,
+        "task_id": "bigcodebench-hard-BigCodeBench-720",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 6.26936806919837e-08,
+        "task_id": "bigcodebench-hard-BigCodeBench-765",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.4278276928623602e-05,
+        "task_id": "bigcodebench-hard-BigCodeBench-771",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 3.5948343945161286e-12,
+        "task_id": "bigcodebench-hard-BigCodeBench-785",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.319156820346059e-06,
+        "task_id": "bigcodebench-hard-BigCodeBench-800",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.391015771950765e-13,
+        "task_id": "bigcodebench-hard-BigCodeBench-857",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.4857038734464097e-18,
+        "task_id": "bigcodebench-hard-BigCodeBench-942",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.6147485292059165e-12,
+        "task_id": "bigcodebench-hard-BigCodeBench-952",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.1060997054928276e-36,
+        "task_id": "bigcodebench-hard-BigCodeBench-985",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 4.0054511582292824e-26,
+        "task_id": "bigcodebench-hard-BigCodeBench-988",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_fallback": true,
+        "probability": 0.9999458757793575,
+        "task_id": "bigcodebench-hard-BigCodeBench-998",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 7.386406912686058e-14,
+        "task_id": "bigcodebench-hard-BigCodeBench-208",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_fallback": true,
+        "probability": 0.15234284755028527,
+        "task_id": "bigcodebench-hard-BigCodeBench-129",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.0375491528976293e-15,
+        "task_id": "bigcodebench-hard-BigCodeBench-93",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.730752312549034e-06,
+        "task_id": "bigcodebench-hard-BigCodeBench-239",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 6.211548531258491e-10,
+        "task_id": "bigcodebench-hard-BigCodeBench-241",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 7.121795895909576e-06,
+        "task_id": "bigcodebench-hard-BigCodeBench-267",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.3823722015016065e-07,
+        "task_id": "bigcodebench-hard-BigCodeBench-341",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 3.067366347634479e-09,
+        "task_id": "bigcodebench-hard-BigCodeBench-443",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+        "predicted_fallback": false,
+        "probability": 0.008955606800652187,
+        "task_id": "bigcodebench-hard-BigCodeBench-582",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 4.2550074685806564e-30,
+        "task_id": "bigcodebench-hard-BigCodeBench-723",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 5.550764166006961e-58,
+        "task_id": "bigcodebench-hard-BigCodeBench-914",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.2487505146241198e-10,
+        "task_id": "bigcodebench-hard-BigCodeBench-915",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 3.934519136477888e-09,
+        "task_id": "bigcodebench-hard-BigCodeBench-916",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": true,
+        "probability": 0.9889480780447272,
+        "task_id": "bigcodebench-hard-BigCodeBench-1137",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.4102459338624814e-07,
+        "task_id": "bigcodebench-hard-BigCodeBench-346",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.9641194711989633e-12,
+        "task_id": "bigcodebench-hard-BigCodeBench-8",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_fallback": true,
+        "probability": 0.9997374477476089,
+        "task_id": "bigcodebench-hard-BigCodeBench-7",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 3.3063796538270127e-15,
+        "task_id": "bigcodebench-hard-BigCodeBench-12",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 6.888158400510452e-09,
+        "task_id": "bigcodebench-hard-BigCodeBench-6",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_fallback": true,
+        "probability": 0.8594229130526744,
+        "task_id": "bigcodebench-hard-BigCodeBench-266",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 4.258939739513341e-12,
+        "task_id": "bigcodebench-hard-BigCodeBench-305",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 5.802823784603709e-32,
+        "task_id": "bigcodebench-hard-BigCodeBench-320",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_fallback": false,
+        "probability": 0.00016107805229825673,
+        "task_id": "bigcodebench-hard-BigCodeBench-917",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_fallback": true,
+        "probability": 0.999999996638389,
+        "task_id": "bigcodebench-hard-BigCodeBench-1008",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.891178003773491e-07,
+        "task_id": "bigcodebench-hard-BigCodeBench-17",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 0.0005457757008095072,
+        "task_id": "bigcodebench-hard-BigCodeBench-287",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.0065397022421783e-27,
+        "task_id": "bigcodebench-hard-BigCodeBench-313",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.877147683094565e-09,
+        "task_id": "bigcodebench-hard-BigCodeBench-655",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_fallback": false,
+        "probability": 0.010941265549030315,
+        "task_id": "bigcodebench-hard-BigCodeBench-865",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.828503377951067e-15,
+        "task_id": "bigcodebench-hard-BigCodeBench-274",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 3.738069532596916e-07,
+        "task_id": "bigcodebench-hard-BigCodeBench-360",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 0.022579646148816128,
+        "task_id": "bigcodebench-hard-BigCodeBench-409",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 0.01810973557166277,
+        "task_id": "bigcodebench-hard-BigCodeBench-130",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.6636232546220183e-05,
+        "task_id": "bigcodebench-hard-BigCodeBench-131",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 0.005717094662567013,
+        "task_id": "bigcodebench-hard-BigCodeBench-288",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": true,
+        "best_ranked_alternate_worker_id": "ollama-cloud-glm-5.2",
+        "predicted_fallback": true,
+        "probability": 0.25123020191863826,
+        "task_id": "bigcodebench-hard-BigCodeBench-192",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": true,
+        "probability": 0.9999768049372537,
+        "task_id": "bigcodebench-hard-BigCodeBench-158",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 6.144766850295132e-06,
+        "task_id": "bigcodebench-hard-BigCodeBench-203",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.8207804822457e-09,
+        "task_id": "bigcodebench-hard-BigCodeBench-202",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 2.438382793899995e-05,
+        "task_id": "bigcodebench-hard-BigCodeBench-306",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.915529100334902e-08,
+        "task_id": "bigcodebench-hard-BigCodeBench-314",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": true,
+        "probability": 0.9998970398757423,
+        "task_id": "bigcodebench-hard-BigCodeBench-145",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 1.2630424242101165e-22,
+        "task_id": "bigcodebench-hard-BigCodeBench-146",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 5.793460778066873e-16,
+        "task_id": "bigcodebench-hard-BigCodeBench-324",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 5.78632986566997e-13,
+        "task_id": "bigcodebench-hard-BigCodeBench-1015",
+        "top_worker_id": "ollama-cloud-kimi-k2.7-code"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 9.821112574819713e-14,
+        "task_id": "bigcodebench-hard-BigCodeBench-273",
+        "top_worker_id": "ollama-cloud-qwen3-coder-480b"
+      },
+      {
+        "actual_useful_fallback": false,
+        "best_ranked_alternate_worker_id": null,
+        "predicted_fallback": false,
+        "probability": 0.08910176575657143,
+        "task_id": "bigcodebench-hard-BigCodeBench-763",
+        "top_worker_id": "ollama-cloud-deepseek-v4-pro"
+      }
+    ],
+    "f1": 0.5806451612903225,
+    "false_negative": 7,
+    "false_positive": 6,
+    "negative_count": 70,
+    "positive_count": 16,
+    "precision": 0.6,
+    "predicted_positive_count": 15,
+    "recall": 0.5625,
+    "task_count": 86,
+    "true_negative": 64,
+    "true_positive": 9
+  },
+  "unique_task_count": 86
+}

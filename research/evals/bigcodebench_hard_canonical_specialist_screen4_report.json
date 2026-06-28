@@ -1,0 +1,10 @@
+{
+  "output": "research/evals/bigcodebench_hard_canonical_specialist_screen4_tasks.json",
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-800",
+    "bigcodebench-hard-BigCodeBench-528",
+    "bigcodebench-hard-BigCodeBench-985",
+    "bigcodebench-hard-BigCodeBench-162"
+  ],
+  "source_batch": "research/evals/bigcodebench_hard_canonical_specialist_batch8_tasks.json"
+}

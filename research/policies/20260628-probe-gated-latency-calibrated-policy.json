@@ -1,0 +1,22 @@
+{
+  "base_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "calibration": {
+    "latency_cost_per_second": 0.5,
+    "min_probability": 0.0,
+    "min_probability_ratio": 0.0
+  },
+  "created_from": {
+    "dataset": "research/datasets/20260628-latency-safe-head-37task-routing.jsonl",
+    "report": "research/evals/20260628-probe-gated-latency-calibration-deepseek-qwen-aggressive-37task.json",
+    "run_tag": "20260628-probe-gated-latency-calibration"
+  },
+  "policy": "probe-gated-latency-calibrated-logits-router",
+  "probe_gate": {
+    "min_pass_rate": 1.0,
+    "mode": "all",
+    "probe_worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b"
+    ]
+  }
+}

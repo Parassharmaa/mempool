@@ -1,0 +1,253 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "codecs",
+        "urllib",
+        "base64",
+        "binascii"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.926,
+      "primary_category": "general",
+      "prompt_length": 1347,
+      "task_id": "bigcodebench-hard-BigCodeBench-990",
+      "test_length": 3537
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "tarfile",
+        "urllib",
+        "hashlib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.7573,
+      "primary_category": "network",
+      "prompt_length": 882,
+      "task_id": "bigcodebench-hard-BigCodeBench-998",
+      "test_length": 2926
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "urllib",
+        "csv",
+        "collections",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.499,
+      "primary_category": "subprocess",
+      "prompt_length": 1137,
+      "task_id": "bigcodebench-hard-BigCodeBench-999",
+      "test_length": 2886
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "hashlib",
+        "os",
+        "ssl"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 8.797,
+      "primary_category": "network",
+      "prompt_length": 882,
+      "task_id": "bigcodebench-hard-BigCodeBench-1039",
+      "test_length": 7095
+    },
+    {
+      "categories": [
+        "network"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "email",
+        "smtplib",
+        "getpass"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.6837,
+      "primary_category": "network",
+      "prompt_length": 719,
+      "task_id": "bigcodebench-hard-BigCodeBench-1042",
+      "test_length": 4244
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-990"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.006s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-998"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-999"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpe720rm_i/candidate.py\", line 2, in <module>\n    from lxml import etree\nModuleNotFoundError: No module named 'lxml'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1003"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpmvw462mj/candidate.py\", line 4, in <module>\n    import matplotlib.pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1004"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpzqfferlf/candidate.py\", line 2, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1006"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpkx6uh_tx/candidate.py\", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1008"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpzv_ivg1e/candidate.py\", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1012"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpfe6s3dlw/candidate.py\", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1013"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmps1c7vfon/candidate.py\", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpt4gof479/candidate.py\", line 1, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1019"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpg5l9u_wk/candidate.py\", line 2, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1020"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp6yox7kww/candidate.py\", line 1, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1022"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1039"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "passed": false,
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-1040"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1042"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpuv1a943c/candidate.py\", line 1, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1053"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpr3snf52k/candidate.py\", line 1, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1057"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp94pqv9q9/candidate.py\", line 2, in <module>\n    import pytz\nModuleNotFoundError: No module named 'pytz'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1077"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpd814g9wb/candidate.py\", line 3, in <module>\n    import matplotlib.pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1085"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpzb5q9ubn/candidate.py\", line 3, in <module>\n    from bs4 import BeautifulSoup\nModuleNotFoundError: No module named 'bs4'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1124"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpux9lwqlu/candidate.py\", line 2, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1129"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp8a85izqb/candidate.py\", line 1, in <module>\n    import bs4\nModuleNotFoundError: No module named 'bs4'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1137"
+    }
+  ],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 5,
+  "max_rows": 40,
+  "mode": "instruct",
+  "next_offset": 148,
+  "offset": 125,
+  "output": "research/evals/bigcodebench_hard_eligible_offset125_tasks.json",
+  "scanned": 23,
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-990",
+    "bigcodebench-hard-BigCodeBench-998",
+    "bigcodebench-hard-BigCodeBench-999",
+    "bigcodebench-hard-BigCodeBench-1039",
+    "bigcodebench-hard-BigCodeBench-1042"
+  ],
+  "split": "v0.1.4",
+  "target_passes": 8
+}

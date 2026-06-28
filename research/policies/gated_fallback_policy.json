@@ -1,0 +1,422 @@
+{
+  "active_evaluation": {
+    "examples": [
+      {
+        "attempts": [
+          {
+            "latency_ms": 2564,
+            "passed": false,
+            "probability": 0.400392258306248,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": 0.1633672550226588,
+        "matched_target": true,
+        "solved": false,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-100"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 3620,
+            "passed": true,
+            "probability": 0.404504152309197,
+            "worker_id": "ollama-cloud-kimi-k2.7-code"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-1004"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 12624,
+            "passed": true,
+            "probability": 0.4968092612740921,
+            "worker_id": "ollama-cloud-kimi-k2.7-code"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-1006"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 3070,
+            "passed": false,
+            "probability": 0.4101210233482285,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": 0.1434683184126293,
+        "matched_target": true,
+        "solved": false,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-1022"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2314,
+            "passed": true,
+            "probability": 0.36368608397092167,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-1085"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2690,
+            "passed": true,
+            "probability": 0.6417006198185036,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-123"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 3618,
+            "passed": true,
+            "probability": 0.48937117800344004,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-13"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2046,
+            "passed": true,
+            "probability": 0.39224722015563324,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-19"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2184,
+            "passed": true,
+            "probability": 0.3930954127913742,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-308"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 8973,
+            "passed": true,
+            "probability": 0.47248582080706647,
+            "worker_id": "ollama-cloud-kimi-k2.7-code"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-310"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 9409,
+            "passed": false,
+            "probability": 0.2964731545126543,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          },
+          {
+            "latency_ms": 3057,
+            "passed": false,
+            "probability": 0.29171761432568627,
+            "worker_id": "ollama-cloud-kimi-k2.7-code"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "first_second_margin": 0.004755540186968055,
+        "matched_target": false,
+        "solved": false,
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-368"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2381,
+            "passed": true,
+            "probability": 0.48554599108139385,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-454"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 6010,
+            "passed": true,
+            "probability": 0.4725526528342477,
+            "worker_id": "ollama-cloud-kimi-k2.7-code"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-592"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2300,
+            "passed": true,
+            "probability": 0.4494779875709581,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-678"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 8288,
+            "passed": true,
+            "probability": 0.6067816381176784,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-760"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 6076,
+            "passed": true,
+            "probability": 0.4426398088602608,
+            "worker_id": "ollama-cloud-deepseek-v4-pro"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-763"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2307,
+            "passed": true,
+            "probability": 0.4997548676176613,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-777"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2343,
+            "passed": true,
+            "probability": 0.4487817461653176,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-854"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2774,
+            "passed": true,
+            "probability": 0.517519550874663,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-870"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2336,
+            "passed": false,
+            "probability": 0.3918950425545997,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": 0.10063434005233357,
+        "matched_target": true,
+        "solved": false,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-955"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2628,
+            "passed": false,
+            "probability": 0.35145065128786646,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          },
+          {
+            "latency_ms": 7910,
+            "passed": true,
+            "probability": 0.25238644826630946,
+            "worker_id": "ollama-cloud-glm-5.2"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-glm-5.2",
+        "first_second_margin": 0.099064203021557,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-glm-5.2",
+        "task_id": "bigcodebench-hard-BigCodeBench-963"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 2368,
+            "passed": true,
+            "probability": 0.332626894494415,
+            "worker_id": "ollama-cloud-qwen3-coder-480b"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "first_second_margin": null,
+        "matched_target": true,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-990"
+      },
+      {
+        "attempts": [
+          {
+            "latency_ms": 8508,
+            "passed": true,
+            "probability": 0.45578994678965257,
+            "worker_id": "ollama-cloud-kimi-k2.7-code"
+          }
+        ],
+        "final_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "first_second_margin": null,
+        "matched_target": false,
+        "solved": true,
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-999"
+      }
+    ],
+    "fallback_opportunities": 5,
+    "fallback_rate": 0.4,
+    "fallbacks_taken": 2,
+    "matched_target": 21,
+    "max_attempts": 2,
+    "max_first_second_margin": 0.1,
+    "mean_attempts": 1.0869565217391304,
+    "mean_latency_ms": 4886.869565217391,
+    "mean_latency_regret_ms": 748.2608695652174,
+    "mean_target_latency_ms": 4138.608695652174,
+    "pass_at_1": 0.8260869565217391,
+    "policy": "gated-fallback",
+    "solvable_pass_at_1": 0.95,
+    "solvable_solved": 19,
+    "solvable_target_accuracy": 0.9,
+    "solvable_task_count": 20,
+    "solved": 19,
+    "target_accuracy": 0.9130434782608695,
+    "task_count": 23
+  },
+  "base_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "base_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "evaluated_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "max_attempts": 2,
+  "max_first_second_margin": 0.1,
+  "policy": "gated-fallback",
+  "regression_manifest": "research/evals/router_regression_slices.json",
+  "regression_passed": true,
+  "selection_rule": [
+    "require all regression slices to pass",
+    "maximize active solvable_pass_at_1",
+    "maximize active pass_at_1",
+    "maximize active target_accuracy",
+    "minimize active mean_latency_regret_ms",
+    "minimize active mean_latency_ms",
+    "minimize active fallback_rate"
+  ]
+}

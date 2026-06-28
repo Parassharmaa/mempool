@@ -1,0 +1,60 @@
+{
+  "baseline_unbalanced": {
+    "loo_mean_latency_regret_ms": 3609.63,
+    "loo_pass_at_1": 0.82,
+    "loo_solvable_pass_at_1": 0.8723404255319149,
+    "loo_target_accuracy": 0.62,
+    "report": "research/evals/results/20260628-m5-offline-multihead-50task-report.json"
+  },
+  "best_balanced_candidate": {
+    "loo_mean_latency_regret_ms": 4364.39,
+    "loo_pass_at_1": 0.8,
+    "loo_solvable_pass_at_1": 0.851063829787234,
+    "loo_target_accuracy": 0.54,
+    "model": "research/models/20260628-m5-balanced-p0.25-multihead.json",
+    "report": "research/evals/results/20260628-m5-balanced-p0.25-multihead-report.json",
+    "target_balance_power": 0.25
+  },
+  "candidates": [
+    {
+      "loo_mean_latency_regret_ms": 4364.39,
+      "loo_pass_at_1": 0.8,
+      "loo_solvable_pass_at_1": 0.851063829787234,
+      "loo_target_accuracy": 0.54,
+      "model": "research/models/20260628-m5-balanced-p0.25-multihead.json",
+      "report": "research/evals/results/20260628-m5-balanced-p0.25-multihead-report.json",
+      "target_balance_power": 0.25
+    },
+    {
+      "loo_mean_latency_regret_ms": 8068.41,
+      "loo_pass_at_1": 0.74,
+      "loo_solvable_pass_at_1": 0.7872340425531915,
+      "loo_target_accuracy": 0.46,
+      "model": "research/models/20260628-m5-balanced-p0.5-multihead.json",
+      "report": "research/evals/results/20260628-m5-balanced-p0.5-multihead-report.json",
+      "target_balance_power": 0.5
+    },
+    {
+      "loo_mean_latency_regret_ms": 7576.33,
+      "loo_pass_at_1": 0.74,
+      "loo_solvable_pass_at_1": 0.7872340425531915,
+      "loo_target_accuracy": 0.44,
+      "model": "research/models/20260628-m5-balanced-p0.75-multihead.json",
+      "report": "research/evals/results/20260628-m5-balanced-p0.75-multihead-report.json",
+      "target_balance_power": 0.75
+    },
+    {
+      "loo_mean_latency_regret_ms": 10437.31,
+      "loo_pass_at_1": 0.72,
+      "loo_solvable_pass_at_1": 0.7659574468085106,
+      "loo_target_accuracy": 0.22,
+      "model": "research/models/20260628-m5-balanced-p1.0-multihead.json",
+      "report": "research/evals/results/20260628-m5-balanced-p1.0-multihead-report.json",
+      "target_balance_power": 1.0
+    }
+  ],
+  "decision": "discard-balanced-refresh",
+  "gate": "research/evals/results/20260628-m5-balanced-p0.25-policy-gate.json",
+  "reason": "All target-balanced candidates regressed against the unbalanced 50-task multi-head baseline and the active 23-task policy gate.",
+  "schema_version": "mempool.multihead_target_balance_selection.v1"
+}

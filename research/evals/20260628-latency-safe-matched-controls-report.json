@@ -1,0 +1,931 @@
+{
+  "candidate_count": 60,
+  "excluded_count": 185,
+  "excluded_outcomes": [
+    "research/evals/results/20260627-acquisition-to-50-wave1.jsonl",
+    "research/evals/results/20260627-acquisition-to-50-wave2-specialist.jsonl",
+    "research/evals/results/20260627-bigcodebench-eligible-8.jsonl",
+    "research/evals/results/20260627-bigcodebench-hard-smoke-1.jsonl",
+    "research/evals/results/20260627-bigcodebench-minipilot.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-provenance.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-top4env.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices.jsonl",
+    "research/evals/results/20260627-cloud-positive-compare-4.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-4task.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-remaining.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-smoke.jsonl",
+    "research/evals/results/20260627-deepseek-candidate-368-repeat-compare.jsonl",
+    "research/evals/results/20260627-expanded-profile-fresh-batch6.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave2.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave3.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4b.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4c.jsonl",
+    "research/evals/results/20260627-fallback-error-neighborhood-screen4.jsonl",
+    "research/evals/results/20260627-fallback-opportunity-top2-repeat.jsonl",
+    "research/evals/results/20260627-fallback-solvability-screen4.jsonl",
+    "research/evals/results/20260627-glm-deepseek-qwen-kimi-negative-mining.jsonl",
+    "research/evals/results/20260627-heldout-both-repeat-compare-env.jsonl",
+    "research/evals/results/20260627-heldout-hard-active-policy.jsonl",
+    "research/evals/results/20260627-kimi-candidate-repeat-compare.jsonl",
+    "research/evals/results/20260627-kimi-offset99-mining-8.jsonl",
+    "research/evals/results/20260627-kimi-qwen-negative-mining-12.jsonl",
+    "research/evals/results/20260627-m1-real-workers.jsonl",
+    "research/evals/results/20260627-m3-expanded-real-workers.jsonl",
+    "research/evals/results/20260627-offset125-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-offset125-stable-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-offset99-neither-specialist-repeat.jsonl",
+    "research/evals/results/20260627-ollama-cloud-smoke-1.jsonl",
+    "research/evals/results/20260627-ollama-cloud-smoke-3.jsonl",
+    "research/evals/results/20260627-positive-neighborhood-screen2.jsonl",
+    "research/evals/results/20260627-postrefresh-heldout-hard.jsonl",
+    "research/evals/results/20260627-qwen-offset125-mining-5.jsonl",
+    "research/evals/results/20260627-qwen-offset99-mining-8.jsonl",
+    "research/evals/results/20260627-qwen-only-offset99-repeat-compare.jsonl",
+    "research/evals/results/20260627-qwen-positive-mining-16.jsonl",
+    "research/evals/results/20260627-top4-fresh-nonqwen-mining-8.jsonl",
+    "research/evals/results/20260627-top4-fresh-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-top4-fresh-qwen-mining-8.jsonl",
+    "research/evals/results/20260627-top4-hard-nonqwen-mining-8.jsonl",
+    "research/evals/results/20260627-top4-hard-specialist-repeat-compare.jsonl",
+    "research/evals/results/20260627-top4-specialist-positive-repeat-compare.jsonl",
+    "research/evals/results/20260628-capped-gate-offset519-qwen-screen.jsonl",
+    "research/evals/results/20260628-capped-gate-offset596-qwen-screen.jsonl",
+    "research/evals/results/20260628-capped-solvability-gate-next-qwen-screen.jsonl",
+    "research/evals/results/20260628-contrast-aware-top4-repeat.jsonl",
+    "research/evals/results/20260628-direct-deepseek-like-remaining1.jsonl",
+    "research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl",
+    "research/evals/results/20260628-fresh-acquisition-outcomes.jsonl",
+    "research/evals/results/20260628-next-profile-fallback-opportunity-screen1.jsonl",
+    "research/evals/results/20260628-next-profile-positive-repeat.jsonl",
+    "research/evals/results/20260628-next2-profile-fallback-opportunity-screen1.jsonl",
+    "research/evals/results/20260628-next3-917-neighborhood-positive-repeat.jsonl",
+    "research/evals/results/20260628-next3-917-neighborhood-screen1.jsonl",
+    "research/evals/results/20260628-next3-nonqwen-screen1.jsonl",
+    "research/evals/results/20260628-next3-positive-repeat.jsonl",
+    "research/evals/results/20260628-nonqwen-pressure-positive-repeat.jsonl",
+    "research/evals/results/20260628-nonqwen-pressure-top3-screen.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-first-screen1.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-pressure-screen.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-pressure-top4-positive.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-rank1-screen.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-rank1-top4-positive.jsonl",
+    "research/evals/results/20260628-normal-offset156-guarded-outcomes.jsonl",
+    "research/evals/results/20260628-normal-offset16-contrast-outcomes.jsonl",
+    "research/evals/results/20260628-normal-offset236-boundary-outcomes.jsonl",
+    "research/evals/results/20260628-normal-offset76-guarded-outcomes.jsonl",
+    "research/evals/results/20260628-positive-neighborhood-kimi-screen1.jsonl",
+    "research/evals/results/20260628-prospective-solvability-gate-qwen-screen.jsonl",
+    "research/evals/results/20260628-prospective-solvability-gate-specialist-screen.jsonl",
+    "research/evals/results/20260628-qwen-fail-contrast-selector-positive-repeat.jsonl",
+    "research/evals/results/20260628-qwen-fail-contrast-selector-screen1.jsonl",
+    "research/evals/results/20260628-qwen-fail-specialist-mining-screen1.jsonl",
+    "research/evals/results/20260628-qwen-first-rejection-qwen-screen.jsonl",
+    "research/evals/results/20260628-qwen-first-rejection-specialist-screen.jsonl",
+    "research/evals/results/20260628-qwen-resistant-rank1-specialist-screen.jsonl",
+    "research/evals/results/20260628-qwen-resistant-rank1-specialist-top4-positive.jsonl",
+    "research/evals/results/20260628-router-miss-repeat4-top4.jsonl",
+    "research/evals/results/20260628-solvability-aware-kimi-screen1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-batch1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-limit1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1.jsonl"
+  ],
+  "excluded_routing_datasets": [
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl"
+  ],
+  "ranked_latency_safe_candidates": [
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "subprocess",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "score": 57.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-320"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "collections",
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-305"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "collections",
+        "itertools",
+        "random"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-384"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "base64",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-547"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "math",
+        "itertools",
+        "functools"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-97"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "json",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 51.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-329"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "subprocess",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "score": 51.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-350"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 1,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "glob",
+        "json",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "score": 48.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-370"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "base64",
+        "os"
+      ],
+      "plausibility_score": 2.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-543"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "base64",
+        "hashlib"
+      ],
+      "plausibility_score": 2.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-644"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "base64",
+        "json",
+        "datetime"
+      ],
+      "plausibility_score": 4.0,
+      "score": 41.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-27"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "subprocess",
+        "time",
+        "signal",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "score": 41.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-348"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "queue",
+        "collections",
+        "random"
+      ],
+      "plausibility_score": 3.0,
+      "score": 40.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-335"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "io",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "score": 40.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-508"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-127"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "collections",
+        "random"
+      ],
+      "plausibility_score": 2.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-268"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "collections",
+        "random"
+      ],
+      "plausibility_score": 2.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-279"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-380"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-389"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "math",
+        "itertools"
+      ],
+      "plausibility_score": 2.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-666"
+    }
+  ],
+  "ranked_unsafe_control_candidates": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "score": 46.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-391"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-127"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-325"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-336"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "ctypes",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "score": 45.2,
+      "task_id": "bigcodebench-hard-BigCodeBench-563"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "subprocess",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "score": 45.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-320"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "subprocess",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "score": 42.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-350"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "os",
+        "time"
+      ],
+      "plausibility_score": 4.0,
+      "score": 41.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-263"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "subprocess",
+        "time",
+        "signal",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "score": 41.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-348"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "sqlite3",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 40.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-539"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "json",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-329"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-380"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 39.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-389"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "mimetypes",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "score": 39.2,
+      "task_id": "bigcodebench-hard-BigCodeBench-154"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "subprocess",
+        "time",
+        "datetime",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "score": 36.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-459"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 1,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "json",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "score": 36.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-370"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "collections",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 35.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-281"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "base64",
+        "json",
+        "datetime"
+      ],
+      "plausibility_score": 4.0,
+      "score": 34.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-27"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 2.0,
+      "score": 33.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-344"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "unicodedata",
+        "hashlib",
+        "pathlib",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "score": 33.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-577"
+    }
+  ],
+  "safe_seed_count": 13,
+  "seed_dataset": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl",
+  "selected": [
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "subprocess",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "score": 57.1,
+      "task_id": "bigcodebench-hard-BigCodeBench-320"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "score": 46.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-391"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "collections",
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-305"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "shutil",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-127"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "collections",
+        "itertools",
+        "random"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-384"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-325"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "label": "latency_safe_candidate",
+      "libraries": [
+        "base64",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "score": 52.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-547"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "label": "unsafe_control_candidate",
+      "libraries": [
+        "glob",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "score": 45.6,
+      "task_id": "bigcodebench-hard-BigCodeBench-336"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-320",
+    "bigcodebench-hard-BigCodeBench-391",
+    "bigcodebench-hard-BigCodeBench-305",
+    "bigcodebench-hard-BigCodeBench-127",
+    "bigcodebench-hard-BigCodeBench-384",
+    "bigcodebench-hard-BigCodeBench-325",
+    "bigcodebench-hard-BigCodeBench-547",
+    "bigcodebench-hard-BigCodeBench-336"
+  ],
+  "task_sources": [
+    "research/evals/20260628-normal-offset156-eligible-tasks.json",
+    "research/evals/20260628-normal-offset16-eligible-tasks.json",
+    "research/evals/20260628-normal-offset236-eligible-tasks.json",
+    "research/evals/20260628-normal-offset316-eligible-tasks.json",
+    "research/evals/20260628-normal-offset359-eligible-tasks.json",
+    "research/evals/20260628-normal-offset439-eligible-tasks.json",
+    "research/evals/20260628-normal-offset519-eligible-tasks.json",
+    "research/evals/20260628-normal-offset596-eligible-tasks.json",
+    "research/evals/20260628-normal-offset676-eligible-tasks.json",
+    "research/evals/20260628-normal-offset76-eligible-tasks.json"
+  ],
+  "unsafe_seed_count": 16
+}

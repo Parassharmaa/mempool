@@ -1,0 +1,307 @@
+{
+  "candidates": [
+    {
+      "model_output": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p05-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.45200857193668714,
+            "mean_latency_regret_ms": 713.1923076923077,
+            "pass_at_1": 0.6538461538461539,
+            "solvable_pass_at_1": 0.7391304347826086,
+            "solvable_target_accuracy": 0.6521739130434783,
+            "solvable_task_count": 23,
+            "target_accuracy": 0.6923076923076923,
+            "task_count": 26
+          },
+          "report": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 18
+            },
+            "target_worker_count": 4,
+            "task_count": 26
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.692 is below minimum 0.700",
+          "candidate LOO mean latency regret increase 212.1 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T18:03:10.855671+00:00",
+        "warnings": [
+          "candidate LOO target accuracy dropped by 0.090"
+        ]
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p05-logits-router-report.json",
+      "temperature": 0.05
+    },
+    {
+      "model_output": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p1-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4396486309313925,
+            "mean_latency_regret_ms": 3797.1153846153848,
+            "pass_at_1": 0.6538461538461539,
+            "solvable_pass_at_1": 0.7391304347826086,
+            "solvable_target_accuracy": 0.6521739130434783,
+            "solvable_task_count": 23,
+            "target_accuracy": 0.6538461538461539,
+            "task_count": 26
+          },
+          "report": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p1-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 18
+            },
+            "target_worker_count": 4,
+            "task_count": 26
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.654 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.129 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 3296.0 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T18:03:32.495132+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p1-logits-router-report.json",
+      "temperature": 0.1
+    },
+    {
+      "model_output": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p2-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4234487024112772,
+            "mean_latency_regret_ms": 5750.384615384615,
+            "pass_at_1": 0.6538461538461539,
+            "solvable_pass_at_1": 0.7391304347826086,
+            "solvable_target_accuracy": 0.5217391304347826,
+            "solvable_task_count": 23,
+            "target_accuracy": 0.5,
+            "task_count": 26
+          },
+          "report": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p2-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 18
+            },
+            "target_worker_count": 4,
+            "task_count": 26
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.500 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.283 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 5249.3 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T18:03:54.004125+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p2-logits-router-report.json",
+      "temperature": 0.2
+    },
+    {
+      "model_output": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p5-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.3924147138865798,
+            "mean_latency_regret_ms": 10093.923076923076,
+            "pass_at_1": 0.6153846153846154,
+            "solvable_pass_at_1": 0.6956521739130435,
+            "solvable_target_accuracy": 0.391304347826087,
+            "solvable_task_count": 23,
+            "target_accuracy": 0.34615384615384615,
+            "task_count": 26
+          },
+          "report": "research/models/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p5-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 18
+            },
+            "target_worker_count": 4,
+            "task_count": 26
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.346 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.436 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 9592.8 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T18:04:15.627930+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-reward-t0p5-logits-router-report.json",
+      "temperature": 0.5
+    }
+  ],
+  "dataset": "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+  "decision": "quarantine",
+  "selected": null,
+  "target_mode": "reward",
+  "temperatures": [
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ]
+}

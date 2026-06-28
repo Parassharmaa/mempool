@@ -1,0 +1,43 @@
+{
+  "candidate": {
+    "available": true,
+    "mean_latency_ms": 6373.55,
+    "mean_latency_regret_ms": 2087.35,
+    "pass_at_1": 0.8333333333333334,
+    "policy": "learned-second-attempt-value-head",
+    "solvable_pass_at_1": 0.9259259259259259,
+    "solvable_target_accuracy": 0.7777777777777778,
+    "solvable_task_count": 27,
+    "target_accuracy": 0.7666666666666667,
+    "task_count": 30
+  },
+  "dataset": "research/datasets/20260628-live-augmented-30task-routing.jsonl",
+  "decision": "quarantine",
+  "reasons": [
+    "candidate target accuracy delta -0.067 is below required -0.050 against probe-gated-latency-calibrated-logits-router",
+    "candidate latency regret increase 1836.0 ms exceeds allowed 0.0 ms against probe-gated-latency-calibrated-logits-router"
+  ],
+  "reference": {
+    "available": true,
+    "mean_latency_regret_ms": 251.38333333333333,
+    "pass_at_1": 0.7666666666666667,
+    "policy": "probe-gated-latency-calibrated-logits-router",
+    "solvable_pass_at_1": 0.8518518518518519,
+    "solvable_target_accuracy": 0.8148148148148148,
+    "solvable_task_count": 27,
+    "target_accuracy": 0.8333333333333334,
+    "task_count": 30
+  },
+  "strongest_worker": {
+    "pass_at_1": 0.6666666666666666
+  },
+  "thresholds": {
+    "max_latency_regret_increase_ms": 0.0,
+    "min_pass_at_1_delta": 0.0,
+    "min_pass_at_1_vs_strongest": 0.0,
+    "min_solvable_pass_at_1_delta": 0.0,
+    "min_target_accuracy_delta": -0.05
+  },
+  "timestamp": "2026-06-28T00:46:59.733436+00:00",
+  "warnings": []
+}

@@ -1,0 +1,11 @@
+{
+  "recommendation": {
+    "id": "router-miss-neighborhood-repeat4",
+    "kind": "repeat_stabilization",
+    "reasons": [
+      "fresh miss-neighborhood pool exhausted; repeat sparse LOO miss seeds to stabilize empirical targets"
+    ],
+    "score": 0.0
+  },
+  "recommended_source_id": "router-miss-neighborhood-repeat4"
+}

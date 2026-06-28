@@ -1,0 +1,1722 @@
+{
+  "input_count": 90,
+  "latency_weight": 0.05,
+  "min_pass_rate": 1.0,
+  "ranked_sources": [
+    {
+      "broad_pass_latency_rows": 3,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-139",
+        "bigcodebench-hard-BigCodeBench-367",
+        "bigcodebench-hard-BigCodeBench-928"
+      ],
+      "dropped_records": 32,
+      "exclusive_stable_nonqwen_targets": 4,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-161",
+        "bigcodebench-hard-BigCodeBench-526",
+        "bigcodebench-hard-BigCodeBench-637",
+        "bigcodebench-hard-BigCodeBench-906"
+      ],
+      "input_records": 41,
+      "merge_ready_records": 9,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-139",
+        "bigcodebench-hard-BigCodeBench-161",
+        "bigcodebench-hard-BigCodeBench-367",
+        "bigcodebench-hard-BigCodeBench-477",
+        "bigcodebench-hard-BigCodeBench-526",
+        "bigcodebench-hard-BigCodeBench-637",
+        "bigcodebench-hard-BigCodeBench-897",
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-139",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-161",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-367",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-477",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-526",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-637",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-897",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-906",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-928",
+          "worker_count": 4
+        }
+      ],
+      "score": 31.0,
+      "source": "research/evals/results/20260627-acquisition-to-50-wave1.jsonl",
+      "stable_nonqwen_targets": 6,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-161",
+        "bigcodebench-hard-BigCodeBench-367",
+        "bigcodebench-hard-BigCodeBench-526",
+        "bigcodebench-hard-BigCodeBench-637",
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-206",
+        "bigcodebench-hard-BigCodeBench-265"
+      ],
+      "dropped_records": 1,
+      "exclusive_stable_nonqwen_targets": 3,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-113",
+        "bigcodebench-hard-BigCodeBench-266",
+        "bigcodebench-hard-BigCodeBench-7"
+      ],
+      "input_records": 6,
+      "merge_ready_records": 5,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-113",
+        "bigcodebench-hard-BigCodeBench-206",
+        "bigcodebench-hard-BigCodeBench-265",
+        "bigcodebench-hard-BigCodeBench-266",
+        "bigcodebench-hard-BigCodeBench-7"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-113",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-206",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-265",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-266",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-7",
+          "worker_count": 3
+        }
+      ],
+      "score": 21.0,
+      "source": "research/evals/results/20260628-nonqwen-specialist-rank1-screen.jsonl",
+      "stable_nonqwen_targets": 5,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-113",
+        "bigcodebench-hard-BigCodeBench-206",
+        "bigcodebench-hard-BigCodeBench-265",
+        "bigcodebench-hard-BigCodeBench-266",
+        "bigcodebench-hard-BigCodeBench-7"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 6,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-16",
+        "bigcodebench-hard-BigCodeBench-18",
+        "bigcodebench-hard-BigCodeBench-22",
+        "bigcodebench-hard-BigCodeBench-24",
+        "bigcodebench-hard-BigCodeBench-25",
+        "bigcodebench-hard-BigCodeBench-30"
+      ],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 6,
+      "merge_ready_records": 6,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-16",
+        "bigcodebench-hard-BigCodeBench-18",
+        "bigcodebench-hard-BigCodeBench-22",
+        "bigcodebench-hard-BigCodeBench-24",
+        "bigcodebench-hard-BigCodeBench-25",
+        "bigcodebench-hard-BigCodeBench-30"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-16",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-18",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-22",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-24",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-25",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-30",
+          "worker_count": 4
+        }
+      ],
+      "score": 18.0,
+      "source": "research/evals/results/20260628-normal-offset16-contrast-outcomes.jsonl",
+      "stable_nonqwen_targets": 6,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-16",
+        "bigcodebench-hard-BigCodeBench-18",
+        "bigcodebench-hard-BigCodeBench-22",
+        "bigcodebench-hard-BigCodeBench-24",
+        "bigcodebench-hard-BigCodeBench-25",
+        "bigcodebench-hard-BigCodeBench-30"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-184",
+        "bigcodebench-hard-BigCodeBench-99"
+      ],
+      "dropped_records": 1,
+      "exclusive_stable_nonqwen_targets": 2,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-129",
+        "bigcodebench-hard-BigCodeBench-92"
+      ],
+      "input_records": 6,
+      "merge_ready_records": 5,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-129",
+        "bigcodebench-hard-BigCodeBench-184",
+        "bigcodebench-hard-BigCodeBench-37",
+        "bigcodebench-hard-BigCodeBench-92",
+        "bigcodebench-hard-BigCodeBench-99"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-129",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-184",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-37",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-92",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-99",
+          "worker_count": 4
+        }
+      ],
+      "score": 17.0,
+      "source": "research/evals/results/20260627-expanded-profile-fresh-batch6.jsonl",
+      "stable_nonqwen_targets": 4,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-129",
+        "bigcodebench-hard-BigCodeBench-184",
+        "bigcodebench-hard-BigCodeBench-92",
+        "bigcodebench-hard-BigCodeBench-99"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "smoke-flatten-list",
+        "smoke-reverse-words"
+      ],
+      "dropped_records": 1,
+      "exclusive_stable_nonqwen_targets": 1,
+      "exclusive_stable_nonqwen_task_ids": [
+        "smoke-parse-kv"
+      ],
+      "input_records": 10,
+      "merge_ready_records": 9,
+      "merge_ready_task_ids": [
+        "smoke-add-numbers",
+        "smoke-flatten-list",
+        "smoke-normalize-records",
+        "smoke-parse-kv",
+        "smoke-reverse-words",
+        "smoke-safe-int",
+        "smoke-title-case",
+        "smoke-top-k-frequent",
+        "smoke-windowed"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "qwen3-4b-instruct",
+          "task_id": "smoke-add-numbers",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "lfm2.5-1.2b",
+          "task_id": "smoke-flatten-list",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "qwen3-1.7b",
+          "task_id": "smoke-normalize-records",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "lfm2.5-1.2b",
+          "task_id": "smoke-parse-kv",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "lfm2.5-1.2b",
+          "task_id": "smoke-reverse-words",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "qwen3-4b-instruct",
+          "task_id": "smoke-safe-int",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "qwen3-4b-instruct",
+          "task_id": "smoke-title-case",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "qwen3-4b-instruct",
+          "task_id": "smoke-top-k-frequent",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "qwen3-4b-instruct",
+          "task_id": "smoke-windowed",
+          "worker_count": 3
+        }
+      ],
+      "score": 17.0,
+      "source": "research/evals/results/20260627-m3-expanded-real-workers.jsonl",
+      "stable_nonqwen_targets": 3,
+      "stable_nonqwen_task_ids": [
+        "smoke-flatten-list",
+        "smoke-parse-kv",
+        "smoke-reverse-words"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 3,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1",
+        "bigcodebench-hard-BigCodeBench-14",
+        "bigcodebench-hard-BigCodeBench-4"
+      ],
+      "dropped_records": 2,
+      "exclusive_stable_nonqwen_targets": 1,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-7"
+      ],
+      "input_records": 6,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1",
+        "bigcodebench-hard-BigCodeBench-14",
+        "bigcodebench-hard-BigCodeBench-4",
+        "bigcodebench-hard-BigCodeBench-7"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-1",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-14",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-4",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-7",
+          "worker_count": 4
+        }
+      ],
+      "score": 14.0,
+      "source": "research/evals/results/20260628-fresh-acquisition-outcomes.jsonl",
+      "stable_nonqwen_targets": 4,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1",
+        "bigcodebench-hard-BigCodeBench-14",
+        "bigcodebench-hard-BigCodeBench-4",
+        "bigcodebench-hard-BigCodeBench-7"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 1,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1004"
+      ],
+      "dropped_records": 5,
+      "exclusive_stable_nonqwen_targets": 2,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1006",
+        "bigcodebench-hard-BigCodeBench-760"
+      ],
+      "input_records": 8,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1004",
+        "bigcodebench-hard-BigCodeBench-1006",
+        "bigcodebench-hard-BigCodeBench-760"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-1004",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-1006",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-760",
+          "worker_count": 3
+        }
+      ],
+      "score": 13.0,
+      "source": "research/evals/results/20260627-top4-hard-nonqwen-mining-8.jsonl",
+      "stable_nonqwen_targets": 3,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1004",
+        "bigcodebench-hard-BigCodeBench-1006",
+        "bigcodebench-hard-BigCodeBench-760"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 1,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-969"
+      ],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 2,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1013",
+        "bigcodebench-hard-BigCodeBench-1053"
+      ],
+      "input_records": 3,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1013",
+        "bigcodebench-hard-BigCodeBench-1053",
+        "bigcodebench-hard-BigCodeBench-969"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-1013",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-1053",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-969",
+          "worker_count": 4
+        }
+      ],
+      "score": 13.0,
+      "source": "research/evals/results/20260627-expanded-profile-wave4b.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1013",
+        "bigcodebench-hard-BigCodeBench-1053"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-118",
+        "bigcodebench-hard-BigCodeBench-98"
+      ],
+      "dropped_records": 2,
+      "exclusive_stable_nonqwen_targets": 1,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-192"
+      ],
+      "input_records": 6,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-118",
+        "bigcodebench-hard-BigCodeBench-176",
+        "bigcodebench-hard-BigCodeBench-192",
+        "bigcodebench-hard-BigCodeBench-98"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-118",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-176",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-192",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-98",
+          "worker_count": 4
+        }
+      ],
+      "score": 12.0,
+      "source": "research/evals/results/20260628-normal-offset156-guarded-outcomes.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-118",
+        "bigcodebench-hard-BigCodeBench-192"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 4,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-854",
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928",
+        "bigcodebench-hard-BigCodeBench-963"
+      ],
+      "dropped_records": 4,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 8,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-854",
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928",
+        "bigcodebench-hard-BigCodeBench-963"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-854",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-906",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-928",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-963",
+          "worker_count": 1
+        }
+      ],
+      "score": 12.0,
+      "source": "research/evals/results/20260627-qwen-offset99-mining-8.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 4,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-13",
+        "bigcodebench-hard-BigCodeBench-19",
+        "bigcodebench-hard-BigCodeBench-454",
+        "bigcodebench-hard-BigCodeBench-777"
+      ],
+      "dropped_records": 12,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 16,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-13",
+        "bigcodebench-hard-BigCodeBench-19",
+        "bigcodebench-hard-BigCodeBench-454",
+        "bigcodebench-hard-BigCodeBench-777"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-13",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-19",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-454",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-777",
+          "worker_count": 1
+        }
+      ],
+      "score": 12.0,
+      "source": "research/evals/results/20260627-qwen-positive-mining-16.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 4,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-671",
+        "bigcodebench-hard-BigCodeBench-672",
+        "bigcodebench-hard-BigCodeBench-673",
+        "bigcodebench-hard-BigCodeBench-675"
+      ],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 4,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-671",
+        "bigcodebench-hard-BigCodeBench-672",
+        "bigcodebench-hard-BigCodeBench-673",
+        "bigcodebench-hard-BigCodeBench-675"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-671",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-672",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-673",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-675",
+          "worker_count": 1
+        }
+      ],
+      "score": 12.0,
+      "source": "research/evals/results/20260628-capped-gate-offset596-qwen-screen.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 0,
+      "broad_pass_task_ids": [],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 2,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1004",
+        "bigcodebench-hard-BigCodeBench-1006"
+      ],
+      "input_records": 3,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1004",
+        "bigcodebench-hard-BigCodeBench-1006",
+        "bigcodebench-hard-BigCodeBench-760"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-1004",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-1006",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-760",
+          "worker_count": 4
+        }
+      ],
+      "score": 11.0,
+      "source": "research/evals/results/20260627-top4-hard-specialist-repeat-compare.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-1004",
+        "bigcodebench-hard-BigCodeBench-1006"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 3,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-113",
+        "bigcodebench-hard-BigCodeBench-206",
+        "bigcodebench-hard-BigCodeBench-265"
+      ],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 5,
+      "merge_ready_records": 5,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-113",
+        "bigcodebench-hard-BigCodeBench-206",
+        "bigcodebench-hard-BigCodeBench-265",
+        "bigcodebench-hard-BigCodeBench-266",
+        "bigcodebench-hard-BigCodeBench-7"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-113",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-206",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-265",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-266",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-7",
+          "worker_count": 4
+        }
+      ],
+      "score": 11.0,
+      "source": "research/evals/results/20260628-nonqwen-specialist-rank1-top4-positive.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 0,
+      "broad_pass_task_ids": [],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 2,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-310",
+        "bigcodebench-hard-BigCodeBench-592"
+      ],
+      "input_records": 2,
+      "merge_ready_records": 2,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-310",
+        "bigcodebench-hard-BigCodeBench-592"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-310",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-592",
+          "worker_count": 4
+        }
+      ],
+      "score": 10.0,
+      "source": "research/evals/results/20260627-kimi-candidate-repeat-compare.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-310",
+        "bigcodebench-hard-BigCodeBench-592"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 3,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-0",
+        "bigcodebench-hard-BigCodeBench-5",
+        "bigcodebench-hard-BigCodeBench-96"
+      ],
+      "dropped_records": 2,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 6,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-0",
+        "bigcodebench-hard-BigCodeBench-2",
+        "bigcodebench-hard-BigCodeBench-5",
+        "bigcodebench-hard-BigCodeBench-96"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-0",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-2",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-5",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-96",
+          "worker_count": 4
+        }
+      ],
+      "score": 10.0,
+      "source": "research/evals/results/20260628-normal-offset76-guarded-outcomes.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-5",
+        "bigcodebench-hard-BigCodeBench-96"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 3,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-990",
+        "bigcodebench-hard-BigCodeBench-998",
+        "bigcodebench-hard-BigCodeBench-999"
+      ],
+      "dropped_records": 2,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 5,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-990",
+        "bigcodebench-hard-BigCodeBench-998",
+        "bigcodebench-hard-BigCodeBench-999"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-990",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-998",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-999",
+          "worker_count": 1
+        }
+      ],
+      "score": 9.0,
+      "source": "research/evals/results/20260627-qwen-offset125-mining-5.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 3,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-123",
+        "bigcodebench-hard-BigCodeBench-308",
+        "bigcodebench-hard-BigCodeBench-678"
+      ],
+      "dropped_records": 5,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 8,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-123",
+        "bigcodebench-hard-BigCodeBench-308",
+        "bigcodebench-hard-BigCodeBench-678"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-123",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-308",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-678",
+          "worker_count": 1
+        }
+      ],
+      "score": 9.0,
+      "source": "research/evals/results/20260627-top4-fresh-qwen-mining-8.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 1,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-260"
+      ],
+      "dropped_records": 4,
+      "exclusive_stable_nonqwen_targets": 1,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-15"
+      ],
+      "input_records": 6,
+      "merge_ready_records": 2,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-15",
+        "bigcodebench-hard-BigCodeBench-260"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+          "task_id": "bigcodebench-hard-BigCodeBench-15",
+          "worker_count": 3
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-260",
+          "worker_count": 3
+        }
+      ],
+      "score": 8.0,
+      "source": "research/evals/results/20260628-nonqwen-pressure-top3-screen.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-15",
+        "bigcodebench-hard-BigCodeBench-260"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-19",
+        "bigcodebench-hard-BigCodeBench-777"
+      ],
+      "dropped_records": 0,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 4,
+      "merge_ready_records": 4,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-13",
+        "bigcodebench-hard-BigCodeBench-19",
+        "bigcodebench-hard-BigCodeBench-454",
+        "bigcodebench-hard-BigCodeBench-777"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-13",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-19",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-454",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-777",
+          "worker_count": 4
+        }
+      ],
+      "score": 8.0,
+      "source": "research/evals/results/20260627-cloud-positive-compare-4.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-0",
+        "bigcodebench-hard-BigCodeBench-5"
+      ],
+      "dropped_records": 1,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 4,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-0",
+        "bigcodebench-hard-BigCodeBench-2",
+        "bigcodebench-hard-BigCodeBench-5"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-0",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-2",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-glm-5.2",
+          "task_id": "bigcodebench-hard-BigCodeBench-5",
+          "worker_count": 4
+        }
+      ],
+      "score": 7.0,
+      "source": "research/evals/results/20260628-contrast-aware-top4-repeat.jsonl",
+      "stable_nonqwen_targets": 1,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-5"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-172",
+        "bigcodebench-hard-BigCodeBench-205"
+      ],
+      "dropped_records": 3,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 6,
+      "merge_ready_records": 3,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-172",
+        "bigcodebench-hard-BigCodeBench-178",
+        "bigcodebench-hard-BigCodeBench-205"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-172",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 2,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-178",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-205",
+          "worker_count": 4
+        }
+      ],
+      "score": 7.0,
+      "source": "research/evals/results/20260628-normal-offset236-boundary-outcomes.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 1,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-532"
+      ],
+      "dropped_records": 1,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 6,
+      "merge_ready_records": 5,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-502",
+        "bigcodebench-hard-BigCodeBench-530",
+        "bigcodebench-hard-BigCodeBench-532",
+        "bigcodebench-hard-BigCodeBench-574",
+        "bigcodebench-hard-BigCodeBench-618"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-502",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-530",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 4,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-532",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-574",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-618",
+          "worker_count": 4
+        }
+      ],
+      "score": 7.0,
+      "source": "research/evals/results/20260627-expanded-profile-wave3.jsonl",
+      "stable_nonqwen_targets": 0,
+      "stable_nonqwen_task_ids": []
+    },
+    {
+      "broad_pass_latency_rows": 0,
+      "broad_pass_task_ids": [],
+      "dropped_records": 4,
+      "exclusive_stable_nonqwen_targets": 1,
+      "exclusive_stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-865"
+      ],
+      "input_records": 6,
+      "merge_ready_records": 2,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-826",
+        "bigcodebench-hard-BigCodeBench-865"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": false,
+          "stable_worker_count": 3,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+          "task_id": "bigcodebench-hard-BigCodeBench-826",
+          "worker_count": 4
+        },
+        {
+          "broad_pass_latency_row": false,
+          "exclusive_stable_nonqwen_target": true,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-865",
+          "worker_count": 4
+        }
+      ],
+      "score": 6.0,
+      "source": "research/evals/results/20260628-next-profile-fallback-opportunity-screen1.jsonl",
+      "stable_nonqwen_targets": 1,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-865"
+      ]
+    },
+    {
+      "broad_pass_latency_rows": 2,
+      "broad_pass_task_ids": [
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928"
+      ],
+      "dropped_records": 6,
+      "exclusive_stable_nonqwen_targets": 0,
+      "exclusive_stable_nonqwen_task_ids": [],
+      "input_records": 8,
+      "merge_ready_records": 2,
+      "merge_ready_task_ids": [
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928"
+      ],
+      "rows": [
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-906",
+          "worker_count": 1
+        },
+        {
+          "broad_pass_latency_row": true,
+          "exclusive_stable_nonqwen_target": false,
+          "stable_nonqwen_target": true,
+          "stable_worker_count": 1,
+          "target_pass_rate": 1.0,
+          "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+          "task_id": "bigcodebench-hard-BigCodeBench-928",
+          "worker_count": 1
+        }
+      ],
+      "score": 6.0,
+      "source": "research/evals/results/20260627-kimi-offset99-mining-8.jsonl",
+      "stable_nonqwen_targets": 2,
+      "stable_nonqwen_task_ids": [
+        "bigcodebench-hard-BigCodeBench-906",
+        "bigcodebench-hard-BigCodeBench-928"
+      ]
+    }
+  ],
+  "schema_version": "mempool.stable_outcome_sources.v1",
+  "skipped": [],
+  "source_count": 90,
+  "temperature": 0.25
+}

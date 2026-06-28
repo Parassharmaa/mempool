@@ -1,0 +1,3270 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "candidate_count": 66,
+  "excluded_count": 52,
+  "excluded_outcome_dirs": [],
+  "excluded_outcomes": [],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-25task-qwen-fail-contrast-routing.jsonl"
+  ],
+  "false_negative_seed_ids": [
+    "bigcodebench-hard-BigCodeBench-1006",
+    "bigcodebench-hard-BigCodeBench-129"
+  ],
+  "false_positive_seed_ids": [
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-955",
+    "bigcodebench-hard-BigCodeBench-963"
+  ],
+  "ranked_candidates": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.2678,
+      "false_positive_similarity": 11.171,
+      "first_second_margin": 0.11431882277691702,
+      "libraries": [
+        "shutil",
+        "random",
+        "os",
+        "csv",
+        "datetime"
+      ],
+      "plausibility_score": 3.6603,
+      "score": 32.3335,
+      "second_probability": 0.2619283670021024,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-594",
+      "top_probability": 0.37624718977901944,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 0.9462,
+      "false_positive_similarity": 8.5434,
+      "first_second_margin": 0.12234051268583368,
+      "libraries": [
+        "math",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.223,
+      "score": 28.1782,
+      "second_probability": 0.2633437609688563,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-399",
+      "top_probability": 0.38568427365469,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 0.6737,
+      "false_positive_similarity": 7.5894,
+      "first_second_margin": 0.015699979210759607,
+      "libraries": [
+        "unicodedata",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 4.601,
+      "score": 26.8331,
+      "second_probability": 0.29385796192073266,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-579",
+      "top_probability": 0.30955794113149226,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3586,
+      "false_positive_similarity": 8.2743,
+      "first_second_margin": 0.012915698086063077,
+      "libraries": [
+        "json",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.7523,
+      "score": 25.8008,
+      "second_probability": 0.2813627424808537,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-287",
+      "top_probability": 0.29427844056691677,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3518,
+      "false_positive_similarity": 8.2675,
+      "first_second_margin": 0.12614617569489844,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "score": 25.5573,
+      "second_probability": 0.2573268271625608,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-800",
+      "top_probability": 0.3834730028574592,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9859,
+      "false_positive_similarity": 8.4593,
+      "first_second_margin": 0.10468794148436134,
+      "libraries": [
+        "pandas",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.9017,
+      "score": 25.3876,
+      "second_probability": 0.2577914949797805,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-528",
+      "top_probability": 0.3624794364641418,
+      "top_worker": "ollama-cloud-deepseek-v4-pro"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.4112,
+      "false_positive_similarity": 7.9008,
+      "first_second_margin": 0.14472105118743117,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 6.6487,
+      "score": 25.1694,
+      "second_probability": 0.27401840931468846,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-582",
+      "top_probability": 0.41873946050211963,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3497,
+      "false_positive_similarity": 7.8393,
+      "first_second_margin": 0.07655225490760525,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 7.2643,
+      "score": 25.1518,
+      "second_probability": 0.2833665080255797,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-915",
+      "top_probability": 0.359918762933185,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3351,
+      "false_positive_similarity": 7.8247,
+      "first_second_margin": 0.0698697048638095,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 7.41,
+      "score": 25.1288,
+      "second_probability": 0.2862203575522008,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-443",
+      "top_probability": 0.3560900624160103,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3704,
+      "false_positive_similarity": 7.86,
+      "first_second_margin": 0.12460215765580773,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 7.0567,
+      "score": 25.1076,
+      "second_probability": 0.292044930713197,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-239",
+      "top_probability": 0.4166470883690047,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3333,
+      "false_positive_similarity": 8.2734,
+      "first_second_margin": 0.1304283428858814,
+      "libraries": [
+        "shutil",
+        "datetime",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 3.005,
+      "score": 25.0758,
+      "second_probability": 0.2515760271945911,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-313",
+      "top_probability": 0.3820043700804725,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3594,
+      "false_positive_similarity": 8.2626,
+      "first_second_margin": 0.14169247386773948,
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 2.744,
+      "score": 25.0078,
+      "second_probability": 0.24498938173265528,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-826",
+      "top_probability": 0.38668185560039475,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.1611,
+      "false_positive_similarity": 7.6507,
+      "first_second_margin": 0.09108559840548802,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "random",
+        "cv2"
+      ],
+      "plausibility_score": 9.1497,
+      "score": 24.6514,
+      "second_probability": 0.2657621134098977,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-214",
+      "top_probability": 0.3568477118153857,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3591,
+      "false_positive_similarity": 8.2623,
+      "first_second_margin": 0.22909548099089422,
+      "libraries": [
+        "csv",
+        "datetime",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 2.747,
+      "score": 24.3323,
+      "second_probability": 0.22321482274119508,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-720",
+      "top_probability": 0.4523103037320893,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.2838,
+      "false_positive_similarity": 8.2098,
+      "first_second_margin": 0.2178475316892025,
+      "libraries": [
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 3.5003,
+      "score": 23.7348,
+      "second_probability": 0.21647680339864017,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-988",
+      "top_probability": 0.4343243350878427,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.292,
+      "false_positive_similarity": 8.218,
+      "first_second_margin": 0.2281538530560733,
+      "libraries": [
+        "glob",
+        "warnings",
+        "time",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 3.4183,
+      "score": 23.7347,
+      "second_probability": 0.21854462676099898,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-857",
+      "top_probability": 0.4466984798170723,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9152,
+      "false_positive_similarity": 8.413,
+      "first_second_margin": 0.1984056898090179,
+      "libraries": [
+        "pytz",
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 6.609,
+      "score": 23.5965,
+      "second_probability": 0.24618758661377071,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-199",
+      "top_probability": 0.4445932764227886,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3804,
+      "false_positive_similarity": 7.87,
+      "first_second_margin": 0.1439899959010289,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 6.9567,
+      "score": 22.0938,
+      "second_probability": 0.26139377719309864,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-942",
+      "top_probability": 0.40538377309412754,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.4112,
+      "false_positive_similarity": 7.9008,
+      "first_second_margin": 0.15603249515220802,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 6.6487,
+      "score": 21.1468,
+      "second_probability": 0.2534470311008543,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-636",
+      "top_probability": 0.40947952625306233,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3681,
+      "false_positive_similarity": 7.8577,
+      "first_second_margin": 0.19904032599397595,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 7.08,
+      "score": 20.9529,
+      "second_probability": 0.24447190229234186,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-208",
+      "top_probability": 0.4435122282863178,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3386,
+      "false_positive_similarity": 6.8282,
+      "first_second_margin": 0.1909964262865937,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 7.3753,
+      "score": 20.8952,
+      "second_probability": 0.25088248958616594,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-241",
+      "top_probability": 0.4418789158727596,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.2612,
+      "false_positive_similarity": 7.7508,
+      "first_second_margin": 0.31231543328461886,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 8.1493,
+      "score": 20.459,
+      "second_probability": 0.222599958590294,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-513",
+      "top_probability": 0.5349153918749129,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8934,
+      "false_positive_similarity": 7.3194,
+      "first_second_margin": 0.057578300573981334,
+      "libraries": [
+        "subprocess",
+        "glob",
+        "os"
+      ],
+      "plausibility_score": 2.4043,
+      "score": 19.8294,
+      "second_probability": 0.29154453456826535,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-785",
+      "top_probability": 0.3491228351422467,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8334,
+      "false_positive_similarity": 7.2594,
+      "first_second_margin": 0.04405949481649751,
+      "libraries": [
+        "csv",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 3.004,
+      "score": 19.7065,
+      "second_probability": 0.31424104966079286,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-771",
+      "top_probability": 0.3583005444772904,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.3662,
+      "false_positive_similarity": 6.6316,
+      "first_second_margin": 0.1677732647158913,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 4.4227,
+      "score": 19.472,
+      "second_probability": 0.24294097590390815,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-492",
+      "top_probability": 0.41071424061979944,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.381,
+      "false_positive_similarity": 6.6168,
+      "first_second_margin": 0.21385555802801953,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 4.5707,
+      "score": 19.3133,
+      "second_probability": 0.2383464999063794,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-952",
+      "top_probability": 0.45220205793439894,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.3643,
+      "false_positive_similarity": 6.6335,
+      "first_second_margin": 0.30991500486542745,
+      "libraries": [
+        "pandas",
+        "re",
+        "json"
+      ],
+      "plausibility_score": 4.4037,
+      "score": 19.1963,
+      "second_probability": 0.19427128437427368,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-458",
+      "top_probability": 0.5041862892397011,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 3.7024,
+      "false_positive_similarity": 7.192,
+      "first_second_margin": 0.23763273117645264,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 8.7373,
+      "score": 18.9614,
+      "second_probability": 0.24154213125370314,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-914",
+      "top_probability": 0.4791748624301558,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3046,
+      "false_positive_similarity": 6.7942,
+      "first_second_margin": 0.11763206956498051,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "os"
+      ],
+      "plausibility_score": 7.715,
+      "score": 18.957,
+      "second_probability": 0.27255905845137013,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-360",
+      "top_probability": 0.39019112801635064,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.4336,
+      "false_positive_similarity": 6.0642,
+      "first_second_margin": 0.06614420818063155,
+      "libraries": [
+        "difflib",
+        "pandas",
+        "csv"
+      ],
+      "plausibility_score": 5.0973,
+      "score": 18.8717,
+      "second_probability": 0.28849088109170423,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-509",
+      "top_probability": 0.3546350892723358,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.449,
+      "false_positive_similarity": 6.4468,
+      "first_second_margin": 0.233436815712983,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 6.271,
+      "score": 18.611,
+      "second_probability": 0.24011818883523764,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-120",
+      "top_probability": 0.47355500454822064,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8859,
+      "false_positive_similarity": 7.3119,
+      "first_second_margin": 0.175071383920499,
+      "libraries": [
+        "shutil",
+        "pathlib",
+        "os"
+      ],
+      "plausibility_score": 2.4793,
+      "score": 18.5756,
+      "second_probability": 0.23898075791000464,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-765",
+      "top_probability": 0.41405214183050365,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8653,
+      "false_positive_similarity": 7.2913,
+      "first_second_margin": 0.17984868238292123,
+      "libraries": [
+        "glob",
+        "subprocess",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 2.685,
+      "score": 18.5147,
+      "second_probability": 0.2605177340243326,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-326",
+      "top_probability": 0.4403664164072538,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.5828,
+      "false_positive_similarity": 6.0229,
+      "first_second_margin": 0.2052087965782518,
+      "libraries": [
+        "math",
+        "pandas",
+        "os",
+        "json"
+      ],
+      "plausibility_score": 5.51,
+      "score": 17.3,
+      "second_probability": 0.22161040661360631,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-985",
+      "top_probability": 0.4268192031918581,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9422,
+      "false_positive_similarity": 6.0556,
+      "first_second_margin": 0.16286022016001964,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.1833,
+      "score": 16.6396,
+      "second_probability": 0.23894220688879295,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-560",
+      "top_probability": 0.4018024270488126,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 1.6833,
+      "false_positive_similarity": 5.1152,
+      "first_second_margin": 0.2457780436600502,
+      "libraries": [
+        "random",
+        "matplotlib",
+        "time"
+      ],
+      "plausibility_score": 4.5047,
+      "score": 16.4456,
+      "second_probability": 0.23528994300250292,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-124",
+      "top_probability": 0.4810679866625531,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9864,
+      "false_positive_similarity": 5.9842,
+      "first_second_margin": 0.18854341766919602,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "numpy"
+      ],
+      "plausibility_score": 5.8973,
+      "score": 16.2942,
+      "second_probability": 0.24041624161276143,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-486",
+      "top_probability": 0.42895965928195745,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 3.6745,
+      "false_positive_similarity": 6.1641,
+      "first_second_margin": 0.19176121922624476,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 9.0163,
+      "score": 15.9834,
+      "second_probability": 0.2440153233196576,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-93",
+      "top_probability": 0.43577654254590237,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9685,
+      "false_positive_similarity": 5.5293,
+      "first_second_margin": 0.17255133747876972,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "os"
+      ],
+      "plausibility_score": 5.4463,
+      "score": 15.0019,
+      "second_probability": 0.24713242351592568,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-409",
+      "top_probability": 0.4196837609946954,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 5.5057,
+      "false_positive_similarity": 5.9317,
+      "first_second_margin": 0.15265245631951857,
+      "libraries": [
+        "regex",
+        "openpyxl",
+        "glob",
+        "os"
+      ],
+      "plausibility_score": 6.281,
+      "score": 14.67,
+      "second_probability": 0.2766354250163516,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-374",
+      "top_probability": 0.42928788133587015,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "false_negative_similarity": 1.9002,
+      "false_positive_similarity": 4.8898,
+      "first_second_margin": 0.037721207429132375,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 11.7587,
+      "score": 14.1059,
+      "second_probability": 0.29927942553057046,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-267",
+      "top_probability": 0.33700063295970284,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 2.1928,
+      "false_positive_similarity": 4.6085,
+      "first_second_margin": 0.15663731675413622,
+      "libraries": [
+        "sklearn",
+        "numpy",
+        "cv2",
+        "os"
+      ],
+      "plausibility_score": 9.4097,
+      "score": 13.349,
+      "second_probability": 0.24275964512910142,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-424",
+      "top_probability": 0.39939696188323764,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3497,
+      "false_positive_similarity": 4.8393,
+      "first_second_margin": 0.1551581568647611,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 7.2637,
+      "score": 11.9948,
+      "second_probability": 0.24443408106012454,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-916",
+      "top_probability": 0.39959223792488563,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3589,
+      "false_positive_similarity": 4.8485,
+      "first_second_margin": 0.22108090350227652,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 7.1723,
+      "score": 11.8858,
+      "second_probability": 0.2167835550933229,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-341",
+      "top_probability": 0.4378644585955994,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8297,
+      "false_positive_similarity": 4.2557,
+      "first_second_margin": 0.0672128331819235,
+      "libraries": [
+        "subprocess",
+        "time",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 3.0407,
+      "score": 10.651,
+      "second_probability": 0.3276881164643548,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-346",
+      "top_probability": 0.3949009496462783,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8114,
+      "false_positive_similarity": 4.2374,
+      "first_second_margin": 0.0446364006656203,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 3.224,
+      "score": 10.6503,
+      "second_probability": 0.3314637123510748,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "top_probability": 0.3761001130166951,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 0.9919,
+      "false_positive_similarity": 2.9897,
+      "first_second_margin": 0.2665686815469904,
+      "libraries": [
+        "pytz",
+        "datetime",
+        "numpy"
+      ],
+      "plausibility_score": 5.8417,
+      "score": 10.152,
+      "second_probability": 0.21911262684743849,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1077",
+      "top_probability": 0.4856813083944289,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 1.0385,
+      "false_positive_similarity": 2.9786,
+      "first_second_margin": 0.28559560693230135,
+      "libraries": [
+        "nltk",
+        "re",
+        "sklearn"
+      ],
+      "plausibility_score": 5.9533,
+      "score": 10.0284,
+      "second_probability": 0.22532298282146468,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-655",
+      "top_probability": 0.510918589753766,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 4.7404,
+      "false_positive_similarity": 4.6664,
+      "first_second_margin": 0.14670227297637978,
+      "libraries": [
+        "pathlib",
+        "requests",
+        "zipfile"
+      ],
+      "plausibility_score": 8.9343,
+      "score": 10.0186,
+      "second_probability": 0.26781566998556733,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1012",
+      "top_probability": 0.4145179429619471,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "false_negative_similarity": -0.1924,
+      "false_positive_similarity": 2.7972,
+      "first_second_margin": 0.057859525122323396,
+      "libraries": [
+        "matplotlib",
+        "re",
+        "wordcloud"
+      ],
+      "plausibility_score": 12.6853,
+      "score": 9.334,
+      "second_probability": 0.28266492889441225,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-34",
+      "top_probability": 0.34052445401673564,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 5.489,
+      "false_positive_similarity": 3.9868,
+      "first_second_margin": 0.1342162935974,
+      "libraries": [
+        "re",
+        "bs4",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 5.8713,
+      "score": 8.4093,
+      "second_probability": 0.26687887752950906,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1137",
+      "top_probability": 0.40109517112690907,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9657,
+      "false_positive_similarity": 2.9635,
+      "first_second_margin": 0.31897491708714776,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "itertools"
+      ],
+      "plausibility_score": 6.1037,
+      "score": 6.9817,
+      "second_probability": 0.2062314292223505,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1057",
+      "top_probability": 0.5252063463094983,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 3.6112,
+      "false_positive_similarity": 3.109,
+      "first_second_margin": 0.32290148052871315,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "scipy",
+        "sklearn"
+      ],
+      "plausibility_score": 9.649,
+      "score": 6.5875,
+      "second_probability": 0.20402380457455796,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-865",
+      "top_probability": 0.5269252851032711,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 7.6532,
+      "false_positive_similarity": 4.5792,
+      "first_second_margin": 0.1531645829686858,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "plausibility_score": 9.806,
+      "score": 5.7878,
+      "second_probability": 0.2860895491373078,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-211",
+      "top_probability": 0.43925413210599357,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 3.9306,
+      "false_positive_similarity": 1.3707,
+      "first_second_margin": 0.11979294963005038,
+      "libraries": [
+        "subprocess",
+        "threading",
+        "time"
+      ],
+      "plausibility_score": 2.0323,
+      "score": 4.8402,
+      "second_probability": 0.2748661085206617,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-324",
+      "top_probability": 0.39465905815071206,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 2.3581,
+      "false_positive_similarity": 2.2841,
+      "first_second_margin": 0.20205794614797204,
+      "libraries": [
+        "tarfile",
+        "urllib",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 7.7573,
+      "score": 4.7022,
+      "second_probability": 0.22705450279906772,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-998",
+      "top_probability": 0.42911244894703976,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": -0.106,
+      "false_positive_similarity": -0.1659,
+      "first_second_margin": 0.02451011126521363,
+      "libraries": [
+        "threading",
+        "socket",
+        "ipaddress"
+      ],
+      "plausibility_score": 2.398,
+      "score": 4.4394,
+      "second_probability": 0.2756980660414365,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-147",
+      "top_probability": 0.3002081773066501,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 1.5512,
+      "false_positive_similarity": 1.5246,
+      "first_second_margin": 0.020334249220377687,
+      "libraries": [
+        "http",
+        "cgi",
+        "smtplib",
+        "json",
+        "email"
+      ],
+      "plausibility_score": 10.249,
+      "score": 3.9695,
+      "second_probability": 0.3373305873536207,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-274",
+      "top_probability": 0.3576648365739984,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 1.5977,
+      "false_positive_similarity": 1.5711,
+      "first_second_margin": 0.09634214026735888,
+      "libraries": [
+        "http",
+        "cgi",
+        "json"
+      ],
+      "plausibility_score": 9.7843,
+      "score": 3.9336,
+      "second_probability": 0.2791881770189351,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-273",
+      "top_probability": 0.375530317286294,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 5,
+      "false_negative_similarity": 5.521,
+      "false_positive_similarity": 2.5188,
+      "first_second_margin": 0.07264262043761277,
+      "libraries": [
+        "pandas",
+        "lxml",
+        "urllib"
+      ],
+      "plausibility_score": 10.551,
+      "score": 3.8626,
+      "second_probability": 0.2910258107883358,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1003",
+      "top_probability": 0.36366843122594855,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 3.7541,
+      "false_positive_similarity": 2.1801,
+      "first_second_margin": 0.15767293625836692,
+      "libraries": [
+        "hashlib",
+        "os",
+        "ssl"
+      ],
+      "plausibility_score": 8.797,
+      "score": 3.031,
+      "second_probability": 0.2780384946442992,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1039",
+      "top_probability": 0.4357114309026661,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 4.6871,
+      "false_positive_similarity": 1.6708,
+      "first_second_margin": 0.26003094203703814,
+      "libraries": [
+        "csv",
+        "urllib",
+        "bs4",
+        "os"
+      ],
+      "plausibility_score": 8.8897,
+      "score": 1.8608,
+      "second_probability": 0.20813185435269857,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-723",
+      "top_probability": 0.4681627963897367,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 1.7457,
+      "false_positive_similarity": -0.8142,
+      "first_second_margin": 0.04170261040818746,
+      "libraries": [
+        "psutil",
+        "subprocess",
+        "time"
+      ],
+      "plausibility_score": 3.881,
+      "score": 0.0342,
+      "second_probability": 0.308440990565313,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-17",
+      "top_probability": 0.35014360097350045,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 4.6992,
+      "false_positive_similarity": 1.6393,
+      "first_second_margin": 0.21344318426040035,
+      "libraries": [
+        "os",
+        "datetime",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 9.346,
+      "score": -0.1755,
+      "second_probability": 0.23818316799793163,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1129",
+      "top_probability": 0.451626352258332,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "false_negative_similarity": 7.7957,
+      "false_positive_similarity": 1.7935,
+      "first_second_margin": 0.034047591254094844,
+      "libraries": [
+        "sqlite3",
+        "pandas",
+        "lxml",
+        "requests"
+      ],
+      "plausibility_score": 12.8037,
+      "score": -2.6234,
+      "second_probability": 0.35856258356744447,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015",
+      "top_probability": 0.3926101748215393,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 2.3077,
+      "false_positive_similarity": -2.1945,
+      "first_second_margin": 0.05220963839407111,
+      "libraries": [
+        "email",
+        "smtplib",
+        "getpass"
+      ],
+      "plausibility_score": 7.6837,
+      "score": -5.8797,
+      "second_probability": 0.28770502452400815,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1042",
+      "top_probability": 0.33991466291807926,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "false_negative_similarity": 7.7957,
+      "false_positive_similarity": 1.7935,
+      "first_second_margin": 0.034047591254094844,
+      "libraries": [
+        "sqlite3",
+        "pandas",
+        "lxml",
+        "requests"
+      ],
+      "plausibility_score": 12.8037,
+      "score": 21.3854,
+      "second_probability": 0.35856258356744447,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015",
+      "top_probability": 0.3926101748215393,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8297,
+      "false_positive_similarity": 4.2557,
+      "first_second_margin": 0.0672128331819235,
+      "libraries": [
+        "subprocess",
+        "time",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 3.0407,
+      "score": 20.947,
+      "second_probability": 0.3276881164643548,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-346",
+      "top_probability": 0.3949009496462783,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8114,
+      "false_positive_similarity": 4.2374,
+      "first_second_margin": 0.0446364006656203,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 3.224,
+      "score": 20.9463,
+      "second_probability": 0.3314637123510748,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "top_probability": 0.3761001130166951,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8934,
+      "false_positive_similarity": 7.3194,
+      "first_second_margin": 0.057578300573981334,
+      "libraries": [
+        "subprocess",
+        "glob",
+        "os"
+      ],
+      "plausibility_score": 2.4043,
+      "score": 18.1254,
+      "second_probability": 0.29154453456826535,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-785",
+      "top_probability": 0.3491228351422467,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 7.6532,
+      "false_positive_similarity": 4.5792,
+      "first_second_margin": 0.1531645829686858,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "plausibility_score": 9.806,
+      "score": 18.0838,
+      "second_probability": 0.2860895491373078,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-211",
+      "top_probability": 0.43925413210599357,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8334,
+      "false_positive_similarity": 7.2594,
+      "first_second_margin": 0.04405949481649751,
+      "libraries": [
+        "csv",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 3.004,
+      "score": 18.0025,
+      "second_probability": 0.31424104966079286,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-771",
+      "top_probability": 0.3583005444772904,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8859,
+      "false_positive_similarity": 7.3119,
+      "first_second_margin": 0.175071383920499,
+      "libraries": [
+        "shutil",
+        "pathlib",
+        "os"
+      ],
+      "plausibility_score": 2.4793,
+      "score": 16.8716,
+      "second_probability": 0.23898075791000464,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-765",
+      "top_probability": 0.41405214183050365,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8653,
+      "false_positive_similarity": 7.2913,
+      "first_second_margin": 0.17984868238292123,
+      "libraries": [
+        "glob",
+        "subprocess",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 2.685,
+      "score": 16.8107,
+      "second_probability": 0.2605177340243326,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-326",
+      "top_probability": 0.4403664164072538,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 5,
+      "false_negative_similarity": 5.521,
+      "false_positive_similarity": 2.5188,
+      "first_second_margin": 0.07264262043761277,
+      "libraries": [
+        "pandas",
+        "lxml",
+        "urllib"
+      ],
+      "plausibility_score": 10.551,
+      "score": 15.8714,
+      "second_probability": 0.2910258107883358,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1003",
+      "top_probability": 0.36366843122594855,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 3.9306,
+      "false_positive_similarity": 1.3707,
+      "first_second_margin": 0.11979294963005038,
+      "libraries": [
+        "subprocess",
+        "threading",
+        "time"
+      ],
+      "plausibility_score": 2.0323,
+      "score": 15.0798,
+      "second_probability": 0.2748661085206617,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-324",
+      "top_probability": 0.39465905815071206,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 5.489,
+      "false_positive_similarity": 3.9868,
+      "first_second_margin": 0.1342162935974,
+      "libraries": [
+        "re",
+        "bs4",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 5.8713,
+      "score": 14.4181,
+      "second_probability": 0.26687887752950906,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1137",
+      "top_probability": 0.40109517112690907,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 4.6871,
+      "false_positive_similarity": 1.6708,
+      "first_second_margin": 0.26003094203703814,
+      "libraries": [
+        "csv",
+        "urllib",
+        "bs4",
+        "os"
+      ],
+      "plausibility_score": 8.8897,
+      "score": 13.926,
+      "second_probability": 0.20813185435269857,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-723",
+      "top_probability": 0.4681627963897367,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 5.5057,
+      "false_positive_similarity": 5.9317,
+      "first_second_margin": 0.15265245631951857,
+      "libraries": [
+        "regex",
+        "openpyxl",
+        "glob",
+        "os"
+      ],
+      "plausibility_score": 6.281,
+      "score": 12.966,
+      "second_probability": 0.2766354250163516,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-374",
+      "top_probability": 0.42928788133587015,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 2.3077,
+      "false_positive_similarity": -2.1945,
+      "first_second_margin": 0.05220963839407111,
+      "libraries": [
+        "email",
+        "smtplib",
+        "getpass"
+      ],
+      "plausibility_score": 7.6837,
+      "score": 12.1291,
+      "second_probability": 0.28770502452400815,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1042",
+      "top_probability": 0.33991466291807926,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 4.6992,
+      "false_positive_similarity": 1.6393,
+      "first_second_margin": 0.21344318426040035,
+      "libraries": [
+        "os",
+        "datetime",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 9.346,
+      "score": 12.0641,
+      "second_probability": 0.23818316799793163,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1129",
+      "top_probability": 0.451626352258332,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9657,
+      "false_positive_similarity": 2.9635,
+      "first_second_margin": 0.31897491708714776,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "itertools"
+      ],
+      "plausibility_score": 6.1037,
+      "score": 10.9905,
+      "second_probability": 0.2062314292223505,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1057",
+      "top_probability": 0.5252063463094983,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 4.7404,
+      "false_positive_similarity": 4.6664,
+      "first_second_margin": 0.14670227297637978,
+      "libraries": [
+        "pathlib",
+        "requests",
+        "zipfile"
+      ],
+      "plausibility_score": 8.9343,
+      "score": 10.3146,
+      "second_probability": 0.26781566998556733,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1012",
+      "top_probability": 0.4145179429619471,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 1.7457,
+      "false_positive_similarity": -0.8142,
+      "first_second_margin": 0.04170261040818746,
+      "libraries": [
+        "psutil",
+        "subprocess",
+        "time"
+      ],
+      "plausibility_score": 3.881,
+      "score": 10.2738,
+      "second_probability": 0.308440990565313,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-17",
+      "top_probability": 0.35014360097350045,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3586,
+      "false_positive_similarity": 8.2743,
+      "first_second_margin": 0.012915698086063077,
+      "libraries": [
+        "json",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.7523,
+      "score": 10.138,
+      "second_probability": 0.2813627424808537,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-287",
+      "top_probability": 0.29427844056691677,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3497,
+      "false_positive_similarity": 4.8393,
+      "first_second_margin": 0.1551581568647611,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 7.2637,
+      "score": 10.0364,
+      "second_probability": 0.24443408106012454,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-916",
+      "top_probability": 0.39959223792488563,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3589,
+      "false_positive_similarity": 4.8485,
+      "first_second_margin": 0.22108090350227652,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 7.1723,
+      "score": 9.9274,
+      "second_probability": 0.2167835550933229,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-341",
+      "top_probability": 0.4378644585955994,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3518,
+      "false_positive_similarity": 8.2675,
+      "first_second_margin": 0.12614617569489844,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "score": 9.8945,
+      "second_probability": 0.2573268271625608,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-800",
+      "top_probability": 0.3834730028574592,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3594,
+      "false_positive_similarity": 8.2626,
+      "first_second_margin": 0.14169247386773948,
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 2.744,
+      "score": 9.395,
+      "second_probability": 0.24498938173265528,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-826",
+      "top_probability": 0.38668185560039475,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 3.7541,
+      "false_positive_similarity": 2.1801,
+      "first_second_margin": 0.15767293625836692,
+      "libraries": [
+        "hashlib",
+        "os",
+        "ssl"
+      ],
+      "plausibility_score": 8.797,
+      "score": 9.327,
+      "second_probability": 0.2780384946442992,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1039",
+      "top_probability": 0.4357114309026661,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3333,
+      "false_positive_similarity": 8.2734,
+      "first_second_margin": 0.1304283428858814,
+      "libraries": [
+        "shutil",
+        "datetime",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 3.005,
+      "score": 9.3154,
+      "second_probability": 0.2515760271945911,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-313",
+      "top_probability": 0.3820043700804725,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3046,
+      "false_positive_similarity": 6.7942,
+      "first_second_margin": 0.11763206956498051,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "os"
+      ],
+      "plausibility_score": 7.715,
+      "score": 8.9986,
+      "second_probability": 0.27255905845137013,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-360",
+      "top_probability": 0.39019112801635064,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9685,
+      "false_positive_similarity": 5.5293,
+      "first_second_margin": 0.17255133747876972,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "os"
+      ],
+      "plausibility_score": 5.4463,
+      "score": 8.7589,
+      "second_probability": 0.24713242351592568,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-409",
+      "top_probability": 0.4196837609946954,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.3591,
+      "false_positive_similarity": 8.2623,
+      "first_second_margin": 0.22909548099089422,
+      "libraries": [
+        "csv",
+        "datetime",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 2.747,
+      "score": 8.7195,
+      "second_probability": 0.22321482274119508,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-720",
+      "top_probability": 0.4523103037320893,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 3.6112,
+      "false_positive_similarity": 3.109,
+      "first_second_margin": 0.32290148052871315,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "scipy",
+        "sklearn"
+      ],
+      "plausibility_score": 9.649,
+      "score": 8.5963,
+      "second_probability": 0.20402380457455796,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-865",
+      "top_probability": 0.5269252851032711,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.4336,
+      "false_positive_similarity": 6.0642,
+      "first_second_margin": 0.06614420818063155,
+      "libraries": [
+        "difflib",
+        "pandas",
+        "csv"
+      ],
+      "plausibility_score": 5.0973,
+      "score": 8.3496,
+      "second_probability": 0.28849088109170423,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-509",
+      "top_probability": 0.3546350892723358,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9864,
+      "false_positive_similarity": 5.9842,
+      "first_second_margin": 0.18854341766919602,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "numpy"
+      ],
+      "plausibility_score": 5.8973,
+      "score": 8.303,
+      "second_probability": 0.24041624161276143,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-486",
+      "top_probability": 0.42895965928195745,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9422,
+      "false_positive_similarity": 6.0556,
+      "first_second_margin": 0.16286022016001964,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.1833,
+      "score": 8.1862,
+      "second_probability": 0.23894220688879295,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-560",
+      "top_probability": 0.4018024270488126,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3804,
+      "false_positive_similarity": 7.87,
+      "first_second_margin": 0.1439899959010289,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 6.9567,
+      "score": 8.1354,
+      "second_probability": 0.26139377719309864,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-942",
+      "top_probability": 0.40538377309412754,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.2838,
+      "false_positive_similarity": 8.2098,
+      "first_second_margin": 0.2178475316892025,
+      "libraries": [
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 3.5003,
+      "score": 8.0308,
+      "second_probability": 0.21647680339864017,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-988",
+      "top_probability": 0.4343243350878427,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.292,
+      "false_positive_similarity": 8.218,
+      "first_second_margin": 0.2281538530560733,
+      "libraries": [
+        "glob",
+        "warnings",
+        "time",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 3.4183,
+      "score": 8.0307,
+      "second_probability": 0.21854462676099898,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-857",
+      "top_probability": 0.4466984798170723,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.5828,
+      "false_positive_similarity": 6.0229,
+      "first_second_margin": 0.2052087965782518,
+      "libraries": [
+        "math",
+        "pandas",
+        "os",
+        "json"
+      ],
+      "plausibility_score": 5.51,
+      "score": 7.5396,
+      "second_probability": 0.22161040661360631,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-985",
+      "top_probability": 0.4268192031918581,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9859,
+      "false_positive_similarity": 8.4593,
+      "first_second_margin": 0.10468794148436134,
+      "libraries": [
+        "pandas",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.9017,
+      "score": 7.494,
+      "second_probability": 0.2577914949797805,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-528",
+      "top_probability": 0.3624794364641418,
+      "top_worker": "ollama-cloud-deepseek-v4-pro"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.4112,
+      "false_positive_similarity": 7.9008,
+      "first_second_margin": 0.15603249515220802,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 6.6487,
+      "score": 7.1884,
+      "second_probability": 0.2534470311008543,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-636",
+      "top_probability": 0.40947952625306233,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.3681,
+      "false_positive_similarity": 7.8577,
+      "first_second_margin": 0.19904032599397595,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 7.08,
+      "score": 6.9945,
+      "second_probability": 0.24447190229234186,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-208",
+      "top_probability": 0.4435122282863178,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.449,
+      "false_positive_similarity": 6.4468,
+      "first_second_margin": 0.233436815712983,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 6.271,
+      "score": 6.6198,
+      "second_probability": 0.24011818883523764,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-120",
+      "top_probability": 0.47355500454822064,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 4.2612,
+      "false_positive_similarity": 7.7508,
+      "first_second_margin": 0.31231543328461886,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 8.1493,
+      "score": 6.5006,
+      "second_probability": 0.222599958590294,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-513",
+      "top_probability": 0.5349153918749129,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.3662,
+      "false_positive_similarity": 6.6316,
+      "first_second_margin": 0.1677732647158913,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 4.4227,
+      "score": 6.4102,
+      "second_probability": 0.24294097590390815,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-492",
+      "top_probability": 0.41071424061979944,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.381,
+      "false_positive_similarity": 6.6168,
+      "first_second_margin": 0.21385555802801953,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 4.5707,
+      "score": 6.3698,
+      "second_probability": 0.2383464999063794,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-952",
+      "top_probability": 0.45220205793439894,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 3.3643,
+      "false_positive_similarity": 6.6335,
+      "first_second_margin": 0.30991500486542745,
+      "libraries": [
+        "pandas",
+        "re",
+        "json"
+      ],
+      "plausibility_score": 4.4037,
+      "score": 6.1193,
+      "second_probability": 0.19427128437427368,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-458",
+      "top_probability": 0.5041862892397011,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 3.6745,
+      "false_positive_similarity": 6.1641,
+      "first_second_margin": 0.19176121922624476,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 9.0163,
+      "score": 6.025,
+      "second_probability": 0.2440153233196576,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-93",
+      "top_probability": 0.43577654254590237,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 3.9152,
+      "false_positive_similarity": 8.413,
+      "first_second_margin": 0.1984056898090179,
+      "libraries": [
+        "pytz",
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 6.609,
+      "score": 5.6053,
+      "second_probability": 0.24618758661377071,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-199",
+      "top_probability": 0.4445932764227886,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 3.7024,
+      "false_positive_similarity": 7.192,
+      "first_second_margin": 0.23763273117645264,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 8.7373,
+      "score": 5.003,
+      "second_probability": 0.24154213125370314,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-914",
+      "top_probability": 0.4791748624301558,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 2.3581,
+      "false_positive_similarity": 2.2841,
+      "first_second_margin": 0.20205794614797204,
+      "libraries": [
+        "tarfile",
+        "urllib",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 7.7573,
+      "score": 4.9982,
+      "second_probability": 0.22705450279906772,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-998",
+      "top_probability": 0.42911244894703976,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.2678,
+      "false_positive_similarity": 11.171,
+      "first_second_margin": 0.11431882277691702,
+      "libraries": [
+        "shutil",
+        "random",
+        "os",
+        "csv",
+        "datetime"
+      ],
+      "plausibility_score": 3.6603,
+      "score": 4.7207,
+      "second_probability": 0.2619283670021024,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-594",
+      "top_probability": 0.37624718977901944,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": -0.106,
+      "false_positive_similarity": -0.1659,
+      "first_second_margin": 0.02451011126521363,
+      "libraries": [
+        "threading",
+        "socket",
+        "ipaddress"
+      ],
+      "plausibility_score": 2.398,
+      "score": 4.679,
+      "second_probability": 0.2756980660414365,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-147",
+      "top_probability": 0.3002081773066501,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 1.5512,
+      "false_positive_similarity": 1.5246,
+      "first_second_margin": 0.020334249220377687,
+      "libraries": [
+        "http",
+        "cgi",
+        "smtplib",
+        "json",
+        "email"
+      ],
+      "plausibility_score": 10.249,
+      "score": 4.0759,
+      "second_probability": 0.3373305873536207,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-274",
+      "top_probability": 0.3576648365739984,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "false_negative_similarity": 1.5977,
+      "false_positive_similarity": 1.5711,
+      "first_second_margin": 0.09634214026735888,
+      "libraries": [
+        "http",
+        "cgi",
+        "json"
+      ],
+      "plausibility_score": 9.7843,
+      "score": 4.04,
+      "second_probability": 0.2791881770189351,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-273",
+      "top_probability": 0.375530317286294,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 2.1928,
+      "false_positive_similarity": 4.6085,
+      "first_second_margin": 0.15663731675413622,
+      "libraries": [
+        "sklearn",
+        "numpy",
+        "cv2",
+        "os"
+      ],
+      "plausibility_score": 9.4097,
+      "score": 3.6862,
+      "second_probability": 0.24275964512910142,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-424",
+      "top_probability": 0.39939696188323764,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 1.6833,
+      "false_positive_similarity": 5.1152,
+      "first_second_margin": 0.2457780436600502,
+      "libraries": [
+        "random",
+        "matplotlib",
+        "time"
+      ],
+      "plausibility_score": 4.5047,
+      "score": 2.718,
+      "second_probability": 0.23528994300250292,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-124",
+      "top_probability": 0.4810679866625531,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 1.0385,
+      "false_positive_similarity": 2.9786,
+      "first_second_margin": 0.28559560693230135,
+      "libraries": [
+        "nltk",
+        "re",
+        "sklearn"
+      ],
+      "plausibility_score": 5.9533,
+      "score": 2.268,
+      "second_probability": 0.22532298282146468,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-655",
+      "top_probability": 0.510918589753766,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 0.9919,
+      "false_positive_similarity": 2.9897,
+      "first_second_margin": 0.2665686815469904,
+      "libraries": [
+        "pytz",
+        "datetime",
+        "numpy"
+      ],
+      "plausibility_score": 5.8417,
+      "score": 2.1608,
+      "second_probability": 0.21911262684743849,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1077",
+      "top_probability": 0.4856813083944289,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "false_negative_similarity": 1.9002,
+      "false_positive_similarity": 4.8898,
+      "first_second_margin": 0.037721207429132375,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 11.7587,
+      "score": 2.1475,
+      "second_probability": 0.29927942553057046,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-267",
+      "top_probability": 0.33700063295970284,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.4112,
+      "false_positive_similarity": 7.9008,
+      "first_second_margin": 0.14472105118743117,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 6.6487,
+      "score": -0.789,
+      "second_probability": 0.27401840931468846,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-582",
+      "top_probability": 0.41873946050211963,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3497,
+      "false_positive_similarity": 7.8393,
+      "first_second_margin": 0.07655225490760525,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 7.2643,
+      "score": -0.8066,
+      "second_probability": 0.2833665080255797,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-915",
+      "top_probability": 0.359918762933185,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3351,
+      "false_positive_similarity": 7.8247,
+      "first_second_margin": 0.0698697048638095,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 7.41,
+      "score": -0.8296,
+      "second_probability": 0.2862203575522008,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-443",
+      "top_probability": 0.3560900624160103,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 0.6737,
+      "false_positive_similarity": 7.5894,
+      "first_second_margin": 0.015699979210759607,
+      "libraries": [
+        "unicodedata",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 4.601,
+      "score": -0.8297,
+      "second_probability": 0.29385796192073266,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-579",
+      "top_probability": 0.30955794113149226,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3704,
+      "false_positive_similarity": 7.86,
+      "first_second_margin": 0.12460215765580773,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 7.0567,
+      "score": -0.8508,
+      "second_probability": 0.292044930713197,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-239",
+      "top_probability": 0.4166470883690047,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.3386,
+      "false_positive_similarity": 6.8282,
+      "first_second_margin": 0.1909964262865937,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 7.3753,
+      "score": -1.0632,
+      "second_probability": 0.25088248958616594,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-241",
+      "top_probability": 0.4418789158727596,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "false_negative_similarity": 1.1611,
+      "false_positive_similarity": 7.6507,
+      "first_second_margin": 0.09108559840548802,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "random",
+        "cv2"
+      ],
+      "plausibility_score": 9.1497,
+      "score": -1.307,
+      "second_probability": 0.2657621134098977,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-214",
+      "top_probability": 0.3568477118153857,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 0.9462,
+      "false_positive_similarity": 8.5434,
+      "first_second_margin": 0.12234051268583368,
+      "libraries": [
+        "math",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.223,
+      "score": -2.2106,
+      "second_probability": 0.2633437609688563,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-399",
+      "top_probability": 0.38568427365469,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "false_negative_similarity": -0.1924,
+      "false_positive_similarity": 2.7972,
+      "first_second_margin": 0.057859525122323396,
+      "libraries": [
+        "matplotlib",
+        "re",
+        "wordcloud"
+      ],
+      "plausibility_score": 12.6853,
+      "score": -2.6244,
+      "second_probability": 0.28266492889441225,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-34",
+      "top_probability": 0.34052445401673564,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    }
+  ],
+  "registry": "research/policies/active_policy.json",
+  "scored_candidate_count": 132,
+  "selected": [
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 6,
+      "false_negative_similarity": 7.7957,
+      "false_positive_similarity": 1.7935,
+      "first_second_margin": 0.034047591254094844,
+      "libraries": [
+        "sqlite3",
+        "pandas",
+        "lxml",
+        "requests"
+      ],
+      "plausibility_score": 12.8037,
+      "score": 21.3854,
+      "second_probability": 0.35856258356744447,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015",
+      "top_probability": 0.3926101748215393,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8297,
+      "false_positive_similarity": 4.2557,
+      "first_second_margin": 0.0672128331819235,
+      "libraries": [
+        "subprocess",
+        "time",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 3.0407,
+      "score": 20.947,
+      "second_probability": 0.3276881164643548,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-346",
+      "top_probability": 0.3949009496462783,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 6.8114,
+      "false_positive_similarity": 4.2374,
+      "first_second_margin": 0.0446364006656203,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 3.224,
+      "score": 20.9463,
+      "second_probability": 0.3314637123510748,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "top_probability": 0.3761001130166951,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "false_negative_similarity": 4.2678,
+      "false_positive_similarity": 11.171,
+      "first_second_margin": 0.11431882277691702,
+      "libraries": [
+        "shutil",
+        "random",
+        "os",
+        "csv",
+        "datetime"
+      ],
+      "plausibility_score": 3.6603,
+      "score": 32.3335,
+      "second_probability": 0.2619283670021024,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-594",
+      "top_probability": 0.37624718977901944,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "false_negative_similarity": 0.9462,
+      "false_positive_similarity": 8.5434,
+      "first_second_margin": 0.12234051268583368,
+      "libraries": [
+        "math",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.223,
+      "score": 28.1782,
+      "second_probability": 0.2633437609688563,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-399",
+      "top_probability": 0.38568427365469,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting"
+      ],
+      "environment_risk": 1,
+      "false_negative_similarity": 0.6737,
+      "false_positive_similarity": 7.5894,
+      "first_second_margin": 0.015699979210759607,
+      "libraries": [
+        "unicodedata",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 4.601,
+      "score": 26.8331,
+      "second_probability": 0.29385796192073266,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-579",
+      "top_probability": 0.30955794113149226,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1015",
+    "bigcodebench-hard-BigCodeBench-346",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-594",
+    "bigcodebench-hard-BigCodeBench-399",
+    "bigcodebench-hard-BigCodeBench-579"
+  ],
+  "source_report": "research/evals/results/20260628-m5-latency-w0p5-multihead-report.json",
+  "substrate": "research/datasets/20260628-m5-small-orchestrator-substrate-50task.jsonl",
+  "task_sources": [
+    "research/evals/bigcodebench_hard_next3_profile_eligible_merged_tasks.json",
+    "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json"
+  ],
+  "value_head_report": "research/evals/results/20260628-heldout-value-head-report.json"
+}

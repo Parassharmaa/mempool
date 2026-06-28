@@ -1,0 +1,278 @@
+{
+  "candidates": [
+    {
+      "model_output": "research/models/20260627-mixed-winner-11task-reward-t0p05-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4476179587687513,
+            "mean_latency_regret_ms": 518.6,
+            "pass_at_1": 0.9,
+            "target_accuracy": 0.8,
+            "task_count": 10
+          },
+          "report": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 3,
+            "task_count": 10
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.5974775819834771,
+            "mean_latency_regret_ms": 1047.7272727272727,
+            "pass_at_1": 0.8181818181818182,
+            "target_accuracy": 0.7272727272727273,
+            "task_count": 11
+          },
+          "report": "research/models/20260627-mixed-winner-11task-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 1,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 4,
+            "task_count": 11
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO mean latency regret increase 529.1 ms exceeds allowed 500.0 ms",
+          "candidate LOO mean latency regret 1047.7 ms exceeds maximum 1000.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 500.0,
+          "max_loo_latency_regret_ms": 1000.0,
+          "min_loo_accuracy": 0.7
+        },
+        "timestamp": "2026-06-27T06:16:09.599826+00:00",
+        "warnings": [
+          "candidate LOO target accuracy dropped by 0.073"
+        ]
+      },
+      "report_output": "research/datasets/20260627-mixed-winner-11task-reward-t0p05-logits-router-report.json",
+      "temperature": 0.05
+    },
+    {
+      "model_output": "research/models/20260627-mixed-winner-11task-reward-t0p1-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4476179587687513,
+            "mean_latency_regret_ms": 518.6,
+            "pass_at_1": 0.9,
+            "target_accuracy": 0.8,
+            "task_count": 10
+          },
+          "report": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 3,
+            "task_count": 10
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.5970555847914195,
+            "mean_latency_regret_ms": 1047.7272727272727,
+            "pass_at_1": 0.8181818181818182,
+            "target_accuracy": 0.7272727272727273,
+            "task_count": 11
+          },
+          "report": "research/models/20260627-mixed-winner-11task-reward-t0p1-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 1,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 4,
+            "task_count": 11
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO mean latency regret increase 529.1 ms exceeds allowed 500.0 ms",
+          "candidate LOO mean latency regret 1047.7 ms exceeds maximum 1000.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 500.0,
+          "max_loo_latency_regret_ms": 1000.0,
+          "min_loo_accuracy": 0.7
+        },
+        "timestamp": "2026-06-27T06:16:12.834341+00:00",
+        "warnings": [
+          "candidate LOO target accuracy dropped by 0.073"
+        ]
+      },
+      "report_output": "research/datasets/20260627-mixed-winner-11task-reward-t0p1-logits-router-report.json",
+      "temperature": 0.1
+    },
+    {
+      "model_output": "research/models/20260627-mixed-winner-11task-reward-t0p2-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4476179587687513,
+            "mean_latency_regret_ms": 518.6,
+            "pass_at_1": 0.9,
+            "target_accuracy": 0.8,
+            "task_count": 10
+          },
+          "report": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 3,
+            "task_count": 10
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.5847458683210593,
+            "mean_latency_regret_ms": 1412.1818181818182,
+            "pass_at_1": 0.7272727272727273,
+            "target_accuracy": 0.6363636363636364,
+            "task_count": 11
+          },
+          "report": "research/models/20260627-mixed-winner-11task-reward-t0p2-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 1,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 4,
+            "task_count": 11
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.636 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.164 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 893.6 ms exceeds allowed 500.0 ms",
+          "candidate LOO mean latency regret 1412.2 ms exceeds maximum 1000.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 500.0,
+          "max_loo_latency_regret_ms": 1000.0,
+          "min_loo_accuracy": 0.7
+        },
+        "timestamp": "2026-06-27T06:16:16.123418+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260627-mixed-winner-11task-reward-t0p2-logits-router-report.json",
+      "temperature": 0.2
+    },
+    {
+      "model_output": "research/models/20260627-mixed-winner-11task-reward-t0p5-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4476179587687513,
+            "mean_latency_regret_ms": 518.6,
+            "pass_at_1": 0.9,
+            "target_accuracy": 0.8,
+            "task_count": 10
+          },
+          "report": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 3,
+            "task_count": 10
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.5503507749129803,
+            "mean_latency_regret_ms": 1412.1818181818182,
+            "pass_at_1": 0.7272727272727273,
+            "target_accuracy": 0.6363636363636364,
+            "task_count": 11
+          },
+          "report": "research/models/20260627-mixed-winner-11task-reward-t0p5-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 1,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 2,
+              "ollama-cloud-qwen3-coder-480b": 7
+            },
+            "target_worker_count": 4,
+            "task_count": 11
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.636 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.164 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 893.6 ms exceeds allowed 500.0 ms",
+          "candidate LOO mean latency regret 1412.2 ms exceeds maximum 1000.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 500.0,
+          "max_loo_latency_regret_ms": 1000.0,
+          "min_loo_accuracy": 0.7
+        },
+        "timestamp": "2026-06-27T06:16:19.017779+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260627-mixed-winner-11task-reward-t0p5-logits-router-report.json",
+      "temperature": 0.5
+    }
+  ],
+  "dataset": "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+  "decision": "quarantine",
+  "selected": null,
+  "target_mode": "reward",
+  "temperatures": [
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ]
+}

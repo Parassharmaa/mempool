@@ -1,0 +1,134 @@
+{
+  "candidate_count": 3,
+  "max_pass_latency_ms": 6000.0,
+  "min_gate_score": null,
+  "positive_seed_count": 5,
+  "prior_outcomes": [
+    "research/evals/results/20260628-qwen-resistant-rank1-specialist-top4-positive.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-rank1-top4-positive.jsonl",
+    "research/evals/results/20260628-qwen-first-rejection-specialist-screen.jsonl"
+  ],
+  "qwen_outcomes": "research/evals/results/20260628-qwen-first-rejection-qwen-screen.jsonl",
+  "ranked_candidates": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "re"
+      ],
+      "plausibility_score": 2.615,
+      "positive_similarity": 8.389,
+      "score": -11.9419,
+      "task_id": "bigcodebench-hard-BigCodeBench-327",
+      "universal_fail_similarity": 11.4043
+    },
+    {
+      "categories": [
+        "subprocess"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "hashlib",
+        "random",
+        "string",
+        "time"
+      ],
+      "plausibility_score": 3.2047,
+      "positive_similarity": 5.4317,
+      "score": -25.4015,
+      "task_id": "bigcodebench-hard-BigCodeBench-271",
+      "universal_fail_similarity": 14.4034
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "subprocess",
+        "shutil",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 7.5,
+      "positive_similarity": 7.0022,
+      "score": -31.9023,
+      "task_id": "bigcodebench-hard-BigCodeBench-322",
+      "universal_fail_similarity": 17.4027
+    }
+  ],
+  "rejected_task_count": 3,
+  "rejected_worker_id": "ollama-cloud-qwen3-coder-480b",
+  "selected": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "re"
+      ],
+      "plausibility_score": 2.615,
+      "positive_similarity": 8.389,
+      "score": -11.9419,
+      "task_id": "bigcodebench-hard-BigCodeBench-327",
+      "universal_fail_similarity": 11.4043
+    },
+    {
+      "categories": [
+        "subprocess"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "hashlib",
+        "random",
+        "string",
+        "time"
+      ],
+      "plausibility_score": 3.2047,
+      "positive_similarity": 5.4317,
+      "score": -25.4015,
+      "task_id": "bigcodebench-hard-BigCodeBench-271",
+      "universal_fail_similarity": 14.4034
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "subprocess",
+        "shutil",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 7.5,
+      "positive_similarity": 7.0022,
+      "score": -31.9023,
+      "task_id": "bigcodebench-hard-BigCodeBench-322",
+      "universal_fail_similarity": 17.4027
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-327",
+    "bigcodebench-hard-BigCodeBench-271",
+    "bigcodebench-hard-BigCodeBench-322"
+  ],
+  "specialist_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "task_source": "research/evals/20260628-qwen-first-rejection-candidate-tasks.json",
+  "universal_fail_seed_count": 4
+}

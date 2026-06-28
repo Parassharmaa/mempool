@@ -1,0 +1,9 @@
+{
+  "output": "research/evals/bigcodebench_hard_fallback_error_neighborhood_screen4_tasks.json",
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-988",
+    "bigcodebench-hard-BigCodeBench-765",
+    "bigcodebench-hard-BigCodeBench-492",
+    "bigcodebench-hard-BigCodeBench-579"
+  ]
+}

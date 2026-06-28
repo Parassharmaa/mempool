@@ -1,0 +1,929 @@
+{
+  "candidate_count": 54,
+  "excluded_count": 75,
+  "excluded_outcomes": [],
+  "excluded_routing_datasets": [
+    "research/datasets/20260628-latency-safe-head-37task-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-heldout31-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-heldout38-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-heldout27-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-54task-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-56task-routing.jsonl"
+  ],
+  "preferred_categories": [
+    "filesystem",
+    "subprocess",
+    "network",
+    "general"
+  ],
+  "ranked_candidates": [
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-800"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "json",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-287"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "datetime",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-720"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-826"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-988"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "text"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "datetime",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-313"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "random",
+        "os",
+        "csv",
+        "datetime"
+      ],
+      "plausibility_score": 6.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-594"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "warnings",
+        "time",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 6.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-857"
+    },
+    {
+      "categories": [
+        "concurrency",
+        "general",
+        "network"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "threading",
+        "socket",
+        "ipaddress"
+      ],
+      "plausibility_score": 4.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-147"
+    },
+    {
+      "categories": [
+        "concurrency",
+        "datetime",
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "subprocess",
+        "threading",
+        "time"
+      ],
+      "plausibility_score": 4.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-324"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "subprocess",
+        "glob",
+        "os"
+      ],
+      "plausibility_score": 4.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-785"
+    },
+    {
+      "categories": [
+        "general",
+        "network"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "email",
+        "smtplib",
+        "getpass"
+      ],
+      "plausibility_score": 5.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-1042"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-15"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "glob",
+        "subprocess",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 5.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-326"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "shutil",
+        "pathlib",
+        "os"
+      ],
+      "plausibility_score": 5.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-765"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "subprocess",
+        "time",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 6.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-346"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "csv",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-771"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "network"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "tarfile",
+        "urllib",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 6.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-998"
+    },
+    {
+      "categories": [
+        "datetime",
+        "general",
+        "subprocess"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "psutil",
+        "subprocess",
+        "time"
+      ],
+      "plausibility_score": 6.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-17"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "network"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "pathlib",
+        "requests",
+        "zipfile"
+      ],
+      "plausibility_score": 7.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-1012"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "network",
+        "subprocess"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "hashlib",
+        "os",
+        "ssl"
+      ],
+      "plausibility_score": 7.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-1039"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "network"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "plausibility_score": 7.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-211"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "network",
+        "text"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "os",
+        "datetime",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 8.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-1129"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "network"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "csv",
+        "urllib",
+        "bs4",
+        "os"
+      ],
+      "plausibility_score": 8.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-723"
+    },
+    {
+      "categories": [
+        "datasci",
+        "datetime",
+        "general"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 8.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-120"
+    },
+    {
+      "categories": [
+        "datasci",
+        "datetime",
+        "general",
+        "text"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 8.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-492"
+    },
+    {
+      "categories": [
+        "datasci",
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "difflib",
+        "pandas",
+        "csv"
+      ],
+      "plausibility_score": 8.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-509"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem",
+        "general",
+        "plotting",
+        "text"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "unicodedata",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 8.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-579"
+    },
+    {
+      "categories": [
+        "datasci",
+        "datetime",
+        "general"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 8.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-952"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "general",
+        "network",
+        "text"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "re",
+        "bs4",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 9.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-1137"
+    },
+    {
+      "categories": [
+        "datasci",
+        "filesystem",
+        "general",
+        "text"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "math",
+        "pandas",
+        "os",
+        "json"
+      ],
+      "plausibility_score": 9.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-985"
+    },
+    {
+      "categories": [
+        "datetime",
+        "general",
+        "plotting",
+        "subprocess"
+      ],
+      "environment_risk": 4,
+      "libraries": [
+        "random",
+        "matplotlib",
+        "time"
+      ],
+      "plausibility_score": 9.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-124"
+    },
+    {
+      "categories": [
+        "datasci",
+        "filesystem",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 4,
+      "libraries": [
+        "pandas",
+        "re",
+        "json"
+      ],
+      "plausibility_score": 9.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-458"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "datasci",
+        "text"
+      ],
+      "environment_risk": 4,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "itertools"
+      ],
+      "plausibility_score": 10.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-1057"
+    },
+    {
+      "categories": [
+        "datasci",
+        "general",
+        "plotting"
+      ],
+      "environment_risk": 6,
+      "libraries": [
+        "math",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 12.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-399"
+    },
+    {
+      "categories": [
+        "datasci",
+        "datetime",
+        "plotting"
+      ],
+      "environment_risk": 6,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "matplotlib"
+      ],
+      "plausibility_score": 12.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-560"
+    },
+    {
+      "categories": [
+        "datasci",
+        "datetime",
+        "plotting"
+      ],
+      "environment_risk": 6,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "numpy"
+      ],
+      "plausibility_score": 13.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-486"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "datasci",
+        "filesystem",
+        "plotting"
+      ],
+      "environment_risk": 6,
+      "libraries": [
+        "pandas",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 13.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-528"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-208"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-239"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-341"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-582"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-636"
+    },
+    {
+      "categories": [
+        "datasci",
+        "nlp",
+        "subprocess",
+        "text"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "nltk",
+        "re",
+        "sklearn"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-655"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-915"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 13.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-942"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "plausibility_score": 14.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-267"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 14.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-443"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 14.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-513"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 14.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-916"
+    },
+    {
+      "categories": [
+        "datasci",
+        "subprocess"
+      ],
+      "environment_risk": 7,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "scipy",
+        "sklearn"
+      ],
+      "plausibility_score": 15.5,
+      "task_id": "bigcodebench-hard-BigCodeBench-865"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting",
+        "subprocess"
+      ],
+      "environment_risk": 8,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 16.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-241"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 8,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 16.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-914"
+    },
+    {
+      "categories": [
+        "datasci",
+        "plotting"
+      ],
+      "environment_risk": 8,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 17.0,
+      "task_id": "bigcodebench-hard-BigCodeBench-93"
+    }
+  ],
+  "selected": [
+    {
+      "categories": [
+        "algorithmic",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 3.0,
+      "reason": "lowest-risk fresh filesystem task",
+      "task_id": "bigcodebench-hard-BigCodeBench-800"
+    },
+    {
+      "categories": [
+        "concurrency",
+        "datetime",
+        "filesystem",
+        "subprocess"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "subprocess",
+        "threading",
+        "time"
+      ],
+      "plausibility_score": 4.5,
+      "reason": "lowest-risk fresh subprocess task",
+      "task_id": "bigcodebench-hard-BigCodeBench-324"
+    },
+    {
+      "categories": [
+        "concurrency",
+        "general",
+        "network"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "threading",
+        "socket",
+        "ipaddress"
+      ],
+      "plausibility_score": 4.5,
+      "reason": "lowest-risk fresh network task",
+      "task_id": "bigcodebench-hard-BigCodeBench-147"
+    },
+    {
+      "categories": [
+        "datetime",
+        "filesystem",
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "datetime",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "reason": "lowest-risk fresh general task",
+      "task_id": "bigcodebench-hard-BigCodeBench-720"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-800",
+    "bigcodebench-hard-BigCodeBench-324",
+    "bigcodebench-hard-BigCodeBench-147",
+    "bigcodebench-hard-BigCodeBench-720"
+  ],
+  "strategy": "diverse",
+  "task_sources": [
+    "research/evals/bigcodebench_hard_top4_expanded_profile_offset0_tasks.json",
+    "research/evals/bigcodebench_hard_top4_expanded_profile_offset30_tasks.json",
+    "research/evals/bigcodebench_hard_top4_expanded_profile_offset60_tasks.json",
+    "research/evals/bigcodebench_hard_top4_expanded_profile_offset90_tasks.json",
+    "research/evals/bigcodebench_hard_top4_expanded_profile_offset115_tasks.json",
+    "research/evals/bigcodebench_hard_top4_expanded_profile_offset145_tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset0_tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset30_tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset60_tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset90_tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset145_tasks.json"
+  ]
+}

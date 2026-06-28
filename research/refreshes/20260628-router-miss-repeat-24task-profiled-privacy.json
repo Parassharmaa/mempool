@@ -1,0 +1,10 @@
+{
+  "contains_raw_private_text": false,
+  "created_at": "2026-06-27T22:15:31.695899+00:00",
+  "distilled_dataset": "research/datasets/20260628-router-miss-repeat-24task-routing.jsonl",
+  "explicit_private_training_approval": false,
+  "memory_scope": "benchmark",
+  "redaction_policy": "benchmark prompts and aggregate worker metadata only",
+  "schema_version": "mempool.privacy_manifest.v1",
+  "training_scope": "general"
+}

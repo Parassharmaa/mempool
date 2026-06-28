@@ -1,0 +1,19 @@
+{
+  "all_fail_tasks": [
+    "bigcodebench-hard-BigCodeBench-130",
+    "bigcodebench-hard-BigCodeBench-131",
+    "bigcodebench-hard-BigCodeBench-288",
+    "bigcodebench-hard-BigCodeBench-6"
+  ],
+  "allow_all_fail_tasks": false,
+  "min_target_pass_rate": 1.0,
+  "ready_to_merge": false,
+  "reasons": [
+    "dataset contains all-fail fastest-failure tasks"
+  ],
+  "record_count": 6,
+  "solvable_task_count": 2,
+  "target_failure_tasks": [],
+  "unstable_target_tasks": [],
+  "validation_errors": []
+}

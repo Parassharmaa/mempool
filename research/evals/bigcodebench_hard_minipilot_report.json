@@ -1,0 +1,308 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "eligible": true,
+      "environment_risk": 3,
+      "libraries": [
+        "subprocess",
+        "ftplib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.9987,
+      "primary_category": "network",
+      "prompt_length": 1416,
+      "task_id": "bigcodebench-hard-BigCodeBench-13",
+      "test_length": 3098
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "eligible": true,
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.224,
+      "primary_category": "subprocess",
+      "prompt_length": 973,
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "test_length": 3603
+    },
+    {
+      "categories": [
+        "subprocess"
+      ],
+      "eligible": false,
+      "environment_risk": 1,
+      "libraries": [
+        "psutil",
+        "subprocess",
+        "time"
+      ],
+      "missing_libraries": [
+        "psutil"
+      ],
+      "plausibility_score": 3.881,
+      "primary_category": "subprocess",
+      "prompt_length": 686,
+      "task_id": "bigcodebench-hard-BigCodeBench-17",
+      "test_length": 1935
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "eligible": true,
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "zipfile",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.6707,
+      "primary_category": "filesystem",
+      "prompt_length": 673,
+      "task_id": "bigcodebench-hard-BigCodeBench-19",
+      "test_length": 2843
+    },
+    {
+      "categories": [
+        "network",
+        "plotting"
+      ],
+      "eligible": false,
+      "environment_risk": 7,
+      "libraries": [
+        "matplotlib",
+        "re",
+        "wordcloud"
+      ],
+      "missing_libraries": [
+        "matplotlib",
+        "wordcloud"
+      ],
+      "plausibility_score": 12.6853,
+      "primary_category": "network",
+      "prompt_length": 638,
+      "task_id": "bigcodebench-hard-BigCodeBench-34",
+      "test_length": 1492
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "eligible": false,
+      "environment_risk": 3,
+      "libraries": [
+        "sklearn",
+        "matplotlib",
+        "seaborn"
+      ],
+      "missing_libraries": [
+        "sklearn",
+        "matplotlib",
+        "seaborn"
+      ],
+      "plausibility_score": 7.5573,
+      "primary_category": "plotting",
+      "prompt_length": 1028,
+      "task_id": "bigcodebench-hard-BigCodeBench-37",
+      "test_length": 2938
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "eligible": false,
+      "environment_risk": 10,
+      "libraries": [
+        "flask_login",
+        "flask_wtf",
+        "wtforms",
+        "werkzeug",
+        "flask"
+      ],
+      "missing_libraries": [
+        "flask_login",
+        "flask_wtf",
+        "wtforms",
+        "werkzeug",
+        "flask"
+      ],
+      "plausibility_score": 19.4927,
+      "primary_category": "network",
+      "prompt_length": 1351,
+      "task_id": "bigcodebench-hard-BigCodeBench-82",
+      "test_length": 4175
+    },
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "eligible": false,
+      "environment_risk": 4,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy",
+        "sklearn"
+      ],
+      "missing_libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy",
+        "sklearn"
+      ],
+      "plausibility_score": 9.304,
+      "primary_category": "subprocess",
+      "prompt_length": 1113,
+      "task_id": "bigcodebench-hard-BigCodeBench-89",
+      "test_length": 2373
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "eligible": false,
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "matplotlib",
+        "sklearn"
+      ],
+      "missing_libraries": [
+        "pandas",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 6.9347,
+      "primary_category": "plotting",
+      "prompt_length": 835,
+      "task_id": "bigcodebench-hard-BigCodeBench-92",
+      "test_length": 1649
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "eligible": false,
+      "environment_risk": 4,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "missing_libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "plausibility_score": 9.0163,
+      "primary_category": "filesystem",
+      "prompt_length": 750,
+      "task_id": "bigcodebench-hard-BigCodeBench-93",
+      "test_length": 2599
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-13"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.026s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-15"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp97svr098/candidate.py\", line 2, in <module>\n    import psutil\nModuleNotFoundError: No module named 'psutil'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-17"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-19"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp3utbv7c2/candidate.py\", line 2, in <module>\n    from wordcloud import WordCloud\nModuleNotFoundError: No module named 'wordcloud'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-34"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp4nt_um6m/candidate.py\", line 1, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-37"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpmk5y2yu3/candidate.py\", line 1, in <module>\n    from flask import Flask, render_template, redirect, url_for\nModuleNotFoundError: No module named 'flask'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-82"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpnegsalfm/candidate.py\", line 1, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-89"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpj6u7wu52/candidate.py\", line 1, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-92"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpqer5rcr0/candidate.py\", line 1, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-93"
+    }
+  ],
+  "count": 3,
+  "input": "/Users/paras/projects/mempool/research/evals/bigcodebench_hard_smoke_tasks.json",
+  "output": "research/evals/bigcodebench_hard_minipilot_tasks.json",
+  "preferred_categories": [
+    "subprocess",
+    "filesystem",
+    "datasci"
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-19",
+    "bigcodebench-hard-BigCodeBench-13"
+  ],
+  "selection_reasons": {
+    "bigcodebench-hard-BigCodeBench-13": "lowest remaining plausibility score",
+    "bigcodebench-hard-BigCodeBench-15": "lowest-risk subprocess task",
+    "bigcodebench-hard-BigCodeBench-19": "lowest-risk filesystem task"
+  }
+}

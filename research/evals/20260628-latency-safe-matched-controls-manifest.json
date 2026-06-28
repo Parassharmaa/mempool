@@ -1,0 +1,27 @@
+{
+  "command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_worker_pool_top4.json --tasks research/evals/20260628-latency-safe-matched-controls-tasks.json --repeat-count 2 --eval-timeout-seconds 40 --run-id 20260628-latency-safe-matched-controls-top4 --output research/evals/results/20260628-latency-safe-matched-controls-top4.json --outcomes research/evals/results/20260628-latency-safe-matched-controls-top4.jsonl --resume --progress --quiet",
+  "eval_timeout_seconds": 40,
+  "outcomes": "research/evals/results/20260628-latency-safe-matched-controls-top4.jsonl",
+  "output": "research/evals/results/20260628-latency-safe-matched-controls-top4.json",
+  "purpose": "Collect matched all-pass latency and unsafe-control outcomes to train the latency-safe head.",
+  "repeat_count": 2,
+  "report": "research/evals/20260628-latency-safe-matched-controls-report.json",
+  "run_id": "20260628-latency-safe-matched-controls-top4",
+  "schema_version": "mempool.latency_safe_matched_controls_manifest.v1",
+  "selected_label_counts": {
+    "latency_safe_candidate": 4,
+    "unsafe_control_candidate": 4
+  },
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-320",
+    "bigcodebench-hard-BigCodeBench-391",
+    "bigcodebench-hard-BigCodeBench-305",
+    "bigcodebench-hard-BigCodeBench-127",
+    "bigcodebench-hard-BigCodeBench-384",
+    "bigcodebench-hard-BigCodeBench-325",
+    "bigcodebench-hard-BigCodeBench-547",
+    "bigcodebench-hard-BigCodeBench-336"
+  ],
+  "task_file": "research/evals/20260628-latency-safe-matched-controls-tasks.json",
+  "worker_pool": "research/evals/ollama_cloud_worker_pool_top4.json"
+}

@@ -1,0 +1,31 @@
+{
+  "base_url": "https://ollama.com/v1",
+  "api_key_env": "OLLAMA_API_KEY",
+  "timeout_seconds": 120,
+  "workers": [
+    {
+      "id": "ollama-cloud-glm-5.2",
+      "model": "glm-5.2",
+      "strengths": ["general", "code_easy", "code_text", "code_data", "bigcodebench_hard", "agentic_coding"],
+      "cost_usd": 0.0
+    },
+    {
+      "id": "ollama-cloud-deepseek-v4-pro",
+      "model": "deepseek-v4-pro",
+      "strengths": ["general", "reasoning", "code_easy", "code_text", "code_data", "bigcodebench_hard"],
+      "cost_usd": 0.0
+    },
+    {
+      "id": "ollama-cloud-kimi-k2.7-code",
+      "model": "kimi-k2.7-code",
+      "strengths": ["code_easy", "code_text", "code_data", "bigcodebench_hard", "agentic_coding"],
+      "cost_usd": 0.0
+    },
+    {
+      "id": "ollama-cloud-qwen3-coder-480b",
+      "model": "qwen3-coder:480b",
+      "strengths": ["code_easy", "code_text", "code_data", "bigcodebench_hard", "agentic_coding"],
+      "cost_usd": 0.0
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "baseline": {
+    "available": true,
+    "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.46096494805709975,
+      "mean_latency_regret_ms": 501.0869565217391,
+      "pass_at_1": 0.6956521739130435,
+      "solvable_pass_at_1": 0.8,
+      "solvable_target_accuracy": 0.75,
+      "solvable_task_count": 20,
+      "target_accuracy": 0.782608695652174,
+      "task_count": 23
+    },
+    "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-deepseek-v4-pro": 2,
+        "ollama-cloud-glm-5.2": 1,
+        "ollama-cloud-kimi-k2.7-code": 4,
+        "ollama-cloud-qwen3-coder-480b": 16
+      },
+      "target_worker_count": 4,
+      "task_count": 23
+    }
+  },
+  "candidate": {
+    "dataset": "research/datasets/20260628-router-miss-repeat-24task-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.0,
+      "mean_latency_regret_ms": 373.25,
+      "pass_at_1": 0.6666666666666666,
+      "solvable_pass_at_1": 0.7619047619047619,
+      "solvable_target_accuracy": 0.6666666666666666,
+      "solvable_task_count": 21,
+      "target_accuracy": 0.7083333333333334,
+      "task_count": 24
+    },
+    "report": "research/models/20260628-router-miss-repeat-24task-profiled-reward-t0p05-logits-router.json",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-deepseek-v4-pro": 2,
+        "ollama-cloud-glm-5.2": 2,
+        "ollama-cloud-kimi-k2.7-code": 4,
+        "ollama-cloud-qwen3-coder-480b": 16
+      },
+      "target_worker_count": 4,
+      "task_count": 24
+    }
+  },
+  "decision": "quarantine",
+  "promotion_profile": "preserve_accuracy",
+  "reasons": [
+    "candidate LOO target accuracy 0.708 is below minimum 0.783",
+    "candidate LOO target accuracy drop 0.074 exceeds allowed 0.000"
+  ],
+  "thresholds": {
+    "max_loo_accuracy_drop": 0.0,
+    "max_loo_latency_regret_increase_ms": null,
+    "max_loo_latency_regret_ms": 501.0869565217391,
+    "min_loo_accuracy": 0.782608695652174,
+    "min_loo_solvable_pass_at_1": 0.8
+  },
+  "timestamp": "2026-06-27T22:12:54.175664+00:00",
+  "warnings": []
+}

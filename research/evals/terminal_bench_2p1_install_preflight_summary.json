@@ -1,0 +1,19 @@
+{
+  "agent_type": null,
+  "cost_usd": null,
+  "environment_type": "docker",
+  "finished_at": null,
+  "job_dir": "research/runs/20260627-terminal-install-preflight/harbor_jobs/mempool-tb2p1-install-cancel-async",
+  "job_id": "26bd8b4b-7db1-4f2a-805a-e7b7776ba6d0",
+  "n_cancelled_trials": 1,
+  "n_completed_trials": 1,
+  "n_errored_trials": 1,
+  "n_pending_trials": 0,
+  "n_running_trials": 0,
+  "n_total_trials": 1,
+  "raw_log_policy": "not_read",
+  "started_at": "2026-06-27T18:53:42.363172",
+  "status": "interrupted_ambiguous",
+  "trial_directory_count": 1,
+  "updated_at": "2026-06-27T09:55:53.712762Z"
+}

@@ -1,0 +1,68 @@
+{
+  "candidate_count": 20,
+  "excluded_task_count": 79,
+  "selected_sources": {
+    "bigcodebench-hard-BigCodeBench-113": [
+      "research/evals/20260628-nonqwen-specialist-rank1-positive-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-15": [
+      "research/evals/20260628-nonqwen-pressure-positive-repeat-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-206": [
+      "research/evals/20260628-nonqwen-specialist-rank1-positive-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-260": [
+      "research/evals/20260628-nonqwen-pressure-positive-repeat-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-265": [
+      "research/evals/20260628-nonqwen-specialist-rank1-positive-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-266": [
+      "research/evals/20260628-nonqwen-specialist-rank1-positive-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-271": [
+      "research/evals/20260628-specialist-solvability-gate-positive-only-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-322": [
+      "research/evals/20260628-specialist-solvability-gate-positive-only-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-594": [
+      "research/evals/bigcodebench_hard_positive_neighborhood_fallback6_tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-7": [
+      "research/evals/20260628-nonqwen-specialist-rank1-positive-tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-765": [
+      "research/evals/bigcodebench_hard_positive_neighborhood_fallback6_tasks.json"
+    ],
+    "bigcodebench-hard-BigCodeBench-826": [
+      "research/evals/20260628-next-profile-fallback-opportunity-positive-tasks.json"
+    ]
+  },
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-113",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-206",
+    "bigcodebench-hard-BigCodeBench-260",
+    "bigcodebench-hard-BigCodeBench-265",
+    "bigcodebench-hard-BigCodeBench-266",
+    "bigcodebench-hard-BigCodeBench-271",
+    "bigcodebench-hard-BigCodeBench-322",
+    "bigcodebench-hard-BigCodeBench-594",
+    "bigcodebench-hard-BigCodeBench-7",
+    "bigcodebench-hard-BigCodeBench-765",
+    "bigcodebench-hard-BigCodeBench-826"
+  ],
+  "selection_note": "known-positive candidates outside frozen policy source and heldout replay slices, preferring fewer heavy dependencies",
+  "source_files": [
+    "research/evals/bigcodebench_hard_offset125_qwen_positive_tasks.json",
+    "research/evals/20260628-next-profile-fallback-opportunity-positive-tasks.json",
+    "research/evals/20260628-next2-profile-fallback-opportunity-positive-tasks.json",
+    "research/evals/20260628-next3-nonqwen-screen1-positive-tasks.json",
+    "research/evals/20260628-nonqwen-pressure-positive-repeat-tasks.json",
+    "research/evals/20260628-nonqwen-specialist-rank1-positive-tasks.json",
+    "research/evals/20260628-qwen-fail-specialist-mining-positive-tasks.json",
+    "research/evals/20260628-specialist-solvability-gate-positive-only-tasks.json",
+    "research/evals/bigcodebench_hard_positive_neighborhood_fallback6_tasks.json"
+  ]
+}

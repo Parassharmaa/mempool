@@ -1,0 +1,390 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "codecs",
+        "urllib",
+        "base64",
+        "binascii"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.926,
+      "primary_category": "general",
+      "prompt_length": 1347,
+      "task_id": "bigcodebench-hard-BigCodeBench-990",
+      "test_length": 3537
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "tarfile",
+        "urllib",
+        "hashlib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.7573,
+      "primary_category": "network",
+      "prompt_length": 882,
+      "task_id": "bigcodebench-hard-BigCodeBench-998",
+      "test_length": 2926
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "urllib",
+        "csv",
+        "collections",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.499,
+      "primary_category": "subprocess",
+      "prompt_length": 1137,
+      "task_id": "bigcodebench-hard-BigCodeBench-999",
+      "test_length": 2886
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem",
+        "plotting"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "urllib",
+        "collections",
+        "matplotlib",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.9077,
+      "primary_category": "network",
+      "prompt_length": 1125,
+      "task_id": "bigcodebench-hard-BigCodeBench-1004",
+      "test_length": 2648
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.8597,
+      "primary_category": "network",
+      "prompt_length": 1471,
+      "task_id": "bigcodebench-hard-BigCodeBench-1006",
+      "test_length": 2516
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pathlib",
+        "requests",
+        "zipfile"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.4343,
+      "primary_category": "network",
+      "prompt_length": 794,
+      "task_id": "bigcodebench-hard-BigCodeBench-1012",
+      "test_length": 3271
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.1393,
+      "primary_category": "subprocess",
+      "prompt_length": 1136,
+      "task_id": "bigcodebench-hard-BigCodeBench-1022",
+      "test_length": 2860
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "hashlib",
+        "os",
+        "ssl"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 8.797,
+      "primary_category": "network",
+      "prompt_length": 882,
+      "task_id": "bigcodebench-hard-BigCodeBench-1039",
+      "test_length": 7095
+    },
+    {
+      "categories": [
+        "network"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "email",
+        "smtplib",
+        "getpass"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.6837,
+      "primary_category": "network",
+      "prompt_length": 719,
+      "task_id": "bigcodebench-hard-BigCodeBench-1042",
+      "test_length": 4244
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.1037,
+      "primary_category": "datasci",
+      "prompt_length": 1108,
+      "task_id": "bigcodebench-hard-BigCodeBench-1057",
+      "test_length": 2837
+    },
+    {
+      "categories": [
+        "plotting"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "collections",
+        "matplotlib",
+        "re"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.217,
+      "primary_category": "plotting",
+      "prompt_length": 613,
+      "task_id": "bigcodebench-hard-BigCodeBench-1085",
+      "test_length": 1662
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "os",
+        "datetime",
+        "requests",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.846,
+      "primary_category": "network",
+      "prompt_length": 837,
+      "task_id": "bigcodebench-hard-BigCodeBench-1129",
+      "test_length": 3327
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-990"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.008s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-998"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.006s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-999"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp2m3im_zf/candidate.py\", line 2, in <module>\n    from lxml import etree\nModuleNotFoundError: No module named 'lxml'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1003"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.172s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1004"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1006"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpcojfy2sm/candidate.py\", line 2, in <module>\n    from bs4 import BeautifulSoup\nModuleNotFoundError: No module named 'bs4'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1008"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 1.330s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1012"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpgk_misop/candidate.py\", line 3, in <module>\n    from bs4 import BeautifulSoup\nModuleNotFoundError: No module named 'bs4'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1013"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp2kodtk4p/candidate.py\", line 2, in <module>\n    from lxml import html\nModuleNotFoundError: No module named 'lxml'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1015"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpkelq0g2l/candidate.py\", line 3, in <module>\n    import pytesseract\nModuleNotFoundError: No module named 'pytesseract'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1019"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp7rn7a714/candidate.py\", line 3, in <module>\n    import chardet\nModuleNotFoundError: No module named 'chardet'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1020"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1022"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.008s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1039"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "passed": false,
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-1040"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1042"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpgywx68wl/candidate.py\", line 2, in <module>\n    from sklearn.feature_extraction.text import CountVectorizer\nModuleNotFoundError: No module named 'sklearn'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1053"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1057"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpvy2fc_zm/candidate.py\", line 2, in <module>\n    import pytz\nModuleNotFoundError: No module named 'pytz'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1077"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.176s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1085"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpl72xslty/candidate.py\", line 3, in <module>\n    from bs4 import BeautifulSoup\nModuleNotFoundError: No module named 'bs4'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1124"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1129"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpmop_jwzx/candidate.py\", line 1, in <module>\n    import bs4\nModuleNotFoundError: No module named 'bs4'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1137"
+    }
+  ],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 12,
+  "max_rows": 23,
+  "mode": "instruct",
+  "next_offset": 148,
+  "offset": 125,
+  "output": "research/evals/bigcodebench_hard_top4_offset125_tasks.json",
+  "scanned": 23,
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-990",
+    "bigcodebench-hard-BigCodeBench-998",
+    "bigcodebench-hard-BigCodeBench-999",
+    "bigcodebench-hard-BigCodeBench-1004",
+    "bigcodebench-hard-BigCodeBench-1006",
+    "bigcodebench-hard-BigCodeBench-1012",
+    "bigcodebench-hard-BigCodeBench-1022",
+    "bigcodebench-hard-BigCodeBench-1039",
+    "bigcodebench-hard-BigCodeBench-1042",
+    "bigcodebench-hard-BigCodeBench-1057",
+    "bigcodebench-hard-BigCodeBench-1085",
+    "bigcodebench-hard-BigCodeBench-1129"
+  ],
+  "split": "v0.1.4",
+  "target_passes": 20
+}

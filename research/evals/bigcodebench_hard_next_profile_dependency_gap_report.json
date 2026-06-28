@@ -1,0 +1,627 @@
+{
+  "cumulative_unlock": [
+    {
+      "packages": [
+        "openpyxl"
+      ],
+      "unique_blocked_tasks": 3
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz"
+      ],
+      "unique_blocked_tasks": 5
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi"
+      ],
+      "unique_blocked_tasks": 7
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa"
+      ],
+      "unique_blocked_tasks": 9
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml"
+      ],
+      "unique_blocked_tasks": 11
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud"
+      ],
+      "unique_blocked_tasks": 12
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login"
+      ],
+      "unique_blocked_tasks": 13
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels"
+      ],
+      "unique_blocked_tasks": 14
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas"
+      ],
+      "unique_blocked_tasks": 15
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail"
+      ],
+      "unique_blocked_tasks": 16
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras"
+      ],
+      "unique_blocked_tasks": 17
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow"
+      ],
+      "unique_blocked_tasks": 18
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python"
+      ],
+      "unique_blocked_tasks": 19
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt"
+      ],
+      "unique_blocked_tasks": 20
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "pyquery"
+      ],
+      "unique_blocked_tasks": 21
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "pyquery",
+        "gensim"
+      ],
+      "unique_blocked_tasks": 22
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "pyquery",
+        "gensim",
+        "python-Levenshtein"
+      ],
+      "unique_blocked_tasks": 23
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "pyquery",
+        "gensim",
+        "python-Levenshtein",
+        "python-docx"
+      ],
+      "unique_blocked_tasks": 24
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "pyquery",
+        "gensim",
+        "python-Levenshtein",
+        "python-docx",
+        "pytesseract"
+      ],
+      "unique_blocked_tasks": 25
+    },
+    {
+      "packages": [
+        "openpyxl",
+        "pytz",
+        "legacy-cgi",
+        "rsa",
+        "lxml",
+        "wordcloud",
+        "flask-login",
+        "statsmodels",
+        "geopandas",
+        "flask-mail",
+        "keras",
+        "tensorflow",
+        "opencv-python",
+        "xlwt",
+        "pyquery",
+        "gensim",
+        "python-Levenshtein",
+        "python-docx",
+        "pytesseract",
+        "chardet"
+      ],
+      "unique_blocked_tasks": 26
+    }
+  ],
+  "dependency_blocked_tasks": 26,
+  "eligible": 102,
+  "non_dependency_failure_count": 15,
+  "non_dependency_failures": [
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset0_report.json",
+      "stderr_tail": "",
+      "task_id": "bigcodebench-hard-BigCodeBench-89"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset0_report.json",
+      "stderr_tail": "hnlixxu/candidate.py\", line 47, in test_heatmap_features\n    self.assertEqual(heatmap_data.shape, (169,))  # Assuming Boston dataset has 13 features\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: (13, 13) != (169,)\n\nFirst differing element 0:\n13\n169\n\nFirst tuple contains 1 additional elements.\nFirst extra element 1:\n13\n\n- (13, 13)\n+ (169,)\n\n----------------------------------------------------------------------\nRan 4 tests in 6.753s\n\nFAILED (failures=1, errors=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-101"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset0_report.json",
+      "stderr_tail": "projects/mempool/.venv-bigcodebench/nltk_data'\n    - '/Users/paras/projects/mempool/.venv-bigcodebench/share/nltk_data'\n    - '/Users/paras/projects/mempool/.venv-bigcodebench/lib/nltk_data'\n    - '/usr/share/nltk_data'\n    - '/usr/local/share/nltk_data'\n    - '/usr/lib/nltk_data'\n    - '/usr/local/lib/nltk_data'\n**********************************************************************\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nFAILED (errors=2)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-177"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset30_report.json",
+      "stderr_tail": "..........\n----------------------------------------------------------------------\nRan 10 tests in 15.756s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-461"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+      "stderr_tail": "test_case_3\n    all(df.applymap(lambda x: isinstance(x, (int, float)))),\n        ^^^^^^^^^^^\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/pandas/core/generic.py\", line 6206, in __getattr__\n    return object.__getattribute__(self, name)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAttributeError: 'DataFrame' object has no attribute 'applymap'\n\n----------------------------------------------------------------------\nRan 8 tests in 0.005s\n\nFAILED (errors=3)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-503"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+      "stderr_tail": "in kwargs.items()})\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/matplotlib/axes/_axes.py\", line 3661, in pie\n    if not np.all(np.isfinite(x)):\n                  ~~~~~~~~~~~^^^\nTypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''\n\n----------------------------------------------------------------------\nRan 7 tests in 0.231s\n\nFAILED (errors=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-511"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+      "stderr_tail": "",
+      "task_id": "bigcodebench-hard-BigCodeBench-553"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+      "stderr_tail": "",
+      "task_id": "bigcodebench-hard-BigCodeBench-567"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-593"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+      "stderr_tail": "/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp48agwmf4/candidate.py:19: OptimizeWarning: Covariance of the parameters could not be estimated\n  popt, _ = optimize.curve_fit(func, x_data, y_data, p0=initial_guess, maxfev=10000)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-654"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset90_report.json",
+      "stderr_tail": "number) or np.issubdtype(data[col2].dtype, np.number):\n       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/numpy/_core/numerictypes.py\", line 470, in issubdtype\n    arg1 = dtype(arg1).type\n           ~~~~~^^^^^^\nTypeError: Cannot interpret '<StringDtype(storage='python', na_value=nan)>' as a data type\n\n----------------------------------------------------------------------\nRan 8 tests in 0.003s\n\nFAILED (errors=5)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-879"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset115_report.json",
+      "stderr_tail": "in pandas._libs.tslibs.offsets.to_offset\n  File \"pandas/_libs/tslibs/offsets.pyx\", line 6352, in pandas._libs.tslibs.offsets.to_offset\n  File \"pandas/_libs/tslibs/offsets.pyx\", line 6137, in pandas._libs.tslibs.offsets.raise_invalid_freq\nValueError: Invalid frequency: Q. Failed to parse with error message: ValueError(\"'Q' is no longer supported for offsets. Please use 'QE' instead.\")\n\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nFAILED (errors=3)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-945"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset115_report.json",
+      "stderr_tail": "case_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpxpvpiasf/candidate.py\", line 84, in test_case_6\n    self.assertTrue(creation_datetime <= modification_datetime)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 10 tests in 0.009s\n\nFAILED (failures=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-971"
+    },
+    {
+      "failure_mode": "test_failure",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset115_report.json",
+      "stderr_tail": "14, in _parser_dispatch\n    import_optional_dependency(\"lxml.etree\")\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/pandas/compat/_optional.py\", line 161, in import_optional_dependency\n    raise ImportError(msg) from err\nImportError: `Import lxml` failed.  Use pip or conda to install the lxml package.\n\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nFAILED (errors=1)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1008"
+    },
+    {
+      "failure_mode": "eval_timeout",
+      "report": "research/evals/bigcodebench_hard_next_profile_offset115_report.json",
+      "stderr_tail": ".",
+      "task_id": "bigcodebench-hard-BigCodeBench-1040"
+    }
+  ],
+  "ranked_packages": [
+    {
+      "blocked_task_count": 3,
+      "modules": [
+        "openpyxl"
+      ],
+      "package": "openpyxl",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-360",
+        "bigcodebench-hard-BigCodeBench-374",
+        "bigcodebench-hard-BigCodeBench-409"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "pytz"
+      ],
+      "package": "pytz",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1077",
+        "bigcodebench-hard-BigCodeBench-199"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "cgi"
+      ],
+      "package": "legacy-cgi",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-273",
+        "bigcodebench-hard-BigCodeBench-274"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "rsa"
+      ],
+      "package": "rsa",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-583",
+        "bigcodebench-hard-BigCodeBench-587"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "modules": [
+        "lxml"
+      ],
+      "package": "lxml",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1003",
+        "bigcodebench-hard-BigCodeBench-1015"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "wordcloud"
+      ],
+      "package": "wordcloud",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-34"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "flask_login"
+      ],
+      "package": "flask-login",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-82"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "statsmodels"
+      ],
+      "package": "statsmodels",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-108"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "geopandas"
+      ],
+      "package": "geopandas",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-187"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "flask_mail"
+      ],
+      "package": "flask-mail",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-401"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "keras"
+      ],
+      "package": "keras",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-417"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "tensorflow"
+      ],
+      "package": "tensorflow",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-418"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "cv2"
+      ],
+      "package": "opencv-python",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-424"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "xlwt"
+      ],
+      "package": "xlwt",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-501"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "pyquery"
+      ],
+      "package": "pyquery",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-590"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "gensim"
+      ],
+      "package": "gensim",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-657"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "Levenshtein"
+      ],
+      "package": "python-Levenshtein",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-845"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "docx"
+      ],
+      "package": "python-docx",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-964"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "pytesseract"
+      ],
+      "package": "pytesseract",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1019"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "modules": [
+        "chardet"
+      ],
+      "package": "chardet",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-1020"
+      ]
+    }
+  ],
+  "reports": [
+    "research/evals/bigcodebench_hard_next_profile_offset0_report.json",
+    "research/evals/bigcodebench_hard_next_profile_offset30_report.json",
+    "research/evals/bigcodebench_hard_next_profile_offset60_report.json",
+    "research/evals/bigcodebench_hard_next_profile_offset90_report.json",
+    "research/evals/bigcodebench_hard_next_profile_offset115_report.json",
+    "research/evals/bigcodebench_hard_next_profile_offset145_report.json"
+  ],
+  "scanned": 143,
+  "unique_dependency_blocked_tasks": 26
+}

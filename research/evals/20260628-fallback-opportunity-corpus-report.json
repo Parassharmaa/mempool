@@ -1,0 +1,669 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "by_source": {
+    "research/datasets/20260627-acquisition-to-50-wave1-merge-ready-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260627-acquisition-to-50-wave1-merged-32task-routing.jsonl": {
+      "fallback_opportunities": 7,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 4,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260627-acquisition-to-50-wave1-routing.jsonl": {
+      "fallback_opportunities": 34,
+      "hard_negatives": 29,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 4
+    },
+    "research/datasets/20260627-acquisition-to-50-wave2-merged-33task-routing.jsonl": {
+      "fallback_opportunities": 7,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 4,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 1,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-deepseek-368-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-expanded-profile-38task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-featurefix-38task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-merge-ready-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 1,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260627-expanded-profile-fresh-batch6-merge-ready-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260627-expanded-profile-fresh-batch6-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 1,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260627-expanded-profile-wave2-40task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-wave2-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 5,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-expanded-profile-wave3-45task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-wave3-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-expanded-profile-wave4-46task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-wave4-49task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260627-expanded-profile-wave4-routing.jsonl": {
+      "fallback_opportunities": 4,
+      "hard_negatives": 4,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-expanded-profile-wave4c-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 1,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-fallback-error-neighborhood-screen4-routing.jsonl": {
+      "fallback_opportunities": 4,
+      "hard_negatives": 4,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-fallback-opportunity-top2-repeat-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-fallback-solvability-screen4-routing.jsonl": {
+      "fallback_opportunities": 4,
+      "hard_negatives": 4,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-heldout-hard-active-policy-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-10task-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-11task-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-14task-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-16task-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-19task-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-mixed-winner-8task-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-ollama-cloud-smoke-3-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-positive-neighborhood-screen2-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260627-postrefresh-heldout-hard-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260627-qwen-only-offset99-repeat-compare-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-contrast-aware-26task-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-contrast-aware-top4-repeat-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 1,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-fresh-acquisition-54task-routing.jsonl": {
+      "fallback_opportunities": 9,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 6,
+      "useful_second_fallbacks": 4
+    },
+    "research/datasets/20260628-fresh-acquisition-outcomes-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-known-positive-live-top4-repeat2-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260628-latency-safe-head-37task-routing.jsonl": {
+      "fallback_opportunities": 7,
+      "hard_negatives": 5,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-latency-safe-matched-controls-top4-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-live-augmented-30task-routing.jsonl": {
+      "fallback_opportunities": 7,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 4,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl": {
+      "fallback_opportunities": 6,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 3,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-mixed-winner-25task-qwen-fail-contrast-routing.jsonl": {
+      "fallback_opportunities": 7,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 4,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl": {
+      "fallback_opportunities": 6,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 3,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-next-profile-fallback-opportunity-screen1-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 4,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-next-profile-positive-repeat-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-next2-profile-fallback-opportunity-screen1-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-next3-positive-repeat-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-nonqwen-pressure-positive-repeat-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 1,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-nonqwen-pressure-top3-screen-merge-ready-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-nonqwen-pressure-top3-screen-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 4,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-nonqwen-specialist-rank1-top4-positive-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 2
+    },
+    "research/datasets/20260628-normal-offset156-guarded-58task-routing.jsonl": {
+      "fallback_opportunities": 9,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 6,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset156-guarded-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-normal-offset16-contrast-29task-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p1-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p5-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-normal-offset16-contrast-56task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset16-contrast-heldout27-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 3,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl": {
+      "fallback_opportunities": 9,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 6,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset236-boundary-heldout38-routing.jsonl": {
+      "fallback_opportunities": 4,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 4,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset236-boundary-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-normal-offset76-guarded-54task-routing.jsonl": {
+      "fallback_opportunities": 8,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 5,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset76-guarded-heldout31-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 3,
+      "useful_second_fallbacks": 3
+    },
+    "research/datasets/20260628-normal-offset76-guarded-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-probe-gated-live-validation-top4-routing.jsonl": {
+      "fallback_opportunities": 4,
+      "hard_negatives": 4,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-qwen-fail-contrast-selector-positive-repeat-routing.jsonl": {
+      "fallback_opportunities": 1,
+      "hard_negatives": 0,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 1
+    },
+    "research/datasets/20260628-qwen-fail-specialist-mining-screen1-routing.jsonl": {
+      "fallback_opportunities": 2,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 0,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-router-miss-repeat-24task-routing.jsonl": {
+      "fallback_opportunities": 5,
+      "hard_negatives": 3,
+      "useful_any_fallbacks": 2,
+      "useful_second_fallbacks": 0
+    },
+    "research/datasets/20260628-router-miss-repeat4-top4-routing.jsonl": {
+      "fallback_opportunities": 3,
+      "hard_negatives": 2,
+      "useful_any_fallbacks": 1,
+      "useful_second_fallbacks": 0
+    }
+  },
+  "datasets": [
+    "research/datasets/20260627-acquisition-to-50-wave1-merge-ready-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-merged-32task-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave1-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-merged-33task-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-merge-ready-routing.jsonl",
+    "research/datasets/20260627-acquisition-to-50-wave2-specialist-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-eligible-8-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-hard-smoke-1-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-minipilot-routing.jsonl",
+    "research/datasets/20260627-catalog-candidate-regression-slices-provenance-routing.jsonl",
+    "research/datasets/20260627-cloud-positive-compare-4-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-4task-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-smoke-routing.jsonl",
+    "research/datasets/20260627-deepseek-368-routing.jsonl",
+    "research/datasets/20260627-expanded-ollama-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-38task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-featurefix-38task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-featurefix-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-fresh-batch6-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-40task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave2-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-45task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave3-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-46task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-49task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4b-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4b-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4c-merge-ready-routing.jsonl",
+    "research/datasets/20260627-expanded-profile-wave4c-routing.jsonl",
+    "research/datasets/20260627-fallback-error-neighborhood-screen4-routing.jsonl",
+    "research/datasets/20260627-fallback-opportunity-top2-repeat-routing.jsonl",
+    "research/datasets/20260627-fallback-solvability-screen4-routing.jsonl",
+    "research/datasets/20260627-heldout-both-repeat-routing.jsonl",
+    "research/datasets/20260627-heldout-hard-active-policy-routing.jsonl",
+    "research/datasets/20260627-kimi-candidate-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-14task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-16task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-6task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+    "research/datasets/20260627-offset125-stable-positive-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-1-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-3-routing.jsonl",
+    "research/datasets/20260627-positive-neighborhood-screen2-routing.jsonl",
+    "research/datasets/20260627-postrefresh-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-qwen-only-offset99-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-real-ollama-routing.jsonl",
+    "research/datasets/20260627-top4-fresh-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-top4-hard-specialist-repeat-routing.jsonl",
+    "research/datasets/20260627-top4-specialist-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-contrast-aware-26task-routing.jsonl",
+    "research/datasets/20260628-contrast-aware-top4-repeat-merge-ready-routing.jsonl",
+    "research/datasets/20260628-contrast-aware-top4-repeat-routing.jsonl",
+    "research/datasets/20260628-fresh-acquisition-54task-routing.jsonl",
+    "research/datasets/20260628-fresh-acquisition-outcomes-routing.jsonl",
+    "research/datasets/20260628-known-positive-live-top4-repeat2-routing.jsonl",
+    "research/datasets/20260628-latency-safe-head-37task-routing.jsonl",
+    "research/datasets/20260628-latency-safe-matched-controls-top4-routing.jsonl",
+    "research/datasets/20260628-live-augmented-30task-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-25task-qwen-fail-contrast-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-26task-next3-917-neighborhood-routing.jsonl",
+    "research/datasets/20260628-next-profile-fallback-opportunity-screen1-routing.jsonl",
+    "research/datasets/20260628-next-profile-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-next2-profile-fallback-opportunity-screen1-routing.jsonl",
+    "research/datasets/20260628-next3-917-neighborhood-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-next3-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-positive-repeat-merge-ready-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-top3-screen-merge-ready-routing.jsonl",
+    "research/datasets/20260628-nonqwen-pressure-top3-screen-routing.jsonl",
+    "research/datasets/20260628-nonqwen-specialist-rank1-top4-positive-routing.jsonl",
+    "research/datasets/20260628-normal-offset156-guarded-58task-routing.jsonl",
+    "research/datasets/20260628-normal-offset156-guarded-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p1-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-29task-weight0p5-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-56task-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-heldout27-routing.jsonl",
+    "research/datasets/20260628-normal-offset16-contrast-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-61task-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-heldout38-routing.jsonl",
+    "research/datasets/20260628-normal-offset236-boundary-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-54task-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-heldout31-routing.jsonl",
+    "research/datasets/20260628-normal-offset76-guarded-routing.jsonl",
+    "research/datasets/20260628-probe-gated-live-validation-top4-routing.jsonl",
+    "research/datasets/20260628-qwen-fail-contrast-selector-positive-repeat-routing.jsonl",
+    "research/datasets/20260628-qwen-fail-specialist-mining-screen1-routing.jsonl",
+    "research/datasets/20260628-qwen-resistant-rank1-specialist-top4-positive-routing.jsonl",
+    "research/datasets/20260628-router-miss-repeat-24task-routing.jsonl",
+    "research/datasets/20260628-router-miss-repeat4-top4-merge-ready-routing.jsonl",
+    "research/datasets/20260628-router-miss-repeat4-top4-routing.jsonl"
+  ],
+  "fallback_opportunities": 322,
+  "hard_negative_task_ids": [
+    "bigcodebench-hard-BigCodeBench-100",
+    "bigcodebench-hard-BigCodeBench-1012",
+    "bigcodebench-hard-BigCodeBench-1015",
+    "bigcodebench-hard-BigCodeBench-1022",
+    "bigcodebench-hard-BigCodeBench-1039",
+    "bigcodebench-hard-BigCodeBench-1042",
+    "bigcodebench-hard-BigCodeBench-1057",
+    "bigcodebench-hard-BigCodeBench-1137",
+    "bigcodebench-hard-BigCodeBench-12",
+    "bigcodebench-hard-BigCodeBench-120",
+    "bigcodebench-hard-BigCodeBench-124",
+    "bigcodebench-hard-BigCodeBench-130",
+    "bigcodebench-hard-BigCodeBench-131",
+    "bigcodebench-hard-BigCodeBench-145",
+    "bigcodebench-hard-BigCodeBench-146",
+    "bigcodebench-hard-BigCodeBench-147",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-158",
+    "bigcodebench-hard-BigCodeBench-17",
+    "bigcodebench-hard-BigCodeBench-202",
+    "bigcodebench-hard-BigCodeBench-203",
+    "bigcodebench-hard-BigCodeBench-208",
+    "bigcodebench-hard-BigCodeBench-211",
+    "bigcodebench-hard-BigCodeBench-239",
+    "bigcodebench-hard-BigCodeBench-241",
+    "bigcodebench-hard-BigCodeBench-267",
+    "bigcodebench-hard-BigCodeBench-273",
+    "bigcodebench-hard-BigCodeBench-274",
+    "bigcodebench-hard-BigCodeBench-287",
+    "bigcodebench-hard-BigCodeBench-288",
+    "bigcodebench-hard-BigCodeBench-305",
+    "bigcodebench-hard-BigCodeBench-306",
+    "bigcodebench-hard-BigCodeBench-313",
+    "bigcodebench-hard-BigCodeBench-314",
+    "bigcodebench-hard-BigCodeBench-320",
+    "bigcodebench-hard-BigCodeBench-324",
+    "bigcodebench-hard-BigCodeBench-341",
+    "bigcodebench-hard-BigCodeBench-346",
+    "bigcodebench-hard-BigCodeBench-360",
+    "bigcodebench-hard-BigCodeBench-399",
+    "bigcodebench-hard-BigCodeBench-409",
+    "bigcodebench-hard-BigCodeBench-443",
+    "bigcodebench-hard-BigCodeBench-486",
+    "bigcodebench-hard-BigCodeBench-492",
+    "bigcodebench-hard-BigCodeBench-509",
+    "bigcodebench-hard-BigCodeBench-513",
+    "bigcodebench-hard-BigCodeBench-528",
+    "bigcodebench-hard-BigCodeBench-560",
+    "bigcodebench-hard-BigCodeBench-579",
+    "bigcodebench-hard-BigCodeBench-594",
+    "bigcodebench-hard-BigCodeBench-6",
+    "bigcodebench-hard-BigCodeBench-636",
+    "bigcodebench-hard-BigCodeBench-655",
+    "bigcodebench-hard-BigCodeBench-720",
+    "bigcodebench-hard-BigCodeBench-723",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-765",
+    "bigcodebench-hard-BigCodeBench-771",
+    "bigcodebench-hard-BigCodeBench-785",
+    "bigcodebench-hard-BigCodeBench-8",
+    "bigcodebench-hard-BigCodeBench-800",
+    "bigcodebench-hard-BigCodeBench-857",
+    "bigcodebench-hard-BigCodeBench-914",
+    "bigcodebench-hard-BigCodeBench-915",
+    "bigcodebench-hard-BigCodeBench-916",
+    "bigcodebench-hard-BigCodeBench-93",
+    "bigcodebench-hard-BigCodeBench-942",
+    "bigcodebench-hard-BigCodeBench-952",
+    "bigcodebench-hard-BigCodeBench-955",
+    "bigcodebench-hard-BigCodeBench-963",
+    "bigcodebench-hard-BigCodeBench-985",
+    "bigcodebench-hard-BigCodeBench-988"
+  ],
+  "hard_negatives": 173,
+  "output": "research/datasets/20260628-fallback-opportunity-corpus.jsonl",
+  "positive_best_alternate_counts": {
+    "ollama-cloud-deepseek-v4-pro": 54,
+    "ollama-cloud-glm-5.2": 39,
+    "ollama-cloud-kimi-k2.7-code": 47,
+    "ollama-cloud-qwen3-coder-480b": 9
+  },
+  "positive_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1008",
+    "bigcodebench-hard-BigCodeBench-1129",
+    "bigcodebench-hard-BigCodeBench-129",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-192",
+    "bigcodebench-hard-BigCodeBench-266",
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-458",
+    "bigcodebench-hard-BigCodeBench-526",
+    "bigcodebench-hard-BigCodeBench-582",
+    "bigcodebench-hard-BigCodeBench-7",
+    "bigcodebench-hard-BigCodeBench-865",
+    "bigcodebench-hard-BigCodeBench-917",
+    "bigcodebench-hard-BigCodeBench-963",
+    "bigcodebench-hard-BigCodeBench-998"
+  ],
+  "records_emitted": 322,
+  "registry": "research/policies/active_policy.json",
+  "solvable_fallback_opportunities": 149,
+  "top_worker_failure_counts": {
+    "ollama-cloud-deepseek-v4-pro": 1,
+    "ollama-cloud-kimi-k2.7-code": 66,
+    "ollama-cloud-qwen3-coder-480b": 255
+  },
+  "unique_task_count": 86,
+  "useful_any_fallback_rate": 0.46273291925465837,
+  "useful_any_fallbacks": 149,
+  "useful_second_fallbacks": 78
+}

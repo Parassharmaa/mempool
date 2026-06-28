@@ -1,0 +1,642 @@
+{
+  "dataset": "research/datasets/20260627-expanded-profile-38task-routing.jsonl",
+  "evaluation": {
+    "cost_per_solved_task": 0.0,
+    "matched_target": 29,
+    "mean_kl": 0.22877366976161342,
+    "mean_latency_ms": 6697.078947368421,
+    "mean_latency_regret_ms": 1550.421052631579,
+    "mean_target_latency_ms": 5285.6578947368425,
+    "pass_at_1": 0.868421052631579,
+    "policy": "logits-router",
+    "predictions": [
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code"
+    ],
+    "solvable_pass_at_1": 0.9428571428571428,
+    "solvable_solved": 33,
+    "solvable_target_accuracy": 0.7714285714285715,
+    "solvable_task_count": 35,
+    "solved": 33,
+    "target_accuracy": 0.7631578947368421,
+    "task_count": 38
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "mean_kl": 0.643141220565037
+    },
+    {
+      "epoch": 60.0,
+      "mean_kl": 0.5535710531977109
+    },
+    {
+      "epoch": 120.0,
+      "mean_kl": 0.5076195020527774
+    },
+    {
+      "epoch": 180.0,
+      "mean_kl": 0.47234079388503875
+    },
+    {
+      "epoch": 240.0,
+      "mean_kl": 0.44330811364784567
+    },
+    {
+      "epoch": 300.0,
+      "mean_kl": 0.41873723711835303
+    }
+  ],
+  "leave_one_out": {
+    "cost_per_solved_task": 0.0,
+    "examples": [
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2799305823050997,
+          "ollama-cloud-glm-5.2": 0.11243627333519389,
+          "ollama-cloud-kimi-k2.7-code": 0.2528856762370405,
+          "ollama-cloud-qwen3-coder-480b": 0.3547474681226659
+        },
+        "kl": 0.056013641325668814,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-100"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.22902928420687543,
+          "ollama-cloud-glm-5.2": 0.15073041732816628,
+          "ollama-cloud-kimi-k2.7-code": 0.36483493815534984,
+          "ollama-cloud-qwen3-coder-480b": 0.2554053603096085
+        },
+        "kl": 0.3067991059558832,
+        "matched_target": true,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-1004"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2384688297891558,
+          "ollama-cloud-glm-5.2": 0.1995064001427108,
+          "ollama-cloud-kimi-k2.7-code": 0.1630701683903403,
+          "ollama-cloud-qwen3-coder-480b": 0.3989546016777931
+        },
+        "kl": 1.0518928012325,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-1006"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.17247225016807333,
+          "ollama-cloud-glm-5.2": 0.15427626661962815,
+          "ollama-cloud-kimi-k2.7-code": 0.4238738279540211,
+          "ollama-cloud-qwen3-coder-480b": 0.2493776552582773
+        },
+        "kl": 0.08998305631089146,
+        "matched_target": false,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-1022"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2573638524522076,
+          "ollama-cloud-glm-5.2": 0.18349830774431317,
+          "ollama-cloud-kimi-k2.7-code": 0.19332685312107234,
+          "ollama-cloud-qwen3-coder-480b": 0.3658109866824069
+        },
+        "kl": 0.028455162591101937,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-1085"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.20636772841171133,
+          "ollama-cloud-glm-5.2": 0.17984976638894096,
+          "ollama-cloud-kimi-k2.7-code": 0.23409398315201696,
+          "ollama-cloud-qwen3-coder-480b": 0.3796885220473308
+        },
+        "kl": 0.26502877300431193,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-123"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.17108876445650603,
+          "ollama-cloud-glm-5.2": 0.15659415192832227,
+          "ollama-cloud-kimi-k2.7-code": 0.3471954403893167,
+          "ollama-cloud-qwen3-coder-480b": 0.3251216432258549
+        },
+        "kl": 0.9805445822383229,
+        "matched_target": false,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-129"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.21292003969426979,
+          "ollama-cloud-glm-5.2": 0.15290176525214907,
+          "ollama-cloud-kimi-k2.7-code": 0.2608162002399083,
+          "ollama-cloud-qwen3-coder-480b": 0.3733619948136727
+        },
+        "kl": 0.2773204403535884,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-13"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.29101921490944443,
+          "ollama-cloud-glm-5.2": 0.12135240010605838,
+          "ollama-cloud-kimi-k2.7-code": 0.1273526638688163,
+          "ollama-cloud-qwen3-coder-480b": 0.46027572111568094
+        },
+        "kl": 0.13048358676069483,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-139"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.25910850778017425,
+          "ollama-cloud-glm-5.2": 0.19196693085292194,
+          "ollama-cloud-kimi-k2.7-code": 0.22798275287183958,
+          "ollama-cloud-qwen3-coder-480b": 0.32094180849506426
+        },
+        "kl": 0.9943152980933077,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-161"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.32831130490275906,
+          "ollama-cloud-glm-5.2": 0.14347782486207963,
+          "ollama-cloud-kimi-k2.7-code": 0.17471066944416433,
+          "ollama-cloud-qwen3-coder-480b": 0.35350020079099703
+        },
+        "kl": 0.05532736805320315,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-162"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2137379633986552,
+          "ollama-cloud-glm-5.2": 0.1538499282918766,
+          "ollama-cloud-kimi-k2.7-code": 0.22478254870066125,
+          "ollama-cloud-qwen3-coder-480b": 0.40762955960880703
+        },
+        "kl": 0.07955694978534991,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-184"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.16355339684204884,
+          "ollama-cloud-glm-5.2": 0.2415671127754269,
+          "ollama-cloud-kimi-k2.7-code": 0.24392798742057734,
+          "ollama-cloud-qwen3-coder-480b": 0.350951502961947
+        },
+        "kl": 0.021652168320932683,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-19"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.3107792733028127,
+          "ollama-cloud-glm-5.2": 0.15276394062616924,
+          "ollama-cloud-kimi-k2.7-code": 0.2475835247985155,
+          "ollama-cloud-qwen3-coder-480b": 0.28887326127250257
+        },
+        "kl": 0.2445760206591588,
+        "matched_target": false,
+        "prediction": "ollama-cloud-deepseek-v4-pro",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-308"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.24832533018486636,
+          "ollama-cloud-glm-5.2": 0.18302558355289406,
+          "ollama-cloud-kimi-k2.7-code": 0.3416579041455114,
+          "ollama-cloud-qwen3-coder-480b": 0.22699118211672822
+        },
+        "kl": 0.6114706740320069,
+        "matched_target": true,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-310"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.22513227578489078,
+          "ollama-cloud-glm-5.2": 0.14119000722921748,
+          "ollama-cloud-kimi-k2.7-code": 0.21114920348875427,
+          "ollama-cloud-qwen3-coder-480b": 0.4225285134971374
+        },
+        "kl": 0.07372574788466554,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-367"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.1276491096651628,
+          "ollama-cloud-glm-5.2": 0.19692751706970074,
+          "ollama-cloud-kimi-k2.7-code": 0.3134565399849375,
+          "ollama-cloud-qwen3-coder-480b": 0.361966833280199
+        },
+        "kl": 1.7751678671782818,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-368"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.3627980972057434,
+          "ollama-cloud-glm-5.2": 0.15558165728068776,
+          "ollama-cloud-kimi-k2.7-code": 0.18823331230079468,
+          "ollama-cloud-qwen3-coder-480b": 0.29338693321277415
+        },
+        "kl": 0.371246290062632,
+        "matched_target": false,
+        "prediction": "ollama-cloud-deepseek-v4-pro",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-37"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.22458033694942858,
+          "ollama-cloud-glm-5.2": 0.22773362720386445,
+          "ollama-cloud-kimi-k2.7-code": 0.22164787365668553,
+          "ollama-cloud-qwen3-coder-480b": 0.32603816219002146
+        },
+        "kl": 0.8948530351572201,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-454"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2962691573960576,
+          "ollama-cloud-glm-5.2": 0.114140874912988,
+          "ollama-cloud-kimi-k2.7-code": 0.1403984452983342,
+          "ollama-cloud-qwen3-coder-480b": 0.4491915223926202
+        },
+        "kl": 0.18338738682398592,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-477"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.410333359147037,
+          "ollama-cloud-glm-5.2": 0.10139450371943137,
+          "ollama-cloud-kimi-k2.7-code": 0.18165719060708432,
+          "ollama-cloud-qwen3-coder-480b": 0.30661494652644733
+        },
+        "kl": 1.5728698118541082,
+        "matched_target": false,
+        "prediction": "ollama-cloud-deepseek-v4-pro",
+        "target_worker_id": "ollama-cloud-glm-5.2",
+        "task_id": "bigcodebench-hard-BigCodeBench-526"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.25427054301646634,
+          "ollama-cloud-glm-5.2": 0.16312336925924764,
+          "ollama-cloud-kimi-k2.7-code": 0.32980626111397504,
+          "ollama-cloud-qwen3-coder-480b": 0.2527998266103109
+        },
+        "kl": 0.6993884339124862,
+        "matched_target": true,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-592"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.24020569538560135,
+          "ollama-cloud-glm-5.2": 0.13647519190834229,
+          "ollama-cloud-kimi-k2.7-code": 0.20021073724679958,
+          "ollama-cloud-qwen3-coder-480b": 0.4231083754592567
+        },
+        "kl": 0.6694661051652875,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-637"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2647136549926059,
+          "ollama-cloud-glm-5.2": 0.18709536951338612,
+          "ollama-cloud-kimi-k2.7-code": 0.18838596393956517,
+          "ollama-cloud-qwen3-coder-480b": 0.3598050115544427
+        },
+        "kl": 0.023421175461939434,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-678"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.27050141438619657,
+          "ollama-cloud-glm-5.2": 0.16954062595054842,
+          "ollama-cloud-kimi-k2.7-code": 0.30167205028509037,
+          "ollama-cloud-qwen3-coder-480b": 0.25828590937816465
+        },
+        "kl": 0.6969581198660646,
+        "matched_target": false,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-760"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.13451486412080177,
+          "ollama-cloud-glm-5.2": 0.29404556862126346,
+          "ollama-cloud-kimi-k2.7-code": 0.2612268740128866,
+          "ollama-cloud-qwen3-coder-480b": 0.31021269324504813
+        },
+        "kl": 1.4000567720914783,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-763"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.1868196964159214,
+          "ollama-cloud-glm-5.2": 0.25186626472217644,
+          "ollama-cloud-kimi-k2.7-code": 0.22346442828438617,
+          "ollama-cloud-qwen3-coder-480b": 0.3378496105775159
+        },
+        "kl": 0.6515788095009764,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-777"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.18260422558106573,
+          "ollama-cloud-glm-5.2": 0.16182499688643437,
+          "ollama-cloud-kimi-k2.7-code": 0.2003589144389768,
+          "ollama-cloud-qwen3-coder-480b": 0.455211863093523
+        },
+        "kl": 0.07366135688590439,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-854"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2557106311282501,
+          "ollama-cloud-glm-5.2": 0.1729502694858259,
+          "ollama-cloud-kimi-k2.7-code": 0.13556999186311988,
+          "ollama-cloud-qwen3-coder-480b": 0.4357691075228041
+        },
+        "kl": 0.08053168529512769,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-870"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.39035795503155657,
+          "ollama-cloud-glm-5.2": 0.12735811595467475,
+          "ollama-cloud-kimi-k2.7-code": 0.1713523410759415,
+          "ollama-cloud-qwen3-coder-480b": 0.31093158793782716
+        },
+        "kl": 0.76303019110102,
+        "matched_target": false,
+        "prediction": "ollama-cloud-deepseek-v4-pro",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-897"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.143067592047265,
+          "ollama-cloud-glm-5.2": 0.15468100179764202,
+          "ollama-cloud-kimi-k2.7-code": 0.23891498788773843,
+          "ollama-cloud-qwen3-coder-480b": 0.4633364182673546
+        },
+        "kl": 0.30426897469113734,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-906"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.29555218107046977,
+          "ollama-cloud-glm-5.2": 0.16094359988800805,
+          "ollama-cloud-kimi-k2.7-code": 0.1992023446829092,
+          "ollama-cloud-qwen3-coder-480b": 0.3443018743586129
+        },
+        "kl": 0.10016613064865287,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "task_id": "bigcodebench-hard-BigCodeBench-92"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2894942893788595,
+          "ollama-cloud-glm-5.2": 0.2123545278331612,
+          "ollama-cloud-kimi-k2.7-code": 0.23926738753930557,
+          "ollama-cloud-qwen3-coder-480b": 0.25888379524867366
+        },
+        "kl": 0.006252246589487703,
+        "matched_target": true,
+        "prediction": "ollama-cloud-deepseek-v4-pro",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "task_id": "bigcodebench-hard-BigCodeBench-928"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.31269825825625097,
+          "ollama-cloud-glm-5.2": 0.16275284261056172,
+          "ollama-cloud-kimi-k2.7-code": 0.17676995546921492,
+          "ollama-cloud-qwen3-coder-480b": 0.34777894366397233
+        },
+        "kl": 0.030785046110698752,
+        "matched_target": true,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-955"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.17595262967939107,
+          "ollama-cloud-glm-5.2": 0.09727328876309958,
+          "ollama-cloud-kimi-k2.7-code": 0.31691511077838597,
+          "ollama-cloud-qwen3-coder-480b": 0.40985897077912337
+        },
+        "kl": 1.0716031467435463,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-glm-5.2",
+        "task_id": "bigcodebench-hard-BigCodeBench-963"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.3160632749848229,
+          "ollama-cloud-glm-5.2": 0.11796295617155397,
+          "ollama-cloud-kimi-k2.7-code": 0.20121797489207585,
+          "ollama-cloud-qwen3-coder-480b": 0.3647557939515473
+        },
+        "kl": 0.09753471561659034,
+        "matched_target": false,
+        "prediction": "ollama-cloud-qwen3-coder-480b",
+        "target_worker_id": "ollama-cloud-glm-5.2",
+        "task_id": "bigcodebench-hard-BigCodeBench-99"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.3439024919006992,
+          "ollama-cloud-glm-5.2": 0.21482301042333693,
+          "ollama-cloud-kimi-k2.7-code": 0.21407562600331292,
+          "ollama-cloud-qwen3-coder-480b": 0.22719887167265093
+        },
+        "kl": 0.029399657450859325,
+        "matched_target": false,
+        "prediction": "ollama-cloud-deepseek-v4-pro",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-990"
+      },
+      {
+        "distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.21076337273605383,
+          "ollama-cloud-glm-5.2": 0.10571220068724399,
+          "ollama-cloud-kimi-k2.7-code": 0.5821626654335965,
+          "ollama-cloud-qwen3-coder-480b": 0.10136176114310565
+        },
+        "kl": 0.2972518964278452,
+        "matched_target": false,
+        "prediction": "ollama-cloud-kimi-k2.7-code",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "task_id": "bigcodebench-hard-BigCodeBench-999"
+      }
+    ],
+    "matched_target": 18,
+    "mean_kl": 0.4489480060851821,
+    "mean_latency_ms": 8797.263157894737,
+    "mean_latency_regret_ms": 4429.736842105263,
+    "mean_target_latency_ms": 5285.6578947368425,
+    "pass_at_1": 0.7368421052631579,
+    "policy": "logits-router-loo",
+    "predictions": [
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-kimi-k2.7-code"
+    ],
+    "solvable_pass_at_1": 0.8,
+    "solvable_solved": 28,
+    "solvable_target_accuracy": 0.45714285714285713,
+    "solvable_task_count": 35,
+    "solved": 28,
+    "target_accuracy": 0.47368421052631576,
+    "task_count": 38
+  },
+  "model_output": "research/models/20260627-expanded-profile-38task-reward-t0p05-logits-router.json",
+  "reward_temperature": 0.05,
+  "target_mode": "reward"
+}

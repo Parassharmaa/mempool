@@ -1,0 +1,37 @@
+{
+  "abstain_positive": 9,
+  "contract_validation": {
+    "available_heads": [
+      "abstain_probability",
+      "verifier_probability",
+      "worker_distribution",
+      "workflow_kind"
+    ],
+    "head_count": 4,
+    "reasons": [],
+    "valid": true
+  },
+  "mean_verifier_probability": 0.4659817272727273,
+  "orchestrator_contract": "research/models/20260627-active-multi-head-orchestrator-contract.json",
+  "output": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+  "record_count": 66,
+  "reward_temperature": 0.05,
+  "routing_dataset": "research/datasets/20260628-m5-current-task-66task-routing.jsonl",
+  "schema_version": "mempool.small_orchestrator_substrate.v1",
+  "target_counts": {
+    "ollama-cloud-deepseek-v4-pro": 9,
+    "ollama-cloud-glm-5.2": 4,
+    "ollama-cloud-kimi-k2.7-code": 12,
+    "ollama-cloud-qwen3-coder-480b": 41
+  },
+  "worker_ids": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "workflow_counts": {
+    "direct": 57,
+    "verify_then_fallback": 9
+  }
+}

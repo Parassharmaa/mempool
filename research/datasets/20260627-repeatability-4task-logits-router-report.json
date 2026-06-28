@@ -1,0 +1,47 @@
+{
+  "dataset": "research/datasets/20260627-cloud-repeatability-4task-routing.jsonl",
+  "evaluation": {
+    "cost_per_solved_task": 0.0,
+    "matched_target": 4,
+    "mean_kl": 0.00010328067379894974,
+    "mean_latency_ms": 2588.0,
+    "pass_at_1": 1.0,
+    "policy": "logits-router",
+    "predictions": [
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "solved": 4,
+    "target_accuracy": 1.0,
+    "task_count": 4
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "mean_kl": 0.5609365496181639
+    },
+    {
+      "epoch": 200.0,
+      "mean_kl": 0.006769674866291375
+    },
+    {
+      "epoch": 400.0,
+      "mean_kl": 0.0012383319869977692
+    },
+    {
+      "epoch": 600.0,
+      "mean_kl": 0.0004006697988786321
+    },
+    {
+      "epoch": 800.0,
+      "mean_kl": 0.00018492585815920804
+    },
+    {
+      "epoch": 1000.0,
+      "mean_kl": 0.00010436958331083471
+    }
+  ],
+  "model_output": "research/models/20260627-repeatability-4task-logits-router.json"
+}

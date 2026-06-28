@@ -1,0 +1,15 @@
+{
+  "analysis": [],
+  "canonical_probe": [],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 0,
+  "max_rows": 80,
+  "mode": "instruct",
+  "next_offset": 676,
+  "offset": 676,
+  "output": "research/evals/20260628-normal-offset676-eligible-tasks.json",
+  "scanned": 0,
+  "selected_task_ids": [],
+  "split": "v0.1.4",
+  "target_passes": 8
+}

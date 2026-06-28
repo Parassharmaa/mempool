@@ -1,0 +1,98 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "status": "planned-after-bigcodebench-heldout",
+  "reason_for_choice": "Interactive terminal tasks with verifier-based success criteria test whether routing generalizes from single-step code generation to multi-turn tool use, repair, and stop decisions.",
+  "ladder": [
+    {
+      "name": "metadata_selection",
+      "target_tasks": 5,
+      "purpose": "Select a category-diverse subset from task metadata only, without copying task instructions or oracle material into mempool."
+    },
+    {
+      "name": "reproducibility_pilot",
+      "target_tasks": 5,
+      "purpose": "Verify that the Harbor/Terminal-Bench run path is reproducible for fixed single-worker agents and an orchestrator-selected policy."
+    },
+    {
+      "name": "agentic_pilot",
+      "target_tasks": 10,
+      "purpose": "Measure whether state/history features are needed for worker switching, verifier use, repair, and stop decisions."
+    }
+  ],
+  "baselines": [
+    "best_single_top_tier_worker",
+    "cheapest_acceptable_worker",
+    "active_bigcodebench_logits_router_as_initial_worker_selector",
+    "orchestrator_with_terminal_state_features",
+    "orchestrator_with_conditional_verifier"
+  ],
+  "primary_metrics": [
+    "task_success_rate",
+    "cost_per_solved_task",
+    "latency_per_solved_task",
+    "verified_completion_rate"
+  ],
+  "secondary_metrics": [
+    "tool_call_count",
+    "file_edit_count",
+    "retry_count",
+    "worker_switch_count",
+    "failure_mode",
+    "orchestration_degradation_cases"
+  ],
+  "trajectory_schema": "research/evals/terminal_bench_trajectory_schema.md",
+  "trajectory_validator": "tools/validate_terminal_bench_trajectories.py",
+  "metadata_extractor": "tools/extract_terminal_bench_metadata.py",
+  "metadata_selector": "tools/select_terminal_bench_pilot.py",
+  "harness_preflight_runner": "tools/run_terminal_bench_preflight.py",
+  "harness_summary_refresher": "tools/refresh_terminal_bench_preflight_summary.py",
+  "harness_readiness_checker": "tools/check_terminal_bench_readiness.py",
+  "harbor_trajectory_converter": "tools/convert_harbor_job_to_terminal_trajectories.py",
+  "trajectory_comparator": "tools/compare_terminal_bench_trajectories.py",
+  "example_metadata_artifacts": [
+    "research/evals/terminal_bench_metadata_example.json",
+    "research/evals/terminal_bench_metadata_example_extracted.json",
+    "research/evals/terminal_bench_example_pilot_manifest.json"
+  ],
+  "real_metadata_artifacts": [
+    "research/evals/terminal_bench_2p1_metadata.json",
+    "research/evals/terminal_bench_2p1_metadata_report.json",
+    "research/evals/terminal_bench_2p1_pilot_manifest.json",
+    "research/evals/terminal_bench_2p1_harness_preflight.json",
+    "research/evals/terminal_bench_2p1_oracle_smoke_summary.json",
+    "research/evals/terminal_bench_2p1_install_preflight_summary.json",
+    "research/evals/terminal_bench_2p1_fix_git_install_preflight_summary.json",
+    "research/evals/terminal_bench_2p1_readiness.json",
+    "research/evals/terminal_bench_2p1_oracle_smoke_refreshed_summary.json",
+    "research/evals/terminal_bench_2p1_install_preflight_refreshed_summary.json",
+    "research/evals/terminal_bench_2p1_fix_git_install_preflight_refreshed_summary.json",
+    "research/evals/terminal_bench_2p1_refreshed_readiness.json",
+    "research/evals/terminal_bench_2p1_fix_git_install_fresh_summary.json",
+    "research/evals/terminal_bench_2p1_fix_git_install_fresh_refreshed_summary.json",
+    "research/evals/terminal_bench_2p1_fix_git_oracle_fresh_summary.json",
+    "research/evals/terminal_bench_2p1_fix_git_oracle_fresh_refreshed_summary.json",
+    "research/evals/terminal_bench_2p1_fresh_oracle_readiness.json",
+    "research/evals/terminal_bench_2p1_fix_git_oracle_fresh_trajectories.jsonl",
+    "research/evals/terminal_bench_2p1_fix_git_qwen_next_summary.json",
+    "research/evals/terminal_bench_2p1_fix_git_qwen_next_refreshed_summary.json",
+    "research/evals/terminal_bench_2p1_qwen_next_readiness.json",
+    "research/evals/terminal_bench_2p1_fix_git_qwen_next_trajectories.jsonl",
+    "research/evals/terminal_bench_2p1_fix_git_oracle_vs_qwen_next_report.json"
+  ],
+  "run_rules": [
+    "Do not persist task instructions, oracle solutions, or verifier code in mempool training corpora.",
+    "Start with a tiny reproducibility pilot, not a leaderboard run.",
+    "Compare every orchestrated run to fixed single-worker agent baselines.",
+    "Record task id, worker id, selected workflow, terminal action summary, verifier result, latency, cost, and failure mode.",
+    "Use Terminal-Bench as held-out agentic evaluation until a separate decision explicitly allows training on sanitized trajectory features.",
+    "Refresh stale or legacy preflight summaries from safe Harbor result/config metadata before checking readiness.",
+    "Do not launch paid or cloud worker comparisons until the readiness checker reports process_status=exited and harbor_summary.status=complete for at least one safe preflight summary."
+  ],
+  "current_readiness": {
+    "status": "tiny_fixed_worker_pilot_started",
+    "evidence": "research/evals/terminal_bench_2p1_fresh_oracle_readiness.json",
+    "safe_trajectory_smoke": "research/evals/terminal_bench_2p1_fix_git_oracle_fresh_trajectories.jsonl",
+    "first_worker_report": "research/evals/terminal_bench_2p1_fix_git_oracle_vs_qwen_next_report.json",
+    "notes": "A fresh fix-git install-only run and oracle execution run both exited cleanly. The first fixed-worker Terminus 2 run against Ollama Cloud Qwen Coder Next also exited cleanly but failed the verifier. This is a valid held-out negative trajectory signal, not training data."
+  }
+}

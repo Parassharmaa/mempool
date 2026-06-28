@@ -1,0 +1,292 @@
+{
+  "active": {
+    "dataset": "research/datasets/20260628-normal-offset156-guarded-58task-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.0,
+      "mean_latency_regret_ms": 500.0258620689655,
+      "pass_at_1": 0.8103448275862069,
+      "solvable_pass_at_1": 0.8545454545454545,
+      "solvable_target_accuracy": 0.6545454545454545,
+      "solvable_task_count": 55,
+      "target_accuracy": 0.6724137931034483,
+      "task_count": 58
+    },
+    "model": "research/models/20260628-latency-calibrated-router-offset156-w0p5.json",
+    "refresh_timestamp": "simulated",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-deepseek-v4-pro": 10,
+        "ollama-cloud-glm-5.2": 5,
+        "ollama-cloud-kimi-k2.7-code": 9,
+        "ollama-cloud-qwen3-coder-480b": 34
+      },
+      "target_worker_count": 4,
+      "task_count": 58
+    }
+  },
+  "history": [
+    {
+      "action": "promote",
+      "from": null,
+      "timestamp": "2026-06-27T05:01:42.666466+00:00",
+      "to": {
+        "dataset": "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.7421644099131415,
+          "pass_at_1": 0.75,
+          "target_accuracy": 0.75,
+          "task_count": 8
+        },
+        "model": "research/models/20260627-mixed-winner-8task-logits-router.json",
+        "refresh_timestamp": "2026-06-27T04:58:40.676464+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 2,
+            "ollama-cloud-qwen3-coder-480b": 5
+          },
+          "target_worker_count": 3,
+          "task_count": 8
+        }
+      },
+      "warnings": [
+        "candidate LOO target accuracy dropped by 0.083"
+      ]
+    },
+    {
+      "action": "promote",
+      "from": {
+        "dataset": "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.5584403926642599,
+          "mean_latency_regret_ms": 522.125,
+          "pass_at_1": 0.5,
+          "target_accuracy": 0.5,
+          "task_count": 8
+        },
+        "model": "research/models/20260627-mixed-winner-8task-logits-router.json",
+        "refresh_timestamp": "2026-06-27T04:58:40.676464+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 2,
+            "ollama-cloud-qwen3-coder-480b": 5
+          },
+          "target_worker_count": 3,
+          "task_count": 8
+        }
+      },
+      "timestamp": "2026-06-27T05:54:38.273748+00:00",
+      "to": {
+        "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.43662012038948345,
+          "mean_latency_regret_ms": 919.5,
+          "pass_at_1": 0.8,
+          "target_accuracy": 0.7,
+          "task_count": 10
+        },
+        "model": "research/models/20260627-mixed-winner-10task-library-logits-router.json",
+        "refresh_timestamp": "2026-06-27T05:54:26.034436+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 2,
+            "ollama-cloud-qwen3-coder-480b": 7
+          },
+          "target_worker_count": 3,
+          "task_count": 10
+        }
+      },
+      "warnings": [
+        "candidate LOO target accuracy dropped by 0.050",
+        "candidate LOO mean latency regret increased by 418.4 ms"
+      ]
+    },
+    {
+      "action": "promote",
+      "from": {
+        "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.43662012038948345,
+          "mean_latency_regret_ms": 919.5,
+          "pass_at_1": 0.8,
+          "target_accuracy": 0.7,
+          "task_count": 10
+        },
+        "model": "research/models/20260627-mixed-winner-10task-library-logits-router.json",
+        "refresh_timestamp": "2026-06-27T05:54:26.034436+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 2,
+            "ollama-cloud-qwen3-coder-480b": 7
+          },
+          "target_worker_count": 3,
+          "task_count": 10
+        }
+      },
+      "timestamp": "2026-06-27T06:03:00.708506+00:00",
+      "to": {
+        "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.4476179587687513,
+          "mean_latency_regret_ms": 518.6,
+          "pass_at_1": 0.9,
+          "target_accuracy": 0.8,
+          "task_count": 10
+        },
+        "model": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+        "refresh_timestamp": "2026-06-27T06:02:53.173445+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 2,
+            "ollama-cloud-qwen3-coder-480b": 7
+          },
+          "target_worker_count": 3,
+          "task_count": 10
+        }
+      },
+      "warnings": []
+    },
+    {
+      "action": "promote",
+      "from": {
+        "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.4476179587687513,
+          "mean_latency_regret_ms": 518.6,
+          "pass_at_1": 0.9,
+          "target_accuracy": 0.8,
+          "task_count": 10
+        },
+        "model": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+        "refresh_timestamp": "2026-06-27T06:02:53.173445+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 2,
+            "ollama-cloud-qwen3-coder-480b": 7
+          },
+          "target_worker_count": 3,
+          "task_count": 10
+        }
+      },
+      "timestamp": "2026-06-27T07:34:15.712050+00:00",
+      "to": {
+        "dataset": "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.4941774371364192,
+          "mean_latency_regret_ms": 606.578947368421,
+          "pass_at_1": 0.8421052631578947,
+          "target_accuracy": 0.7894736842105263,
+          "task_count": 19
+        },
+        "model": "research/models/20260627-mixed-winner-19task-network-features-reward-t0p05-logits-router.json",
+        "refresh_timestamp": "2026-06-27T07:33:24.003168+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-deepseek-v4-pro": 1,
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 4,
+            "ollama-cloud-qwen3-coder-480b": 13
+          },
+          "target_worker_count": 4,
+          "task_count": 19
+        }
+      },
+      "warnings": [
+        "candidate LOO target accuracy dropped by 0.011",
+        "candidate LOO mean latency regret increased by 88.0 ms"
+      ]
+    },
+    {
+      "action": "promote",
+      "from": {
+        "dataset": "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.4941774371364192,
+          "mean_latency_regret_ms": 606.578947368421,
+          "pass_at_1": 0.8421052631578947,
+          "target_accuracy": 0.7894736842105263,
+          "task_count": 19
+        },
+        "model": "research/models/20260627-mixed-winner-19task-network-features-reward-t0p05-logits-router.json",
+        "refresh_timestamp": "2026-06-27T07:33:24.003168+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-deepseek-v4-pro": 1,
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 4,
+            "ollama-cloud-qwen3-coder-480b": 13
+          },
+          "target_worker_count": 4,
+          "task_count": 19
+        }
+      },
+      "timestamp": "2026-06-27T08:04:19.323335+00:00",
+      "to": {
+        "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+        "loo": {
+          "available": true,
+          "mean_kl": 0.46096494805709975,
+          "mean_latency_regret_ms": 501.0869565217391,
+          "pass_at_1": 0.6956521739130435,
+          "solvable_pass_at_1": 0.8,
+          "solvable_target_accuracy": 0.75,
+          "solvable_task_count": 20,
+          "target_accuracy": 0.782608695652174,
+          "task_count": 23
+        },
+        "model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+        "refresh_timestamp": "2026-06-27T08:02:49.377529+00:00",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-deepseek-v4-pro": 2,
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 4,
+            "ollama-cloud-qwen3-coder-480b": 16
+          },
+          "target_worker_count": 4,
+          "task_count": 23
+        }
+      },
+      "warnings": [
+        "candidate LOO target accuracy dropped by 0.007"
+      ]
+    }
+  ],
+  "previous": {
+    "dataset": "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.4941774371364192,
+      "mean_latency_regret_ms": 606.578947368421,
+      "pass_at_1": 0.8421052631578947,
+      "target_accuracy": 0.7894736842105263,
+      "task_count": 19
+    },
+    "model": "research/models/20260627-mixed-winner-19task-network-features-reward-t0p05-logits-router.json",
+    "refresh_timestamp": "2026-06-27T07:33:24.003168+00:00",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-deepseek-v4-pro": 1,
+        "ollama-cloud-glm-5.2": 1,
+        "ollama-cloud-kimi-k2.7-code": 4,
+        "ollama-cloud-qwen3-coder-480b": 13
+      },
+      "target_worker_count": 4,
+      "task_count": 19
+    }
+  }
+}

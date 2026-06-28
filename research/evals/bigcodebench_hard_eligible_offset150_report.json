@@ -1,0 +1,15 @@
+{
+  "analysis": [],
+  "canonical_probe": [],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 0,
+  "max_rows": 100,
+  "mode": "instruct",
+  "next_offset": 150,
+  "offset": 150,
+  "output": "research/evals/bigcodebench_hard_eligible_offset150_tasks.json",
+  "scanned": 0,
+  "selected_task_ids": [],
+  "split": "v0.1.4",
+  "target_passes": 12
+}

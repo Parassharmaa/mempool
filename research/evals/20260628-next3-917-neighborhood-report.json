@@ -1,0 +1,138 @@
+{
+  "benchmark_id": "bigcodebench-hard-specialist-positive-neighborhood",
+  "exclude_screening_summaries": [
+    "research/evals/results/20260628-next3-positive-repeat-summary.json",
+    "research/evals/results/20260628-next3-nonqwen-screen1-summary.json",
+    "research/evals/results/20260627-top4-fresh-positive-repeat-summary.json",
+    "research/evals/results/20260627-fallback-solvability-screen4-summary.json",
+    "research/evals/results/20260627-heldout-both-repeat-compare-env-summary.json",
+    "research/evals/results/20260628-solvability-aware-kimi-screen1-summary.json",
+    "research/evals/results/20260627-qwen-offset125-mining-5-summary.json",
+    "research/evals/results/20260627-offset125-stable-positive-repeat-summary.json",
+    "research/evals/results/20260627-offset99-neither-specialist-repeat-summary.json",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-provenance_summary.json",
+    "research/evals/results/20260628-next-profile-fallback-opportunity-screen1-summary.json",
+    "research/evals/results/20260627-offset125-positive-repeat-compare-summary.json",
+    "research/evals/results/20260627-top4-hard-specialist-repeat-summary.json",
+    "research/evals/results/20260627-kimi-candidate-repeat-compare-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-limit1-summary.json",
+    "research/evals/results/20260627-fallback-opportunity-top2-repeat-summary.json",
+    "research/evals/results/20260627-offset99-neither-specialist-repeat-repeat-summary.json",
+    "research/evals/results/20260627-heldout-both-repeat-compare-env-repeat-summary.json",
+    "research/evals/results/20260627-top4-specialist-positive-repeat-summary.json",
+    "research/evals/results/20260628-next-profile-positive-repeat-summary.json",
+    "research/evals/results/20260628-nonqwen-specialist-first-screen1-summary.json",
+    "research/evals/results/20260628-direct-deepseek-mining-lowrisk1-summary.json",
+    "research/evals/results/20260627-heldout-hard-active-policy-summary.json",
+    "research/evals/results/20260627-fallback-error-neighborhood-screen4-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1-summary.json",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-top4env_summary.json",
+    "research/evals/results/20260628-specialist-acquisition-batch1-summary.json",
+    "research/evals/results/20260627-glm-deepseek-qwen-kimi-negative-mining-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1-summary.json",
+    "research/evals/results/20260627-cloud-repeatability-4task-summary.json",
+    "research/evals/results/20260627-cloud-repeatability-smoke-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1-summary.json",
+    "research/evals/results/20260628-positive-neighborhood-kimi-screen1-summary.json",
+    "research/evals/results/20260627-offset125-positive-repeat-compare-repeat-summary.json",
+    "research/evals/results/20260627-catalog-candidate-regression-slices_summary.json",
+    "research/evals/results/20260627-deepseek-candidate-368-repeat-compare-summary.json",
+    "research/evals/results/20260628-direct-deepseek-like-remaining1-summary.json",
+    "research/evals/results/20260627-qwen-only-offset99-repeat-compare-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1-summary.json",
+    "research/evals/results/20260627-postrefresh-heldout-hard-summary.json",
+    "research/evals/results/20260628-next2-profile-fallback-opportunity-screen1-summary.json",
+    "research/evals/results/20260627-positive-neighborhood-screen2-summary.json"
+  ],
+  "excluded_task_count": 69,
+  "per_worker_limit": 2,
+  "purpose": "Select fresh specialist candidates near tasks the target worker has already passed.",
+  "routing_dataset": "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+  "seed_counts_by_worker": {
+    "ollama-cloud-glm-5.2": 14,
+    "ollama-cloud-kimi-k2.7-code": 16
+  },
+  "selected_by_worker": {
+    "ollama-cloud-glm-5.2": [
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "datetime",
+          "numpy"
+        ],
+        "plausibility_score": 5.8973,
+        "positive_similarity": 10.418,
+        "score": 28.6644,
+        "task_id": "bigcodebench-hard-BigCodeBench-486"
+      },
+      {
+        "categories": [
+          "subprocess",
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "re",
+          "sklearn"
+        ],
+        "plausibility_score": 6.552,
+        "positive_similarity": 9.9835,
+        "score": 27.2953,
+        "task_id": "bigcodebench-hard-BigCodeBench-184"
+      }
+    ],
+    "ollama-cloud-kimi-k2.7-code": [
+      {
+        "categories": [
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "numpy",
+          "itertools"
+        ],
+        "plausibility_score": 6.1037,
+        "positive_similarity": 11.4119,
+        "score": 31.6254,
+        "task_id": "bigcodebench-hard-BigCodeBench-1057"
+      },
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 3,
+        "libraries": [
+          "pandas",
+          "matplotlib",
+          "sklearn"
+        ],
+        "plausibility_score": 6.9347,
+        "positive_similarity": 9.9692,
+        "score": 26.2142,
+        "task_id": "bigcodebench-hard-BigCodeBench-92"
+      }
+    ]
+  },
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1057",
+    "bigcodebench-hard-BigCodeBench-92",
+    "bigcodebench-hard-BigCodeBench-486",
+    "bigcodebench-hard-BigCodeBench-184"
+  ],
+  "target_workers": [
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-glm-5.2"
+  ],
+  "task_sources": [
+    "research/evals/bigcodebench_hard_next3_profile_eligible_merged_tasks.json"
+  ],
+  "tasks_output": "research/evals/20260628-next3-917-neighborhood-tasks.json"
+}

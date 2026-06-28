@@ -1,0 +1,37 @@
+{
+  "allow_all_fail_tasks": false,
+  "dropped": [
+    {
+      "reasons": [
+        "all_fail_task",
+        "unstable_target"
+      ],
+      "target_pass_rate": 0.0,
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-202"
+    },
+    {
+      "reasons": [
+        "all_fail_task",
+        "unstable_target"
+      ],
+      "target_pass_rate": 0.0,
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-306"
+    },
+    {
+      "reasons": [
+        "all_fail_task",
+        "unstable_target"
+      ],
+      "target_pass_rate": 0.0,
+      "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "task_id": "bigcodebench-hard-BigCodeBench-314"
+    }
+  ],
+  "dropped_records": 3,
+  "input_records": 6,
+  "kept_records": 3,
+  "min_target_pass_rate": 1.0,
+  "validation_errors": []
+}

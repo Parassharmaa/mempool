@@ -1,0 +1,104 @@
+{
+  "current_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4"
+  ],
+  "current_profile_path": "research/evals/bigcodebench_dependency_profile_top4.txt",
+  "expanded_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask"
+  ],
+  "gap_report": "research/evals/bigcodebench_hard_top4_dependency_gap_report.json",
+  "profile_output": "research/evals/bigcodebench_dependency_profile_next.txt",
+  "projected_unique_unlocks": 10,
+  "selected_package_count": 4,
+  "selected_packages": [
+    {
+      "blocked_task_count": 3,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-177",
+        "bigcodebench-hard-BigCodeBench-655",
+        "bigcodebench-hard-BigCodeBench-657"
+      ],
+      "incremental_unique_tasks": 3,
+      "modules": [
+        "nltk"
+      ],
+      "package": "nltk",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-177",
+        "bigcodebench-hard-BigCodeBench-655",
+        "bigcodebench-hard-BigCodeBench-657"
+      ]
+    },
+    {
+      "blocked_task_count": 3,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-287",
+        "bigcodebench-hard-BigCodeBench-313",
+        "bigcodebench-hard-BigCodeBench-826"
+      ],
+      "incremental_unique_tasks": 3,
+      "modules": [
+        "faker"
+      ],
+      "package": "faker",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-287",
+        "bigcodebench-hard-BigCodeBench-313",
+        "bigcodebench-hard-BigCodeBench-826"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-17",
+        "bigcodebench-hard-BigCodeBench-461"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "psutil"
+      ],
+      "package": "psutil",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-17",
+        "bigcodebench-hard-BigCodeBench-461"
+      ]
+    },
+    {
+      "blocked_task_count": 2,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-401",
+        "bigcodebench-hard-BigCodeBench-82"
+      ],
+      "incremental_unique_tasks": 2,
+      "modules": [
+        "flask"
+      ],
+      "package": "flask",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-401",
+        "bigcodebench-hard-BigCodeBench-82"
+      ]
+    }
+  ],
+  "source_eligible_tasks": 69,
+  "source_scanned_tasks": 148,
+  "source_unique_dependency_blocked_tasks": 72
+}

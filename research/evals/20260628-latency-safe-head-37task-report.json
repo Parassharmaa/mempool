@@ -1,0 +1,514 @@
+{
+  "dataset": "research/datasets/20260628-latency-safe-head-37task-routing.jsonl",
+  "evaluation": {
+    "accuracy": 0.972972972972973,
+    "examples": [
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.03703808401915612,
+        "task_id": "bigcodebench-hard-BigCodeBench-100"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.07695187179687733,
+        "task_id": "bigcodebench-hard-BigCodeBench-1004"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.08964933059661548,
+        "task_id": "bigcodebench-hard-BigCodeBench-1006"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.09559737036252423,
+        "task_id": "bigcodebench-hard-BigCodeBench-1022"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.8484154198512421,
+        "task_id": "bigcodebench-hard-BigCodeBench-1085"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.08672989738269861,
+        "task_id": "bigcodebench-hard-BigCodeBench-123"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9134995305898109,
+        "task_id": "bigcodebench-hard-BigCodeBench-127"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.1353774521085701,
+        "task_id": "bigcodebench-hard-BigCodeBench-13"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9788850542315302,
+        "task_id": "bigcodebench-hard-BigCodeBench-16"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.8959830239749887,
+        "task_id": "bigcodebench-hard-BigCodeBench-18"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.7190840583334553,
+        "task_id": "bigcodebench-hard-BigCodeBench-19"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.903646317330999,
+        "task_id": "bigcodebench-hard-BigCodeBench-22"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.997142145077863,
+        "task_id": "bigcodebench-hard-BigCodeBench-24"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9980341262600357,
+        "task_id": "bigcodebench-hard-BigCodeBench-25"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9497698004922221,
+        "task_id": "bigcodebench-hard-BigCodeBench-30"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.7149025186807298,
+        "task_id": "bigcodebench-hard-BigCodeBench-305"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.159433031225583,
+        "task_id": "bigcodebench-hard-BigCodeBench-308"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.04167406957198082,
+        "task_id": "bigcodebench-hard-BigCodeBench-310"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.05933852321226951,
+        "task_id": "bigcodebench-hard-BigCodeBench-320"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.03724271232941739,
+        "task_id": "bigcodebench-hard-BigCodeBench-325"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.010191961540736512,
+        "task_id": "bigcodebench-hard-BigCodeBench-336"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.029638944798814983,
+        "task_id": "bigcodebench-hard-BigCodeBench-368"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.7540452427761076,
+        "task_id": "bigcodebench-hard-BigCodeBench-384"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.1492193374341967,
+        "task_id": "bigcodebench-hard-BigCodeBench-391"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.3637685984572104,
+        "task_id": "bigcodebench-hard-BigCodeBench-454"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9914363265038477,
+        "task_id": "bigcodebench-hard-BigCodeBench-547"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.0266068423372941,
+        "task_id": "bigcodebench-hard-BigCodeBench-592"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.8467067169104884,
+        "task_id": "bigcodebench-hard-BigCodeBench-678"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.1884690922019995,
+        "task_id": "bigcodebench-hard-BigCodeBench-760"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.14042306277193203,
+        "task_id": "bigcodebench-hard-BigCodeBench-763"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.11765789308371534,
+        "task_id": "bigcodebench-hard-BigCodeBench-777"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9926347919980134,
+        "task_id": "bigcodebench-hard-BigCodeBench-854"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.829570862928428,
+        "task_id": "bigcodebench-hard-BigCodeBench-870"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.12533647474421084,
+        "task_id": "bigcodebench-hard-BigCodeBench-955"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.29848197819815386,
+        "task_id": "bigcodebench-hard-BigCodeBench-963"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9890139523483396,
+        "task_id": "bigcodebench-hard-BigCodeBench-990"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9226490172605916,
+        "task_id": "bigcodebench-hard-BigCodeBench-999"
+      }
+    ],
+    "false_negative": 0,
+    "false_positive": 1,
+    "policy": "latency-safe-logit-head",
+    "positive_count": 16,
+    "precision": 0.9411764705882353,
+    "predicted_positive_count": 17,
+    "recall": 1.0,
+    "task_count": 37,
+    "true_negative": 20,
+    "true_positive": 16
+  },
+  "feature_count": 89,
+  "history": [
+    {
+      "epoch": 1.0,
+      "mean_loss": 0.7042259787257727
+    },
+    {
+      "epoch": 60.0,
+      "mean_loss": 0.3227876981562006
+    },
+    {
+      "epoch": 120.0,
+      "mean_loss": 0.23212076257015915
+    },
+    {
+      "epoch": 180.0,
+      "mean_loss": 0.18647697939201888
+    },
+    {
+      "epoch": 240.0,
+      "mean_loss": 0.1583703165399844
+    },
+    {
+      "epoch": 300.0,
+      "mean_loss": 0.13894207594860628
+    }
+  ],
+  "leave_one_out": {
+    "accuracy": 0.4864864864864865,
+    "available": true,
+    "examples": [
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.09807559336270394,
+        "task_id": "bigcodebench-hard-BigCodeBench-100"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.6048951332878089,
+        "task_id": "bigcodebench-hard-BigCodeBench-1004"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.6555277887440548,
+        "task_id": "bigcodebench-hard-BigCodeBench-1006"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.31717946815334236,
+        "task_id": "bigcodebench-hard-BigCodeBench-1022"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.0383943613461585,
+        "task_id": "bigcodebench-hard-BigCodeBench-1085"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.4818659538151721,
+        "task_id": "bigcodebench-hard-BigCodeBench-123"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.39549043385564603,
+        "task_id": "bigcodebench-hard-BigCodeBench-127"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.9679812219070765,
+        "task_id": "bigcodebench-hard-BigCodeBench-13"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9546501673825756,
+        "task_id": "bigcodebench-hard-BigCodeBench-16"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.23688380410590212,
+        "task_id": "bigcodebench-hard-BigCodeBench-18"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.09267260437482813,
+        "task_id": "bigcodebench-hard-BigCodeBench-19"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.4625715279149179,
+        "task_id": "bigcodebench-hard-BigCodeBench-22"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9964287771894034,
+        "task_id": "bigcodebench-hard-BigCodeBench-24"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9970687430540066,
+        "task_id": "bigcodebench-hard-BigCodeBench-25"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.7077403890149003,
+        "task_id": "bigcodebench-hard-BigCodeBench-30"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.9992768735997181,
+        "task_id": "bigcodebench-hard-BigCodeBench-305"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.609888485567132,
+        "task_id": "bigcodebench-hard-BigCodeBench-308"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.08266256186888497,
+        "task_id": "bigcodebench-hard-BigCodeBench-310"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.35706365642173976,
+        "task_id": "bigcodebench-hard-BigCodeBench-320"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.18323961238527453,
+        "task_id": "bigcodebench-hard-BigCodeBench-325"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.01800993590552741,
+        "task_id": "bigcodebench-hard-BigCodeBench-336"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.05172881281144998,
+        "task_id": "bigcodebench-hard-BigCodeBench-368"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.10576904773991368,
+        "task_id": "bigcodebench-hard-BigCodeBench-384"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.4820504697349138,
+        "task_id": "bigcodebench-hard-BigCodeBench-391"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.7729529479796486,
+        "task_id": "bigcodebench-hard-BigCodeBench-454"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9822756957996456,
+        "task_id": "bigcodebench-hard-BigCodeBench-547"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.05036325345271092,
+        "task_id": "bigcodebench-hard-BigCodeBench-592"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.010998978927270999,
+        "task_id": "bigcodebench-hard-BigCodeBench-678"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.9580103497574006,
+        "task_id": "bigcodebench-hard-BigCodeBench-760"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.9684928874761345,
+        "task_id": "bigcodebench-hard-BigCodeBench-763"
+      },
+      {
+        "label": 0.0,
+        "predicted": 0.0,
+        "probability": 0.40097395091490473,
+        "task_id": "bigcodebench-hard-BigCodeBench-777"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9737803137645586,
+        "task_id": "bigcodebench-hard-BigCodeBench-854"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.0472473109772101,
+        "task_id": "bigcodebench-hard-BigCodeBench-870"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.6186448313714902,
+        "task_id": "bigcodebench-hard-BigCodeBench-955"
+      },
+      {
+        "label": 0.0,
+        "predicted": 1.0,
+        "probability": 0.6961907126541049,
+        "task_id": "bigcodebench-hard-BigCodeBench-963"
+      },
+      {
+        "label": 1.0,
+        "predicted": 1.0,
+        "probability": 0.9244121338518253,
+        "task_id": "bigcodebench-hard-BigCodeBench-990"
+      },
+      {
+        "label": 1.0,
+        "predicted": 0.0,
+        "probability": 0.024266650859669177,
+        "task_id": "bigcodebench-hard-BigCodeBench-999"
+      }
+    ],
+    "false_negative": 9,
+    "false_positive": 10,
+    "positive_count": 16,
+    "precision": 0.4117647058823529,
+    "predicted_positive_count": 17,
+    "recall": 0.4375,
+    "task_count": 37,
+    "true_negative": 11,
+    "true_positive": 7
+  },
+  "model_output": "research/models/20260628-latency-safe-head-37task.json",
+  "router_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "training": {
+    "epochs": 300,
+    "l2": 0.0001,
+    "learning_rate": 0.01,
+    "positive_weight": 2.0,
+    "threshold": 0.5
+  },
+  "valid": true
+}

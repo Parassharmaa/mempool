@@ -1,0 +1,89 @@
+{
+  "ranked_sources": [
+    {
+      "candidate_count": 4,
+      "decision": null,
+      "evidence_count": 0,
+      "exhausted": false,
+      "id": "contrast-aware",
+      "kind": "specialist_pressure",
+      "reasons": [
+        "4 candidates available",
+        "4 preselected tasks",
+        "targets non-Qwen specialist evidence",
+        "can be inspected without live worker spend"
+      ],
+      "score": 14.0,
+      "selected_count": 4
+    },
+    {
+      "candidate_count": 33,
+      "decision": null,
+      "evidence_count": 2,
+      "exhausted": false,
+      "id": "nonqwen-pressure",
+      "kind": "nonqwen_specialist_pressure",
+      "reasons": [
+        "33 candidates available",
+        "6 preselected tasks",
+        "targets non-Qwen specialist evidence",
+        "can be inspected without live worker spend",
+        "4/6 evidence tasks were universal failures",
+        "2 evidence tasks were conversion candidates",
+        "2 evidence candidates were non-Qwen wins",
+        "1/2 evidence tasks were universal failures",
+        "1 evidence tasks were conversion candidates",
+        "evidence candidates did not produce stable non-Qwen wins"
+      ],
+      "score": 11.3,
+      "selected_count": 6
+    },
+    {
+      "candidate_count": 0,
+      "decision": "quarantine",
+      "evidence_count": 0,
+      "exhausted": false,
+      "id": "fresh-54-quarantine",
+      "kind": "dependency_profile",
+      "reasons": [
+        "widens benchmark dependency coverage",
+        "prior gate produced useful negative evidence",
+        "can be inspected without live worker spend"
+      ],
+      "score": 9.0,
+      "selected_count": 0
+    },
+    {
+      "candidate_count": 0,
+      "decision": null,
+      "evidence_count": 0,
+      "exhausted": true,
+      "id": "normal-offset676",
+      "kind": "normal_offset_scan",
+      "reasons": [
+        "source is exhausted",
+        "normal offset scan has lower novelty",
+        "can be inspected without live worker spend"
+      ],
+      "score": -100.0,
+      "selected_count": 0
+    }
+  ],
+  "recommendation": {
+    "candidate_count": 4,
+    "decision": null,
+    "evidence_count": 0,
+    "exhausted": false,
+    "id": "contrast-aware",
+    "kind": "specialist_pressure",
+    "reasons": [
+      "4 candidates available",
+      "4 preselected tasks",
+      "targets non-Qwen specialist evidence",
+      "can be inspected without live worker spend"
+    ],
+    "score": 14.0,
+    "selected_count": 4
+  },
+  "recommended_source_id": "contrast-aware"
+}

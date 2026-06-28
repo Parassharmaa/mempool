@@ -1,0 +1,13 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "fallback_hurt_count": 2,
+  "fallback_opportunity_count": 2,
+  "input": "research/datasets/20260627-positive-neighborhood-screen2-routing.jsonl",
+  "output": "research/datasets/20260627-positive-neighborhood-screen2-fallback-training.jsonl",
+  "registry": "research/policies/active_policy.json",
+  "solvable_task_count": 0,
+  "task_count": 2,
+  "useful_fallback_count": 0,
+  "useful_fallback_rate": 0.0
+}

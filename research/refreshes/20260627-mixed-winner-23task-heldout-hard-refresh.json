@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "available": true,
+    "dataset": "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.4941774371364192,
+      "mean_latency_regret_ms": 606.578947368421,
+      "pass_at_1": 0.8421052631578947,
+      "solvable_pass_at_1": 0.0,
+      "solvable_target_accuracy": 0.0,
+      "solvable_task_count": 0,
+      "target_accuracy": 0.7894736842105263,
+      "task_count": 19
+    },
+    "report": "research/models/20260627-mixed-winner-19task-network-features-reward-t0p05-logits-router.json",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-deepseek-v4-pro": 1,
+        "ollama-cloud-glm-5.2": 1,
+        "ollama-cloud-kimi-k2.7-code": 4,
+        "ollama-cloud-qwen3-coder-480b": 13
+      },
+      "target_worker_count": 4,
+      "task_count": 19
+    }
+  },
+  "candidate": {
+    "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.46096494805709975,
+      "mean_latency_regret_ms": 501.0869565217391,
+      "pass_at_1": 0.6956521739130435,
+      "solvable_pass_at_1": 0.8,
+      "solvable_target_accuracy": 0.75,
+      "solvable_task_count": 20,
+      "target_accuracy": 0.782608695652174,
+      "task_count": 23
+    },
+    "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-deepseek-v4-pro": 2,
+        "ollama-cloud-glm-5.2": 1,
+        "ollama-cloud-kimi-k2.7-code": 4,
+        "ollama-cloud-qwen3-coder-480b": 16
+      },
+      "target_worker_count": 4,
+      "task_count": 23
+    }
+  },
+  "decision": "promote",
+  "reasons": [],
+  "thresholds": {
+    "max_loo_accuracy_drop": 0.1,
+    "max_loo_latency_regret_increase_ms": 500.0,
+    "max_loo_latency_regret_ms": 1000.0,
+    "min_loo_accuracy": 0.75,
+    "min_loo_solvable_pass_at_1": 0.75
+  },
+  "timestamp": "2026-06-27T08:02:49.377529+00:00",
+  "warnings": [
+    "candidate LOO target accuracy dropped by 0.007"
+  ]
+}

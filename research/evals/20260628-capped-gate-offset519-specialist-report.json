@@ -1,0 +1,81 @@
+{
+  "candidate_count": 0,
+  "max_pass_latency_ms": 6000.0,
+  "max_universal_fail_similarity": 4.0,
+  "min_gate_score": 0.0,
+  "positive_seed_count": 5,
+  "prior_outcomes": [
+    "research/evals/results/20260628-qwen-resistant-rank1-specialist-top4-positive.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-rank1-top4-positive.jsonl",
+    "research/evals/results/20260628-qwen-first-rejection-specialist-screen.jsonl",
+    "research/evals/results/20260628-prospective-solvability-gate-specialist-screen.jsonl"
+  ],
+  "qwen_outcomes": "research/evals/results/20260628-capped-gate-offset519-qwen-screen.jsonl",
+  "ranked_candidates": [],
+  "rejected_by_score": 2,
+  "rejected_by_universal_fail_cap": 1,
+  "rejected_task_count": 3,
+  "rejected_worker_id": "ollama-cloud-qwen3-coder-480b",
+  "scored_rejections": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "random",
+        "os",
+        "csv",
+        "datetime"
+      ],
+      "plausibility_score": 3.6603,
+      "positive_similarity": 10.3862,
+      "score": 6.1962,
+      "task_id": "bigcodebench-hard-BigCodeBench-594",
+      "universal_fail_similarity": 5.7133
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "ctypes",
+        "hashlib",
+        "binascii"
+      ],
+      "plausibility_score": 2.8257,
+      "positive_similarity": 2.4157,
+      "score": -2.7479,
+      "task_id": "bigcodebench-hard-BigCodeBench-565",
+      "universal_fail_similarity": 2.9413
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "base64",
+        "random",
+        "string",
+        "zlib"
+      ],
+      "plausibility_score": 2.298,
+      "positive_similarity": 2.9776,
+      "score": -9.2139,
+      "task_id": "bigcodebench-hard-BigCodeBench-548",
+      "universal_fail_similarity": 5.9941
+    }
+  ],
+  "selected": [],
+  "selected_task_ids": [],
+  "specialist_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "task_source": "research/evals/20260628-capped-gate-offset519-candidate-tasks.json",
+  "universal_fail_seed_count": 5
+}

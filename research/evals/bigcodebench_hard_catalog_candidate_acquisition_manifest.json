@@ -1,0 +1,29 @@
+{
+  "benchmark_id": "bigcodebench-hard-catalog-candidate-acquisition",
+  "call_count": 12,
+  "pool_output": "research/evals/ollama_cloud_catalog_candidate_pool.json",
+  "purpose": "Evaluate newly available catalog workers on existing regression slices before adding them to router evidence.",
+  "repeat_count": 2,
+  "environment_note": "Use .venv-bigcodebench for top-four dependency tasks; base Python lacks packages such as numpy and pandas.",
+  "invalid_base_python_summary": "research/evals/results/20260627-catalog-candidate-regression-slices_summary.json",
+  "run_command": "PYTHONPATH=src .venv-bigcodebench/bin/python tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_catalog_candidate_pool.json --tasks research/evals/bigcodebench_hard_catalog_candidate_regression_tasks.json --repeat-count 2 --eval-timeout-seconds 20 --required-package numpy --required-package pandas --run-id 20260627-catalog-candidate-regression-slices-top4env --output research/evals/results/20260627-catalog-candidate-regression-slices-top4env.json --outcomes research/evals/results/20260627-catalog-candidate-regression-slices-top4env.jsonl --resume --progress",
+  "valid_top4env_outcomes": "research/evals/results/20260627-catalog-candidate-regression-slices-top4env.jsonl",
+  "valid_top4env_summary": "research/evals/results/20260627-catalog-candidate-regression-slices-top4env_summary.json",
+  "provenance_outcomes": "research/evals/results/20260627-catalog-candidate-regression-slices-provenance.jsonl",
+  "provenance_audit": "research/evals/results/20260627-catalog-candidate-regression-slices-provenance_audit.json",
+  "provenance_merge_audit": "research/evals/results/20260627-catalog-candidate-regression-slices-provenance_merge_audit.json",
+  "provenance_routing_dataset": "research/datasets/20260627-catalog-candidate-regression-slices-provenance-routing.jsonl",
+  "provenance_summary": "research/evals/results/20260627-catalog-candidate-regression-slices-provenance_summary.json",
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-526"
+  ],
+  "selected_worker_ids": [
+    "ollama-cloud-qwen3-coder-next",
+    "ollama-cloud-qwen3p5-397b",
+    "ollama-cloud-gpt-oss-120b"
+  ],
+  "task_count": 2,
+  "tasks_output": "research/evals/bigcodebench_hard_catalog_candidate_regression_tasks.json",
+  "worker_count": 3
+}

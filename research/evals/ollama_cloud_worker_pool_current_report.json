@@ -1,0 +1,110 @@
+{
+  "available_model_count": 35,
+  "candidate_count": 7,
+  "missing": [],
+  "selected": [
+    {
+      "model": "qwen3-coder:480b",
+      "priority": 10,
+      "rationale": "Current measured strongest/fastest coding worker in mempool BigCodeBench runs.",
+      "role": "code_frontier",
+      "strengths": [
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard",
+        "agentic_coding"
+      ],
+      "worker_id": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "model": "qwen3-coder-next",
+      "priority": 20,
+      "rationale": "Efficient coding-specialist candidate for lower-cost agentic coding comparisons.",
+      "role": "code_efficient_agentic",
+      "strengths": [
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard",
+        "agentic_coding",
+        "low_active_params"
+      ],
+      "worker_id": "ollama-cloud-qwen3-coder-next"
+    },
+    {
+      "model": "kimi-k2.7-code",
+      "priority": 30,
+      "rationale": "Specialist code model with prior Kimi wins in mempool routing data.",
+      "role": "code_agentic_specialist",
+      "strengths": [
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard",
+        "agentic_coding"
+      ],
+      "worker_id": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "model": "glm-5.2",
+      "priority": 40,
+      "rationale": "Long-context agentic candidate and prior GLM specialist winner in mempool routing data.",
+      "role": "long_context_agentic",
+      "strengths": [
+        "general",
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard",
+        "agentic_coding",
+        "long_context"
+      ],
+      "worker_id": "ollama-cloud-glm-5.2"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "priority": 50,
+      "rationale": "Reasoning-heavy specialist with prior DeepSeek wins in mempool routing data.",
+      "role": "reasoning_specialist",
+      "strengths": [
+        "general",
+        "reasoning",
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard"
+      ],
+      "worker_id": "ollama-cloud-deepseek-v4-pro"
+    },
+    {
+      "model": "qwen3.5:397b",
+      "priority": 60,
+      "rationale": "Large current general candidate for checking whether coding-specialist routes miss generalist wins.",
+      "role": "general_multimodal_frontier",
+      "strengths": [
+        "general",
+        "reasoning",
+        "code_easy",
+        "bigcodebench_hard",
+        "multimodal"
+      ],
+      "worker_id": "ollama-cloud-qwen3p5-397b"
+    },
+    {
+      "model": "gpt-oss:120b",
+      "priority": 70,
+      "rationale": "Open-weight reasoning model useful as a local/open baseline when available.",
+      "role": "open_weight_reasoning",
+      "strengths": [
+        "general",
+        "reasoning",
+        "code_easy",
+        "agentic_coding",
+        "open_weight"
+      ],
+      "worker_id": "ollama-cloud-gpt-oss-120b"
+    }
+  ],
+  "selected_count": 7
+}

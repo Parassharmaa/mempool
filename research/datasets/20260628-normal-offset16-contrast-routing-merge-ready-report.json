@@ -1,0 +1,9 @@
+{
+  "allow_all_fail_tasks": false,
+  "dropped": [],
+  "dropped_records": 0,
+  "input_records": 6,
+  "kept_records": 6,
+  "min_target_pass_rate": 1.0,
+  "validation_errors": []
+}

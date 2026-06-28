@@ -1,0 +1,307 @@
+{
+  "candidates": [
+    {
+      "model_output": "research/models/20260628-mixed-winner-24task-next3-reward-t0p05-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.48703522737140537,
+            "mean_latency_regret_ms": 514.375,
+            "pass_at_1": 0.625,
+            "solvable_pass_at_1": 0.7142857142857143,
+            "solvable_target_accuracy": 0.6666666666666666,
+            "solvable_task_count": 21,
+            "target_accuracy": 0.7083333333333334,
+            "task_count": 24
+          },
+          "report": "research/models/20260628-mixed-winner-24task-next3-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 24
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO solvable pass@1 0.714 is below minimum 0.800"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T17:48:56.417852+00:00",
+        "warnings": [
+          "candidate LOO target accuracy dropped by 0.074",
+          "candidate LOO mean latency regret increased by 13.3 ms"
+        ]
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-24task-next3-reward-t0p05-logits-router-report.json",
+      "temperature": 0.05
+    },
+    {
+      "model_output": "research/models/20260628-mixed-winner-24task-next3-reward-t0p1-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.47607696028315316,
+            "mean_latency_regret_ms": 4113.541666666667,
+            "pass_at_1": 0.625,
+            "solvable_pass_at_1": 0.7142857142857143,
+            "solvable_target_accuracy": 0.6190476190476191,
+            "solvable_task_count": 21,
+            "target_accuracy": 0.625,
+            "task_count": 24
+          },
+          "report": "research/models/20260628-mixed-winner-24task-next3-reward-t0p1-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 24
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.625 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.158 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 3612.5 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T17:49:14.547741+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-24task-next3-reward-t0p1-logits-router-report.json",
+      "temperature": 0.1
+    },
+    {
+      "model_output": "research/models/20260628-mixed-winner-24task-next3-reward-t0p2-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4592147161138633,
+            "mean_latency_regret_ms": 5211.291666666667,
+            "pass_at_1": 0.625,
+            "solvable_pass_at_1": 0.7142857142857143,
+            "solvable_target_accuracy": 0.5238095238095238,
+            "solvable_task_count": 21,
+            "target_accuracy": 0.5,
+            "task_count": 24
+          },
+          "report": "research/models/20260628-mixed-winner-24task-next3-reward-t0p2-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 24
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.500 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.283 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 4710.2 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T17:49:32.730681+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-24task-next3-reward-t0p2-logits-router-report.json",
+      "temperature": 0.2
+    },
+    {
+      "model_output": "research/models/20260628-mixed-winner-24task-next3-reward-t0p5-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": true,
+          "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.46096494805709975,
+            "mean_latency_regret_ms": 501.0869565217391,
+            "pass_at_1": 0.6956521739130435,
+            "solvable_pass_at_1": 0.8,
+            "solvable_target_accuracy": 0.75,
+            "solvable_task_count": 20,
+            "target_accuracy": 0.782608695652174,
+            "task_count": 23
+          },
+          "report": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 4,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 23
+          }
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.4257413562941285,
+            "mean_latency_regret_ms": 9452.041666666666,
+            "pass_at_1": 0.5833333333333334,
+            "solvable_pass_at_1": 0.6666666666666666,
+            "solvable_target_accuracy": 0.38095238095238093,
+            "solvable_task_count": 21,
+            "target_accuracy": 0.3333333333333333,
+            "task_count": 24
+          },
+          "report": "research/models/20260628-mixed-winner-24task-next3-reward-t0p5-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 2,
+              "ollama-cloud-glm-5.2": 1,
+              "ollama-cloud-kimi-k2.7-code": 5,
+              "ollama-cloud-qwen3-coder-480b": 16
+            },
+            "target_worker_count": 4,
+            "task_count": 24
+          }
+        },
+        "decision": "quarantine",
+        "reasons": [
+          "candidate LOO target accuracy 0.333 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.449 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 8951.0 ms exceeds allowed 100.0 ms"
+        ],
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.1,
+          "max_loo_latency_regret_increase_ms": 100.0,
+          "max_loo_latency_regret_ms": null,
+          "min_loo_accuracy": 0.7,
+          "min_loo_solvable_pass_at_1": 0.8
+        },
+        "timestamp": "2026-06-27T17:49:50.918719+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-mixed-winner-24task-next3-reward-t0p5-logits-router-report.json",
+      "temperature": 0.5
+    }
+  ],
+  "dataset": "research/datasets/20260628-mixed-winner-24task-next3-routing.jsonl",
+  "decision": "quarantine",
+  "selected": null,
+  "target_mode": "reward",
+  "temperatures": [
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ]
+}

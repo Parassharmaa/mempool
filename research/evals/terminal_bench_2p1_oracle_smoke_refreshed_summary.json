@@ -1,0 +1,26 @@
+{
+  "harbor_summary": {
+    "agent_type": null,
+    "cost_usd": null,
+    "environment_type": "docker",
+    "finished_at": null,
+    "job_dir": "research/runs/20260627-terminal-real-metadata/harbor_jobs/mempool-tb2p1-oracle-cancel-async-smoke",
+    "job_id": "8360a00e-99a5-451c-8fde-fa20aca1ca94",
+    "n_cancelled_trials": 1,
+    "n_completed_trials": 1,
+    "n_errored_trials": 1,
+    "n_pending_trials": 0,
+    "n_running_trials": 0,
+    "n_total_trials": 1,
+    "raw_log_policy": "not_read",
+    "started_at": "2026-06-27T18:44:18.905160",
+    "status": "interrupted_ambiguous",
+    "trial_directory_count": 1,
+    "updated_at": "2026-06-27T09:47:50.079755Z"
+  },
+  "process_status": null,
+  "raw_log_policy": "not_read",
+  "refresh_policy": "metadata_only_result_json_and_config_json",
+  "returncode": null,
+  "source_summary": "research/evals/terminal_bench_2p1_oracle_smoke_summary.json"
+}

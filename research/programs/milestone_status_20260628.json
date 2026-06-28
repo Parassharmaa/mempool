@@ -1,0 +1,236 @@
+{
+  "milestones": [
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": false,
+          "key": "worker_outcomes",
+          "path": "research/evals/bigcodebench_hard_top4_offset0_outcomes.jsonl"
+        },
+        {
+          "exists": true,
+          "key": "external_comparison_report",
+          "path": "research/evals/results/20260627-selected-gated-fallback-active-23task.json"
+        },
+        {
+          "exists": true,
+          "key": "external_smoke_report",
+          "path": "docs/benchmark_strategy.md"
+        }
+      ],
+      "id": "M1-real-worker-pool-evaluation",
+      "metrics": {
+        "routing_dataset": {
+          "exists": true,
+          "min_workers_per_task": 4,
+          "solvable_task_count": 20,
+          "target_counts": {
+            "ollama-cloud-deepseek-v4-pro": 2,
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 4,
+            "ollama-cloud-qwen3-coder-480b": 16
+          },
+          "target_worker_count": 4,
+          "task_count": 23
+        }
+      },
+      "open_gaps": [],
+      "summary": "Real worker outcomes and cost/latency-aware comparison artifacts exist."
+    },
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": true,
+          "key": "routing_dataset",
+          "path": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl"
+        }
+      ],
+      "id": "M2-outcome-dataset",
+      "metrics": {
+        "exists": true,
+        "min_workers_per_task": 4,
+        "solvable_task_count": 20,
+        "target_counts": {
+          "ollama-cloud-deepseek-v4-pro": 2,
+          "ollama-cloud-glm-5.2": 1,
+          "ollama-cloud-kimi-k2.7-code": 4,
+          "ollama-cloud-qwen3-coder-480b": 16
+        },
+        "target_worker_count": 4,
+        "task_count": 23
+      },
+      "open_gaps": [],
+      "summary": "Canonical routing dataset exists with worker outcomes and routing targets."
+    },
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": true,
+          "key": "active_policy",
+          "path": "research/policies/active_policy.json"
+        }
+      ],
+      "id": "M3-lightweight-router",
+      "metrics": {
+        "dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+        "exists": true,
+        "loo": {
+          "available": true,
+          "mean_kl": 0.46096494805709975,
+          "mean_latency_regret_ms": 501.0869565217391,
+          "pass_at_1": 0.6956521739130435,
+          "solvable_pass_at_1": 0.8,
+          "solvable_target_accuracy": 0.75,
+          "solvable_task_count": 20,
+          "target_accuracy": 0.782608695652174,
+          "task_count": 23
+        },
+        "model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+        "target_mix": {
+          "target_counts": {
+            "ollama-cloud-deepseek-v4-pro": 2,
+            "ollama-cloud-glm-5.2": 1,
+            "ollama-cloud-kimi-k2.7-code": 4,
+            "ollama-cloud-qwen3-coder-480b": 16
+          },
+          "target_worker_count": 4,
+          "task_count": 23
+        }
+      },
+      "open_gaps": [],
+      "summary": "Active lightweight logits router is trained, evaluated, and promoted through the registry."
+    },
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": true,
+          "key": "external_smoke_report",
+          "path": "docs/benchmark_strategy.md"
+        },
+        {
+          "exists": true,
+          "key": "external_comparison_report",
+          "path": "research/evals/results/20260627-selected-gated-fallback-active-23task.json"
+        }
+      ],
+      "id": "M4-external-smoke-benchmark",
+      "metrics": {
+        "active_loo_task_count": 23,
+        "active_solvable_pass_at_1": 0.8
+      },
+      "open_gaps": [],
+      "summary": "External BigCodeBench smoke/pilot reports exist and compare learned routing with baselines."
+    },
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": true,
+          "key": "m5_model",
+          "path": "research/models/20260628-m5-offline-multihead-50task.json"
+        },
+        {
+          "exists": true,
+          "key": "m5_report",
+          "path": "research/evals/results/20260628-m5-offline-multihead-50task-report.json"
+        },
+        {
+          "exists": true,
+          "key": "m5_gate",
+          "path": "research/evals/results/20260628-m5-offline-multihead-50task-policy-gate.json"
+        }
+      ],
+      "id": "M5-small-trainable-orchestrator",
+      "metrics": {
+        "evaluation": {
+          "mean_latency_regret_ms": 1516.82,
+          "pass_at_1": 0.9,
+          "solvable_pass_at_1": 0.9574468085106383,
+          "target_accuracy": 0.74,
+          "task_count": 50,
+          "workflow_accuracy": 0.94
+        },
+        "gate_decision": "quarantine",
+        "gate_exists": true,
+        "gate_reasons": [
+          "candidate LOO target accuracy 0.620 is below minimum 0.700",
+          "candidate LOO target accuracy drop 0.163 exceeds allowed 0.100",
+          "candidate LOO mean latency regret increase 3108.5 ms exceeds allowed 500.0 ms",
+          "candidate LOO mean latency regret 3609.6 ms exceeds maximum 750.0 ms"
+        ],
+        "leave_one_out": {
+          "mean_latency_regret_ms": 3609.63,
+          "pass_at_1": 0.82,
+          "solvable_pass_at_1": 0.8723404255319149,
+          "target_accuracy": 0.62,
+          "task_count": 50,
+          "workflow_accuracy": 0.94
+        },
+        "report_exists": true
+      },
+      "open_gaps": [
+        "candidate is quarantined; active promoted policy remains the 23-task lightweight router"
+      ],
+      "summary": "Local multi-head trainable orchestrator exists with a clear negative/quarantine result."
+    },
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": true,
+          "key": "terminal_bench_report",
+          "path": "research/evals/terminal_bench_2p1_fix_git_oracle_vs_qwen_next_report.json"
+        },
+        {
+          "exists": true,
+          "key": "terminal_bench_trajectories",
+          "path": "research/evals/terminal_bench_2p1_fix_git_qwen_next_trajectories.jsonl"
+        }
+      ],
+      "id": "M5.5-agentic-harness-pilot",
+      "metrics": {},
+      "open_gaps": [],
+      "summary": "Terminal-Bench pilot evidence exists, but this remains a side track until BigCodeBench routing improves."
+    },
+    {
+      "audit_status": "completed",
+      "evidence": [
+        {
+          "exists": true,
+          "key": "adaptive_refresh",
+          "path": "research/refreshes/20260628-router-miss-repeat-24task-profiled-refresh-cycle.json"
+        }
+      ],
+      "id": "M6-adaptive-memory-refresh",
+      "metrics": {
+        "decision": "quarantine",
+        "exists": true,
+        "guardrail_count": 7,
+        "guardrails_passed": true,
+        "promotion_allowed": false,
+        "promotion_profile": "preserve_accuracy",
+        "reasons": [
+          "candidate LOO target accuracy 0.708 is below minimum 0.783",
+          "candidate LOO target accuracy drop 0.074 exceeds allowed 0.000"
+        ]
+      },
+      "open_gaps": [
+        "refresh cycle works but produced a quarantined candidate under preserve_accuracy gate"
+      ],
+      "summary": "Adaptive refresh path is implemented end to end with privacy, rollback, and promotion gates."
+    }
+  ],
+  "recommendations": [
+    "Keep the 23-task lightweight router as the active promoted policy.",
+    "Use the quarantined 50-task multi-head result as the next training-signal target, not as a deployable policy.",
+    "Use preserve_accuracy for promotion-grade adaptive refreshes unless an experiment explicitly studies a latency-for-accuracy tradeoff.",
+    "Next research loop should improve stable specialist wins and broad-pass latency rows before another promotion attempt."
+  ],
+  "recommended_active_milestone": "M6-adaptive-memory-refresh",
+  "root": "/Users/paras/projects/mempool",
+  "schema_version": "mempool.milestone_audit.v1"
+}

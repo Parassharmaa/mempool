@@ -1,0 +1,24 @@
+.DS_Store
+.env
+.env.*
+__pycache__/
+.venv/
+.venv-*/
+venv/
+*.pyc
+*.log
+*.png
+*.csv
+output/
+file_sizes.csv
+prefix_*.json
+research/logs/*.jsonl
+research/evals/results/*.json
+research/evals/results/*.jsonl
+research/runs/*/
+!research/runs/.gitkeep
+research/hf_export/
+
+# Reference checkouts can be large and should not be committed by default.
+external_repos/*/
+!external_repos/README.md

@@ -1,0 +1,17 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "checks": [
+    {
+      "harbor_status": "complete",
+      "path": "research/evals/terminal_bench_2p1_fix_git_install_fresh_refreshed_summary.json",
+      "process_status": "exited",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "ready": true,
+  "required_status": {
+    "harbor_summary.status": "complete",
+    "process_status": "exited"
+  }
+}

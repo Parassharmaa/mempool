@@ -1,0 +1,97 @@
+{
+  "acquisition_report": "research/evals/bigcodebench_hard_fallback_opportunity_batch8_report.json",
+  "candidate_count": 30,
+  "excluded_count": 2,
+  "excluded_fallback_reports": [],
+  "excluded_task_files": [],
+  "excluded_task_ids": [
+    "bigcodebench-hard-BigCodeBench-771",
+    "bigcodebench-hard-BigCodeBench-785"
+  ],
+  "selected": [
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.06614420818063155,
+      "libraries": [
+        "difflib",
+        "pandas",
+        "csv"
+      ],
+      "plausibility_score": 5.0973,
+      "score": 17.5703,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-509",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.2281538530560733,
+      "libraries": [
+        "glob",
+        "warnings",
+        "time",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 3.4183,
+      "score": 16.5467,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-857",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0446364006656203,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 3.224,
+      "score": 16.0343,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0672128331819235,
+      "libraries": [
+        "subprocess",
+        "time",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 3.0407,
+      "score": 15.872,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-346",
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-509",
+    "bigcodebench-hard-BigCodeBench-857",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-346"
+  ],
+  "source_report": [
+    "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json"
+  ],
+  "tasks": "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json"
+}

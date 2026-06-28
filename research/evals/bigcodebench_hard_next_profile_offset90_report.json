@@ -1,0 +1,536 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "shutil",
+        "json",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.7733,
+      "primary_category": "subprocess",
+      "prompt_length": 654,
+      "task_id": "bigcodebench-hard-BigCodeBench-678",
+      "test_length": 2158
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "datetime",
+        "random",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.747,
+      "primary_category": "filesystem",
+      "prompt_length": 590,
+      "task_id": "bigcodebench-hard-BigCodeBench-720",
+      "test_length": 2271
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "csv",
+        "urllib",
+        "bs4",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.3897,
+      "primary_category": "network",
+      "prompt_length": 519,
+      "task_id": "bigcodebench-hard-BigCodeBench-723",
+      "test_length": 2912
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.652,
+      "primary_category": "datasci",
+      "prompt_length": 1284,
+      "task_id": "bigcodebench-hard-BigCodeBench-752",
+      "test_length": 3954
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "codecs",
+        "re",
+        "datetime"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 4.3763,
+      "primary_category": "subprocess",
+      "prompt_length": 1967,
+      "task_id": "bigcodebench-hard-BigCodeBench-760",
+      "test_length": 1978
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "collections",
+        "csv",
+        "numpy",
+        "json"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.1237,
+      "primary_category": "filesystem",
+      "prompt_length": 638,
+      "task_id": "bigcodebench-hard-BigCodeBench-763",
+      "test_length": 3257
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "pathlib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.4793,
+      "primary_category": "subprocess",
+      "prompt_length": 518,
+      "task_id": "bigcodebench-hard-BigCodeBench-765",
+      "test_length": 2734
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "pathlib",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.004,
+      "primary_category": "subprocess",
+      "prompt_length": 670,
+      "task_id": "bigcodebench-hard-BigCodeBench-771",
+      "test_length": 2802
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "zipfile",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.884,
+      "primary_category": "filesystem",
+      "prompt_length": 567,
+      "task_id": "bigcodebench-hard-BigCodeBench-777",
+      "test_length": 3801
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "glob",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.4043,
+      "primary_category": "subprocess",
+      "prompt_length": 522,
+      "task_id": "bigcodebench-hard-BigCodeBench-785",
+      "test_length": 2497
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.8203,
+      "primary_category": "filesystem",
+      "prompt_length": 1005,
+      "task_id": "bigcodebench-hard-BigCodeBench-800",
+      "test_length": 2296
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.744,
+      "primary_category": "filesystem",
+      "prompt_length": 716,
+      "task_id": "bigcodebench-hard-BigCodeBench-826",
+      "test_length": 2934
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "math",
+        "itertools",
+        "functools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.4707,
+      "primary_category": "general",
+      "prompt_length": 922,
+      "task_id": "bigcodebench-hard-BigCodeBench-854",
+      "test_length": 1496
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "warnings",
+        "time",
+        "shutil",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.4183,
+      "primary_category": "filesystem",
+      "prompt_length": 661,
+      "task_id": "bigcodebench-hard-BigCodeBench-857",
+      "test_length": 3022
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "scipy",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.649,
+      "primary_category": "subprocess",
+      "prompt_length": 826,
+      "task_id": "bigcodebench-hard-BigCodeBench-865",
+      "test_length": 4269
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.6597,
+      "primary_category": "datasci",
+      "prompt_length": 1173,
+      "task_id": "bigcodebench-hard-BigCodeBench-870",
+      "test_length": 1310
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.5423,
+      "primary_category": "plotting",
+      "prompt_length": 884,
+      "task_id": "bigcodebench-hard-BigCodeBench-897",
+      "test_length": 1825
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "re",
+        "shutil",
+        "zipfile",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.0817,
+      "primary_category": "subprocess",
+      "prompt_length": 571,
+      "task_id": "bigcodebench-hard-BigCodeBench-906",
+      "test_length": 3332
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "sklearn"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.7373,
+      "primary_category": "plotting",
+      "prompt_length": 737,
+      "task_id": "bigcodebench-hard-BigCodeBench-914",
+      "test_length": 1801
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "scipy"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.7643,
+      "primary_category": "plotting",
+      "prompt_length": 1005,
+      "task_id": "bigcodebench-hard-BigCodeBench-915",
+      "test_length": 2128
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.006s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-678"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "sourceWarning: Enable tracemalloc to get the object allocation traceback\n/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp0km9zom_/candidate.py:69: ResourceWarning: unclosed file <_io.TextIOWrapper name='task_func_data/Output.txt' mode='r' encoding='UTF-8'>\n  final_line_count = sum(1 for line in open(self.file_path))\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n.....\n----------------------------------------------------------------------\nRan 5 tests in 0.006s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-720"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-723"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.057s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-752"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.008s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-760"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-763"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-765"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-771"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.003s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-777"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.032s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-785"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-800"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.009s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-826"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmphr2uswmx/candidate.py:6: SyntaxWarning: \"\\W\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\W\"? A raw string is also an option.\n  ALPHANUMERIC = re.compile('[\\W_]+')\nTraceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmphr2uswmx/candidate.py\", line 4, in <module>\n    from Levenshtein import ratio\nModuleNotFoundError: No module named 'Levenshtein'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-845"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-854"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpe6j2kl9z/source_dir/file1.txt: \n  warnings.warn(f\"Unable to move file {src_file}: {str(e)}\")\n/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp1oeea46k/candidate.py:17: UserWarning: Unable to move file /var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpe6j2kl9z/source_dir/file2.csv: \n  warnings.warn(f\"Unable to move file {src_file}: {str(e)}\")\n.\n----------------------------------------------------------------------\nRan 5 tests in 5.044s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-857"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "../var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpf_xsh4gg/candidate.py:10: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.\n  counts_normalized = zscore(counts)\n.....\n----------------------------------------------------------------------\nRan 7 tests in 0.056s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-865"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-870"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "number) or np.issubdtype(data[col2].dtype, np.number):\n       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/paras/projects/mempool/.venv-bigcodebench/lib/python3.14/site-packages/numpy/_core/numerictypes.py\", line 470, in issubdtype\n    arg1 = dtype(arg1).type\n           ~~~~~^^^^^^\nTypeError: Cannot interpret '<StringDtype(storage='python', na_value=nan)>' as a data type\n\n----------------------------------------------------------------------\nRan 8 tests in 0.003s\n\nFAILED (errors=5)\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-879"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.246s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-897"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-906"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.199s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-914"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.190s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-915"
+    }
+  ],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 20,
+  "max_rows": 40,
+  "mode": "instruct",
+  "next_offset": 112,
+  "offset": 90,
+  "output": "research/evals/bigcodebench_hard_next_profile_offset90_tasks.json",
+  "scanned": 22,
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-678",
+    "bigcodebench-hard-BigCodeBench-720",
+    "bigcodebench-hard-BigCodeBench-723",
+    "bigcodebench-hard-BigCodeBench-752",
+    "bigcodebench-hard-BigCodeBench-760",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-765",
+    "bigcodebench-hard-BigCodeBench-771",
+    "bigcodebench-hard-BigCodeBench-777",
+    "bigcodebench-hard-BigCodeBench-785",
+    "bigcodebench-hard-BigCodeBench-800",
+    "bigcodebench-hard-BigCodeBench-826",
+    "bigcodebench-hard-BigCodeBench-854",
+    "bigcodebench-hard-BigCodeBench-857",
+    "bigcodebench-hard-BigCodeBench-865",
+    "bigcodebench-hard-BigCodeBench-870",
+    "bigcodebench-hard-BigCodeBench-897",
+    "bigcodebench-hard-BigCodeBench-906",
+    "bigcodebench-hard-BigCodeBench-914",
+    "bigcodebench-hard-BigCodeBench-915"
+  ],
+  "split": "v0.1.4",
+  "target_passes": 20
+}

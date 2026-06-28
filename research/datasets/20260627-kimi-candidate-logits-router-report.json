@@ -1,0 +1,45 @@
+{
+  "dataset": "research/datasets/20260627-kimi-candidate-repeat-compare-routing.jsonl",
+  "evaluation": {
+    "cost_per_solved_task": 0.0,
+    "matched_target": 2,
+    "mean_kl": 0.0047963300958177475,
+    "mean_latency_ms": 7491.5,
+    "pass_at_1": 1.0,
+    "policy": "logits-router",
+    "predictions": [
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-kimi-k2.7-code"
+    ],
+    "solved": 2,
+    "target_accuracy": 1.0,
+    "task_count": 2
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "mean_kl": 0.8196699002671873
+    },
+    {
+      "epoch": 200.0,
+      "mean_kl": 0.02544890105476845
+    },
+    {
+      "epoch": 400.0,
+      "mean_kl": 0.01587666555575311
+    },
+    {
+      "epoch": 600.0,
+      "mean_kl": 0.010357169091944663
+    },
+    {
+      "epoch": 800.0,
+      "mean_kl": 0.006992100105724879
+    },
+    {
+      "epoch": 1000.0,
+      "mean_kl": 0.004852554310565839
+    }
+  ],
+  "model_output": "research/models/20260627-kimi-candidate-logits-router.json"
+}

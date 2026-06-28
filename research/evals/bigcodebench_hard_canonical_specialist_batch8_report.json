@@ -1,0 +1,876 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "candidate_count": 26,
+  "excluded_count": 53,
+  "excluded_outcomes": [],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-bigcodebench-eligible-8-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-hard-smoke-1-routing.jsonl",
+    "research/datasets/20260627-bigcodebench-minipilot-routing.jsonl",
+    "research/datasets/20260627-cloud-positive-compare-4-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-4task-routing.jsonl",
+    "research/datasets/20260627-cloud-repeatability-smoke-routing.jsonl",
+    "research/datasets/20260627-deepseek-368-routing.jsonl",
+    "research/datasets/20260627-expanded-ollama-routing.jsonl",
+    "research/datasets/20260627-fallback-error-neighborhood-screen4-routing.jsonl",
+    "research/datasets/20260627-fallback-opportunity-top2-repeat-routing.jsonl",
+    "research/datasets/20260627-fallback-solvability-screen4-routing.jsonl",
+    "research/datasets/20260627-heldout-both-repeat-routing.jsonl",
+    "research/datasets/20260627-heldout-hard-active-policy-routing.jsonl",
+    "research/datasets/20260627-kimi-candidate-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-11task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-14task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-16task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-19task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-6task-routing.jsonl",
+    "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+    "research/datasets/20260627-offset125-stable-positive-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-1-routing.jsonl",
+    "research/datasets/20260627-ollama-cloud-smoke-3-routing.jsonl",
+    "research/datasets/20260627-positive-neighborhood-screen2-routing.jsonl",
+    "research/datasets/20260627-postrefresh-heldout-hard-routing.jsonl",
+    "research/datasets/20260627-qwen-only-offset99-repeat-compare-routing.jsonl",
+    "research/datasets/20260627-real-ollama-routing.jsonl",
+    "research/datasets/20260627-top4-fresh-positive-repeat-routing.jsonl",
+    "research/datasets/20260627-top4-hard-specialist-repeat-routing.jsonl",
+    "research/datasets/20260627-top4-specialist-positive-repeat-routing.jsonl"
+  ],
+  "excluded_task_ids": [
+    "bigcodebench-hard-BigCodeBench-100",
+    "bigcodebench-hard-BigCodeBench-1004",
+    "bigcodebench-hard-BigCodeBench-1006",
+    "bigcodebench-hard-BigCodeBench-1022",
+    "bigcodebench-hard-BigCodeBench-1085",
+    "bigcodebench-hard-BigCodeBench-123",
+    "bigcodebench-hard-BigCodeBench-124",
+    "bigcodebench-hard-BigCodeBench-13",
+    "bigcodebench-hard-BigCodeBench-147",
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-19",
+    "bigcodebench-hard-BigCodeBench-308",
+    "bigcodebench-hard-BigCodeBench-310",
+    "bigcodebench-hard-BigCodeBench-324",
+    "bigcodebench-hard-BigCodeBench-326",
+    "bigcodebench-hard-BigCodeBench-346",
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-454",
+    "bigcodebench-hard-BigCodeBench-492",
+    "bigcodebench-hard-BigCodeBench-509",
+    "bigcodebench-hard-BigCodeBench-526",
+    "bigcodebench-hard-BigCodeBench-579",
+    "bigcodebench-hard-BigCodeBench-592",
+    "bigcodebench-hard-BigCodeBench-594",
+    "bigcodebench-hard-BigCodeBench-678",
+    "bigcodebench-hard-BigCodeBench-720",
+    "bigcodebench-hard-BigCodeBench-760",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-765",
+    "bigcodebench-hard-BigCodeBench-771",
+    "bigcodebench-hard-BigCodeBench-777",
+    "bigcodebench-hard-BigCodeBench-785",
+    "bigcodebench-hard-BigCodeBench-854",
+    "bigcodebench-hard-BigCodeBench-857",
+    "bigcodebench-hard-BigCodeBench-870",
+    "bigcodebench-hard-BigCodeBench-906",
+    "bigcodebench-hard-BigCodeBench-928",
+    "bigcodebench-hard-BigCodeBench-952",
+    "bigcodebench-hard-BigCodeBench-955",
+    "bigcodebench-hard-BigCodeBench-963",
+    "bigcodebench-hard-BigCodeBench-988",
+    "bigcodebench-hard-BigCodeBench-990",
+    "bigcodebench-hard-BigCodeBench-999",
+    "smoke-add-numbers",
+    "smoke-flatten-list",
+    "smoke-group-by-key",
+    "smoke-normalize-records",
+    "smoke-parse-kv",
+    "smoke-reverse-words",
+    "smoke-safe-int",
+    "smoke-title-case",
+    "smoke-top-k-frequent",
+    "smoke-windowed"
+  ],
+  "ranked_candidates": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12614617569489844,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "score": 10.2619,
+      "second_probability": 0.2573268271625608,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.257327,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-800",
+      "top_probability": 0.3834730028574592,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.10468794148436134,
+      "libraries": [
+        "pandas",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.9017,
+      "score": 6.5847,
+      "second_probability": 0.2577914949797805,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.362479,
+      "specialist_rank": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-528",
+      "top_probability": 0.3624794364641418,
+      "top_worker": "ollama-cloud-deepseek-v4-pro"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.2052087965782518,
+      "libraries": [
+        "math",
+        "pandas",
+        "os",
+        "json"
+      ],
+      "plausibility_score": 5.51,
+      "score": 5.2677,
+      "second_probability": 0.22161040661360631,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.219783,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-985",
+      "top_probability": 0.4268192031918581,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.10159985772075142,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "re"
+      ],
+      "plausibility_score": 5.5607,
+      "score": 4.1344,
+      "second_probability": 0.28174013104535883,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.28174,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-162",
+      "top_probability": 0.38333998876611025,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.12234051268583368,
+      "libraries": [
+        "math",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.223,
+      "score": 4.0578,
+      "second_probability": 0.2633437609688563,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.263344,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-399",
+      "top_probability": 0.38568427365469,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.12878691908153567,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "random"
+      ],
+      "plausibility_score": 5.5423,
+      "score": 4.0474,
+      "second_probability": 0.2669435949535776,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.266944,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-897",
+      "top_probability": 0.3957305140351133,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.13089489829407236,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "re"
+      ],
+      "plausibility_score": 8.7943,
+      "score": 3.7513,
+      "second_probability": 0.28039780023341554,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.18845,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-161",
+      "top_probability": 0.4112926985274879,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.14670227297637978,
+      "libraries": [
+        "pathlib",
+        "requests",
+        "zipfile"
+      ],
+      "plausibility_score": 8.9343,
+      "score": 3.5646,
+      "second_probability": 0.26781566998556733,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.159675,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-1012",
+      "top_probability": 0.4145179429619471,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.14176956651971448,
+      "libraries": [
+        "datetime",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 4.3777,
+      "score": 3.4061,
+      "second_probability": 0.24124659757601316,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.223982,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-367",
+      "top_probability": 0.38301616409572764,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.20205794614797204,
+      "libraries": [
+        "tarfile",
+        "urllib",
+        "hashlib",
+        "os"
+      ],
+      "plausibility_score": 7.7573,
+      "score": 2.9257,
+      "second_probability": 0.22705450279906772,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.20024,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-998",
+      "top_probability": 0.42911244894703976,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.1439899959010289,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 6.9567,
+      "score": 2.8727,
+      "second_probability": 0.26139377719309864,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.261394,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-942",
+      "top_probability": 0.40538377309412754,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.12233184428667965,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "random"
+      ],
+      "plausibility_score": 7.2703,
+      "score": 2.8101,
+      "second_probability": 0.25618462243824913,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.256185,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-637",
+      "top_probability": 0.3785164667249288,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.15767293625836692,
+      "libraries": [
+        "hashlib",
+        "os",
+        "ssl"
+      ],
+      "plausibility_score": 8.797,
+      "score": 2.5872,
+      "second_probability": 0.2780384946442992,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.161144,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-1039",
+      "top_probability": 0.4357114309026661,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.16286022016001964,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.1833,
+      "score": 1.9153,
+      "second_probability": 0.23894220688879295,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.238942,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-560",
+      "top_probability": 0.4018024270488126,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.18854341766919602,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "numpy"
+      ],
+      "plausibility_score": 5.8973,
+      "score": 1.8528,
+      "second_probability": 0.24041624161276143,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.240416,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-486",
+      "top_probability": 0.42895965928195745,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.21344318426040035,
+      "libraries": [
+        "os",
+        "datetime",
+        "requests",
+        "json"
+      ],
+      "plausibility_score": 9.346,
+      "score": 1.7651,
+      "second_probability": 0.23818316799793163,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.199953,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-1129",
+      "top_probability": 0.451626352258332,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.31897491708714776,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "itertools"
+      ],
+      "plausibility_score": 6.1037,
+      "score": 1.627,
+      "second_probability": 0.2062314292223505,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.206231,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-1057",
+      "top_probability": 0.5252063463094983,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.1531645829686858,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "plausibility_score": 9.806,
+      "score": 1.3894,
+      "second_probability": 0.2860895491373078,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.145004,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-211",
+      "top_probability": 0.43925413210599357,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.30991500486542745,
+      "libraries": [
+        "pandas",
+        "re",
+        "json"
+      ],
+      "plausibility_score": 4.4037,
+      "score": 1.1767,
+      "second_probability": 0.19427128437427368,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.186178,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-458",
+      "top_probability": 0.5041862892397011,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.05220963839407111,
+      "libraries": [
+        "email",
+        "smtplib",
+        "getpass"
+      ],
+      "plausibility_score": 7.6837,
+      "score": 0.9223,
+      "second_probability": 0.28770502452400815,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.198445,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-1042",
+      "top_probability": 0.33991466291807926,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.233436815712983,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 6.271,
+      "score": 0.862,
+      "second_probability": 0.24011818883523764,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.164856,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-120",
+      "top_probability": 0.47355500454822064,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.15603249515220802,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 6.6487,
+      "score": 0.8558,
+      "second_probability": 0.2534470311008543,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.253447,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-636",
+      "top_probability": 0.40947952625306233,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.19904032599397595,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 7.08,
+      "score": 0.7588,
+      "second_probability": 0.24447190229234186,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.244472,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-208",
+      "top_probability": 0.4435122282863178,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.2635211516464513,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 7.2987,
+      "score": 0.6356,
+      "second_probability": 0.22757708780404312,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.227577,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-477",
+      "top_probability": 0.4910982394504944,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.29665731755218977,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 7.1503,
+      "score": 0.5877,
+      "second_probability": 0.2171298224525426,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.21713,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-139",
+      "top_probability": 0.5137871400047324,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "first_second_margin": 0.31231543328461886,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 8.1493,
+      "score": 0.5207,
+      "second_probability": 0.222599958590294,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.2226,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-513",
+      "top_probability": 0.5349153918749129,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    }
+  ],
+  "registry": "research/policies/active_policy.json",
+  "selected": [
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.12614617569489844,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "score": 10.2619,
+      "second_probability": 0.2573268271625608,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.257327,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-800",
+      "top_probability": 0.3834730028574592,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.10468794148436134,
+      "libraries": [
+        "pandas",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.9017,
+      "score": 6.5847,
+      "second_probability": 0.2577914949797805,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.362479,
+      "specialist_rank": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-528",
+      "top_probability": 0.3624794364641418,
+      "top_worker": "ollama-cloud-deepseek-v4-pro"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "first_second_margin": 0.2052087965782518,
+      "libraries": [
+        "math",
+        "pandas",
+        "os",
+        "json"
+      ],
+      "plausibility_score": 5.51,
+      "score": 5.2677,
+      "second_probability": 0.22161040661360631,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.219783,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-985",
+      "top_probability": 0.4268192031918581,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.10159985772075142,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "re"
+      ],
+      "plausibility_score": 5.5607,
+      "score": 4.1344,
+      "second_probability": 0.28174013104535883,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.28174,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-162",
+      "top_probability": 0.38333998876611025,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.12234051268583368,
+      "libraries": [
+        "math",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.223,
+      "score": 4.0578,
+      "second_probability": 0.2633437609688563,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.263344,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-399",
+      "top_probability": 0.38568427365469,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "first_second_margin": 0.12878691908153567,
+      "libraries": [
+        "numpy",
+        "matplotlib",
+        "random"
+      ],
+      "plausibility_score": 5.5423,
+      "score": 4.0474,
+      "second_probability": 0.2669435949535776,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.266944,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-897",
+      "top_probability": 0.3957305140351133,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.13089489829407236,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "re"
+      ],
+      "plausibility_score": 8.7943,
+      "score": 3.7513,
+      "second_probability": 0.28039780023341554,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.18845,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-161",
+      "top_probability": 0.4112926985274879,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "first_second_margin": 0.14670227297637978,
+      "libraries": [
+        "pathlib",
+        "requests",
+        "zipfile"
+      ],
+      "plausibility_score": 8.9343,
+      "score": 3.5646,
+      "second_probability": 0.26781566998556733,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "specialist_probability": 0.159675,
+      "specialist_rank": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-1012",
+      "top_probability": 0.4145179429619471,
+      "top_worker": "ollama-cloud-kimi-k2.7-code"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-800",
+    "bigcodebench-hard-BigCodeBench-528",
+    "bigcodebench-hard-BigCodeBench-985",
+    "bigcodebench-hard-BigCodeBench-162",
+    "bigcodebench-hard-BigCodeBench-399",
+    "bigcodebench-hard-BigCodeBench-897",
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-1012"
+  ],
+  "specialist_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2"
+  ],
+  "task_sources": [
+    "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json",
+    "research/evals/bigcodebench_hard_eligible_merged_tasks.json",
+    "research/evals/bigcodebench_hard_eligible_offset125_tasks.json",
+    "research/evals/bigcodebench_hard_eligible_offset99_tasks.json",
+    "research/evals/bigcodebench_hard_eligible_offset44_tasks.json"
+  ]
+}

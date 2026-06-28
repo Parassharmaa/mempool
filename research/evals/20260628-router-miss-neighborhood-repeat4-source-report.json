@@ -1,0 +1,101 @@
+{
+  "candidate_count": 0,
+  "fallback_used": true,
+  "miss_plan": "research/evals/20260628-router-miss-acquisition-plan.json",
+  "selected": [
+    {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "category_key": "filesystem",
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-368"
+      ],
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-368"
+    },
+    {
+      "categories": [
+        "algorithmic",
+        "datasci",
+        "filesystem"
+      ],
+      "category_key": "datasci+filesystem",
+      "environment_risk": 3,
+      "libraries": [
+        "collections",
+        "csv",
+        "numpy",
+        "json"
+      ],
+      "plausibility_score": 9.5,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-763"
+      ],
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-763"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "category_key": "filesystem",
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "pathlib",
+        "zipfile",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-963"
+      ],
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_id": "bigcodebench-hard-BigCodeBench-963"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "category_key": "general",
+      "environment_risk": 0,
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "plausibility_score": 2.0,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-5"
+      ],
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_id": "bigcodebench-hard-BigCodeBench-5"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-963",
+    "bigcodebench-hard-BigCodeBench-5"
+  ]
+}

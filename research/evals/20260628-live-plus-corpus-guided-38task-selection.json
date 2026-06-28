@@ -1,0 +1,225 @@
+{
+  "candidates": [
+    {
+      "model_output": "research/models/20260628-live-plus-corpus-guided-38task-reward-t0p05-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": false,
+          "dataset": null,
+          "loo": null,
+          "report": null,
+          "target_mix": null
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-live-plus-corpus-guided-38task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.0,
+            "mean_latency_regret_ms": 1903.2894736842106,
+            "pass_at_1": 0.7894736842105263,
+            "solvable_pass_at_1": 0.9090909090909091,
+            "solvable_target_accuracy": 0.7272727272727273,
+            "solvable_task_count": 33,
+            "target_accuracy": 0.7368421052631579,
+            "task_count": 38
+          },
+          "report": "research/models/20260628-live-plus-corpus-guided-38task-reward-t0p05-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 3,
+              "ollama-cloud-glm-5.2": 3,
+              "ollama-cloud-kimi-k2.7-code": 9,
+              "ollama-cloud-qwen3-coder-480b": 23
+            },
+            "target_worker_count": 4,
+            "task_count": 38
+          }
+        },
+        "decision": "quarantine",
+        "operational_reference": {
+          "available": true,
+          "mean_latency_regret_ms": 251.38333333333333,
+          "pass_at_1": 0.7666666666666667,
+          "policy": "probe-gated-latency-calibrated-logits-router",
+          "solvable_pass_at_1": 0.8518518518518519,
+          "solvable_target_accuracy": 0.8148148148148148,
+          "solvable_task_count": 27,
+          "target_accuracy": 0.8333333333333334,
+          "task_count": 30
+        },
+        "promotion_profile": "preserve_accuracy",
+        "reasons": [
+          "candidate LOO target accuracy 0.737 is below minimum 0.833",
+          "candidate LOO target accuracy drop 0.096 against operational reference probe-gated-latency-calibrated-logits-router exceeds allowed 0.000",
+          "candidate LOO mean latency regret 1903.3 ms exceeds maximum 251.4 ms"
+        ],
+        "strongest_worker": {
+          "pass_at_1": 0.6578947368421053
+        },
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.0,
+          "max_loo_latency_regret_increase_ms": null,
+          "max_loo_latency_regret_ms": 251.38333333333333,
+          "min_loo_accuracy": 0.8333333333333334,
+          "min_loo_pass_at_1_vs_strongest": 0.0,
+          "min_loo_solvable_pass_at_1": 0.8518518518518519
+        },
+        "timestamp": "2026-06-28T01:13:59.965362+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-live-plus-corpus-guided-38task-reward-t0p05-logits-router-report.json",
+      "temperature": 0.05
+    },
+    {
+      "model_output": "research/models/20260628-live-plus-corpus-guided-38task-reward-t0p1-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": false,
+          "dataset": null,
+          "loo": null,
+          "report": null,
+          "target_mix": null
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-live-plus-corpus-guided-38task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.0,
+            "mean_latency_regret_ms": 2173.7894736842104,
+            "pass_at_1": 0.7894736842105263,
+            "solvable_pass_at_1": 0.9090909090909091,
+            "solvable_target_accuracy": 0.7272727272727273,
+            "solvable_task_count": 33,
+            "target_accuracy": 0.7105263157894737,
+            "task_count": 38
+          },
+          "report": "research/models/20260628-live-plus-corpus-guided-38task-reward-t0p1-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 3,
+              "ollama-cloud-glm-5.2": 3,
+              "ollama-cloud-kimi-k2.7-code": 9,
+              "ollama-cloud-qwen3-coder-480b": 23
+            },
+            "target_worker_count": 4,
+            "task_count": 38
+          }
+        },
+        "decision": "quarantine",
+        "operational_reference": {
+          "available": true,
+          "mean_latency_regret_ms": 251.38333333333333,
+          "pass_at_1": 0.7666666666666667,
+          "policy": "probe-gated-latency-calibrated-logits-router",
+          "solvable_pass_at_1": 0.8518518518518519,
+          "solvable_target_accuracy": 0.8148148148148148,
+          "solvable_task_count": 27,
+          "target_accuracy": 0.8333333333333334,
+          "task_count": 30
+        },
+        "promotion_profile": "preserve_accuracy",
+        "reasons": [
+          "candidate LOO target accuracy 0.711 is below minimum 0.833",
+          "candidate LOO target accuracy drop 0.123 against operational reference probe-gated-latency-calibrated-logits-router exceeds allowed 0.000",
+          "candidate LOO mean latency regret 2173.8 ms exceeds maximum 251.4 ms"
+        ],
+        "strongest_worker": {
+          "pass_at_1": 0.6578947368421053
+        },
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.0,
+          "max_loo_latency_regret_increase_ms": null,
+          "max_loo_latency_regret_ms": 251.38333333333333,
+          "min_loo_accuracy": 0.8333333333333334,
+          "min_loo_pass_at_1_vs_strongest": 0.0,
+          "min_loo_solvable_pass_at_1": 0.8518518518518519
+        },
+        "timestamp": "2026-06-28T01:14:39.565501+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-live-plus-corpus-guided-38task-reward-t0p1-logits-router-report.json",
+      "temperature": 0.1
+    },
+    {
+      "model_output": "research/models/20260628-live-plus-corpus-guided-38task-reward-t0p2-logits-router.json",
+      "refresh": {
+        "baseline": {
+          "available": false,
+          "dataset": null,
+          "loo": null,
+          "report": null,
+          "target_mix": null
+        },
+        "candidate": {
+          "dataset": "research/datasets/20260628-live-plus-corpus-guided-38task-routing.jsonl",
+          "loo": {
+            "available": true,
+            "mean_kl": 0.0,
+            "mean_latency_regret_ms": 5227.578947368421,
+            "pass_at_1": 0.7631578947368421,
+            "solvable_pass_at_1": 0.8787878787878788,
+            "solvable_target_accuracy": 0.696969696969697,
+            "solvable_task_count": 33,
+            "target_accuracy": 0.6842105263157895,
+            "task_count": 38
+          },
+          "report": "research/models/20260628-live-plus-corpus-guided-38task-reward-t0p2-logits-router.json",
+          "target_mix": {
+            "target_counts": {
+              "ollama-cloud-deepseek-v4-pro": 3,
+              "ollama-cloud-glm-5.2": 3,
+              "ollama-cloud-kimi-k2.7-code": 9,
+              "ollama-cloud-qwen3-coder-480b": 23
+            },
+            "target_worker_count": 4,
+            "task_count": 38
+          }
+        },
+        "decision": "quarantine",
+        "operational_reference": {
+          "available": true,
+          "mean_latency_regret_ms": 251.38333333333333,
+          "pass_at_1": 0.7666666666666667,
+          "policy": "probe-gated-latency-calibrated-logits-router",
+          "solvable_pass_at_1": 0.8518518518518519,
+          "solvable_target_accuracy": 0.8148148148148148,
+          "solvable_task_count": 27,
+          "target_accuracy": 0.8333333333333334,
+          "task_count": 30
+        },
+        "promotion_profile": "preserve_accuracy",
+        "reasons": [
+          "candidate LOO target accuracy 0.684 is below minimum 0.833",
+          "candidate LOO target accuracy drop 0.149 against operational reference probe-gated-latency-calibrated-logits-router exceeds allowed 0.000",
+          "candidate LOO mean latency regret 5227.6 ms exceeds maximum 251.4 ms"
+        ],
+        "strongest_worker": {
+          "pass_at_1": 0.6578947368421053
+        },
+        "thresholds": {
+          "max_loo_accuracy_drop": 0.0,
+          "max_loo_latency_regret_increase_ms": null,
+          "max_loo_latency_regret_ms": 251.38333333333333,
+          "min_loo_accuracy": 0.8333333333333334,
+          "min_loo_pass_at_1_vs_strongest": 0.0,
+          "min_loo_solvable_pass_at_1": 0.8518518518518519
+        },
+        "timestamp": "2026-06-28T01:15:19.311429+00:00",
+        "warnings": []
+      },
+      "report_output": "research/datasets/20260628-live-plus-corpus-guided-38task-reward-t0p2-logits-router-report.json",
+      "temperature": 0.2
+    }
+  ],
+  "dataset": "research/datasets/20260628-live-plus-corpus-guided-38task-routing.jsonl",
+  "decision": "quarantine",
+  "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "promotion_profile": "preserve_accuracy",
+  "selected": null,
+  "target_mode": "reward",
+  "temperatures": [
+    0.05,
+    0.1,
+    0.2
+  ]
+}

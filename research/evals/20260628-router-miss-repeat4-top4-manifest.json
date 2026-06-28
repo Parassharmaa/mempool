@@ -1,0 +1,127 @@
+{
+  "benchmark_id": "bigcodebench-hard-recommended-acquisition",
+  "call_count": 32,
+  "outcomes": "research/evals/results/20260628-router-miss-repeat4-top4.jsonl",
+  "output": "research/evals/results/20260628-router-miss-repeat4-top4.json",
+  "python_executable": "python3",
+  "recommended_source_id": "router-miss-neighborhood-repeat4",
+  "repeat_count": 2,
+  "required_packages": [],
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_worker_pool_top4.json --tasks research/evals/20260628-router-miss-repeat4-top4-tasks.json --repeat-count 2 --eval-timeout-seconds 40 --run-id 20260628-router-miss-repeat4-top4 --output research/evals/results/20260628-router-miss-repeat4-top4.json --outcomes research/evals/results/20260628-router-miss-repeat4-top4.jsonl --resume --progress --quiet",
+  "run_id": "20260628-router-miss-repeat4-top4",
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-963",
+    "bigcodebench-hard-BigCodeBench-5"
+  ],
+  "selected_task_metadata": {
+    "bigcodebench-hard-BigCodeBench-368": {
+      "categories": [
+        "filesystem",
+        "general"
+      ],
+      "category_key": "filesystem",
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "random",
+        "os"
+      ],
+      "plausibility_score": 4.0,
+      "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-368"
+      ],
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-368"
+    },
+    "bigcodebench-hard-BigCodeBench-5": {
+      "categories": [
+        "general"
+      ],
+      "category_key": "general",
+      "environment_risk": 0,
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "plausibility_score": 2.0,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-5"
+      ],
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_id": "bigcodebench-hard-BigCodeBench-5"
+    },
+    "bigcodebench-hard-BigCodeBench-763": {
+      "categories": [
+        "algorithmic",
+        "datasci",
+        "filesystem"
+      ],
+      "category_key": "datasci+filesystem",
+      "environment_risk": 3,
+      "libraries": [
+        "collections",
+        "csv",
+        "numpy",
+        "json"
+      ],
+      "plausibility_score": 9.5,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-763"
+      ],
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-763"
+    },
+    "bigcodebench-hard-BigCodeBench-963": {
+      "categories": [
+        "filesystem"
+      ],
+      "category_key": "filesystem",
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "pathlib",
+        "zipfile",
+        "os"
+      ],
+      "plausibility_score": 5.0,
+      "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "score": 0.0,
+      "selection_reason": "fallback_seed_repeat",
+      "source_seed_task_ids": [
+        "bigcodebench-hard-BigCodeBench-963"
+      ],
+      "target_worker_id": "ollama-cloud-glm-5.2",
+      "task_id": "bigcodebench-hard-BigCodeBench-963"
+    }
+  },
+  "source_candidate_count": 0,
+  "source_recommendation": {
+    "id": "router-miss-neighborhood-repeat4",
+    "kind": "repeat_stabilization",
+    "reasons": [
+      "fresh miss-neighborhood pool exhausted; repeat sparse LOO miss seeds to stabilize empirical targets"
+    ],
+    "score": 0.0
+  },
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-router-miss-repeat4-top4.jsonl --output research/evals/results/20260628-router-miss-repeat4-top4-summary.json",
+  "task_count": 4,
+  "tasks_output": "research/evals/20260628-router-miss-repeat4-top4-tasks.json",
+  "worker_ids_to_run": [
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "worker_pool": "research/evals/ollama_cloud_worker_pool_top4.json"
+}

@@ -1,0 +1,175 @@
+{
+  "benchmark_id": "bigcodebench-hard-recommended-acquisition",
+  "call_count": 18,
+  "outcomes": "research/evals/results/20260628-nonqwen-pressure-top3-screen.jsonl",
+  "output": "research/evals/results/20260628-nonqwen-pressure-top3-screen.json",
+  "python_executable": "python3",
+  "recommended_source_id": "nonqwen-pressure",
+  "repeat_count": 1,
+  "required_packages": [],
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_nonqwen_top3_pool.json --tasks research/evals/20260628-nonqwen-pressure-top3-screen-tasks.json --repeat-count 1 --eval-timeout-seconds 20 --run-id 20260628-nonqwen-pressure-top3-screen --output research/evals/results/20260628-nonqwen-pressure-top3-screen.json --outcomes research/evals/results/20260628-nonqwen-pressure-top3-screen.jsonl --resume --progress --quiet",
+  "run_id": "20260628-nonqwen-pressure-top3-screen",
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-15",
+    "bigcodebench-hard-BigCodeBench-6",
+    "bigcodebench-hard-BigCodeBench-130",
+    "bigcodebench-hard-BigCodeBench-131",
+    "bigcodebench-hard-BigCodeBench-288",
+    "bigcodebench-hard-BigCodeBench-260"
+  ],
+  "selected_task_metadata": {
+    "bigcodebench-hard-BigCodeBench-130": {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.052862918838255,
+      "libraries": [
+        "base64",
+        "hashlib",
+        "os",
+        "binascii"
+      ],
+      "plausibility_score": 2.6257,
+      "score": 10.5009,
+      "second_probability": 0.29390440563180353,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.293904,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-130",
+      "top_probability": 0.34676732447005854,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    "bigcodebench-hard-BigCodeBench-131": {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.052892550681622796,
+      "libraries": [
+        "base64",
+        "hashlib",
+        "os",
+        "binascii"
+      ],
+      "plausibility_score": 2.7277,
+      "score": 10.4908,
+      "second_probability": 0.29392686277920926,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.293927,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-131",
+      "top_probability": 0.34681941346083206,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    "bigcodebench-hard-BigCodeBench-15": {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.0446364006656203,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 3.224,
+      "score": 10.6664,
+      "second_probability": 0.3314637123510748,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.331464,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "top_probability": 0.3761001130166951,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    "bigcodebench-hard-BigCodeBench-260": {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.053742915918271295,
+      "libraries": [
+        "glob",
+        "json",
+        "os"
+      ],
+      "plausibility_score": 2.943,
+      "score": 10.3397,
+      "second_probability": 0.2723314985139125,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.272331,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-260",
+      "top_probability": 0.32607441443218377,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    "bigcodebench-hard-BigCodeBench-288": {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.027799976452590747,
+      "libraries": [
+        "json",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.581,
+      "score": 10.4803,
+      "second_probability": 0.2897366421637739,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "specialist_probability": 0.289737,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-288",
+      "top_probability": 0.3175366186163647,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    },
+    "bigcodebench-hard-BigCodeBench-6": {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "first_second_margin": 0.05729799889162218,
+      "libraries": [
+        "re",
+        "os"
+      ],
+      "plausibility_score": 2.1913,
+      "score": 10.5076,
+      "second_probability": 0.287796134626647,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "specialist_probability": 0.287796,
+      "specialist_rank": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-6",
+      "top_probability": 0.3450941335182692,
+      "top_worker": "ollama-cloud-qwen3-coder-480b"
+    }
+  },
+  "source_candidate_count": 33,
+  "source_recommendation": {
+    "candidate_count": 33,
+    "decision": null,
+    "exhausted": false,
+    "id": "nonqwen-pressure",
+    "kind": "nonqwen_specialist_pressure",
+    "reasons": [
+      "33 candidates available",
+      "6 preselected tasks",
+      "targets non-Qwen specialist evidence",
+      "can be inspected without live worker spend"
+    ],
+    "score": 26.8,
+    "selected_count": 6
+  },
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-nonqwen-pressure-top3-screen.jsonl --output research/evals/results/20260628-nonqwen-pressure-top3-screen-summary.json",
+  "task_count": 6,
+  "tasks_output": "research/evals/20260628-nonqwen-pressure-top3-screen-tasks.json",
+  "worker_ids_to_run": [
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "worker_pool": "research/evals/ollama_cloud_nonqwen_top3_pool.json"
+}

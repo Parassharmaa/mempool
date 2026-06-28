@@ -1,0 +1,30 @@
+{
+  "benchmark_id": "bigcodebench-hard-specialist-acquisition-batch",
+  "call_count": 16,
+  "outcomes": "research/evals/results/20260628-specialist-acquisition-batch1.jsonl",
+  "output": "research/evals/results/20260628-specialist-acquisition-batch1.json",
+  "repeat_count": 2,
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_worker_pool_top4.json --tasks research/evals/20260628-specialist-acquisition-batch1-tasks.json --repeat-count 2 --eval-timeout-seconds 20 --run-id 20260628-specialist-acquisition-batch1 --output research/evals/results/20260628-specialist-acquisition-batch1.json --outcomes research/evals/results/20260628-specialist-acquisition-batch1.jsonl --resume --progress --quiet",
+  "run_id": "20260628-specialist-acquisition-batch1",
+  "screened_task_ids": [
+    "bigcodebench-hard-BigCodeBench-208"
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-942",
+    "bigcodebench-hard-BigCodeBench-636"
+  ],
+  "source_benchmark_id": "bigcodebench-hard-specialist-acquisition",
+  "source_manifest": "research/programs/20260628-specialist-acquisition-plan.json",
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-specialist-acquisition-batch1.jsonl --output research/evals/results/20260628-specialist-acquisition-batch1-summary.json",
+  "task_count": 2,
+  "tasks_output": "research/evals/20260628-specialist-acquisition-batch1-tasks.json",
+  "universal_failure_task_ids": [
+    "bigcodebench-hard-BigCodeBench-208"
+  ],
+  "worker_ids_to_run": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ]
+}

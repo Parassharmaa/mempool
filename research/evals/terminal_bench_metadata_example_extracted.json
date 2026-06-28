@@ -1,0 +1,60 @@
+[
+  {
+    "categories": [
+      "software-engineering"
+    ],
+    "difficulty": "hard",
+    "id": "example/software-edit",
+    "source": "terminal_bench_metadata_example.json:0",
+    "tags": [
+      "git",
+      "tests"
+    ]
+  },
+  {
+    "categories": [
+      "system-administration"
+    ],
+    "difficulty": "hard",
+    "id": "example/system-repair",
+    "source": "terminal_bench_metadata_example.json:1",
+    "tags": [
+      "shell",
+      "services"
+    ]
+  },
+  {
+    "categories": [
+      "data-processing"
+    ],
+    "difficulty": "medium",
+    "id": "example/data-cleanup",
+    "source": "terminal_bench_metadata_example.json:2",
+    "tags": [
+      "csv",
+      "python"
+    ]
+  },
+  {
+    "categories": [
+      "security"
+    ],
+    "difficulty": "medium",
+    "id": "example/security-audit",
+    "source": "terminal_bench_metadata_example.json:3",
+    "tags": [
+      "permissions"
+    ]
+  },
+  {
+    "categories": [
+      "model-training"
+    ],
+    "difficulty": "medium",
+    "id": "example/model-training",
+    "source": "terminal_bench_metadata_example.json:4",
+    "tags": [
+      "training"
+    ]
+  }
+]

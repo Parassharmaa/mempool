@@ -1,0 +1,69 @@
+{
+  "baseline_unweighted": {
+    "loo_mean_latency_regret_ms": 3609.63,
+    "loo_pass_at_1": 0.82,
+    "loo_solvable_pass_at_1": 0.8723404255319149,
+    "loo_target_accuracy": 0.62,
+    "report": "research/evals/results/20260628-m5-offline-multihead-50task-report.json"
+  },
+  "best_latency_candidate": {
+    "latency_regret_weight": 0.5,
+    "loo_mean_latency_regret_ms": 1693.48,
+    "loo_pass_at_1": 0.8,
+    "loo_solvable_pass_at_1": 0.851063829787234,
+    "loo_target_accuracy": 0.6,
+    "model": "research/models/20260628-m5-latency-w0p5-multihead.json",
+    "report": "research/evals/results/20260628-m5-latency-w0p5-multihead-report.json"
+  },
+  "candidates": [
+    {
+      "latency_regret_weight": 0.05,
+      "loo_mean_latency_regret_ms": 3609.63,
+      "loo_pass_at_1": 0.82,
+      "loo_solvable_pass_at_1": 0.8723404255319149,
+      "loo_target_accuracy": 0.62,
+      "model": "research/models/20260628-m5-latency-w0p05-multihead.json",
+      "report": "research/evals/results/20260628-m5-latency-w0p05-multihead-report.json"
+    },
+    {
+      "latency_regret_weight": 0.1,
+      "loo_mean_latency_regret_ms": 3609.63,
+      "loo_pass_at_1": 0.82,
+      "loo_solvable_pass_at_1": 0.8723404255319149,
+      "loo_target_accuracy": 0.62,
+      "model": "research/models/20260628-m5-latency-w0p1-multihead.json",
+      "report": "research/evals/results/20260628-m5-latency-w0p1-multihead-report.json"
+    },
+    {
+      "latency_regret_weight": 0.2,
+      "loo_mean_latency_regret_ms": 2734.01,
+      "loo_pass_at_1": 0.8,
+      "loo_solvable_pass_at_1": 0.851063829787234,
+      "loo_target_accuracy": 0.6,
+      "model": "research/models/20260628-m5-latency-w0p2-multihead.json",
+      "report": "research/evals/results/20260628-m5-latency-w0p2-multihead-report.json"
+    },
+    {
+      "latency_regret_weight": 0.5,
+      "loo_mean_latency_regret_ms": 1693.48,
+      "loo_pass_at_1": 0.8,
+      "loo_solvable_pass_at_1": 0.851063829787234,
+      "loo_target_accuracy": 0.6,
+      "model": "research/models/20260628-m5-latency-w0p5-multihead.json",
+      "report": "research/evals/results/20260628-m5-latency-w0p5-multihead-report.json"
+    },
+    {
+      "latency_regret_weight": 1.0,
+      "loo_mean_latency_regret_ms": 1696.83,
+      "loo_pass_at_1": 0.78,
+      "loo_solvable_pass_at_1": 0.8297872340425532,
+      "loo_target_accuracy": 0.58,
+      "model": "research/models/20260628-m5-latency-w1p0-multihead.json",
+      "report": "research/evals/results/20260628-m5-latency-w1p0-multihead-report.json"
+    }
+  ],
+  "decision": "quarantine-latency-aware-refresh",
+  "gate": "research/evals/results/20260628-m5-latency-w0p5-policy-gate.json",
+  "reason": "Latency-aware loss reduces leave-one-out latency regret but still misses target-accuracy and absolute-regret promotion thresholds.",
+  "schema_version": "mempool.multihead_latency_aware_selection.v1"
+}

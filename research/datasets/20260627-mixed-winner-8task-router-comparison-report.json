@@ -1,0 +1,131 @@
+{
+  "active_policy": {
+    "dataset": "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+    "model": "research/models/20260627-mixed-winner-8task-logits-router.json",
+    "registry": "research/policies/active_policy.json"
+  },
+  "baselines": {
+    "fastest_worker": "ollama-cloud-qwen3-coder-480b",
+    "strongest_worker": "ollama-cloud-kimi-k2.7-code"
+  },
+  "dataset": "research/datasets/20260627-mixed-winner-8task-routing.jsonl",
+  "evaluations": [
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 5,
+      "mean_latency_ms": 3024.125,
+      "pass_at_1": 0.625,
+      "policy": "family-router",
+      "solved": 5,
+      "target_accuracy": 0.625,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 24193
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 8,
+      "mean_latency_ms": 4448.5,
+      "pass_at_1": 1.0,
+      "policy": "nearest-neighbor-router",
+      "solved": 8,
+      "target_accuracy": 1.0,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 35588
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 5,
+      "mean_latency_ms": 3024.125,
+      "pass_at_1": 0.625,
+      "policy": "family-router-loo",
+      "solved": 5,
+      "target_accuracy": 0.625,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 24193
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 6,
+      "mean_latency_ms": 4987.25,
+      "pass_at_1": 0.875,
+      "policy": "nearest-neighbor-router-loo",
+      "solved": 7,
+      "target_accuracy": 0.75,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 39898
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 2,
+      "mean_latency_ms": 9094.5,
+      "pass_at_1": 0.75,
+      "policy": "strongest-worker",
+      "solved": 6,
+      "target_accuracy": 0.25,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 72756
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 5,
+      "mean_latency_ms": 3024.125,
+      "pass_at_1": 0.625,
+      "policy": "fastest-worker",
+      "solved": 5,
+      "target_accuracy": 0.625,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 24193
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 8,
+      "mean_latency_ms": 4448.5,
+      "pass_at_1": 1.0,
+      "policy": "oracle-target",
+      "solved": 8,
+      "target_accuracy": 1.0,
+      "task_count": 8,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 35588
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 8,
+      "mean_kl": 0.0015660431860364948,
+      "mean_latency_ms": 4448.5,
+      "pass_at_1": 1.0,
+      "policy": "active-logits-router",
+      "predictions": [
+        "ollama-cloud-qwen3-coder-480b",
+        "ollama-cloud-qwen3-coder-480b",
+        "ollama-cloud-kimi-k2.7-code",
+        "ollama-cloud-qwen3-coder-480b",
+        "ollama-cloud-kimi-k2.7-code",
+        "ollama-cloud-qwen3-coder-480b",
+        "ollama-cloud-qwen3-coder-480b",
+        "ollama-cloud-glm-5.2"
+      ],
+      "solved": 8,
+      "target_accuracy": 1.0,
+      "task_count": 8
+    }
+  ],
+  "nearest_router": {
+    "default_worker_id": "ollama-cloud-qwen3-coder-480b",
+    "example_count": 8,
+    "policy": "nearest-neighbor-router"
+  },
+  "router": {
+    "default_worker_id": "ollama-cloud-qwen3-coder-480b",
+    "family_to_worker": {
+      "bigcodebench_hard": "ollama-cloud-qwen3-coder-480b"
+    },
+    "policy": "family-router"
+  }
+}

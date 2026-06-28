@@ -1,0 +1,19 @@
+{
+  "description": "Regression slices that candidate routers must report before promotion.",
+  "slices": [
+    {
+      "dataset": "research/datasets/20260627-heldout-hard-active-policy-routing.jsonl",
+      "expected_solvable_task_count": 1,
+      "id": "heldout-hard-deepseek-763",
+      "minimum_solvable_pass_at_1": 1.0,
+      "note": "Former held-out slice; active 23-task router should route BigCodeBench/763 to DeepSeek."
+    },
+    {
+      "dataset": "research/datasets/20260627-postrefresh-heldout-hard-routing.jsonl",
+      "expected_solvable_task_count": 1,
+      "id": "postrefresh-hard-glm-526",
+      "minimum_solvable_pass_at_1": 1.0,
+      "note": "Fresh post-refresh miss; future candidates should route BigCodeBench/526 away from Qwen, preferably GLM."
+    }
+  ]
+}

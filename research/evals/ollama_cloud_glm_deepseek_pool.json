@@ -1,0 +1,33 @@
+{
+  "api_key_env": "OLLAMA_API_KEY",
+  "base_url": "https://ollama.com/v1",
+  "timeout_seconds": 90,
+  "workers": [
+    {
+      "cost_usd": 0.0,
+      "id": "ollama-cloud-glm-5.2",
+      "model": "glm-5.2",
+      "strengths": [
+        "general",
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard",
+        "agentic_coding"
+      ]
+    },
+    {
+      "cost_usd": 0.0,
+      "id": "ollama-cloud-deepseek-v4-pro",
+      "model": "deepseek-v4-pro",
+      "strengths": [
+        "general",
+        "reasoning",
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard"
+      ]
+    }
+  ]
+}

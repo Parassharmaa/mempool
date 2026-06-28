@@ -1,0 +1,116 @@
+{
+  "current_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask",
+    "openpyxl",
+    "pytz",
+    "legacy-cgi",
+    "rsa",
+    "statsmodels",
+    "opencv-python",
+    "lxml",
+    "wordcloud"
+  ],
+  "current_profile_path": "research/evals/bigcodebench_dependency_profile_next3.txt",
+  "expanded_profile": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "bs4",
+    "nltk",
+    "faker",
+    "psutil",
+    "flask",
+    "openpyxl",
+    "pytz",
+    "legacy-cgi",
+    "rsa",
+    "statsmodels",
+    "opencv-python",
+    "lxml",
+    "wordcloud",
+    "geopandas",
+    "soundfile",
+    "regex",
+    "tensorflow"
+  ],
+  "gap_report": "research/evals/bigcodebench_hard_top4_dependency_gap_report.json",
+  "profile_output": "research/evals/20260628-router-miss-dependency-profile-next.txt",
+  "projected_unique_unlocks": 4,
+  "selected_package_count": 4,
+  "selected_packages": [
+    {
+      "blocked_task_count": 1,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-187"
+      ],
+      "incremental_unique_tasks": 1,
+      "modules": [
+        "geopandas"
+      ],
+      "package": "geopandas",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-187"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-227"
+      ],
+      "incremental_unique_tasks": 1,
+      "modules": [
+        "soundfile"
+      ],
+      "package": "soundfile",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-227"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-374"
+      ],
+      "incremental_unique_tasks": 1,
+      "modules": [
+        "regex"
+      ],
+      "package": "regex",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-374"
+      ]
+    },
+    {
+      "blocked_task_count": 1,
+      "incremental_task_ids": [
+        "bigcodebench-hard-BigCodeBench-418"
+      ],
+      "incremental_unique_tasks": 1,
+      "modules": [
+        "tensorflow"
+      ],
+      "package": "tensorflow",
+      "task_ids": [
+        "bigcodebench-hard-BigCodeBench-418"
+      ]
+    }
+  ],
+  "source_eligible_tasks": 69,
+  "source_scanned_tasks": 148,
+  "source_unique_dependency_blocked_tasks": 72
+}

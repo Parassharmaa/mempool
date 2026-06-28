@@ -1,0 +1,55 @@
+{
+  "baseline": {
+    "available": true,
+    "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.43662012038948345,
+      "mean_latency_regret_ms": 919.5,
+      "pass_at_1": 0.8,
+      "target_accuracy": 0.7,
+      "task_count": 10
+    },
+    "report": "research/models/20260627-mixed-winner-10task-library-logits-router.json",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-glm-5.2": 1,
+        "ollama-cloud-kimi-k2.7-code": 2,
+        "ollama-cloud-qwen3-coder-480b": 7
+      },
+      "target_worker_count": 3,
+      "task_count": 10
+    }
+  },
+  "candidate": {
+    "dataset": "research/datasets/20260627-mixed-winner-10task-routing.jsonl",
+    "loo": {
+      "available": true,
+      "mean_kl": 0.4476179587687513,
+      "mean_latency_regret_ms": 518.6,
+      "pass_at_1": 0.9,
+      "target_accuracy": 0.8,
+      "task_count": 10
+    },
+    "report": "research/models/20260627-mixed-winner-10task-reward-t010-logits-router.json",
+    "target_mix": {
+      "target_counts": {
+        "ollama-cloud-glm-5.2": 1,
+        "ollama-cloud-kimi-k2.7-code": 2,
+        "ollama-cloud-qwen3-coder-480b": 7
+      },
+      "target_worker_count": 3,
+      "task_count": 10
+    }
+  },
+  "decision": "promote",
+  "reasons": [],
+  "thresholds": {
+    "max_loo_accuracy_drop": 0.1,
+    "max_loo_latency_regret_increase_ms": 500.0,
+    "max_loo_latency_regret_ms": 1000.0,
+    "min_loo_accuracy": 0.7
+  },
+  "timestamp": "2026-06-27T06:02:53.173445+00:00",
+  "warnings": []
+}

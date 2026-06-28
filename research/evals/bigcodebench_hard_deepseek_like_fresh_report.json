@@ -1,0 +1,22 @@
+{
+  "candidate_count": 0,
+  "excluded_outcomes": [
+    "research/evals/results/20260627-glm-deepseek-qwen-kimi-negative-mining.jsonl",
+    "research/evals/results/20260627-deepseek-candidate-368-repeat-compare.jsonl",
+    "research/evals/results/20260627-offset99-neither-specialist-repeat.jsonl",
+    "research/evals/results/20260627-heldout-both-repeat-compare-env.jsonl",
+    "research/evals/results/20260627-offset125-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-qwen-offset125-mining-5.jsonl"
+  ],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-mixed-winner-11task-routing.jsonl"
+  ],
+  "ranked": [],
+  "seed_task_id": "bigcodebench-hard-BigCodeBench-368",
+  "selected_task_ids": [],
+  "task_sources": [
+    "research/evals/bigcodebench_hard_eligible_merged_tasks.json",
+    "research/evals/bigcodebench_hard_eligible_offset99_tasks.json",
+    "research/evals/bigcodebench_hard_eligible_offset125_tasks.json"
+  ]
+}

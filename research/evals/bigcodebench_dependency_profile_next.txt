@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+requests
+scikit-learn
+scipy
+seaborn
+bs4
+nltk
+faker
+psutil
+flask

@@ -1,0 +1,107 @@
+{
+  "baselines": {
+    "fastest_worker": "lfm2.5-1.2b",
+    "strongest_worker": "qwen3-1.7b"
+  },
+  "dataset": "research/datasets/20260627-real-ollama-routing.jsonl",
+  "evaluations": [
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 3,
+      "mean_latency_ms": 16407.0,
+      "pass_at_1": 1.0,
+      "policy": "family-router",
+      "solved": 4,
+      "target_accuracy": 0.75,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 65628
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 4,
+      "mean_latency_ms": 9017.0,
+      "pass_at_1": 1.0,
+      "policy": "nearest-neighbor-router",
+      "solved": 4,
+      "target_accuracy": 1.0,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 36068
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 0,
+      "mean_latency_ms": 12941.0,
+      "pass_at_1": 0.75,
+      "policy": "family-router-loo",
+      "solved": 3,
+      "target_accuracy": 0.0,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 51764
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 0,
+      "mean_latency_ms": 11863.0,
+      "pass_at_1": 0.5,
+      "policy": "nearest-neighbor-router-loo",
+      "solved": 2,
+      "target_accuracy": 0.0,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 47452
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 1,
+      "mean_latency_ms": 18589.25,
+      "pass_at_1": 1.0,
+      "policy": "strongest-worker",
+      "solved": 4,
+      "target_accuracy": 0.25,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 74357
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 1,
+      "mean_latency_ms": 2880.5,
+      "pass_at_1": 0.25,
+      "policy": "fastest-worker",
+      "solved": 1,
+      "target_accuracy": 0.25,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 11522
+    },
+    {
+      "cost_per_solved_task": 0.0,
+      "matched_target": 4,
+      "mean_latency_ms": 9017.0,
+      "pass_at_1": 1.0,
+      "policy": "oracle-target",
+      "solved": 4,
+      "target_accuracy": 1.0,
+      "task_count": 4,
+      "total_cost_usd": 0.0,
+      "total_latency_ms": 36068
+    }
+  ],
+  "nearest_router": {
+    "default_worker_id": "qwen3-4b-instruct",
+    "example_count": 4,
+    "policy": "nearest-neighbor-router"
+  },
+  "router": {
+    "default_worker_id": "qwen3-4b-instruct",
+    "family_to_worker": {
+      "code_data": "qwen3-1.7b",
+      "code_easy": "qwen3-4b-instruct",
+      "code_text": "lfm2.5-1.2b"
+    },
+    "policy": "family-router"
+  }
+}

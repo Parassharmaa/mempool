@@ -1,0 +1,54 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "content_policy": "summary_only_no_raw_terminal_logs_or_task_content",
+  "policy_count": 2,
+  "policy_summaries": [
+    {
+      "mean_cost_usd": 0.0,
+      "mean_latency_ms": 26348.692,
+      "policy_id": "fixed-oracle",
+      "records": 1,
+      "success_rate": 1.0,
+      "successes": 1,
+      "worker_ids": [
+        "oracle-reference"
+      ]
+    },
+    {
+      "mean_cost_usd": 0.0,
+      "mean_latency_ms": 63061.673,
+      "policy_id": "fixed-worker-qwen-next",
+      "records": 1,
+      "success_rate": 0.0,
+      "successes": 0,
+      "worker_ids": [
+        "ollama-cloud-qwen3-coder-next"
+      ]
+    }
+  ],
+  "record_count": 2,
+  "task_comparisons": [
+    {
+      "records": [
+        {
+          "cost_usd": 0.0,
+          "failure_mode": null,
+          "latency_ms": 26348.692,
+          "policy_id": "fixed-oracle",
+          "task_success": true,
+          "worker_id": "oracle-reference"
+        },
+        {
+          "cost_usd": 0.0,
+          "failure_mode": "verifier_failed",
+          "latency_ms": 63061.673,
+          "policy_id": "fixed-worker-qwen-next",
+          "task_success": false,
+          "worker_id": "ollama-cloud-qwen3-coder-next"
+        }
+      ],
+      "task_id": "fix-git"
+    }
+  ],
+  "task_count": 1
+}

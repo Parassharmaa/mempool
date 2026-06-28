@@ -1,0 +1,396 @@
+{
+  "active_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "active_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "candidate_count": 4,
+  "contrast_outcomes": [
+    "research/evals/results/20260628-fresh-acquisition-outcomes.jsonl"
+  ],
+  "contrast_prior_count": 6,
+  "excluded_count": 134,
+  "excluded_outcome_dirs": [
+    "research/evals/results"
+  ],
+  "excluded_outcomes": [
+    "research/evals/results/20260627-acquisition-to-50-wave1.jsonl",
+    "research/evals/results/20260627-acquisition-to-50-wave2-specialist.jsonl",
+    "research/evals/results/20260627-bigcodebench-eligible-8.jsonl",
+    "research/evals/results/20260627-bigcodebench-hard-smoke-1.jsonl",
+    "research/evals/results/20260627-bigcodebench-minipilot.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-provenance.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices-top4env.jsonl",
+    "research/evals/results/20260627-catalog-candidate-regression-slices.jsonl",
+    "research/evals/results/20260627-cloud-positive-compare-4.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-4task.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-remaining.jsonl",
+    "research/evals/results/20260627-cloud-repeatability-smoke.jsonl",
+    "research/evals/results/20260627-deepseek-candidate-368-repeat-compare.jsonl",
+    "research/evals/results/20260627-expanded-profile-fresh-batch6.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave2.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave3.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4b.jsonl",
+    "research/evals/results/20260627-expanded-profile-wave4c.jsonl",
+    "research/evals/results/20260627-fallback-error-neighborhood-screen4.jsonl",
+    "research/evals/results/20260627-fallback-opportunity-top2-repeat.jsonl",
+    "research/evals/results/20260627-fallback-solvability-screen4.jsonl",
+    "research/evals/results/20260627-glm-deepseek-qwen-kimi-negative-mining.jsonl",
+    "research/evals/results/20260627-heldout-both-repeat-compare-env.jsonl",
+    "research/evals/results/20260627-heldout-hard-active-policy.jsonl",
+    "research/evals/results/20260627-kimi-candidate-repeat-compare.jsonl",
+    "research/evals/results/20260627-kimi-offset99-mining-8.jsonl",
+    "research/evals/results/20260627-kimi-qwen-negative-mining-12.jsonl",
+    "research/evals/results/20260627-m1-real-workers.jsonl",
+    "research/evals/results/20260627-m3-expanded-real-workers.jsonl",
+    "research/evals/results/20260627-offset125-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-offset125-stable-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-offset99-neither-specialist-repeat.jsonl",
+    "research/evals/results/20260627-ollama-cloud-smoke-1.jsonl",
+    "research/evals/results/20260627-ollama-cloud-smoke-3.jsonl",
+    "research/evals/results/20260627-positive-neighborhood-screen2.jsonl",
+    "research/evals/results/20260627-postrefresh-heldout-hard.jsonl",
+    "research/evals/results/20260627-qwen-offset125-mining-5.jsonl",
+    "research/evals/results/20260627-qwen-offset99-mining-8.jsonl",
+    "research/evals/results/20260627-qwen-only-offset99-repeat-compare.jsonl",
+    "research/evals/results/20260627-qwen-positive-mining-16.jsonl",
+    "research/evals/results/20260627-top4-fresh-nonqwen-mining-8.jsonl",
+    "research/evals/results/20260627-top4-fresh-positive-repeat-compare.jsonl",
+    "research/evals/results/20260627-top4-fresh-qwen-mining-8.jsonl",
+    "research/evals/results/20260627-top4-hard-nonqwen-mining-8.jsonl",
+    "research/evals/results/20260627-top4-hard-specialist-repeat-compare.jsonl",
+    "research/evals/results/20260627-top4-specialist-positive-repeat-compare.jsonl",
+    "research/evals/results/20260628-direct-deepseek-like-remaining1.jsonl",
+    "research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl",
+    "research/evals/results/20260628-fresh-acquisition-outcomes.jsonl",
+    "research/evals/results/20260628-next-profile-fallback-opportunity-screen1.jsonl",
+    "research/evals/results/20260628-next-profile-positive-repeat.jsonl",
+    "research/evals/results/20260628-next2-profile-fallback-opportunity-screen1.jsonl",
+    "research/evals/results/20260628-next3-917-neighborhood-positive-repeat.jsonl",
+    "research/evals/results/20260628-next3-917-neighborhood-screen1.jsonl",
+    "research/evals/results/20260628-next3-nonqwen-screen1.jsonl",
+    "research/evals/results/20260628-next3-positive-repeat.jsonl",
+    "research/evals/results/20260628-nonqwen-specialist-first-screen1.jsonl",
+    "research/evals/results/20260628-positive-neighborhood-kimi-screen1.jsonl",
+    "research/evals/results/20260628-qwen-fail-contrast-selector-positive-repeat.jsonl",
+    "research/evals/results/20260628-qwen-fail-contrast-selector-screen1.jsonl",
+    "research/evals/results/20260628-qwen-fail-specialist-mining-screen1.jsonl",
+    "research/evals/results/20260628-solvability-aware-kimi-screen1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-batch1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-limit1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1.jsonl",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1.jsonl"
+  ],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+    "research/datasets/20260628-mixed-winner-25task-qwen-fail-contrast-routing.jsonl"
+  ],
+  "false_negative_seed_ids": [
+    "bigcodebench-hard-BigCodeBench-1006",
+    "bigcodebench-hard-BigCodeBench-129"
+  ],
+  "false_positive_seed_ids": [
+    "bigcodebench-hard-BigCodeBench-161",
+    "bigcodebench-hard-BigCodeBench-368",
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-955",
+    "bigcodebench-hard-BigCodeBench-963"
+  ],
+  "ranked_candidates": [
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.0877,
+      "false_positive_similarity": 2.8155,
+      "first_second_margin": 0.05754338873187648,
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "plausibility_score": 2.215,
+      "score": 7.8529,
+      "second_probability": 0.27310221824877556,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-5",
+      "top_probability": 0.33064560698065204,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 5.4555
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.1085,
+      "false_positive_similarity": 2.7947,
+      "first_second_margin": 0.06999429530112167,
+      "libraries": [
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 2.423,
+      "score": 7.7968,
+      "second_probability": 0.27915589136123836,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-0",
+      "top_probability": 0.34915018666236003,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 5.4347
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 1.477,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.1098,
+      "false_positive_similarity": 2.8221,
+      "first_second_margin": 0.0936570963844282,
+      "libraries": [
+        "collections",
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 2.4363,
+      "score": 7.0491,
+      "second_probability": 0.2670496084501868,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-8",
+      "top_probability": 0.36070670483461503,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 8.4334
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.057,
+      "false_positive_similarity": 2.8462,
+      "first_second_margin": 0.05507161199748151,
+      "libraries": [
+        "statistics",
+        "random"
+      ],
+      "plausibility_score": 1.9083,
+      "score": 6.4038,
+      "second_probability": 0.2684702423417543,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-2",
+      "top_probability": 0.3235418543392358,
+      "top_worker": "ollama-cloud-kimi-k2.7-code",
+      "uniform_similarity": 5.4862
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.0877,
+      "false_positive_similarity": 2.8155,
+      "first_second_margin": 0.05754338873187648,
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "plausibility_score": 2.215,
+      "score": -3.7599,
+      "second_probability": 0.27310221824877556,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-5",
+      "top_probability": 0.33064560698065204,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 5.4555
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.1085,
+      "false_positive_similarity": 2.7947,
+      "first_second_margin": 0.06999429530112167,
+      "libraries": [
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 2.423,
+      "score": -3.816,
+      "second_probability": 0.27915589136123836,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-0",
+      "top_probability": 0.34915018666236003,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 5.4347
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 1.477,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.1098,
+      "false_positive_similarity": 2.8221,
+      "first_second_margin": 0.0936570963844282,
+      "libraries": [
+        "collections",
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 2.4363,
+      "score": -4.6785,
+      "second_probability": 0.2670496084501868,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-8",
+      "top_probability": 0.36070670483461503,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 8.4334
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.057,
+      "false_positive_similarity": 2.8462,
+      "first_second_margin": 0.05507161199748151,
+      "libraries": [
+        "statistics",
+        "random"
+      ],
+      "plausibility_score": 1.9083,
+      "score": -5.209,
+      "second_probability": 0.2684702423417543,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "missed-positive-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-2",
+      "top_probability": 0.3235418543392358,
+      "top_worker": "ollama-cloud-kimi-k2.7-code",
+      "uniform_similarity": 5.4862
+    }
+  ],
+  "registry": "research/policies/active_policy.json",
+  "scored_candidate_count": 8,
+  "selected": [
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.0877,
+      "false_positive_similarity": 2.8155,
+      "first_second_margin": 0.05754338873187648,
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "plausibility_score": 2.215,
+      "score": 7.8529,
+      "second_probability": 0.27310221824877556,
+      "second_worker": "ollama-cloud-deepseek-v4-pro",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-5",
+      "top_probability": 0.33064560698065204,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 5.4555
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.1085,
+      "false_positive_similarity": 2.7947,
+      "first_second_margin": 0.06999429530112167,
+      "libraries": [
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 2.423,
+      "score": 7.7968,
+      "second_probability": 0.27915589136123836,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-0",
+      "top_probability": 0.34915018666236003,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 5.4347
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 1.477,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.1098,
+      "false_positive_similarity": 2.8221,
+      "first_second_margin": 0.0936570963844282,
+      "libraries": [
+        "collections",
+        "random",
+        "itertools"
+      ],
+      "plausibility_score": 2.4363,
+      "score": 7.0491,
+      "second_probability": 0.2670496084501868,
+      "second_worker": "ollama-cloud-kimi-k2.7-code",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-8",
+      "top_probability": 0.36070670483461503,
+      "top_worker": "ollama-cloud-qwen3-coder-480b",
+      "uniform_similarity": 8.4334
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "contrast_similarity": 0.0,
+      "environment_risk": 0,
+      "false_negative_similarity": -0.057,
+      "false_positive_similarity": 2.8462,
+      "first_second_margin": 0.05507161199748151,
+      "libraries": [
+        "statistics",
+        "random"
+      ],
+      "plausibility_score": 1.9083,
+      "score": 6.4038,
+      "second_probability": 0.2684702423417543,
+      "second_worker": "ollama-cloud-qwen3-coder-480b",
+      "target_group": "false-spend-value",
+      "task_id": "bigcodebench-hard-BigCodeBench-2",
+      "top_probability": 0.3235418543392358,
+      "top_worker": "ollama-cloud-kimi-k2.7-code",
+      "uniform_similarity": 5.4862
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-5",
+    "bigcodebench-hard-BigCodeBench-0",
+    "bigcodebench-hard-BigCodeBench-8",
+    "bigcodebench-hard-BigCodeBench-2"
+  ],
+  "source_report": "research/evals/results/20260628-m5-latency-w0p5-multihead-report.json",
+  "substrate": "research/datasets/20260628-m5-small-orchestrator-substrate-50task.jsonl",
+  "task_sources": [
+    "research/evals/20260628-fresh-pool-frontier-bigcodebench-offset0-tasks.json"
+  ],
+  "value_head_report": "research/evals/results/20260628-heldout-value-head-report.json"
+}

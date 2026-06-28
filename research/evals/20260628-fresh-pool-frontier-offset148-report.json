@@ -1,0 +1,15 @@
+{
+  "analysis": [],
+  "canonical_probe": [],
+  "dataset": "bigcode/bigcodebench-hard",
+  "eligible_count": 0,
+  "max_rows": 20,
+  "mode": "instruct",
+  "next_offset": 148,
+  "offset": 148,
+  "output": "research/evals/20260628-fresh-pool-frontier-offset148-tasks.json",
+  "scanned": 0,
+  "selected_task_ids": [],
+  "split": "v0.1.4",
+  "target_passes": 4
+}

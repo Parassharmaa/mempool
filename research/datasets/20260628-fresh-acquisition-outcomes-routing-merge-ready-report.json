@@ -1,0 +1,28 @@
+{
+  "allow_all_fail_tasks": false,
+  "dropped": [
+    {
+      "reasons": [
+        "all_fail_task",
+        "unstable_target"
+      ],
+      "target_pass_rate": 0.0,
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-12"
+    },
+    {
+      "reasons": [
+        "all_fail_task",
+        "unstable_target"
+      ],
+      "target_pass_rate": 0.0,
+      "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+      "task_id": "bigcodebench-hard-BigCodeBench-6"
+    }
+  ],
+  "dropped_records": 2,
+  "input_records": 6,
+  "kept_records": 4,
+  "min_target_pass_rate": 1.0,
+  "validation_errors": []
+}

@@ -1,0 +1,40 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "checks": [
+    {
+      "harbor_status": "running_or_stale",
+      "path": "research/evals/terminal_bench_2p1_fix_git_install_preflight_summary.json",
+      "process_status": "timeout",
+      "ready": false,
+      "reasons": [
+        "process_status=timeout",
+        "harbor_status=running_or_stale"
+      ]
+    },
+    {
+      "harbor_status": null,
+      "path": "research/evals/terminal_bench_2p1_install_preflight_summary.json",
+      "process_status": null,
+      "ready": false,
+      "reasons": [
+        "process_status=None",
+        "harbor_status=None"
+      ]
+    },
+    {
+      "harbor_status": null,
+      "path": "research/evals/terminal_bench_2p1_oracle_smoke_summary.json",
+      "process_status": null,
+      "ready": false,
+      "reasons": [
+        "process_status=None",
+        "harbor_status=None"
+      ]
+    }
+  ],
+  "ready": false,
+  "required_status": {
+    "harbor_summary.status": "complete",
+    "process_status": "exited"
+  }
+}

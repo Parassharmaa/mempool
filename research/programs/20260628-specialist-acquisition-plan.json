@@ -1,0 +1,243 @@
+{
+  "benchmark_id": "bigcodebench-hard-specialist-acquisition",
+  "call_count": 96,
+  "candidate_report": "research/evals/results/20260628-m5-latency-w0p5-multihead-report.json",
+  "comparison_workers": [
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "excluded_task_count": 50,
+  "per_worker_limit": 4,
+  "purpose": "Acquire measured rows near current DeepSeek/GLM/Kimi routing misses before retraining the small orchestrator.",
+  "repeat_count": 2,
+  "routing_dataset": "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+  "routing_record_count": 50,
+  "run_command_template": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config <specialist-worker-pool.json> --tasks research/evals/20260628-specialist-acquisition-tasks.json --repeat-count 2 --eval-timeout-seconds 20 --run-id 20260628-specialist-acquisition --output research/evals/results/20260628-specialist-acquisition.json --outcomes research/evals/results/20260628-specialist-acquisition.jsonl --resume --progress",
+  "seed_miss_count": 17,
+  "seed_misses_by_worker": {
+    "ollama-cloud-deepseek-v4-pro": 6,
+    "ollama-cloud-glm-5.2": 2,
+    "ollama-cloud-kimi-k2.7-code": 3
+  },
+  "selected_by_worker": {
+    "ollama-cloud-deepseek-v4-pro": [
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 3,
+        "libraries": [
+          "pandas",
+          "numpy",
+          "matplotlib"
+        ],
+        "plausibility_score": 7.08,
+        "score": 12.981,
+        "task_id": "bigcodebench-hard-BigCodeBench-208"
+      },
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 3,
+        "libraries": [
+          "pandas",
+          "numpy",
+          "matplotlib"
+        ],
+        "plausibility_score": 6.9567,
+        "score": 12.9686,
+        "task_id": "bigcodebench-hard-BigCodeBench-942"
+      },
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 3,
+        "libraries": [
+          "pandas",
+          "numpy",
+          "matplotlib"
+        ],
+        "plausibility_score": 6.6487,
+        "score": 12.9378,
+        "task_id": "bigcodebench-hard-BigCodeBench-636"
+      },
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 3,
+        "libraries": [
+          "pandas",
+          "numpy",
+          "matplotlib"
+        ],
+        "plausibility_score": 8.1493,
+        "score": 12.9121,
+        "task_id": "bigcodebench-hard-BigCodeBench-513"
+      }
+    ],
+    "ollama-cloud-glm-5.2": [
+      {
+        "categories": [
+          "filesystem",
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "csv",
+          "collections",
+          "matplotlib"
+        ],
+        "plausibility_score": 5.9017,
+        "score": 9.9242,
+        "task_id": "bigcodebench-hard-BigCodeBench-528"
+      },
+      {
+        "categories": [
+          "filesystem",
+          "datasci"
+        ],
+        "environment_risk": 1,
+        "libraries": [
+          "math",
+          "pandas",
+          "os",
+          "json"
+        ],
+        "plausibility_score": 5.51,
+        "score": 9.385,
+        "task_id": "bigcodebench-hard-BigCodeBench-985"
+      },
+      {
+        "categories": [
+          "filesystem"
+        ],
+        "environment_risk": 0,
+        "libraries": [
+          "pathlib",
+          "re",
+          "os"
+        ],
+        "plausibility_score": 3.5003,
+        "score": 8.4996,
+        "task_id": "bigcodebench-hard-BigCodeBench-988"
+      },
+      {
+        "categories": [
+          "filesystem"
+        ],
+        "environment_risk": 0,
+        "libraries": [
+          "glob",
+          "warnings",
+          "time",
+          "shutil",
+          "os"
+        ],
+        "plausibility_score": 3.4183,
+        "score": 8.4922,
+        "task_id": "bigcodebench-hard-BigCodeBench-857"
+      }
+    ],
+    "ollama-cloud-kimi-k2.7-code": [
+      {
+        "categories": [
+          "network",
+          "filesystem"
+        ],
+        "environment_risk": 4,
+        "libraries": [
+          "zipfile",
+          "requests",
+          "os"
+        ],
+        "plausibility_score": 9.806,
+        "score": 12.9554,
+        "task_id": "bigcodebench-hard-BigCodeBench-211"
+      },
+      {
+        "categories": [
+          "network",
+          "filesystem"
+        ],
+        "environment_risk": 4,
+        "libraries": [
+          "os",
+          "datetime",
+          "requests",
+          "json"
+        ],
+        "plausibility_score": 9.346,
+        "score": 9.9986,
+        "task_id": "bigcodebench-hard-BigCodeBench-1129"
+      },
+      {
+        "categories": [
+          "network",
+          "filesystem"
+        ],
+        "environment_risk": 4,
+        "libraries": [
+          "pathlib",
+          "requests",
+          "zipfile"
+        ],
+        "plausibility_score": 8.9343,
+        "score": 9.9575,
+        "task_id": "bigcodebench-hard-BigCodeBench-1012"
+      },
+      {
+        "categories": [
+          "network",
+          "subprocess",
+          "filesystem"
+        ],
+        "environment_risk": 3,
+        "libraries": [
+          "hashlib",
+          "os",
+          "ssl"
+        ],
+        "plausibility_score": 8.797,
+        "score": 7.9437,
+        "task_id": "bigcodebench-hard-BigCodeBench-1039"
+      }
+    ]
+  },
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-208",
+    "bigcodebench-hard-BigCodeBench-942",
+    "bigcodebench-hard-BigCodeBench-636",
+    "bigcodebench-hard-BigCodeBench-513",
+    "bigcodebench-hard-BigCodeBench-528",
+    "bigcodebench-hard-BigCodeBench-985",
+    "bigcodebench-hard-BigCodeBench-988",
+    "bigcodebench-hard-BigCodeBench-857",
+    "bigcodebench-hard-BigCodeBench-211",
+    "bigcodebench-hard-BigCodeBench-1129",
+    "bigcodebench-hard-BigCodeBench-1012",
+    "bigcodebench-hard-BigCodeBench-1039"
+  ],
+  "target_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "task_sources": [
+    "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json"
+  ],
+  "tasks_output": "research/evals/20260628-specialist-acquisition-tasks.json",
+  "worker_ids_to_run": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ]
+}

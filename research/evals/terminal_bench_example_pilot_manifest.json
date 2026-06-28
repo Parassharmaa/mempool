@@ -1,0 +1,94 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "candidate_count": 5,
+  "excluded_count": 0,
+  "mode": "metadata-only-pilot-selection",
+  "run_contract": {
+    "first_run": "Compare single-worker agent runs against the active orchestrator-selected worker policy.",
+    "record_fields": [
+      "task_id",
+      "worker_id",
+      "policy_id",
+      "terminal_actions",
+      "file_edits",
+      "test_result",
+      "latency_ms",
+      "cost_usd",
+      "failure_mode"
+    ],
+    "task_content_policy": "Do not persist benchmark task instructions, oracle solutions, or verifier code in mempool training corpora."
+  },
+  "selected": [
+    {
+      "categories": [
+        "software-engineering"
+      ],
+      "difficulty": "hard",
+      "id": "example/software-edit",
+      "selection_reason": "category coverage: software-engineering",
+      "source": "terminal_bench_metadata_example.json:0",
+      "tags": [
+        "git",
+        "tests"
+      ]
+    },
+    {
+      "categories": [
+        "system-administration"
+      ],
+      "difficulty": "hard",
+      "id": "example/system-repair",
+      "selection_reason": "category coverage: system-administration",
+      "source": "terminal_bench_metadata_example.json:1",
+      "tags": [
+        "shell",
+        "services"
+      ]
+    },
+    {
+      "categories": [
+        "data-processing"
+      ],
+      "difficulty": "medium",
+      "id": "example/data-cleanup",
+      "selection_reason": "category coverage: data-processing",
+      "source": "terminal_bench_metadata_example.json:2",
+      "tags": [
+        "csv",
+        "python"
+      ]
+    },
+    {
+      "categories": [
+        "security"
+      ],
+      "difficulty": "medium",
+      "id": "example/security-audit",
+      "selection_reason": "category coverage: security",
+      "source": "terminal_bench_metadata_example.json:3",
+      "tags": [
+        "permissions"
+      ]
+    },
+    {
+      "categories": [
+        "model-training"
+      ],
+      "difficulty": "medium",
+      "id": "example/model-training",
+      "selection_reason": "category coverage: model-training",
+      "source": "terminal_bench_metadata_example.json:4",
+      "tags": [
+        "training"
+      ]
+    }
+  ],
+  "selected_task_ids": [
+    "example/software-edit",
+    "example/system-repair",
+    "example/data-cleanup",
+    "example/security-audit",
+    "example/model-training"
+  ],
+  "target_task_count": 5
+}

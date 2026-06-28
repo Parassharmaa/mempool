@@ -1,0 +1,276 @@
+{
+  "benchmark_id": "bigcodebench-hard-direct-specialist-mining",
+  "call_count": 2,
+  "candidate_count": 13,
+  "excluded_count": 66,
+  "excluded_outcomes": [],
+  "excluded_routing_datasets": [
+    "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl"
+  ],
+  "excluded_screening_summaries": [
+    "research/evals/results/20260628-specialist-acquisition-limit1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-batch1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1-summary.json",
+    "research/evals/results/20260628-solvability-aware-kimi-screen1-summary.json",
+    "research/evals/results/20260627-positive-neighborhood-screen2-summary.json",
+    "research/evals/results/20260628-positive-neighborhood-kimi-screen1-summary.json"
+  ],
+  "max_environment_risk": 1,
+  "outcomes": "research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl",
+  "output": "research/evals/results/20260628-direct-deepseek-mining-lowrisk1.json",
+  "preferred_categories": [
+    "filesystem",
+    "datasci",
+    "plotting",
+    "subprocess",
+    "general"
+  ],
+  "purpose": "Mine actual one-sample specialist positives from a fresh low-risk task pool before full comparison.",
+  "ranked_candidates": [
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "random",
+        "matplotlib",
+        "time"
+      ],
+      "plausibility_score": 4.5047,
+      "preferred_overlap": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-124"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "threading",
+        "time"
+      ],
+      "plausibility_score": 2.0323,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-324"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "glob",
+        "os"
+      ],
+      "plausibility_score": 2.4043,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-785"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "subprocess",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 2.685,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-326"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "time",
+        "os",
+        "sys"
+      ],
+      "plausibility_score": 3.0407,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-346"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "plausibility_score": 3.224,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-15"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "pandas",
+        "re",
+        "json"
+      ],
+      "plausibility_score": 4.4037,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-458"
+    },
+    {
+      "categories": [
+        "filesystem",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "difflib",
+        "pandas",
+        "csv"
+      ],
+      "plausibility_score": 5.0973,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-509"
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "threading",
+        "socket",
+        "ipaddress"
+      ],
+      "plausibility_score": 2.398,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-147"
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "csv",
+        "collections",
+        "os"
+      ],
+      "plausibility_score": 2.8203,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-800"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 4.4227,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-492"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 4.5707,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-952"
+    },
+    {
+      "categories": [
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "random"
+      ],
+      "plausibility_score": 6.271,
+      "preferred_overlap": 1,
+      "task_id": "bigcodebench-hard-BigCodeBench-120"
+    }
+  ],
+  "repeat_count": 1,
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_deepseek_v4_pro_single_pool.json --tasks research/evals/20260628-direct-deepseek-mining-lowrisk1-tasks.json --repeat-count 1 --eval-timeout-seconds 20 --run-id 20260628-direct-deepseek-mining-lowrisk1 --output research/evals/results/20260628-direct-deepseek-mining-lowrisk1.json --outcomes research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl --resume --progress --quiet",
+  "run_id": "20260628-direct-deepseek-mining-lowrisk1",
+  "selected": [
+    {
+      "categories": [
+        "subprocess",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 1,
+      "libraries": [
+        "random",
+        "matplotlib",
+        "time"
+      ],
+      "plausibility_score": 4.5047,
+      "preferred_overlap": 3,
+      "task_id": "bigcodebench-hard-BigCodeBench-124"
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "threading",
+        "time"
+      ],
+      "plausibility_score": 2.0323,
+      "preferred_overlap": 2,
+      "task_id": "bigcodebench-hard-BigCodeBench-324"
+    }
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-124",
+    "bigcodebench-hard-BigCodeBench-324"
+  ],
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-direct-deepseek-mining-lowrisk1.jsonl --output research/evals/results/20260628-direct-deepseek-mining-lowrisk1-summary.json",
+  "task_count": 2,
+  "task_sources": [
+    "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json"
+  ],
+  "tasks_output": "research/evals/20260628-direct-deepseek-mining-lowrisk1-tasks.json",
+  "worker_ids_to_run": [
+    "ollama-cloud-deepseek-v4-pro"
+  ]
+}

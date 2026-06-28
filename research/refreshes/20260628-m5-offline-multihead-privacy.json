@@ -1,0 +1,10 @@
+{
+  "contains_raw_private_text": false,
+  "created_at": "2026-06-27T15:14:21.969058+00:00",
+  "distilled_dataset": "research/datasets/20260628-m5-small-orchestrator-substrate-50task.jsonl",
+  "explicit_private_training_approval": false,
+  "memory_scope": "benchmark",
+  "redaction_policy": "benchmark prompts and aggregate worker metadata only",
+  "schema_version": "mempool.privacy_manifest.v1",
+  "training_scope": "general"
+}

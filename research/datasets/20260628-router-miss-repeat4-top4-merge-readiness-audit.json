@@ -1,0 +1,24 @@
+{
+  "all_fail_tasks": [
+    "bigcodebench-hard-BigCodeBench-763",
+    "bigcodebench-hard-BigCodeBench-963"
+  ],
+  "allow_all_fail_tasks": false,
+  "min_target_pass_rate": 1.0,
+  "ready_to_merge": false,
+  "reasons": [
+    "dataset contains all-fail fastest-failure tasks",
+    "dataset contains unstable target workers"
+  ],
+  "record_count": 4,
+  "solvable_task_count": 2,
+  "target_failure_tasks": [],
+  "unstable_target_tasks": [
+    {
+      "target_pass_rate": 0.5,
+      "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "task_id": "bigcodebench-hard-BigCodeBench-368"
+    }
+  ],
+  "validation_errors": []
+}

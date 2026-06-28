@@ -1,0 +1,330 @@
+{
+  "analysis": [
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "random",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.423,
+      "primary_category": "general",
+      "prompt_length": 686,
+      "task_id": "bigcodebench-hard-BigCodeBench-0",
+      "test_length": 3111
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "collections",
+        "random",
+        "string"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.2633,
+      "primary_category": "general",
+      "prompt_length": 720,
+      "task_id": "bigcodebench-hard-BigCodeBench-1",
+      "test_length": 1480
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "statistics",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 1.9083,
+      "primary_category": "general",
+      "prompt_length": 611,
+      "task_id": "bigcodebench-hard-BigCodeBench-2",
+      "test_length": 1792
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "collections",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.2453,
+      "primary_category": "general",
+      "prompt_length": 758,
+      "task_id": "bigcodebench-hard-BigCodeBench-4",
+      "test_length": 2362
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "math",
+        "random"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.215,
+      "primary_category": "general",
+      "prompt_length": 847,
+      "task_id": "bigcodebench-hard-BigCodeBench-5",
+      "test_length": 2004
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "re",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.1913,
+      "primary_category": "filesystem",
+      "prompt_length": 759,
+      "task_id": "bigcodebench-hard-BigCodeBench-6",
+      "test_length": 2197
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "operator",
+        "csv",
+        "collections"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.9533,
+      "primary_category": "filesystem",
+      "prompt_length": 927,
+      "task_id": "bigcodebench-hard-BigCodeBench-7",
+      "test_length": 2929
+    },
+    {
+      "categories": [
+        "general"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "collections",
+        "random",
+        "itertools"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.4363,
+      "primary_category": "general",
+      "prompt_length": 759,
+      "task_id": "bigcodebench-hard-BigCodeBench-8",
+      "test_length": 1882
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "datetime",
+        "json",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.2883,
+      "primary_category": "subprocess",
+      "prompt_length": 983,
+      "task_id": "bigcodebench-hard-BigCodeBench-12",
+      "test_length": 2716
+    },
+    {
+      "categories": [
+        "network",
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "subprocess",
+        "ftplib",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 7.9987,
+      "primary_category": "network",
+      "prompt_length": 1416,
+      "task_id": "bigcodebench-hard-BigCodeBench-13",
+      "test_length": 3098
+    },
+    {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "configparser",
+        "shutil",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 2.915,
+      "primary_category": "filesystem",
+      "prompt_length": 1047,
+      "task_id": "bigcodebench-hard-BigCodeBench-14",
+      "test_length": 2454
+    },
+    {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "subprocess",
+        "csv",
+        "os"
+      ],
+      "missing_libraries": [],
+      "plausibility_score": 3.224,
+      "primary_category": "subprocess",
+      "prompt_length": 973,
+      "task_id": "bigcodebench-hard-BigCodeBench-15",
+      "test_length": 3603
+    }
+  ],
+  "canonical_probe": [
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "..........\n----------------------------------------------------------------------\nRan 10 tests in 5.357s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-0"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-1"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-2"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp3x9lwv_w/candidate.py\", line 2, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-3"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-4"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-5"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-6"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-7"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.000s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-8"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmp8dufcsgl/candidate.py\", line 1, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-9"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpdxvwm7xk/candidate.py\", line 1, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-10"
+    },
+    {
+      "failure_mode": "test_failure",
+      "passed": false,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/xd/7jp8qm7x7r305yfgsp4xdc2w0000gn/T/tmpwe4tggzy/candidate.py\", line 1, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-11"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-12"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-13"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py:1139: ResourceWarning: subprocess 83257 is still running\n  _warn(\"subprocess %s is still running\" % self.pid,\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.019s\n\nOK\n<sys>:0: ResourceWarning: unclosed file <_io.TextIOWrapper name=3 encoding='UTF-8'>\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-14"
+    },
+    {
+      "failure_mode": null,
+      "passed": true,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.024s\n\nOK\n",
+      "task_id": "bigcodebench-hard-BigCodeBench-15"
+    }
+  ],
+  "dataset": "bigcode/bigcodebench",
+  "eligible_count": 12,
+  "max_rows": 40,
+  "mode": "instruct",
+  "next_offset": 16,
+  "offset": 0,
+  "output": "research/evals/20260628-fresh-pool-frontier-bigcodebench-offset0-tasks.json",
+  "scanned": 16,
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-0",
+    "bigcodebench-hard-BigCodeBench-1",
+    "bigcodebench-hard-BigCodeBench-2",
+    "bigcodebench-hard-BigCodeBench-4",
+    "bigcodebench-hard-BigCodeBench-5",
+    "bigcodebench-hard-BigCodeBench-6",
+    "bigcodebench-hard-BigCodeBench-7",
+    "bigcodebench-hard-BigCodeBench-8",
+    "bigcodebench-hard-BigCodeBench-12",
+    "bigcodebench-hard-BigCodeBench-13",
+    "bigcodebench-hard-BigCodeBench-14",
+    "bigcodebench-hard-BigCodeBench-15"
+  ],
+  "split": "v0.1.4",
+  "target_passes": 12
+}

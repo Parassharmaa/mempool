@@ -1,0 +1,138 @@
+{
+  "baseline": {
+    "available": true,
+    "mean_kl": 0.46096494805709975,
+    "mean_latency_regret_ms": 501.0869565217391,
+    "pass_at_1": 0.6956521739130435,
+    "solvable_pass_at_1": 0.8,
+    "solvable_target_accuracy": 0.75,
+    "solvable_task_count": 20,
+    "target_accuracy": 0.782608695652174,
+    "task_count": 23
+  },
+  "baseline_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "best_by_gate": null,
+  "best_by_pass_at_1": {
+    "decision": "quarantine",
+    "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+    "label": "anchored_weight0p25_e50_lr1e4",
+    "mean_latency_regret_ms": 744.8965517241379,
+    "pass_at_1": 0.8275862068965517,
+    "reasons": [
+      "candidate LOO target accuracy 0.690 is below minimum 0.783",
+      "candidate LOO target accuracy drop 0.093 exceeds allowed 0.000",
+      "candidate LOO mean latency regret 744.9 ms exceeds maximum 501.1 ms"
+    ],
+    "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-anchored-e50-lr1e4-temperature-selection.json",
+    "solvable_pass_at_1": 0.9230769230769231,
+    "solvable_target_accuracy": 0.6538461538461539,
+    "target_accuracy": 0.6896551724137931,
+    "temperature": 0.05
+  },
+  "best_by_target_accuracy": {
+    "decision": "quarantine",
+    "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+    "label": "anchored_weight0p25_e50_lr1e4",
+    "mean_latency_regret_ms": 744.8965517241379,
+    "pass_at_1": 0.8275862068965517,
+    "reasons": [
+      "candidate LOO target accuracy 0.690 is below minimum 0.783",
+      "candidate LOO target accuracy drop 0.093 exceeds allowed 0.000",
+      "candidate LOO mean latency regret 744.9 ms exceeds maximum 501.1 ms"
+    ],
+    "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-anchored-e50-lr1e4-temperature-selection.json",
+    "solvable_pass_at_1": 0.9230769230769231,
+    "solvable_target_accuracy": 0.6538461538461539,
+    "target_accuracy": 0.6896551724137931,
+    "temperature": 0.05
+  },
+  "candidate_dataset": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl",
+  "rows": [
+    {
+      "decision": "quarantine",
+      "initial_model": null,
+      "label": "zero_weight0p25",
+      "mean_latency_regret_ms": 754.9655172413793,
+      "pass_at_1": 0.7241379310344828,
+      "reasons": [
+        "candidate LOO target accuracy 0.586 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.196 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 755.0 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-profiled-temperature-selection.json",
+      "solvable_pass_at_1": 0.8076923076923077,
+      "solvable_target_accuracy": 0.5384615384615384,
+      "target_accuracy": 0.5862068965517241,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+      "label": "anchored_weight0p25_default",
+      "mean_latency_regret_ms": 4023.9655172413795,
+      "pass_at_1": 0.8275862068965517,
+      "reasons": [
+        "candidate LOO target accuracy 0.655 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.127 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 4024.0 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-anchored-temperature-selection.json",
+      "solvable_pass_at_1": 0.9230769230769231,
+      "solvable_target_accuracy": 0.6538461538461539,
+      "target_accuracy": 0.6551724137931034,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+      "label": "anchored_weight0p25_e50_lr1e4",
+      "mean_latency_regret_ms": 744.8965517241379,
+      "pass_at_1": 0.8275862068965517,
+      "reasons": [
+        "candidate LOO target accuracy 0.690 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.093 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 744.9 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-anchored-e50-lr1e4-temperature-selection.json",
+      "solvable_pass_at_1": 0.9230769230769231,
+      "solvable_target_accuracy": 0.6538461538461539,
+      "target_accuracy": 0.6896551724137931,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+      "label": "anchored_weight0p25_e100_lr1e4",
+      "mean_latency_regret_ms": 744.8965517241379,
+      "pass_at_1": 0.8275862068965517,
+      "reasons": [
+        "candidate LOO target accuracy 0.690 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.093 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 744.9 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-anchored-e100-lr1e4-temperature-selection.json",
+      "solvable_pass_at_1": 0.9230769230769231,
+      "solvable_target_accuracy": 0.6538461538461539,
+      "target_accuracy": 0.6896551724137931,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "initial_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+      "label": "anchored_weight0p1_e50_lr1e4",
+      "mean_latency_regret_ms": 744.8965517241379,
+      "pass_at_1": 0.8275862068965517,
+      "reasons": [
+        "candidate LOO target accuracy 0.690 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.093 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 744.9 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p1-anchored-e50-lr1e4-temperature-selection.json",
+      "solvable_pass_at_1": 0.9230769230769231,
+      "solvable_target_accuracy": 0.6538461538461539,
+      "target_accuracy": 0.6896551724137931,
+      "temperature": 0.05
+    }
+  ],
+  "schema_version": "mempool.anchored_refresh.v1"
+}

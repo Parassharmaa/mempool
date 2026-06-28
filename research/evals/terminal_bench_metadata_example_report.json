@@ -1,0 +1,18 @@
+{
+  "metadata_rows": 5,
+  "output": "research/evals/terminal_bench_metadata_example_extracted.json",
+  "selected_fields": [
+    "categories",
+    "difficulty",
+    "id",
+    "source",
+    "tags"
+  ],
+  "task_ids": [
+    "example/software-edit",
+    "example/system-repair",
+    "example/data-cleanup",
+    "example/security-audit",
+    "example/model-training"
+  ]
+}

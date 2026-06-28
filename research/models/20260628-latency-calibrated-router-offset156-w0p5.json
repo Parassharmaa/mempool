@@ -1,0 +1,12 @@
+{
+  "base_model": "research/models/20260628-normal-offset156-guarded-58task-multihead.json",
+  "calibration": {
+    "latency_cost_per_second": 0.02,
+    "min_probability": 0.0,
+    "min_probability_ratio": 0.0,
+    "policy": "latency-calibrated-worker-choice"
+  },
+  "model_type": "latency-calibrated-multi-head-router",
+  "source_report": "research/evals/results/20260628-normal-offset156-guarded-58task-multihead-report.json",
+  "substrate": "research/datasets/20260628-normal-offset156-guarded-58task-substrate.jsonl"
+}

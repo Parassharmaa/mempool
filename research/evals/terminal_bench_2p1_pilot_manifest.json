@@ -1,0 +1,96 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "candidate_count": 89,
+  "excluded_count": 0,
+  "mode": "metadata-only-pilot-selection",
+  "run_contract": {
+    "first_run": "Compare single-worker agent runs against the active orchestrator-selected worker policy.",
+    "record_fields": [
+      "task_id",
+      "worker_id",
+      "policy_id",
+      "terminal_actions",
+      "file_edits",
+      "test_result",
+      "latency_ms",
+      "cost_usd",
+      "failure_mode"
+    ],
+    "task_content_policy": "Do not persist benchmark task instructions, oracle solutions, or verifier code in mempool training corpora."
+  },
+  "selected": [
+    {
+      "categories": [],
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "id": "terminal-bench/cancel-async-tasks",
+      "selection_reason": "category coverage: software-engineering",
+      "source": "cancel-async-tasks",
+      "tags": [
+        "async",
+        "concurrency",
+        "python"
+      ]
+    },
+    {
+      "categories": [],
+      "category": "system-administration",
+      "difficulty": "hard",
+      "id": "terminal-bench/configure-git-webserver",
+      "selection_reason": "category coverage: system-administration",
+      "source": "configure-git-webserver",
+      "tags": [
+        "system",
+        "version-control",
+        "web"
+      ]
+    },
+    {
+      "categories": [],
+      "category": "data-processing",
+      "difficulty": "medium",
+      "id": "terminal-bench/financial-document-processor",
+      "selection_reason": "category coverage: data-processing",
+      "source": "financial-document-processor",
+      "tags": [
+        "ocr",
+        "image-processing",
+        "financial",
+        "file-operations"
+      ]
+    },
+    {
+      "categories": [],
+      "category": "security",
+      "difficulty": "hard",
+      "id": "terminal-bench/fix-code-vulnerability",
+      "selection_reason": "category coverage: security",
+      "source": "fix-code-vulnerability",
+      "tags": [
+        "security",
+        "code-vulnerability",
+        "common-weakness-enumeration"
+      ]
+    },
+    {
+      "categories": [],
+      "category": "model-training",
+      "difficulty": "hard",
+      "id": "terminal-bench/train-fasttext",
+      "selection_reason": "category coverage: model-training",
+      "source": "train-fasttext",
+      "tags": [
+        "data-processing",
+        "data-science"
+      ]
+    }
+  ],
+  "selected_task_ids": [
+    "terminal-bench/cancel-async-tasks",
+    "terminal-bench/configure-git-webserver",
+    "terminal-bench/financial-document-processor",
+    "terminal-bench/fix-code-vulnerability",
+    "terminal-bench/train-fasttext"
+  ],
+  "target_task_count": 5
+}

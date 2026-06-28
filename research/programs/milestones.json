@@ -1,0 +1,72 @@
+{
+  "active_milestone": "M6-adaptive-memory-refresh",
+  "last_audit": {
+    "recommended_active_milestone": "M6-adaptive-memory-refresh",
+    "schema_version": "mempool.milestone_audit.v1"
+  },
+  "milestones": [
+    {
+      "exit_criteria": [
+        "at least 3 real workers evaluated on the local smoke set",
+        "JSONL outcome records produced",
+        "first real cost/pass/latency comparison documented"
+      ],
+      "id": "M1-real-worker-pool-evaluation",
+      "status": "completed"
+    },
+    {
+      "exit_criteria": [
+        "dataset file with task features, worker outcomes, and routing targets",
+        "dataset validation tests",
+        "learning note on whether task features separate worker performance"
+      ],
+      "id": "M2-outcome-dataset",
+      "status": "completed"
+    },
+    {
+      "exit_criteria": [
+        "trained router artifact",
+        "evaluation report against baselines",
+        "decision on whether to proceed to neural/LLM orchestrator"
+      ],
+      "id": "M3-lightweight-router",
+      "status": "completed"
+    },
+    {
+      "exit_criteria": [
+        "10-task benchmark report",
+        "comparison of rule router vs learned router vs strongest worker",
+        "documented failure modes"
+      ],
+      "id": "M4-external-smoke-benchmark",
+      "status": "completed"
+    },
+    {
+      "exit_criteria": [
+        "local trainable orchestrator artifact",
+        "measurable improvement or clear negative result",
+        "documented compute latency and update cost"
+      ],
+      "id": "M5-small-trainable-orchestrator",
+      "status": "completed"
+    },
+    {
+      "exit_criteria": [
+        "reproducible Terminal-Bench 2.1 subset report",
+        "ledger records for multi-turn terminal trajectories",
+        "decision on whether the router needs state and history features"
+      ],
+      "id": "M5.5-agentic-harness-pilot",
+      "status": "completed"
+    },
+    {
+      "exit_criteria": [
+        "end-to-end ledger-to-training-record path",
+        "at least one evaluated refresh cycle",
+        "guardrails documented for privacy and rollback"
+      ],
+      "id": "M6-adaptive-memory-refresh",
+      "status": "completed"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "benchmark_id": "bigcodebench-hard-specialist-positive-neighborhood",
+  "exclude_screening_summaries": [
+    "research/evals/results/20260628-specialist-acquisition-limit1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-batch1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-lowrisk-batch1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-qwen-screen1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-glm-screen1-summary.json",
+    "research/evals/results/20260628-specialist-acquisition-kimi-screen1-summary.json",
+    "research/evals/results/20260628-solvability-aware-kimi-screen1-summary.json",
+    "research/evals/results/20260627-positive-neighborhood-screen2-summary.json"
+  ],
+  "excluded_task_count": 64,
+  "per_worker_limit": 2,
+  "purpose": "Select fresh specialist candidates near tasks the target worker has already passed.",
+  "routing_dataset": "research/datasets/20260627-expanded-profile-wave4-50task-routing.jsonl",
+  "seed_counts_by_worker": {
+    "ollama-cloud-deepseek-v4-pro": 38,
+    "ollama-cloud-glm-5.2": 34,
+    "ollama-cloud-kimi-k2.7-code": 38
+  },
+  "selected_by_worker": {
+    "ollama-cloud-deepseek-v4-pro": [
+      {
+        "categories": [
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "numpy",
+          "itertools"
+        ],
+        "plausibility_score": 6.1037,
+        "positive_similarity": 11.4119,
+        "score": 31.6254,
+        "task_id": "bigcodebench-hard-BigCodeBench-1057"
+      },
+      {
+        "categories": [
+          "filesystem"
+        ],
+        "environment_risk": 0,
+        "libraries": [
+          "csv",
+          "collections",
+          "os"
+        ],
+        "plausibility_score": 2.8203,
+        "positive_similarity": 10.4717,
+        "score": 31.133,
+        "task_id": "bigcodebench-hard-BigCodeBench-800"
+      }
+    ],
+    "ollama-cloud-glm-5.2": [
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "datetime",
+          "numpy"
+        ],
+        "plausibility_score": 5.8973,
+        "positive_similarity": 10.418,
+        "score": 28.6644,
+        "task_id": "bigcodebench-hard-BigCodeBench-486"
+      },
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "math",
+          "numpy",
+          "matplotlib"
+        ],
+        "plausibility_score": 5.223,
+        "positive_similarity": 9.9711,
+        "score": 27.391,
+        "task_id": "bigcodebench-hard-BigCodeBench-399"
+      }
+    ],
+    "ollama-cloud-kimi-k2.7-code": [
+      {
+        "categories": [
+          "plotting",
+          "datasci"
+        ],
+        "environment_risk": 2,
+        "libraries": [
+          "pandas",
+          "datetime",
+          "matplotlib"
+        ],
+        "plausibility_score": 5.1833,
+        "positive_similarity": 9.9806,
+        "score": 27.4236,
+        "task_id": "bigcodebench-hard-BigCodeBench-560"
+      },
+      {
+        "categories": [
+          "subprocess",
+          "filesystem"
+        ],
+        "environment_risk": 0,
+        "libraries": [
+          "shutil",
+          "pathlib",
+          "os"
+        ],
+        "plausibility_score": 2.4793,
+        "positive_similarity": 9.9492,
+        "score": 29.5996,
+        "task_id": "bigcodebench-hard-BigCodeBench-765"
+      }
+    ]
+  },
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-1057",
+    "bigcodebench-hard-BigCodeBench-800",
+    "bigcodebench-hard-BigCodeBench-486",
+    "bigcodebench-hard-BigCodeBench-399",
+    "bigcodebench-hard-BigCodeBench-560",
+    "bigcodebench-hard-BigCodeBench-765"
+  ],
+  "target_workers": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code"
+  ],
+  "task_sources": [
+    "research/evals/bigcodebench_hard_top4_eligible_merged_tasks.json"
+  ],
+  "tasks_output": "research/evals/20260628-specialist-positive-neighborhood-tasks.json"
+}

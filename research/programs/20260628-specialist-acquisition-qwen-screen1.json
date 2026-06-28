@@ -1,0 +1,104 @@
+{
+  "benchmark_id": "bigcodebench-hard-specialist-acquisition-solvability-screen",
+  "call_count": 4,
+  "max_environment_risk": null,
+  "outcomes": "research/evals/results/20260628-specialist-acquisition-qwen-screen1.jsonl",
+  "output": "research/evals/results/20260628-specialist-acquisition-qwen-screen1.json",
+  "repeat_count": 1,
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_qwen_mining_pool.json --tasks research/evals/20260628-specialist-acquisition-qwen-screen1-tasks.json --repeat-count 1 --eval-timeout-seconds 20 --run-id 20260628-specialist-acquisition-qwen-screen1 --output research/evals/results/20260628-specialist-acquisition-qwen-screen1.json --outcomes research/evals/results/20260628-specialist-acquisition-qwen-screen1.jsonl --resume --progress --quiet",
+  "run_id": "20260628-specialist-acquisition-qwen-screen1",
+  "screened_task_ids": [
+    "bigcodebench-hard-BigCodeBench-208",
+    "bigcodebench-hard-BigCodeBench-636",
+    "bigcodebench-hard-BigCodeBench-942",
+    "bigcodebench-hard-BigCodeBench-985",
+    "bigcodebench-hard-BigCodeBench-988"
+  ],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-513",
+    "bigcodebench-hard-BigCodeBench-528",
+    "bigcodebench-hard-BigCodeBench-857",
+    "bigcodebench-hard-BigCodeBench-211"
+  ],
+  "selected_task_metadata": {
+    "bigcodebench-hard-BigCodeBench-211": {
+      "categories": [
+        "network",
+        "filesystem"
+      ],
+      "environment_risk": 4,
+      "libraries": [
+        "zipfile",
+        "requests",
+        "os"
+      ],
+      "plausibility_score": 9.806,
+      "score": 12.9554,
+      "task_id": "bigcodebench-hard-BigCodeBench-211"
+    },
+    "bigcodebench-hard-BigCodeBench-513": {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 3,
+      "libraries": [
+        "pandas",
+        "numpy",
+        "matplotlib"
+      ],
+      "plausibility_score": 8.1493,
+      "score": 12.9121,
+      "task_id": "bigcodebench-hard-BigCodeBench-513"
+    },
+    "bigcodebench-hard-BigCodeBench-528": {
+      "categories": [
+        "filesystem",
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "pandas",
+        "csv",
+        "collections",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.9017,
+      "score": 9.9242,
+      "task_id": "bigcodebench-hard-BigCodeBench-528"
+    },
+    "bigcodebench-hard-BigCodeBench-857": {
+      "categories": [
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "glob",
+        "warnings",
+        "time",
+        "shutil",
+        "os"
+      ],
+      "plausibility_score": 3.4183,
+      "score": 8.4922,
+      "task_id": "bigcodebench-hard-BigCodeBench-857"
+    }
+  },
+  "source_benchmark_id": "bigcodebench-hard-specialist-acquisition",
+  "source_manifest": "research/programs/20260628-specialist-acquisition-plan.json",
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-specialist-acquisition-qwen-screen1.jsonl --output research/evals/results/20260628-specialist-acquisition-qwen-screen1-summary.json",
+  "task_count": 4,
+  "tasks_output": "research/evals/20260628-specialist-acquisition-qwen-screen1-tasks.json",
+  "universal_failure_task_ids": [
+    "bigcodebench-hard-BigCodeBench-208",
+    "bigcodebench-hard-BigCodeBench-636",
+    "bigcodebench-hard-BigCodeBench-942",
+    "bigcodebench-hard-BigCodeBench-985",
+    "bigcodebench-hard-BigCodeBench-988"
+  ],
+  "universal_min_workers": 4,
+  "worker_ids_to_run": [
+    "ollama-cloud-qwen3-coder-480b"
+  ]
+}

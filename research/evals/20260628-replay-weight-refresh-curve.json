@@ -1,0 +1,101 @@
+{
+  "base_dataset": "research/datasets/20260627-mixed-winner-23task-heldout-hard-routing.jsonl",
+  "baseline": {
+    "available": true,
+    "mean_kl": 0.46096494805709975,
+    "mean_latency_regret_ms": 501.0869565217391,
+    "pass_at_1": 0.6956521739130435,
+    "solvable_pass_at_1": 0.8,
+    "solvable_target_accuracy": 0.75,
+    "solvable_task_count": 20,
+    "target_accuracy": 0.782608695652174,
+    "task_count": 23
+  },
+  "best_by_gate": null,
+  "best_by_pass_at_1": {
+    "decision": "quarantine",
+    "mean_latency_regret_ms": 754.9655172413793,
+    "new_row_weight": 0.25,
+    "pass_at_1": 0.7241379310344828,
+    "reasons": [
+      "candidate LOO target accuracy 0.586 is below minimum 0.783",
+      "candidate LOO target accuracy drop 0.196 exceeds allowed 0.000",
+      "candidate LOO mean latency regret 755.0 ms exceeds maximum 501.1 ms"
+    ],
+    "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-profiled-temperature-selection.json",
+    "solvable_pass_at_1": 0.8076923076923077,
+    "solvable_target_accuracy": 0.5384615384615384,
+    "target_accuracy": 0.5862068965517241,
+    "temperature": 0.05
+  },
+  "candidate_rows": 29,
+  "new_rows": 6,
+  "new_slice": "research/datasets/20260628-normal-offset16-contrast-routing-merge-ready.jsonl",
+  "rows": [
+    {
+      "decision": "quarantine",
+      "mean_latency_regret_ms": 783.2413793103449,
+      "new_row_weight": 1.0,
+      "pass_at_1": 0.6896551724137931,
+      "reasons": [
+        "candidate LOO target accuracy 0.552 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.231 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 783.2 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-profiled-temperature-selection.json",
+      "solvable_pass_at_1": 0.7692307692307693,
+      "solvable_target_accuracy": 0.5,
+      "target_accuracy": 0.5517241379310345,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "mean_latency_regret_ms": 783.2413793103449,
+      "new_row_weight": 0.5,
+      "pass_at_1": 0.6896551724137931,
+      "reasons": [
+        "candidate LOO target accuracy 0.552 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.231 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 783.2 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p5-profiled-temperature-selection.json",
+      "solvable_pass_at_1": 0.7692307692307693,
+      "solvable_target_accuracy": 0.5,
+      "target_accuracy": 0.5517241379310345,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "mean_latency_regret_ms": 754.9655172413793,
+      "new_row_weight": 0.25,
+      "pass_at_1": 0.7241379310344828,
+      "reasons": [
+        "candidate LOO target accuracy 0.586 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.196 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 755.0 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-profiled-temperature-selection.json",
+      "solvable_pass_at_1": 0.8076923076923077,
+      "solvable_target_accuracy": 0.5384615384615384,
+      "target_accuracy": 0.5862068965517241,
+      "temperature": 0.05
+    },
+    {
+      "decision": "quarantine",
+      "mean_latency_regret_ms": 754.9655172413793,
+      "new_row_weight": 0.1,
+      "pass_at_1": 0.7241379310344828,
+      "reasons": [
+        "candidate LOO target accuracy 0.586 is below minimum 0.783",
+        "candidate LOO target accuracy drop 0.196 exceeds allowed 0.000",
+        "candidate LOO mean latency regret 755.0 ms exceeds maximum 501.1 ms"
+      ],
+      "selection_output": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p1-profiled-temperature-selection.json",
+      "solvable_pass_at_1": 0.8076923076923077,
+      "solvable_target_accuracy": 0.5384615384615384,
+      "target_accuracy": 0.5862068965517241,
+      "temperature": 0.05
+    }
+  ],
+  "schema_version": "mempool.replay_weight_refresh.v1"
+}

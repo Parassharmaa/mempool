@@ -1,0 +1,48 @@
+{
+  "api_key_env": "OLLAMA_API_KEY",
+  "base_url": "https://ollama.com/v1",
+  "source": "live_openai_compatible_model_catalog",
+  "timeout_seconds": 120,
+  "workers": [
+    {
+      "cost_usd": 0.0,
+      "id": "ollama-cloud-qwen3-coder-next",
+      "model": "qwen3-coder-next",
+      "role": "code_efficient_agentic",
+      "strengths": [
+        "code_easy",
+        "code_text",
+        "code_data",
+        "bigcodebench_hard",
+        "agentic_coding",
+        "low_active_params"
+      ]
+    },
+    {
+      "cost_usd": 0.0,
+      "id": "ollama-cloud-qwen3p5-397b",
+      "model": "qwen3.5:397b",
+      "role": "general_multimodal_frontier",
+      "strengths": [
+        "general",
+        "reasoning",
+        "code_easy",
+        "bigcodebench_hard",
+        "multimodal"
+      ]
+    },
+    {
+      "cost_usd": 0.0,
+      "id": "ollama-cloud-gpt-oss-120b",
+      "model": "gpt-oss:120b",
+      "role": "open_weight_reasoning",
+      "strengths": [
+        "general",
+        "reasoning",
+        "code_easy",
+        "agentic_coding",
+        "open_weight"
+      ]
+    }
+  ]
+}

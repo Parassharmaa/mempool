@@ -1,0 +1,60 @@
+{
+  "benchmark_id": "bigcodebench-hard-specialist-positive-neighborhood-target-screen",
+  "call_count": 2,
+  "max_environment_risk": null,
+  "outcomes": "research/evals/results/20260628-positive-neighborhood-kimi-screen1.jsonl",
+  "output": "research/evals/results/20260628-positive-neighborhood-kimi-screen1.json",
+  "repeat_count": 1,
+  "run_command": "PYTHONPATH=src python3 tools/run_real_smoke_benchmark.py --config research/evals/ollama_cloud_kimi_single_pool.json --tasks research/evals/20260628-positive-neighborhood-kimi-screen1-tasks.json --repeat-count 1 --eval-timeout-seconds 20 --run-id 20260628-positive-neighborhood-kimi-screen1 --output research/evals/results/20260628-positive-neighborhood-kimi-screen1.json --outcomes research/evals/results/20260628-positive-neighborhood-kimi-screen1.jsonl --resume --progress --quiet",
+  "run_id": "20260628-positive-neighborhood-kimi-screen1",
+  "screened_task_ids": [],
+  "selected_task_ids": [
+    "bigcodebench-hard-BigCodeBench-560",
+    "bigcodebench-hard-BigCodeBench-765"
+  ],
+  "selected_task_metadata": {
+    "bigcodebench-hard-BigCodeBench-560": {
+      "categories": [
+        "plotting",
+        "datasci"
+      ],
+      "environment_risk": 2,
+      "libraries": [
+        "pandas",
+        "datetime",
+        "matplotlib"
+      ],
+      "plausibility_score": 5.1833,
+      "positive_similarity": 9.9806,
+      "score": 27.4236,
+      "task_id": "bigcodebench-hard-BigCodeBench-560"
+    },
+    "bigcodebench-hard-BigCodeBench-765": {
+      "categories": [
+        "subprocess",
+        "filesystem"
+      ],
+      "environment_risk": 0,
+      "libraries": [
+        "shutil",
+        "pathlib",
+        "os"
+      ],
+      "plausibility_score": 2.4793,
+      "positive_similarity": 9.9492,
+      "score": 29.5996,
+      "task_id": "bigcodebench-hard-BigCodeBench-765"
+    }
+  },
+  "source_benchmark_id": "bigcodebench-hard-specialist-positive-neighborhood",
+  "source_manifest": "research/programs/20260628-specialist-positive-neighborhood-plan.json",
+  "summary_command": "PYTHONPATH=src python3 tools/summarize_repeated_outcomes.py --input research/evals/results/20260628-positive-neighborhood-kimi-screen1.jsonl --output research/evals/results/20260628-positive-neighborhood-kimi-screen1-summary.json",
+  "target_worker": "ollama-cloud-kimi-k2.7-code",
+  "task_count": 2,
+  "tasks_output": "research/evals/20260628-positive-neighborhood-kimi-screen1-tasks.json",
+  "universal_failure_task_ids": [],
+  "universal_min_workers": 1,
+  "worker_ids_to_run": [
+    "ollama-cloud-kimi-k2.7-code"
+  ]
+}

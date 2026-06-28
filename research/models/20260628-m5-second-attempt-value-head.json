@@ -1,0 +1,43 @@
+{
+  "epochs": 500,
+  "head": {
+    "feature_names": [
+      "abstain_probability",
+      "bias",
+      "first_second_margin",
+      "second_probability",
+      "second_worker_ollama_cloud_deepseek_v4_pro",
+      "second_worker_ollama_cloud_glm_5_2",
+      "second_worker_ollama_cloud_kimi_k2_7_code",
+      "second_worker_ollama_cloud_qwen3_coder_480b",
+      "top_probability",
+      "top_worker_ollama_cloud_deepseek_v4_pro",
+      "top_worker_ollama_cloud_kimi_k2_7_code",
+      "top_worker_ollama_cloud_qwen3_coder_480b",
+      "verifier_probability"
+    ],
+    "policy": "second-attempt-value-head",
+    "threshold": 0.3,
+    "weights": [
+      -15.555221919566135,
+      -1.1976428617609294,
+      -2.1629659669019152,
+      -2.9448759801540825,
+      0.446968112796855,
+      -2.602591484213309,
+      2.1437285796179126,
+      -1.185748069962418,
+      -5.107841947056,
+      -0.6165175914514531,
+      -3.0024815708704473,
+      2.421356300560921,
+      4.543945379675456
+    ]
+  },
+  "l2": 0.0001,
+  "latency_cost_per_second": 0.01,
+  "learning_rate": 0.05,
+  "model_type": "second-attempt-value-head",
+  "source_report": "research/evals/results/20260628-m5-latency-w0p5-multihead-report.json",
+  "substrate": "research/datasets/20260628-m5-small-orchestrator-substrate-50task.jsonl"
+}

@@ -1,0 +1,14 @@
+{
+  "base_model": "research/models/20260627-mixed-winner-23task-heldout-hard-reward-t0p05-logits-router.json",
+  "calibrate_task_ids": "research/evals/20260628-normal-offset16-contrast-task-ids.txt",
+  "calibration": {
+    "calibrated_task_count": 6,
+    "conditional_calibration": true,
+    "latency_cost_per_second": 0.5,
+    "min_probability": 0.0,
+    "min_probability_ratio": 0.0,
+    "policy": "latency-calibrated-worker-choice"
+  },
+  "dataset": "research/datasets/20260628-normal-offset16-contrast-29task-weight0p25-routing.jsonl",
+  "model_type": "latency-calibrated-logits-router"
+}

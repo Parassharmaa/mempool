@@ -1,0 +1,73 @@
+{
+  "benchmark_id": "terminal-bench-2.1",
+  "docker_available": true,
+  "docker_server_version": "29.2.0",
+  "harbor_cli_available": true,
+  "harbor_invocation": "uvx harbor",
+  "reference_checkout": {
+    "path": "external_repos/terminal-bench-2-1",
+    "commit": "c5ee500"
+  },
+  "oracle_smoke": {
+    "attempted": true,
+    "task_id": "terminal-bench/cancel-async-tasks",
+    "agent": "oracle",
+    "n_attempts": 1,
+    "n_concurrent": 1,
+    "jobs_dir": "research/runs/20260627-terminal-real-metadata/harbor_jobs",
+    "summary_artifact": "research/evals/terminal_bench_2p1_oracle_smoke_summary.json",
+    "status": "interrupted_ambiguous",
+    "observed_runtime_seconds": 211,
+    "structured_result_before_interrupt": {
+      "n_total_trials": 1,
+      "n_completed_trials": 0,
+      "n_errored_trials": 0,
+      "n_cancelled_trials": 0,
+      "n_running_trials": 1
+    },
+    "structured_result_after_interrupt": {
+      "n_total_trials": 1,
+      "n_completed_trials": 1,
+      "n_errored_trials": 1,
+      "n_cancelled_trials": 1,
+      "n_running_trials": 0
+    }
+  },
+  "install_only_smoke": {
+    "attempted": true,
+    "task_id": "terminal-bench/cancel-async-tasks",
+    "agent": "oracle",
+    "n_attempts": 1,
+    "n_concurrent": 1,
+    "jobs_dir": "research/runs/20260627-terminal-install-preflight/harbor_jobs",
+    "summary_artifact": "research/evals/terminal_bench_2p1_install_preflight_summary.json",
+    "status": "interrupted_ambiguous",
+    "observed_runtime_seconds": 131,
+    "structured_result_after_interrupt": {
+      "n_total_trials": 1,
+      "n_completed_trials": 1,
+      "n_errored_trials": 1,
+      "n_cancelled_trials": 1,
+      "n_running_trials": 0
+    }
+  },
+  "easy_install_only_smoke": {
+    "attempted": true,
+    "task_id": "terminal-bench/fix-git",
+    "agent": "oracle",
+    "n_attempts": 1,
+    "n_concurrent": 1,
+    "jobs_dir": "research/runs/20260627-terminal-easy-preflight/harbor_jobs",
+    "summary_artifact": "research/evals/terminal_bench_2p1_fix_git_install_preflight_summary.json",
+    "status": "timeout_running_or_stale",
+    "observed_runtime_seconds": 300,
+    "structured_result_after_timeout": {
+      "n_total_trials": 1,
+      "n_completed_trials": 0,
+      "n_errored_trials": 0,
+      "n_cancelled_trials": 0,
+      "n_running_trials": 1
+    }
+  },
+  "content_policy": "Raw Harbor logs are kept under ignored research/runs paths and must not be copied into training corpora."
+}

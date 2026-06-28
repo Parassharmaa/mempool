@@ -1,0 +1,45 @@
+{
+  "dataset": "research/datasets/20260627-cloud-repeatability-smoke-routing.jsonl",
+  "evaluation": {
+    "cost_per_solved_task": 0.0,
+    "matched_target": 2,
+    "mean_kl": 3.066141521569387e-06,
+    "mean_latency_ms": 2832.0,
+    "pass_at_1": 1.0,
+    "policy": "logits-router",
+    "predictions": [
+      "ollama-cloud-qwen3-coder-480b",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "solved": 2,
+    "target_accuracy": 1.0,
+    "task_count": 2
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "mean_kl": 0.23973074583525358
+    },
+    {
+      "epoch": 160.0,
+      "mean_kl": 0.0011789707126058288
+    },
+    {
+      "epoch": 320.0,
+      "mean_kl": 0.00019056495684001033
+    },
+    {
+      "epoch": 480.0,
+      "mean_kl": 4.16487416580432e-05
+    },
+    {
+      "epoch": 640.0,
+      "mean_kl": 1.060938702875508e-05
+    },
+    {
+      "epoch": 800.0,
+      "mean_kl": 3.102083886473775e-06
+    }
+  ],
+  "model_output": "research/models/20260627-repeatability-logits-router.json"
+}
