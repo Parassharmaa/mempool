@@ -11,6 +11,24 @@ The worker pool is intentionally open-ended. It should support top-tier hosted
 models, strong open-weight models, specialist local models, tool-using agents,
 and future systems through the same interface.
 
+## Architecture
+
+<img src="docs/assets/orchestrator-architecture.svg" alt="mempool Qwen3 logits orchestrator architecture" width="100%">
+
+The current architecture is intentionally compact:
+
+1. Benchmark and worker runs produce measured outcome rows.
+2. Rows are converted into soft routing targets.
+3. A frozen Qwen3 0.6B backbone embeds task text.
+4. Lightweight heads emit worker logits, workflow logits, verifier probability,
+   and abstain probability.
+5. Runtime routes to the selected worker pool.
+
+The next architecture step is registry-backed routing. Worker IDs should become
+canonical model identities, while provider-specific names remain runtime
+bindings. A mask layer will let the router mute unavailable, deprecated,
+expensive, or user-disallowed workers before softmax.
+
 ## Direction
 
 - Learn routing policies from task outcomes, not fixed hand-written rules.
@@ -58,24 +76,6 @@ Published artifacts and local checkpoints:
 The v1 model stores only the trained routing heads. It uses
 `Qwen/Qwen3-0.6B` as the frozen base model and attaches lightweight
 heads at inference time.
-
-## Architecture
-
-![mempool Qwen3 logits orchestrator architecture](docs/assets/orchestrator-architecture.svg)
-
-The current architecture is intentionally compact:
-
-1. Benchmark and worker runs produce measured outcome rows.
-2. Rows are converted into soft routing targets.
-3. A frozen Qwen3 0.6B backbone embeds task text.
-4. Lightweight heads emit worker logits, workflow logits, verifier probability,
-   and abstain probability.
-5. Runtime routes to the selected worker pool.
-
-The next architecture step is registry-backed routing. Worker IDs should become
-canonical model identities, while provider-specific names remain runtime
-bindings. A mask layer will let the router mute unavailable, deprecated,
-expensive, or user-disallowed workers before softmax.
 
 ## Current Results
 

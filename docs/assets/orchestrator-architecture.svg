@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
   <title id="title">mempool Qwen3 logits orchestrator architecture</title>
   <desc id="desc">Architecture diagram showing measured outcomes, training rows, Qwen3 backbone, routing heads, dynamic worker registry, logit masking, and worker execution.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M 0 0 L 12 6 L 0 12 z" fill="#344054"/>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#344054"/>
     </marker>
     <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#e8f1ff"/>
@@ -36,17 +36,17 @@
       .label { font-size: 15px; font-weight: 700; }
       .small { font-size: 12.5px; fill: #344054; }
       .tiny { font-size: 11px; fill: #667085; }
-      .arrow { stroke: #344054; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
-      .dash { stroke-dasharray: 7 6; }
+      .arrow { stroke: #344054; stroke-width: 1.6; fill: none; marker-end: url(#arrow); stroke-linecap: round; stroke-linejoin: round; }
+      .dash { stroke-dasharray: 6 7; }
       .metric { font-size: 13px; fill: #175cd3; font-weight: 700; }
     </style>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1180" height="720"/>
+  <rect class="bg" x="0" y="0" width="1180" height="760"/>
   <text class="text title" x="48" y="52">mempool Orchestrator Architecture</text>
   <text class="text subtitle" x="48" y="78">Current Qwen3 0.6B logits-head router plus the planned dynamic worker registry and expandable-head path.</text>
 
-  <rect class="panel" x="36" y="105" width="1108" height="560"/>
+  <rect class="panel" x="36" y="105" width="1108" height="600"/>
   <text class="text label" x="60" y="136">Measured Training Loop</text>
   <text class="text label" x="650" y="136">Runtime Routing Loop</text>
 
@@ -64,7 +64,7 @@
   <text class="text label" x="364" y="276">Routing Dataset</text>
   <text class="text small" x="364" y="300">53 train rows, 13 held-out</text>
   <text class="text small" x="364" y="319">soft worker targets</text>
-  <text class="text tiny" x="364" y="338">HF: mempool-qwen-logits-orchestrator-rows</text>
+  <text class="text tiny" x="364" y="338">HF dataset: routing rows</text>
 
   <rect class="box blue" x="630" y="195" width="230" height="94"/>
   <text class="text label" x="654" y="227">Frozen Backbone</text>
@@ -110,11 +110,11 @@
   <path class="arrow" d="M 1010 304 L 1010 346"/>
   <path class="arrow" d="M 1010 452 L 1010 520"/>
   <path class="arrow dash" d="M 920 242 L 860 242"/>
-  <path class="arrow dash" d="M 460 505 C 500 450 570 410 630 405"/>
-  <path class="arrow dash" d="M 1010 608 C 1010 650 196 650 175 415"/>
+  <path class="arrow dash" d="M 585 536 C 612 506 617 456 630 428"/>
+  <path class="arrow dash" d="M 1010 608 L 1010 632 L 175 632 L 175 415"/>
 
   <text class="text metric" x="650" y="514">v1 held-out worker accuracy: 0.6923</text>
   <text class="text metric" x="650" y="536">v1 workflow accuracy: 0.7692</text>
   <text class="text tiny" x="650" y="558">Checkpoint stores heads only; Qwen3 base is loaded separately.</text>
-  <text class="text tiny" x="60" y="640">Next roadmap: registry-backed labels, runtime masks, expanded-head refreshes, and larger measured datasets with diverse worker winners.</text>
+  <text class="text tiny" x="60" y="678">Next roadmap: registry-backed labels, runtime masks, expanded-head refreshes, and larger measured datasets with diverse worker winners.</text>
 </svg>
