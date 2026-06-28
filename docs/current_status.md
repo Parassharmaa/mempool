@@ -104,3 +104,14 @@ It ran 3 prompts under both the trained-orchestrator policy and a fixed
 `ollama-cloud-qwen3-coder-480b` baseline. The orchestrator selected Qwen for all
 3 prompts, so this validates the repeatable comparison path but not routing
 diversity.
+
+A second live prompt-set comparison targeted measured non-Qwen substrate regions:
+
+- `research/evals/20260628-nonqwen-promptset-comparison-prompts.json`
+- `research/evals/20260628-nonqwen-promptset-comparison.json`
+- `research/evals/20260628-nonqwen-promptset-comparison-outcomes.jsonl`
+
+This time the orchestrator selected `GLM`, `Kimi`, and `DeepSeek` once each,
+matching the selected non-Qwen target regions. The fixed Qwen baseline was still
+faster on this small live sample, so the result is routing-diversity evidence,
+not a promotion signal.
