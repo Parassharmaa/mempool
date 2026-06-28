@@ -6,7 +6,9 @@ from pathlib import Path
 from mempool.multi_head_orchestrator import train_multi_head_orchestrator
 from mempool.orchestrated_executor import (
     execute_orchestrated_prompt,
+    flatten_orchestrated_execution,
     load_worker_pool,
+    write_orchestrated_outcome,
     worker_by_id,
 )
 
@@ -149,6 +151,56 @@ class OrchestratedExecutorTest(unittest.TestCase):
         self.assertEqual(result["execution_status"], "dry_run")
         self.assertEqual(result["response"]["content"], "")
         self.assertEqual(fake_client.calls, [])
+
+    def test_flattens_orchestrated_execution_as_outcome_row(self) -> None:
+        result = {
+            "timestamp": "2026-06-28T00:00:00+00:00",
+            "model_path": "model.json",
+            "worker_pool_path": "pool.json",
+            "task_id": "adhoc",
+            "benchmark_id": "local-ad-hoc",
+            "task_family": "bigcodebench_hard",
+            "prompt": "do work",
+            "route": {
+                "selected_workflow": "direct",
+                "worker_distribution": {"glm": 0.7, "qwen": 0.3},
+                "workflow_distribution": {"direct": 1.0},
+                "verifier_probability": 0.2,
+                "abstain_probability": 0.1,
+            },
+            "selected_worker": {"id": "glm", "model": "glm-5.2", "cost_usd": 0.0},
+            "response": {"content": "answer"},
+            "latency_ms": 123,
+            "execution_status": "completed",
+        }
+
+        row = flatten_orchestrated_execution(result)
+
+        self.assertEqual(row["schema_version"], "mempool.orchestrated_execution_outcome.v1")
+        self.assertEqual(row["selected_worker_id"], "glm")
+        self.assertEqual(row["selected_model"], "glm-5.2")
+        self.assertEqual(row["response_chars"], 6)
+        self.assertTrue(row["response_present"])
+        self.assertIsNone(row["passed"])
+
+    def test_writes_orchestrated_outcome_jsonl(self) -> None:
+        result = {
+            "task_id": "adhoc",
+            "benchmark_id": "local-ad-hoc",
+            "task_family": "ad_hoc",
+            "prompt": "hello",
+            "route": {},
+            "selected_worker": {"id": "glm", "model": "glm-5.2"},
+            "response": {"content": ""},
+            "execution_status": "dry_run",
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output = Path(tmpdir) / "outcome.jsonl"
+            row = write_orchestrated_outcome(output, result)
+            rows = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines()]
+
+        self.assertEqual(row["execution_status"], "dry_run")
+        self.assertEqual(rows[0]["selected_worker_id"], "glm")
 
 
 if __name__ == "__main__":

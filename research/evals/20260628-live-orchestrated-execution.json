@@ -1,0 +1,90 @@
+{
+  "benchmark_id": "local-ad-hoc",
+  "execution_status": "completed",
+  "latency_ms": 2057,
+  "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+  "prompt": "Return one concise sentence saying hello from mempool.",
+  "request": {
+    "chat_options": {},
+    "messages": [
+      {
+        "content": "You are a helpful worker model. Return the best answer you can.",
+        "role": "system"
+      },
+      {
+        "content": "Return one concise sentence saying hello from mempool.",
+        "role": "user"
+      }
+    ]
+  },
+  "response": {
+    "content": "Hello from mempool!",
+    "raw": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "Hello from mempool!",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1782611929,
+      "id": "chatcmpl-761",
+      "model": "qwen3-coder:480b",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_ollama",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 37,
+        "total_tokens": 43
+      }
+    }
+  },
+  "route": {
+    "abstain_probability": 0.3872367372904479,
+    "available_workers": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "benchmark_id": "local-ad-hoc",
+    "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+    "model_type": "linear-multi-head-orchestrator",
+    "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+    "selected_workflow": "direct",
+    "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+    "task_family": "general",
+    "task_id": "live-hello-20260628",
+    "verifier_probability": 0.4985990870061423,
+    "worker_distribution": {
+      "ollama-cloud-deepseek-v4-pro": 0.23244912281369423,
+      "ollama-cloud-glm-5.2": 0.23072200362943207,
+      "ollama-cloud-kimi-k2.7-code": 0.24560731406948683,
+      "ollama-cloud-qwen3-coder-480b": 0.2912215594873868
+    },
+    "workflow_distribution": {
+      "direct": 0.6357345214550936,
+      "verify_then_fallback": 0.3642654785449065
+    }
+  },
+  "schema_version": "mempool.orchestrated_execution.v1",
+  "selected_worker": {
+    "cost_usd": 0.0,
+    "id": "ollama-cloud-qwen3-coder-480b",
+    "model": "qwen3-coder:480b",
+    "strengths": [
+      "code_easy",
+      "code_text",
+      "code_data",
+      "bigcodebench_hard",
+      "agentic_coding"
+    ]
+  },
+  "task_family": "general",
+  "task_id": "live-hello-20260628",
+  "timestamp": "2026-06-28T01:58:49.552033+00:00",
+  "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+}

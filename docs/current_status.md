@@ -86,3 +86,11 @@ PYTHONPATH=src python3 tools/run_orchestrated_prompt.py \
   --categories filesystem,text \
   --libraries pathlib
 ```
+
+First live orchestrated execution is recorded:
+
+- `research/evals/20260628-live-orchestrated-execution.json`
+- `research/evals/20260628-live-orchestrated-execution-outcome.jsonl`
+
+That run selected `ollama-cloud-qwen3-coder-480b`, executed
+`qwen3-coder:480b`, and received `Hello from mempool!` in 2057 ms.

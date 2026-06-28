@@ -7,6 +7,7 @@ from pathlib import Path
 from mempool.orchestrated_executor import (
     execute_orchestrated_prompt,
     load_env_file,
+    write_orchestrated_outcome,
 )
 
 
@@ -46,6 +47,7 @@ def main() -> int:
     )
     parser.add_argument("--env-file", type=Path, default=ROOT / ".env")
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--outcome-output", type=Path)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -67,6 +69,8 @@ def main() -> int:
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(payload, encoding="utf-8")
+    if args.outcome_output:
+        write_orchestrated_outcome(args.outcome_output, result)
     print(payload, end="")
     return 0
 

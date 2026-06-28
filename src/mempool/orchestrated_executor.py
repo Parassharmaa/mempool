@@ -167,3 +167,45 @@ def execute_orchestrated_prompt(
         "latency_ms": latency_ms,
         "execution_status": "completed",
     }
+
+
+def flatten_orchestrated_execution(result: dict[str, Any]) -> dict[str, Any]:
+    route = result.get("route") or {}
+    selected_worker = result.get("selected_worker") or {}
+    response = result.get("response") or {}
+    content = response.get("content")
+    execution_status = str(result.get("execution_status") or "unknown")
+    return {
+        "schema_version": "mempool.orchestrated_execution_outcome.v1",
+        "benchmark_id": result.get("benchmark_id"),
+        "task_id": result.get("task_id"),
+        "task_family": result.get("task_family"),
+        "prompt": result.get("prompt"),
+        "timestamp": result.get("timestamp"),
+        "model_path": result.get("model_path"),
+        "worker_pool_path": result.get("worker_pool_path"),
+        "selected_worker_id": selected_worker.get("id"),
+        "selected_model": selected_worker.get("model"),
+        "selected_workflow": route.get("selected_workflow"),
+        "worker_distribution": route.get("worker_distribution", {}),
+        "workflow_distribution": route.get("workflow_distribution", {}),
+        "verifier_probability": route.get("verifier_probability"),
+        "abstain_probability": route.get("abstain_probability"),
+        "execution_status": execution_status,
+        "latency_ms": result.get("latency_ms"),
+        "cost_usd": selected_worker.get("cost_usd", 0.0),
+        "response_chars": len(content) if isinstance(content, str) else 0,
+        "response_present": bool(content),
+        "passed": None,
+        "score": None,
+        "failure_mode": None if execution_status in {"completed", "dry_run"} else execution_status,
+        "reward": None,
+    }
+
+
+def write_orchestrated_outcome(path: str | Path, result: dict[str, Any]) -> dict[str, Any]:
+    row = flatten_orchestrated_execution(result)
+    output_path = Path(path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(row, sort_keys=True) + "\n", encoding="utf-8")
+    return row
