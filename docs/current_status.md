@@ -62,3 +62,14 @@ The turn-level substrate builder is now code-ready as a deferred path:
 `tools/build_agentic_turn_substrate.py` converts sanitized trajectory summaries
 into per-turn examples, while rejecting raw terminal output. It should remain a
 data-contract scaffold until real multi-turn trajectories exist.
+
+The current checkpoint can also be queried locally without retraining:
+
+```bash
+PYTHONPATH=src python3 tools/predict_multi_head_orchestrator.py \
+  --model research/models/20260628-m5-current-task-66task-multihead.json \
+  --prompt "Write Python code that reads files from a directory." \
+  --task-family bigcodebench_hard \
+  --categories filesystem,text \
+  --libraries pathlib
+```
