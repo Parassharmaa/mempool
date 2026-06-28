@@ -125,6 +125,89 @@ Exit criteria:
 - at least one evaluated refresh cycle
 - guardrails documented for privacy and rollback
 
+## Milestone 7: Dynamic Worker Registry And Expandable Heads
+
+Goal: remove fixed provider-shaped worker labels from the orchestrator path and
+make the worker pool expandable without retraining the whole system from
+scratch.
+
+Motivation:
+
+- The current Qwen logits-head checkpoint learns a fixed worker-label set.
+- Real deployments need to mute unavailable, expensive, deprecated, or
+  user-disallowed workers at inference time.
+- New workers should be added through measured data and head refreshes, not by
+  rewriting routing code.
+- Provider-specific names such as Ollama model labels should be runtime bindings,
+  not the identity the orchestrator learns.
+
+Tasks:
+
+- define a canonical worker registry with stable `worker_id`, provider binding,
+  capability tags, latency/cost priors, context limits, availability, and policy
+  flags
+- add runtime logit masking so unavailable or muted workers receive `-inf`
+  before softmax
+- version the worker-label set in every checkpoint and fail closed when a
+  checkpoint is loaded against an incompatible registry
+- implement an expanded-head refresh path:
+  - copy old worker-head weights for unchanged labels
+  - initialize new labels from a generic prior, nearest model family, or worker
+    metadata embedding
+  - train only routing heads first
+  - promote only when held-out routing improves or the new worker wins a
+    measured slice
+- add a model-conditioned scoring prototype where the task representation is
+  scored against worker metadata instead of only a flat worker classifier
+- keep v1 Qwen3 0.6B as the fixed-label baseline while building the dynamic path
+
+Exit criteria:
+
+- registry file and validation tests
+- inference-time worker mask exercised by tests
+- checkpoint metadata records label-set version and canonical worker IDs
+- at least one simulated worker-addition refresh that preserves old labels and
+  adds a new muted/unmuted label
+- recommendation on whether v2 should stay flat-head plus masks or move to
+  model-conditioned worker scoring
+
+## Milestone 8: Dataset Expansion For First Robust Version
+
+Goal: grow routing data enough to train a stronger first robust orchestrator
+without relying only on expensive custom runs.
+
+Dataset-source ladder:
+
+1. Reuse existing public benchmark traces when they include prompt, candidate
+   model, output, score/pass, and enough metadata to recover routing targets.
+2. Mine local benchmark tasks where canonical solutions pass in our environment,
+   then run a cheap worker screen before top-worker comparison.
+3. Use repeated top-k worker comparisons only on screened or known-positive
+   tasks to control cost.
+4. Add agentic/terminal traces only after single-step routing labels are stable,
+   and keep them in a separate schema until turn-level routing is ready.
+5. Distill private/user traces only after sanitization and explicit policy gates.
+
+Candidate public sources to investigate:
+
+- BigCodeBench/LiveCodeBench-style generated-code evaluation records
+- LMSYS/Chatbot Arena-style model comparison data, only if licensing and task
+  content are compatible
+- public agent benchmark trajectories where tool actions and final rewards are
+  available
+- open model-eval leaderboards that expose per-sample outcomes rather than only
+  aggregate scores
+
+Exit criteria:
+
+- documented data-source decision table: license, schema fit, labels available,
+  cost, and contamination risk
+- one imported or newly generated dataset with at least three empirical winner
+  classes
+- repeated held-out split that is disjoint by task/source
+- vNext Qwen3 0.6B training run compared against v1, strongest single worker,
+  and active flat-router baseline
+
 ## Milestone 5.5: Agentic Harness Pilot
 
 Goal: evaluate the orchestrator in an interactive terminal harness before
@@ -257,6 +340,18 @@ one broad-pass Qwen-latency target (`BigCodeBench/854`). The eight-task logits
 router fits Qwen/Kimi/GLM targets, but LOO drops to 6/8 because GLM and Qwen-only
 filesystem regions are still sparse. Continue data acquisition before moving to
 a larger backbone.
+
+The Qwen3 0.6B logits-head v1 is now the fixed-label neural baseline. The next
+architecture priority is not another blind backbone run; it is the dynamic
+worker-registry path in Milestone 7. Implement canonical worker IDs, runtime
+worker masking, and checkpoint label-set metadata so workers can be muted,
+removed, or provider-rebound without changing the learned identity space. In
+parallel, run the Milestone 8 dataset-source audit. Prefer importing compatible
+public per-sample outcome data if it has usable labels and licensing; otherwise
+continue the current screened/repeated BigCodeBench acquisition loop. The next
+major training run should happen only after either the dynamic-head path exists
+or the dataset has enough new winner diversity to justify a vNext comparison
+against the Qwen3 v1 checkpoint.
 
 Adaptive refresh now has a first gate: `tools/policy_refresh_gate.py` compares a
 candidate logits-router report against a baseline using leave-one-out accuracy,

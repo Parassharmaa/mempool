@@ -85,6 +85,72 @@ sample and verify that:
 - evaluator Python and required package availability are recorded with outcome
   rows
 
+## Dataset Expansion Strategy
+
+The next orchestrator training run should be data-led. Treat new model
+architecture as useful only when the training/evaluation data has enough worker
+diversity to measure it.
+
+Required fields for any imported or self-generated routing row:
+
+- task text or normalized prompt
+- candidate worker/model identity
+- provider binding, if different from canonical worker identity
+- executable score, pass/fail, human preference, or other comparable reward
+- latency and approximate cost when available
+- failure mode or evaluator error when available
+- source/license metadata
+- split key that prevents near-duplicate leakage into held-out evaluation
+
+Acquisition order:
+
+1. Search for existing public per-sample model outcome datasets. Prefer sources
+   with executable pass/fail labels or pairwise preferences and compatible
+   licenses. Reject aggregate-only leaderboards for training labels.
+2. Convert compatible public data into a neutral worker-outcome schema using
+   canonical worker IDs and source metadata.
+3. Fill gaps with our own screened benchmark runs. Use cheap solvability screens
+   first, then repeated top-k comparisons only on likely-positive tasks.
+4. Keep single-step code routing data separate from terminal/agent trajectories
+   until turn-level routing has its own schema and evaluation gate.
+5. Promote a new training dataset only when it adds either more tasks, more
+   empirical winner classes, or better repeated-sample confidence without
+   weakening held-out split hygiene.
+
+Candidate source families to audit:
+
+- code benchmark execution traces with per-sample pass/fail outcomes
+- pairwise model-comparison datasets with prompt and winner labels
+- public agent benchmark trajectories with final reward and tool traces
+- local Codex/Claude traces only after sanitization, consent, and a separate
+  privacy review
+
+If public data is insufficient, continue creating our own data with the current
+mine-screen-repeat pattern. The cost-control rule is simple: do not run all
+workers on all tasks until a cheap screen says the task can produce a useful
+positive or disagreement signal.
+
+## Dynamic Worker Pool Strategy
+
+Worker labels must become registry-backed rather than provider-string-backed.
+The orchestrator should learn canonical worker IDs, while runtime configuration
+maps those IDs to Ollama, local, or OpenAI-compatible provider endpoints.
+
+Inference should support a worker mask:
+
+- unavailable workers
+- muted workers
+- user-disallowed workers
+- workers outside cost/latency policy
+- deprecated workers kept only for checkpoint compatibility
+
+Masked workers should receive impossible logits before softmax, so an existing
+checkpoint can route over the currently available subset. New workers should be
+introduced through a versioned expanded-head refresh: copy weights for unchanged
+labels, initialize new labels from priors or metadata, collect measured outcomes,
+train heads, and promote only if held-out routing improves or the new worker
+wins a meaningful measured slice.
+
 ## Current External Smoke Status
 
 The BigCodeBench-Hard smoke materializer writes a 10-task instruct-mode file at

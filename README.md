@@ -34,7 +34,7 @@ and future systems through the same interface.
 
 ## What This Offers
 
-`mempool` now contains a first usable Qwen-based orchestration checkpoint:
+`mempool` now contains a usable Qwen3-based orchestration checkpoint:
 
 - A small Qwen-family coordinator representation.
 - Trained routing heads for worker selection, workflow selection, verifier
@@ -45,15 +45,37 @@ and future systems through the same interface.
 - Reproducible local, Apple MPS, CUDA, and Lightning AI training launch paths.
 - Published Hugging Face dataset/model artifacts.
 
-Published artifacts:
+Published artifacts and local checkpoints:
 
-- Dataset: [blazeofchi/mempool-qwen-logits-orchestrator-rows](https://huggingface.co/datasets/blazeofchi/mempool-qwen-logits-orchestrator-rows)
-- Model v1: [blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1](https://huggingface.co/blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1)
-- Model v0: [blazeofchi/mempool-qwen-logits-orchestrator-v0](https://huggingface.co/blazeofchi/mempool-qwen-logits-orchestrator-v0)
+| Artifact | Location |
+| --- | --- |
+| Training rows | [blazeofchi/mempool-qwen-logits-orchestrator-rows](https://huggingface.co/datasets/blazeofchi/mempool-qwen-logits-orchestrator-rows) |
+| Qwen3 0.6B model v1 | [blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1](https://huggingface.co/blazeofchi/mempool-qwen3-0p6b-logits-orchestrator-v1) |
+| Qwen2.5 model v0 | [blazeofchi/mempool-qwen-logits-orchestrator-v0](https://huggingface.co/blazeofchi/mempool-qwen-logits-orchestrator-v0) |
+| v1 local checkpoint | `research/models/20260628-qwen3-0p6b-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt` |
+| v0 local checkpoint | `research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt` |
 
 The v1 model stores only the trained routing heads. It uses
 `Qwen/Qwen3-0.6B` as the frozen base model and attaches lightweight
 heads at inference time.
+
+## Architecture
+
+![mempool Qwen3 logits orchestrator architecture](docs/assets/orchestrator-architecture.svg)
+
+The current architecture is intentionally compact:
+
+1. Benchmark and worker runs produce measured outcome rows.
+2. Rows are converted into soft routing targets.
+3. A frozen Qwen3 0.6B backbone embeds task text.
+4. Lightweight heads emit worker logits, workflow logits, verifier probability,
+   and abstain probability.
+5. Runtime routes to the selected worker pool.
+
+The next architecture step is registry-backed routing. Worker IDs should become
+canonical model identities, while provider-specific names remain runtime
+bindings. A mask layer will let the router mute unavailable, deprecated,
+expensive, or user-disallowed workers before softmax.
 
 ## Current Results
 
@@ -66,7 +88,7 @@ The repository now has an end-to-end measured-data loop:
 5. Lightweight logits-router training and promotion gates.
 6. Multi-head task-level orchestrator substrate export.
 7. A trained local multi-head orchestrator candidate.
-8. Qwen-small logits-head orchestrator training and prediction.
+8. Qwen 0.6B logits-head orchestrator training and prediction.
 9. Adaptive refresh records with quarantine/rollback discipline.
 
 The current Qwen3 0.6B v1 orchestrator artifact is:
@@ -87,6 +109,14 @@ The earlier one-epoch split smoke reached 0.3077 held-out worker accuracy, and
 the 20-epoch Apple MPS run reached 0.3846. The Qwen2.5 L40S v0 reached 0.5385;
 the Qwen3 0.6B L40S v1 improves this to 0.6923, but it is still small-data and
 not a production policy.
+
+Release lineage:
+
+| Release | Backbone | Train Rows | Held-out Rows | Train Worker Acc. | Held-out Worker Acc. | Status |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| E0 split smoke | `Qwen/Qwen2.5-0.5B-Instruct` | 53 | 13 | 0.4717 | 0.3077 | proof of held-out gate |
+| v0 full GPU | `Qwen/Qwen2.5-0.5B-Instruct` | 53 | 13 | 0.7358 | 0.5385 | first published checkpoint |
+| v1 full GPU | `Qwen/Qwen3-0.6B` | 53 | 13 | 0.8113 | 0.6923 | current checkpoint |
 
 The source split is:
 
@@ -147,7 +177,7 @@ python3 -m venv .venv-lightning
 Machine availability depends on the selected Lightning teamspace/cloud account.
 On the first attempt for this project, `L4`, `T4`, and `A100` batch jobs were
 rejected by the selected AWS cluster even though the global machine list showed
-those names. The v0 release was trained through a Lightning Studio on `L40S`;
+those names. The GPU releases were trained through a Lightning Studio on `L40S`;
 use the Studio UI or a matching cloud account if batch submission reports
 `accelerator ... not found`.
 
@@ -173,6 +203,30 @@ PYTHONPATH=src python3 tools/publish_hf_release.py
 For bounded autonomous improvement runs, see
 `.agents/skills/research-loop/SKILL.md` and
 `research/programs/orchestration_loop.md`.
+
+## Roadmap
+
+Near-term roadmap:
+
+- **Dynamic worker registry:** replace provider-shaped labels with canonical
+  worker IDs, provider bindings, model metadata, cost/latency priors, and
+  availability flags.
+- **Runtime logit masking:** allow unavailable, muted, deprecated, or
+  user-disallowed workers to be removed from the softmax decision at inference
+  time.
+- **Expandable heads:** refresh a worker head when new models arrive by copying
+  old label weights, initializing new labels, collecting measured outcomes, and
+  promoting only when held-out routing improves.
+- **Model-conditioned scoring:** prototype a router that scores task
+  representations against worker metadata so new models can generalize faster
+  than flat label heads.
+- **Dataset expansion:** audit public per-sample model outcome datasets first;
+  fill gaps with screened BigCodeBench runs and repeated top-k worker
+  comparisons only where tasks can produce useful positive or disagreement
+  signal.
+- **Next training run:** train a stronger vNext only after the dynamic-head path
+  exists or the dataset has enough new empirical winner diversity to justify a
+  fair comparison against Qwen3 v1.
 
 ## Quick Commands
 
