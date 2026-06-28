@@ -5,6 +5,16 @@ description = "Open research system for learned model orchestration."
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+qwen-train = [
+  "torch>=2.3",
+  "transformers>=4.45",
+]
+mlx-train = [
+  "mlx>=0.18",
+  "mlx-lm>=0.18",
+]
+
 [project.scripts]
 mempool-demo = "mempool.demo:main"
 

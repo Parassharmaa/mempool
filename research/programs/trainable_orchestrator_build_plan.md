@@ -773,3 +773,11 @@ comparison-source union down to 27 locally evaluable tasks. Use this manifest
 for the next live task-level acquisition run unless we first add a pinned
 benchmark environment with packages such as `pandas`, `matplotlib`, `numpy`,
 `requests`, `bs4`, and `sklearn`.
+
+Clarified Milestone 5 architecture: the linear logits router is only the
+baseline and data-loop validator. The intended small-orchestrator track should
+use a Qwen-small style local language-model backbone with explicit heads over a
+decision hidden state. Train worker, workflow, verifier, and abstain heads
+against measured soft routing targets first, with the backbone frozen; only try
+LoRA/adapters after the heads beat the linear router on held-out task-level
+routing.

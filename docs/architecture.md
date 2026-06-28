@@ -51,6 +51,17 @@ selection is produced by learned logits. Text-generating workflow plans are a
 later, higher-latency mode for multi-agent workflows, not the default routing
 path.
 
+The current linear logits router is therefore a baseline, not the destination.
+The next neural path should use a small local language-model backbone, such as a
+Qwen-small family model, and attach explicit heads to a fixed decision hidden
+state. The backbone reads the task and compact state summary; the heads emit
+worker logits, workflow logits, verifier probability, abstention probability,
+and eventually turn-level action and memory-update logits.
+
+Fast routing should remain a classification decision over normalized worker
+ids. The model can use language-model representations internally, but it should
+not rely on free-form text generation to decide which worker to call.
+
 ## Worker Pool Requirements
 
 Workers should be accessed through adapters. An adapter can wrap a hosted model,

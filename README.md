@@ -43,7 +43,8 @@ The repository now has an end-to-end measured-data loop:
 5. Lightweight logits-router training and promotion gates.
 6. Multi-head task-level orchestrator substrate export.
 7. A trained local multi-head orchestrator candidate.
-8. Adaptive refresh records with quarantine/rollback discipline.
+8. Qwen-small logits-head orchestrator training plan and rows.
+9. Adaptive refresh records with quarantine/rollback discipline.
 
 The current trained task-level orchestrator artifact is:
 
@@ -61,6 +62,36 @@ The model is a research checkpoint, not a promoted production policy. The
 latest leave-one-out result still shows that specialist target accuracy and
 latency regret need improvement before promotion.
 
+The intended neural orchestrator path is now explicit: use a small Qwen-family
+backbone as the fast coordinator representation, attach logits heads for worker
+selection, workflow selection, verifier probability, and abstention/fallback,
+then train those heads against measured soft routing targets. The current
+linear router remains the baseline, not the final architecture.
+
+Prepared Qwen-small artifacts:
+
+```text
+research/models/20260628-qwen-small-logits-orchestrator-plan.json
+research/datasets/20260628-qwen-small-logits-orchestrator-rows.jsonl
+```
+
+The plan currently reports `can_train_here: false` because this checkout does
+not have the ML training stack installed. To train the first frozen-backbone
+heads locally:
+
+```bash
+python3 -m pip install -e '.[qwen-train]'
+PYTHONPATH=src python3 tools/train_qwen_logits_orchestrator.py \
+  --plan-output research/models/local-qwen-logits-plan.json \
+  --rows-output research/datasets/local-qwen-logits-rows.jsonl \
+  --output-dir research/models/local-qwen-logits-heads \
+  --train
+```
+
+For a serious run, use GPU or Apple MLX access and keep the backbone frozen for
+the first pass. Only try LoRA/backbone updates after the logits heads beat the
+linear router on held-out task-level routing.
+
 For bounded autonomous improvement runs, see
 `.agents/skills/research-loop/SKILL.md` and
 `research/programs/orchestration_loop.md`.
@@ -73,4 +104,7 @@ PYTHONPATH=src python3 tools/train_multi_head_orchestrator.py \
   --substrate research/datasets/20260628-m5-current-task-66task-substrate.jsonl \
   --model-output research/models/local-multihead.json \
   --report-output research/evals/local-multihead-report.json
+PYTHONPATH=src python3 tools/train_qwen_logits_orchestrator.py \
+  --plan-output research/models/local-qwen-logits-plan.json \
+  --rows-output research/datasets/local-qwen-logits-rows.jsonl
 ```

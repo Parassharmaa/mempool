@@ -144,3 +144,17 @@ excluded because they require unavailable imports such as `bs4`, `matplotlib`,
 `numpy`, `pandas`, `requests`, or `sklearn`. Use this manifest, or a pinned
 benchmark environment, before converting future live rows into router-training
 labels.
+
+The Qwen-small logits-head orchestrator path is now implemented as a source
+training path:
+
+- `src/mempool/qwen_logits_orchestrator.py`
+- `tools/train_qwen_logits_orchestrator.py`
+- `research/models/20260628-qwen-small-logits-orchestrator-plan.json`
+- `research/datasets/20260628-qwen-small-logits-orchestrator-rows.jsonl`
+
+The generated plan has 66 task-level substrate records and four worker labels.
+It reports `can_train_here: false` because this project environment does not
+currently have `torch`, `transformers`, `mlx`, or `mlx_lm` installed. The real
+training command is wired, but the first Qwen-small head training run needs the
+ML stack installed or GPU/MLX access.

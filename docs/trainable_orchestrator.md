@@ -14,14 +14,20 @@ The longer-term goal is live adaptation. The orchestrator should be small and
 cheap enough to retrain frequently as new worker models, user patterns, memories,
 and evaluation evidence arrive.
 
-The first target is a sub-1B or smaller coordinator path. We do not need to begin
-with a text-generating planner. A smaller staged path is more measurable:
+The first target is a sub-1B or small local coordinator path. We do not need to
+begin with a text-generating planner. A smaller staged path is more measurable:
 
 1. Heuristic router.
 2. Trainable classifier or ranking head over task features.
 3. Compact logits-head orchestrator trained from worker outcome data.
 4. Optional text-generating workflow conductor once the dataset and reward loop
    are strong enough.
+
+The current linear logits router is a baseline and a data-loop sanity check,
+not the final orchestrator. The intended next model track is a small local
+language-model backbone, such as a Qwen-small family model, with explicit
+routing heads attached to its decision hidden state. The model should not
+generate worker names as text for the fast path; it should emit action logits.
 
 ## Worker Pool
 
@@ -188,6 +194,21 @@ position; lightweight heads then map that hidden state to action logits. The
 training objective should minimize KL divergence between measured soft routing
 targets and the model's predicted distribution.
 
+Preferred first implementation:
+
+- use a Qwen-small style instruction backbone when local hardware allows it
+- insert a fixed decision token or use the final hidden state after a compact
+  routing prompt
+- attach heads for worker distribution, workflow kind, verifier probability,
+  abstention probability, and later turn-level actions
+- train the heads first while freezing the backbone
+- then evaluate LoRA/adapters on the backbone only after the heads beat the
+  linear router on held-out task-level routing
+
+This keeps the orchestrator close to the desired architecture while preserving a
+cheap rollback path. If the Qwen-small head does not beat the linear baseline,
+the measured dataset is probably still too small or too noisy.
+
 ### Phase 3: LoRA Fine-Tune
 
 For Mac-local training, prefer MLX/MLX-LM LoRA first. For NVIDIA GPU training,
@@ -195,6 +216,7 @@ use Unsloth or a standard TRL stack depending on hardware and reward method.
 
 Candidate base models:
 
+- Qwen-small family model for routing hidden states plus logits heads
 - local 1-2B instruction model for routing text
 - local embedding model plus MLP head for fast classification
 - 4B instruction model only if smaller models fail to separate task types
