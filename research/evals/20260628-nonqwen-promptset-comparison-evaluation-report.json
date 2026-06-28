@@ -1,15 +1,32 @@
 {
   "comparison": "research/evals/20260628-nonqwen-promptset-comparison.json",
+  "missing_eval_dependency_count": 4,
   "policy_summaries": [
     {
+      "evaluable_pass_rate": 0.0,
+      "evaluable_passed": 0,
+      "evaluable_record_count": 1,
       "mean_latency_ms": 4052.0,
+      "missing_eval_dependencies": [
+        "matplotlib",
+        "pandas"
+      ],
+      "missing_eval_dependency_count": 2,
       "pass_rate": 0.0,
       "passed": 0,
       "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
       "record_count": 3
     },
     {
+      "evaluable_pass_rate": 1.0,
+      "evaluable_passed": 1,
+      "evaluable_record_count": 1,
       "mean_latency_ms": 6955.0,
+      "missing_eval_dependencies": [
+        "matplotlib",
+        "pandas"
+      ],
+      "missing_eval_dependency_count": 2,
       "pass_rate": 0.3333333333333333,
       "passed": 1,
       "policy_id": "trained-orchestrator",
@@ -17,7 +34,7 @@
     }
   ],
   "record_count": 6,
-  "schema_version": "mempool.orchestrated_prompt_set_evaluation.v1",
+  "schema_version": "mempool.orchestrated_prompt_set_evaluation.v2",
   "task_files": [
     "research/evals/20260628-normal-offset316-eligible-tasks.json",
     "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json"

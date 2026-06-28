@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections import defaultdict
 from dataclasses import asdict
 from pathlib import Path
@@ -29,6 +30,13 @@ def load_executions(path: Path) -> list[dict[str, Any]]:
     if not isinstance(executions, list):
         raise ValueError("comparison artifact missing executions list")
     return [dict(item) for item in executions]
+
+
+def missing_eval_dependencies(result: dict[str, Any]) -> list[str]:
+    metadata = result.get("metadata") or {}
+    stderr = str(metadata.get("stderr_tail") or "")
+    dependencies = sorted(set(re.findall(r"ModuleNotFoundError: No module named '([^']+)'", stderr)))
+    return dependencies
 
 
 def evaluate_execution(
@@ -63,14 +71,18 @@ def evaluate_execution(
     code = extract_python_code(content)
     adapter = SmokeCodeBenchmarkAdapter(task_path, timeout_seconds=timeout_seconds)
     result = adapter.evaluate_output(task, code)
+    result_payload = asdict(result)
+    missing_dependencies = missing_eval_dependencies(result_payload)
+    failure_mode = "missing_eval_dependency" if missing_dependencies else result.failure_mode
     return {
         **row,
         "passed": result.passed,
         "score": result.score,
-        "failure_mode": result.failure_mode,
+        "failure_mode": failure_mode,
         "task_file": str(task_path),
         "extracted_code_chars": len(code),
-        "result": asdict(result),
+        "missing_eval_dependencies": missing_dependencies,
+        "result": result_payload,
     }
 
 
@@ -81,12 +93,28 @@ def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     policy_summaries = []
     for policy_id, policy_rows in sorted(by_policy.items()):
         passed = sum(1 for row in policy_rows if row["passed"])
+        missing_dependency_count = sum(1 for row in policy_rows if row.get("failure_mode") == "missing_eval_dependency")
+        evaluable_rows = [row for row in policy_rows if row.get("failure_mode") != "missing_eval_dependency"]
+        evaluable_passed = sum(1 for row in evaluable_rows if row["passed"])
+        missing_dependencies = sorted(
+            {
+                dependency
+                for row in policy_rows
+                for dependency in row.get("missing_eval_dependencies", [])
+                if isinstance(dependency, str)
+            }
+        )
         policy_summaries.append(
             {
                 "policy_id": policy_id,
                 "record_count": len(policy_rows),
                 "passed": passed,
                 "pass_rate": passed / len(policy_rows) if policy_rows else 0.0,
+                "missing_eval_dependency_count": missing_dependency_count,
+                "missing_eval_dependencies": missing_dependencies,
+                "evaluable_record_count": len(evaluable_rows),
+                "evaluable_passed": evaluable_passed,
+                "evaluable_pass_rate": evaluable_passed / len(evaluable_rows) if evaluable_rows else 0.0,
                 "mean_latency_ms": sum(float(row.get("latency_ms") or 0.0) for row in policy_rows) / len(policy_rows)
                 if policy_rows
                 else 0.0,
@@ -94,6 +122,7 @@ def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
         )
     return {
         "record_count": len(rows),
+        "missing_eval_dependency_count": sum(1 for row in rows if row.get("failure_mode") == "missing_eval_dependency"),
         "policy_summaries": policy_summaries,
     }
 
@@ -117,7 +146,7 @@ def evaluate_prompt_set(
         for execution in executions
     ]
     report = {
-        "schema_version": "mempool.orchestrated_prompt_set_evaluation.v1",
+        "schema_version": "mempool.orchestrated_prompt_set_evaluation.v2",
         "comparison": str(comparison_path),
         "task_files": [str(path) for path in task_paths],
         "timeout_seconds": timeout_seconds,
