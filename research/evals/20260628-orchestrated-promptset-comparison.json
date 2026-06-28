@@ -1,0 +1,570 @@
+{
+  "dry_run": false,
+  "execution_count": 6,
+  "executions": [
+    {
+      "benchmark_id": "local-prompt-set",
+      "execution_status": "completed",
+      "fixed_worker_id": null,
+      "latency_ms": 2799,
+      "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+      "policy_id": "trained-orchestrator",
+      "prompt": "Return one concise sentence saying hello from mempool.",
+      "request": {
+        "chat_options": {},
+        "messages": [
+          {
+            "content": "You are a helpful worker model. Return the best answer you can.",
+            "role": "system"
+          },
+          {
+            "content": "Return one concise sentence saying hello from mempool.",
+            "role": "user"
+          }
+        ]
+      },
+      "response": {
+        "content": "Hello from mempool!",
+        "raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "Hello from mempool!",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1782612179,
+          "id": "chatcmpl-54",
+          "model": "qwen3-coder:480b",
+          "object": "chat.completion",
+          "system_fingerprint": "fp_ollama",
+          "usage": {
+            "completion_tokens": 6,
+            "prompt_tokens": 37,
+            "total_tokens": 43
+          }
+        }
+      },
+      "route": {
+        "abstain_probability": 0.41172508476460434,
+        "available_workers": [
+          "ollama-cloud-deepseek-v4-pro",
+          "ollama-cloud-glm-5.2",
+          "ollama-cloud-kimi-k2.7-code",
+          "ollama-cloud-qwen3-coder-480b"
+        ],
+        "benchmark_id": "local-prompt-set",
+        "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+        "model_type": "linear-multi-head-orchestrator",
+        "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_workflow": "direct",
+        "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+        "task_family": "general",
+        "task_id": "promptset-hello",
+        "verifier_probability": 0.6393136074570237,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.20445983786520647,
+          "ollama-cloud-glm-5.2": 0.24198126654671517,
+          "ollama-cloud-kimi-k2.7-code": 0.2315579453314777,
+          "ollama-cloud-qwen3-coder-480b": 0.3220009502566007
+        },
+        "workflow_distribution": {
+          "direct": 0.5877790742759372,
+          "verify_then_fallback": 0.4122209257240627
+        }
+      },
+      "schema_version": "mempool.orchestrated_execution.v1",
+      "selected_worker": {
+        "cost_usd": 0.0,
+        "id": "ollama-cloud-qwen3-coder-480b",
+        "model": "qwen3-coder:480b",
+        "strengths": [
+          "code_easy",
+          "code_text",
+          "code_data",
+          "bigcodebench_hard",
+          "agentic_coding"
+        ]
+      },
+      "task_family": "general",
+      "task_id": "promptset-hello",
+      "timestamp": "2026-06-28T02:02:59.735186+00:00",
+      "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+    },
+    {
+      "benchmark_id": "local-prompt-set",
+      "execution_status": "completed",
+      "fixed_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "latency_ms": 2073,
+      "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+      "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+      "prompt": "Return one concise sentence saying hello from mempool.",
+      "request": {
+        "chat_options": {},
+        "messages": [
+          {
+            "content": "You are a helpful worker model. Return the best answer you can.",
+            "role": "system"
+          },
+          {
+            "content": "Return one concise sentence saying hello from mempool.",
+            "role": "user"
+          }
+        ]
+      },
+      "response": {
+        "content": "Hello from mempool!",
+        "raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "Hello from mempool!",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1782612181,
+          "id": "chatcmpl-255",
+          "model": "qwen3-coder:480b",
+          "object": "chat.completion",
+          "system_fingerprint": "fp_ollama",
+          "usage": {
+            "completion_tokens": 6,
+            "prompt_tokens": 37,
+            "total_tokens": 43
+          }
+        }
+      },
+      "route": {
+        "abstain_probability": 0.41172508476460434,
+        "available_workers": [
+          "ollama-cloud-deepseek-v4-pro",
+          "ollama-cloud-glm-5.2",
+          "ollama-cloud-kimi-k2.7-code",
+          "ollama-cloud-qwen3-coder-480b"
+        ],
+        "benchmark_id": "local-prompt-set",
+        "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+        "model_type": "linear-multi-head-orchestrator",
+        "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+        "policy_selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_workflow": "direct",
+        "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+        "task_family": "general",
+        "task_id": "promptset-hello",
+        "verifier_probability": 0.6393136074570237,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.20445983786520647,
+          "ollama-cloud-glm-5.2": 0.24198126654671517,
+          "ollama-cloud-kimi-k2.7-code": 0.2315579453314777,
+          "ollama-cloud-qwen3-coder-480b": 0.3220009502566007
+        },
+        "workflow_distribution": {
+          "direct": 0.5877790742759372,
+          "verify_then_fallback": 0.4122209257240627
+        }
+      },
+      "schema_version": "mempool.orchestrated_execution.v1",
+      "selected_worker": {
+        "cost_usd": 0.0,
+        "id": "ollama-cloud-qwen3-coder-480b",
+        "model": "qwen3-coder:480b",
+        "strengths": [
+          "code_easy",
+          "code_text",
+          "code_data",
+          "bigcodebench_hard",
+          "agentic_coding"
+        ]
+      },
+      "task_family": "general",
+      "task_id": "promptset-hello",
+      "timestamp": "2026-06-28T02:03:01.811033+00:00",
+      "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+    },
+    {
+      "benchmark_id": "local-prompt-set",
+      "execution_status": "completed",
+      "fixed_worker_id": null,
+      "latency_ms": 2078,
+      "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+      "policy_id": "trained-orchestrator",
+      "prompt": "In two concise bullet points, describe a Python approach for reading text files from a directory and counting lowercase words.",
+      "request": {
+        "chat_options": {},
+        "messages": [
+          {
+            "content": "You are a helpful worker model. Return the best answer you can.",
+            "role": "system"
+          },
+          {
+            "content": "In two concise bullet points, describe a Python approach for reading text files from a directory and counting lowercase words.",
+            "role": "user"
+          }
+        ]
+      },
+      "response": {
+        "content": "\u2022 Use `os.listdir()` or `pathlib.Path.iterdir()` to iterate through files in a directory, then open each text file with `open()` and read its contents using `read()` or `readlines()`.\n\n\u2022 Split the text into words using `split()` or regex patterns, convert to lowercase with `lower()`, and use a dictionary or `collections.Counter` to tally word frequencies.",
+        "raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "\u2022 Use `os.listdir()` or `pathlib.Path.iterdir()` to iterate through files in a directory, then open each text file with `open()` and read its contents using `read()` or `readlines()`.\n\n\u2022 Split the text into words using `split()` or regex patterns, convert to lowercase with `lower()`, and use a dictionary or `collections.Counter` to tally word frequencies.",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1782612183,
+          "id": "chatcmpl-314",
+          "model": "qwen3-coder:480b",
+          "object": "chat.completion",
+          "system_fingerprint": "fp_ollama",
+          "usage": {
+            "completion_tokens": 82,
+            "prompt_tokens": 49,
+            "total_tokens": 131
+          }
+        }
+      },
+      "route": {
+        "abstain_probability": 0.26868389850093133,
+        "available_workers": [
+          "ollama-cloud-deepseek-v4-pro",
+          "ollama-cloud-glm-5.2",
+          "ollama-cloud-kimi-k2.7-code",
+          "ollama-cloud-qwen3-coder-480b"
+        ],
+        "benchmark_id": "local-prompt-set",
+        "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+        "model_type": "linear-multi-head-orchestrator",
+        "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_workflow": "direct",
+        "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+        "task_family": "bigcodebench_hard",
+        "task_id": "promptset-filesystem-plan",
+        "verifier_probability": 0.5532116080378017,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.18930186620972653,
+          "ollama-cloud-glm-5.2": 0.29960289939046214,
+          "ollama-cloud-kimi-k2.7-code": 0.18487082347333042,
+          "ollama-cloud-qwen3-coder-480b": 0.32622441092648097
+        },
+        "workflow_distribution": {
+          "direct": 0.7325377126494415,
+          "verify_then_fallback": 0.2674622873505586
+        }
+      },
+      "schema_version": "mempool.orchestrated_execution.v1",
+      "selected_worker": {
+        "cost_usd": 0.0,
+        "id": "ollama-cloud-qwen3-coder-480b",
+        "model": "qwen3-coder:480b",
+        "strengths": [
+          "code_easy",
+          "code_text",
+          "code_data",
+          "bigcodebench_hard",
+          "agentic_coding"
+        ]
+      },
+      "task_family": "bigcodebench_hard",
+      "task_id": "promptset-filesystem-plan",
+      "timestamp": "2026-06-28T02:03:03.891564+00:00",
+      "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+    },
+    {
+      "benchmark_id": "local-prompt-set",
+      "execution_status": "completed",
+      "fixed_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "latency_ms": 2096,
+      "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+      "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+      "prompt": "In two concise bullet points, describe a Python approach for reading text files from a directory and counting lowercase words.",
+      "request": {
+        "chat_options": {},
+        "messages": [
+          {
+            "content": "You are a helpful worker model. Return the best answer you can.",
+            "role": "system"
+          },
+          {
+            "content": "In two concise bullet points, describe a Python approach for reading text files from a directory and counting lowercase words.",
+            "role": "user"
+          }
+        ]
+      },
+      "response": {
+        "content": "\u2022 Use `os.listdir()` or `pathlib.Path.iterdir()` to iterate through files in a directory, then open each text file with `open()` and read its contents using `read()` or `readlines()`.\n\n\u2022 Split the text into words using `split()` or regex patterns, convert to lowercase with `lower()`, and use a dictionary or `collections.Counter` to tally word frequencies.",
+        "raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "\u2022 Use `os.listdir()` or `pathlib.Path.iterdir()` to iterate through files in a directory, then open each text file with `open()` and read its contents using `read()` or `readlines()`.\n\n\u2022 Split the text into words using `split()` or regex patterns, convert to lowercase with `lower()`, and use a dictionary or `collections.Counter` to tally word frequencies.",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1782612185,
+          "id": "chatcmpl-122",
+          "model": "qwen3-coder:480b",
+          "object": "chat.completion",
+          "system_fingerprint": "fp_ollama",
+          "usage": {
+            "completion_tokens": 82,
+            "prompt_tokens": 49,
+            "total_tokens": 131
+          }
+        }
+      },
+      "route": {
+        "abstain_probability": 0.26868389850093133,
+        "available_workers": [
+          "ollama-cloud-deepseek-v4-pro",
+          "ollama-cloud-glm-5.2",
+          "ollama-cloud-kimi-k2.7-code",
+          "ollama-cloud-qwen3-coder-480b"
+        ],
+        "benchmark_id": "local-prompt-set",
+        "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+        "model_type": "linear-multi-head-orchestrator",
+        "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+        "policy_selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_workflow": "direct",
+        "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+        "task_family": "bigcodebench_hard",
+        "task_id": "promptset-filesystem-plan",
+        "verifier_probability": 0.5532116080378017,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.18930186620972653,
+          "ollama-cloud-glm-5.2": 0.29960289939046214,
+          "ollama-cloud-kimi-k2.7-code": 0.18487082347333042,
+          "ollama-cloud-qwen3-coder-480b": 0.32622441092648097
+        },
+        "workflow_distribution": {
+          "direct": 0.7325377126494415,
+          "verify_then_fallback": 0.2674622873505586
+        }
+      },
+      "schema_version": "mempool.orchestrated_execution.v1",
+      "selected_worker": {
+        "cost_usd": 0.0,
+        "id": "ollama-cloud-qwen3-coder-480b",
+        "model": "qwen3-coder:480b",
+        "strengths": [
+          "code_easy",
+          "code_text",
+          "code_data",
+          "bigcodebench_hard",
+          "agentic_coding"
+        ]
+      },
+      "task_family": "bigcodebench_hard",
+      "task_id": "promptset-filesystem-plan",
+      "timestamp": "2026-06-28T02:03:05.989215+00:00",
+      "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+    },
+    {
+      "benchmark_id": "local-prompt-set",
+      "execution_status": "completed",
+      "fixed_worker_id": null,
+      "latency_ms": 2752,
+      "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+      "policy_id": "trained-orchestrator",
+      "prompt": "In one concise sentence, describe how to fetch JSON from a URL and return a sorted list of keys.",
+      "request": {
+        "chat_options": {},
+        "messages": [
+          {
+            "content": "You are a helpful worker model. Return the best answer you can.",
+            "role": "system"
+          },
+          {
+            "content": "In one concise sentence, describe how to fetch JSON from a URL and return a sorted list of keys.",
+            "role": "user"
+          }
+        ]
+      },
+      "response": {
+        "content": "Use `requests.get()` to fetch the JSON data from the URL, then parse it with `.json()` and return `sorted(data.keys())`.",
+        "raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "Use `requests.get()` to fetch the JSON data from the URL, then parse it with `.json()` and return `sorted(data.keys())`.",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1782612188,
+          "id": "chatcmpl-525",
+          "model": "qwen3-coder:480b",
+          "object": "chat.completion",
+          "system_fingerprint": "fp_ollama",
+          "usage": {
+            "completion_tokens": 30,
+            "prompt_tokens": 48,
+            "total_tokens": 78
+          }
+        }
+      },
+      "route": {
+        "abstain_probability": 0.17897424049249522,
+        "available_workers": [
+          "ollama-cloud-deepseek-v4-pro",
+          "ollama-cloud-glm-5.2",
+          "ollama-cloud-kimi-k2.7-code",
+          "ollama-cloud-qwen3-coder-480b"
+        ],
+        "benchmark_id": "local-prompt-set",
+        "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+        "model_type": "linear-multi-head-orchestrator",
+        "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_workflow": "direct",
+        "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+        "task_family": "bigcodebench_hard",
+        "task_id": "promptset-network-json",
+        "verifier_probability": 0.3798244838302789,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2102422508898909,
+          "ollama-cloud-glm-5.2": 0.23322370089850655,
+          "ollama-cloud-kimi-k2.7-code": 0.1926521561321024,
+          "ollama-cloud-qwen3-coder-480b": 0.36388189207950017
+        },
+        "workflow_distribution": {
+          "direct": 0.8748718687479764,
+          "verify_then_fallback": 0.12512813125202368
+        }
+      },
+      "schema_version": "mempool.orchestrated_execution.v1",
+      "selected_worker": {
+        "cost_usd": 0.0,
+        "id": "ollama-cloud-qwen3-coder-480b",
+        "model": "qwen3-coder:480b",
+        "strengths": [
+          "code_easy",
+          "code_text",
+          "code_data",
+          "bigcodebench_hard",
+          "agentic_coding"
+        ]
+      },
+      "task_family": "bigcodebench_hard",
+      "task_id": "promptset-network-json",
+      "timestamp": "2026-06-28T02:03:08.743187+00:00",
+      "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+    },
+    {
+      "benchmark_id": "local-prompt-set",
+      "execution_status": "completed",
+      "fixed_worker_id": "ollama-cloud-qwen3-coder-480b",
+      "latency_ms": 1564,
+      "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+      "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+      "prompt": "In one concise sentence, describe how to fetch JSON from a URL and return a sorted list of keys.",
+      "request": {
+        "chat_options": {},
+        "messages": [
+          {
+            "content": "You are a helpful worker model. Return the best answer you can.",
+            "role": "system"
+          },
+          {
+            "content": "In one concise sentence, describe how to fetch JSON from a URL and return a sorted list of keys.",
+            "role": "user"
+          }
+        ]
+      },
+      "response": {
+        "content": "Use `requests.get()` to fetch the JSON data from the URL, then parse it with `.json()` and return `sorted(data.keys())` to get the sorted list of keys.",
+        "raw": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "Use `requests.get()` to fetch the JSON data from the URL, then parse it with `.json()` and return `sorted(data.keys())` to get the sorted list of keys.",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1782612190,
+          "id": "chatcmpl-701",
+          "model": "qwen3-coder:480b",
+          "object": "chat.completion",
+          "system_fingerprint": "fp_ollama",
+          "usage": {
+            "completion_tokens": 38,
+            "prompt_tokens": 48,
+            "total_tokens": 86
+          }
+        }
+      },
+      "route": {
+        "abstain_probability": 0.17897424049249522,
+        "available_workers": [
+          "ollama-cloud-deepseek-v4-pro",
+          "ollama-cloud-glm-5.2",
+          "ollama-cloud-kimi-k2.7-code",
+          "ollama-cloud-qwen3-coder-480b"
+        ],
+        "benchmark_id": "local-prompt-set",
+        "model_path": "research/models/20260628-m5-current-task-66task-multihead.json",
+        "model_type": "linear-multi-head-orchestrator",
+        "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+        "policy_selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "selected_workflow": "direct",
+        "substrate": "research/datasets/20260628-m5-current-task-66task-substrate.jsonl",
+        "task_family": "bigcodebench_hard",
+        "task_id": "promptset-network-json",
+        "verifier_probability": 0.3798244838302789,
+        "worker_distribution": {
+          "ollama-cloud-deepseek-v4-pro": 0.2102422508898909,
+          "ollama-cloud-glm-5.2": 0.23322370089850655,
+          "ollama-cloud-kimi-k2.7-code": 0.1926521561321024,
+          "ollama-cloud-qwen3-coder-480b": 0.36388189207950017
+        },
+        "workflow_distribution": {
+          "direct": 0.8748718687479764,
+          "verify_then_fallback": 0.12512813125202368
+        }
+      },
+      "schema_version": "mempool.orchestrated_execution.v1",
+      "selected_worker": {
+        "cost_usd": 0.0,
+        "id": "ollama-cloud-qwen3-coder-480b",
+        "model": "qwen3-coder:480b",
+        "strengths": [
+          "code_easy",
+          "code_text",
+          "code_data",
+          "bigcodebench_hard",
+          "agentic_coding"
+        ]
+      },
+      "task_family": "bigcodebench_hard",
+      "task_id": "promptset-network-json",
+      "timestamp": "2026-06-28T02:03:10.309145+00:00",
+      "worker_pool_path": "research/evals/ollama_cloud_worker_pool_top4.json"
+    }
+  ],
+  "fixed_worker_id": "ollama-cloud-qwen3-coder-480b",
+  "model": "research/models/20260628-m5-current-task-66task-multihead.json",
+  "prompt_count": 3,
+  "prompt_set": "research/evals/20260628-orchestrated-promptset-comparison-prompts.json",
+  "schema_version": "mempool.orchestrated_prompt_set_comparison.v1",
+  "worker_pool": "research/evals/ollama_cloud_worker_pool_top4.json"
+}

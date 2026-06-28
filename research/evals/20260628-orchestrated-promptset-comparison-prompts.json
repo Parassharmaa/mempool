@@ -1,0 +1,24 @@
+{
+  "prompts": [
+    {
+      "task_id": "promptset-hello",
+      "task_family": "general",
+      "categories": ["general"],
+      "prompt": "Return one concise sentence saying hello from mempool."
+    },
+    {
+      "task_id": "promptset-filesystem-plan",
+      "task_family": "bigcodebench_hard",
+      "categories": ["filesystem", "text"],
+      "libraries": ["pathlib", "collections"],
+      "prompt": "In two concise bullet points, describe a Python approach for reading text files from a directory and counting lowercase words."
+    },
+    {
+      "task_id": "promptset-network-json",
+      "task_family": "bigcodebench_hard",
+      "categories": ["network", "data-processing"],
+      "libraries": ["json", "urllib"],
+      "prompt": "In one concise sentence, describe how to fetch JSON from a URL and return a sorted list of keys."
+    }
+  ]
+}

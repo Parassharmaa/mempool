@@ -77,6 +77,55 @@ def build_openai_compatible_client(worker_pool: dict[str, Any]) -> OpenAICompati
     )
 
 
+def _execution_record(
+    *,
+    model_path: str | Path,
+    worker_pool_path: str | Path,
+    worker_pool: dict[str, Any],
+    selected_worker: dict[str, Any],
+    prompt: str,
+    task_id: str,
+    benchmark_id: str,
+    task_family: str,
+    messages: list[dict[str, str]],
+    route: dict[str, Any],
+    response: dict[str, Any],
+    latency_ms: int,
+    execution_status: str,
+    policy_id: str,
+    fixed_worker_id: str | None = None,
+) -> dict[str, Any]:
+    return {
+        "schema_version": "mempool.orchestrated_execution.v1",
+        "timestamp": utc_now(),
+        "model_path": str(model_path),
+        "worker_pool_path": str(worker_pool_path),
+        "policy_id": policy_id,
+        "fixed_worker_id": fixed_worker_id,
+        "task_id": task_id,
+        "benchmark_id": benchmark_id,
+        "task_family": task_family,
+        "prompt": prompt,
+        "route": route,
+        "selected_worker": {
+            "id": selected_worker["id"],
+            "model": selected_worker["model"],
+            "strengths": selected_worker.get("strengths", []),
+            "cost_usd": selected_worker.get("cost_usd", 0.0),
+        },
+        "request": {
+            "messages": messages,
+            "chat_options": worker_pool.get("chat_options") or {},
+        },
+        "response": {
+            "content": chat_content(response),
+            "raw": response,
+        },
+        "latency_ms": latency_ms,
+        "execution_status": execution_status,
+    }
+
+
 def execute_orchestrated_prompt(
     *,
     model_path: str | Path,
@@ -109,64 +158,121 @@ def execute_orchestrated_prompt(
         {"role": "user", "content": prompt},
     ]
     if dry_run:
-        return {
-            "schema_version": "mempool.orchestrated_execution.v1",
-            "timestamp": utc_now(),
-            "model_path": str(model_path),
-            "worker_pool_path": str(worker_pool_path),
-            "task_id": task_id,
-            "benchmark_id": benchmark_id,
-            "task_family": task_family,
-            "prompt": prompt,
-            "route": route,
-            "selected_worker": {
-                "id": selected_worker["id"],
-                "model": selected_worker["model"],
-                "strengths": selected_worker.get("strengths", []),
-                "cost_usd": selected_worker.get("cost_usd", 0.0),
-            },
-            "request": {
-                "messages": messages,
-                "chat_options": worker_pool.get("chat_options") or {},
-            },
-            "response": {
-                "content": "",
-                "raw": {},
-            },
-            "latency_ms": 0,
-            "execution_status": "dry_run",
-        }
+        return _execution_record(
+            model_path=model_path,
+            worker_pool_path=worker_pool_path,
+            worker_pool=worker_pool,
+            selected_worker=selected_worker,
+            prompt=prompt,
+            task_id=task_id,
+            benchmark_id=benchmark_id,
+            task_family=task_family,
+            messages=messages,
+            route=route,
+            response={},
+            latency_ms=0,
+            execution_status="dry_run",
+            policy_id="trained-orchestrator",
+        )
     chat_client = client or build_openai_compatible_client(worker_pool)
     started = time.perf_counter()
     response = chat_client.chat(selected_worker["model"], messages)
     latency_ms = int((time.perf_counter() - started) * 1000)
-    return {
-        "schema_version": "mempool.orchestrated_execution.v1",
-        "timestamp": utc_now(),
-        "model_path": str(model_path),
-        "worker_pool_path": str(worker_pool_path),
-        "task_id": task_id,
-        "benchmark_id": benchmark_id,
-        "task_family": task_family,
-        "prompt": prompt,
-        "route": route,
-        "selected_worker": {
-            "id": selected_worker["id"],
-            "model": selected_worker["model"],
-            "strengths": selected_worker.get("strengths", []),
-            "cost_usd": selected_worker.get("cost_usd", 0.0),
-        },
-        "request": {
-            "messages": messages,
-            "chat_options": worker_pool.get("chat_options") or {},
-        },
-        "response": {
-            "content": chat_content(response),
-            "raw": response,
-        },
-        "latency_ms": latency_ms,
-        "execution_status": "completed",
+    return _execution_record(
+        model_path=model_path,
+        worker_pool_path=worker_pool_path,
+        worker_pool=worker_pool,
+        selected_worker=selected_worker,
+        prompt=prompt,
+        task_id=task_id,
+        benchmark_id=benchmark_id,
+        task_family=task_family,
+        messages=messages,
+        route=route,
+        response=response,
+        latency_ms=latency_ms,
+        execution_status="completed",
+        policy_id="trained-orchestrator",
+    )
+
+
+def execute_fixed_worker_prompt(
+    *,
+    model_path: str | Path,
+    worker_pool_path: str | Path,
+    fixed_worker_id: str,
+    prompt: str,
+    task_id: str = "ad-hoc",
+    benchmark_id: str = "ad-hoc",
+    task_family: str = "ad_hoc",
+    categories: list[str] | None = None,
+    libraries: list[str] | None = None,
+    missing_libraries: list[str] | None = None,
+    system_prompt: str = "You are a helpful worker model. Return the best answer you can.",
+    client: ChatClient | None = None,
+    dry_run: bool = False,
+) -> dict[str, Any]:
+    worker_pool = load_worker_pool(worker_pool_path)
+    record = build_prompt_record(
+        prompt=prompt,
+        task_id=task_id,
+        benchmark_id=benchmark_id,
+        task_family=task_family,
+        categories=categories,
+        libraries=libraries,
+        missing_libraries=missing_libraries,
+    )
+    route = predict_orchestration(model_path=model_path, record=record)
+    selected_worker = worker_by_id(worker_pool, fixed_worker_id)
+    route = {
+        **route,
+        "policy_selected_worker_id": route["selected_worker_id"],
+        "selected_worker_id": fixed_worker_id,
+        "policy_id": f"fixed-worker:{fixed_worker_id}",
     }
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": prompt},
+    ]
+    if dry_run:
+        return _execution_record(
+            model_path=model_path,
+            worker_pool_path=worker_pool_path,
+            worker_pool=worker_pool,
+            selected_worker=selected_worker,
+            prompt=prompt,
+            task_id=task_id,
+            benchmark_id=benchmark_id,
+            task_family=task_family,
+            messages=messages,
+            route=route,
+            response={},
+            latency_ms=0,
+            execution_status="dry_run",
+            policy_id=f"fixed-worker:{fixed_worker_id}",
+            fixed_worker_id=fixed_worker_id,
+        )
+    chat_client = client or build_openai_compatible_client(worker_pool)
+    started = time.perf_counter()
+    response = chat_client.chat(selected_worker["model"], messages)
+    latency_ms = int((time.perf_counter() - started) * 1000)
+    return _execution_record(
+        model_path=model_path,
+        worker_pool_path=worker_pool_path,
+        worker_pool=worker_pool,
+        selected_worker=selected_worker,
+        prompt=prompt,
+        task_id=task_id,
+        benchmark_id=benchmark_id,
+        task_family=task_family,
+        messages=messages,
+        route=route,
+        response=response,
+        latency_ms=latency_ms,
+        execution_status="completed",
+        policy_id=f"fixed-worker:{fixed_worker_id}",
+        fixed_worker_id=fixed_worker_id,
+    )
 
 
 def flatten_orchestrated_execution(result: dict[str, Any]) -> dict[str, Any]:
@@ -184,6 +290,8 @@ def flatten_orchestrated_execution(result: dict[str, Any]) -> dict[str, Any]:
         "timestamp": result.get("timestamp"),
         "model_path": result.get("model_path"),
         "worker_pool_path": result.get("worker_pool_path"),
+        "policy_id": result.get("policy_id"),
+        "fixed_worker_id": result.get("fixed_worker_id"),
         "selected_worker_id": selected_worker.get("id"),
         "selected_model": selected_worker.get("model"),
         "selected_workflow": route.get("selected_workflow"),

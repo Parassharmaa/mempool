@@ -5,6 +5,7 @@ from pathlib import Path
 
 from mempool.multi_head_orchestrator import train_multi_head_orchestrator
 from mempool.orchestrated_executor import (
+    execute_fixed_worker_prompt,
     execute_orchestrated_prompt,
     flatten_orchestrated_execution,
     load_worker_pool,
@@ -111,6 +112,56 @@ class OrchestratedExecutorTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not present"):
             worker_by_id(payload, "missing")
 
+    def test_fixed_worker_execution_overrides_policy_selection(self) -> None:
+        records = [
+            example("t1", "filesystem", "glm"),
+            example("t2", "network", "qwen"),
+        ]
+        model, _ = train_multi_head_orchestrator(records, epochs=80, learning_rate=0.05)
+        fake_client = FakeClient()
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            model_path = root / "model.json"
+            model_path.write_text(
+                json.dumps(
+                    {
+                        "model_type": "linear-multi-head-orchestrator",
+                        "substrate": "fixture.jsonl",
+                        "orchestrator": model.to_dict(),
+                    }
+                ),
+                encoding="utf-8",
+            )
+            worker_pool = root / "pool.json"
+            worker_pool.write_text(
+                json.dumps(
+                    {
+                        "base_url": "http://localhost:11434/v1",
+                        "workers": [
+                            {"id": "glm", "model": "glm-5.2"},
+                            {"id": "qwen", "model": "qwen3-coder:480b"},
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            result = execute_fixed_worker_prompt(
+                model_path=model_path,
+                worker_pool_path=worker_pool,
+                fixed_worker_id="qwen",
+                prompt="Please solve a filesystem task.",
+                categories=["filesystem"],
+                client=fake_client,
+            )
+
+        self.assertEqual(result["policy_id"], "fixed-worker:qwen")
+        self.assertEqual(result["fixed_worker_id"], "qwen")
+        self.assertEqual(result["route"]["policy_selected_worker_id"], "glm")
+        self.assertEqual(result["route"]["selected_worker_id"], "qwen")
+        self.assertEqual(result["selected_worker"]["model"], "qwen3-coder:480b")
+        self.assertEqual(fake_client.calls[0]["model"], "qwen3-coder:480b")
+
     def test_dry_run_returns_route_without_calling_client(self) -> None:
         records = [example("t1", "filesystem", "glm")]
         model, _ = train_multi_head_orchestrator(records, epochs=10, learning_rate=0.05)
@@ -157,6 +208,7 @@ class OrchestratedExecutorTest(unittest.TestCase):
             "timestamp": "2026-06-28T00:00:00+00:00",
             "model_path": "model.json",
             "worker_pool_path": "pool.json",
+            "policy_id": "trained-orchestrator",
             "task_id": "adhoc",
             "benchmark_id": "local-ad-hoc",
             "task_family": "bigcodebench_hard",
@@ -179,6 +231,7 @@ class OrchestratedExecutorTest(unittest.TestCase):
         self.assertEqual(row["schema_version"], "mempool.orchestrated_execution_outcome.v1")
         self.assertEqual(row["selected_worker_id"], "glm")
         self.assertEqual(row["selected_model"], "glm-5.2")
+        self.assertEqual(row["policy_id"], "trained-orchestrator")
         self.assertEqual(row["response_chars"], 6)
         self.assertTrue(row["response_present"])
         self.assertIsNone(row["passed"])

@@ -94,3 +94,13 @@ First live orchestrated execution is recorded:
 
 That run selected `ollama-cloud-qwen3-coder-480b`, executed
 `qwen3-coder:480b`, and received `Hello from mempool!` in 2057 ms.
+
+The first live prompt-set comparison is also recorded:
+
+- `research/evals/20260628-orchestrated-promptset-comparison.json`
+- `research/evals/20260628-orchestrated-promptset-comparison-outcomes.jsonl`
+
+It ran 3 prompts under both the trained-orchestrator policy and a fixed
+`ollama-cloud-qwen3-coder-480b` baseline. The orchestrator selected Qwen for all
+3 prompts, so this validates the repeatable comparison path but not routing
+diversity.
