@@ -131,3 +131,16 @@ Qwen was 0/1. The positive row was
 as `missing_eval_dependency` because `matplotlib` and `pandas` were
 unavailable, so this is an encouraging quality signal but still not a promotion
 signal.
+
+To prevent future comparison runs from producing dependency-coupled labels, a
+current-environment evaluable task manifest is now recorded:
+
+- `research/evals/20260628-current-env-evaluable-tasks.json`
+- `research/evals/20260628-current-env-evaluable-tasks-report.json`
+
+Across the 40-task union used by the non-Qwen comparison source files, 27 tasks
+are import-preflight evaluable in the current Python environment and 13 are
+excluded because they require unavailable imports such as `bs4`, `matplotlib`,
+`numpy`, `pandas`, `requests`, or `sklearn`. Use this manifest, or a pinned
+benchmark environment, before converting future live rows into router-training
+labels.

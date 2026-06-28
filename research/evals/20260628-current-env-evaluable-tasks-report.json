@@ -1,0 +1,578 @@
+{
+  "evaluable_task_count": 27,
+  "excluded_task_count": 13,
+  "input_task_count": 40,
+  "missing_import_roots": [
+    "bs4",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "requests",
+    "sklearn"
+  ],
+  "schema_version": "mempool.evaluable_task_filter.v1",
+  "task_files": [
+    "research/evals/20260628-normal-offset316-eligible-tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json"
+  ],
+  "tasks": [
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "os",
+        "random",
+        "subprocess",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-320"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "os",
+        "shutil",
+        "subprocess",
+        "sys",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-322"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "subprocess",
+        "threading",
+        "time",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-324"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "glob",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-325"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "glob",
+        "os",
+        "subprocess",
+        "sys",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-326"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "collections",
+        "csv",
+        "doctest",
+        "os",
+        "re",
+        "shutil",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-327"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "collections",
+        "queue",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-328"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "json",
+        "os",
+        "re",
+        "shutil",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-329"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "heapq",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-330"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "bisect",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-331"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "heapq",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-333"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "collections",
+        "queue",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-335"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "glob",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-336"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "hashlib",
+        "hmac",
+        "json",
+        "unittest",
+        "urllib"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-339"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "random",
+        "re",
+        "string",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-342"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "os",
+        "shutil",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-344"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "os",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-346"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "os",
+        "signal",
+        "subprocess",
+        "time",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-348"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "doctest",
+        "glob",
+        "os",
+        "shutil",
+        "subprocess",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-350"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "itertools",
+        "json",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/20260628-normal-offset316-eligible-tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-358"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "matplotlib",
+        "numpy",
+        "pandas"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-942"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "datetime",
+        "pandas",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "pandas"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-952"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "collections",
+        "matplotlib",
+        "numpy",
+        "re",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "matplotlib",
+        "numpy"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-955"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "glob",
+        "os",
+        "pathlib",
+        "tempfile",
+        "unittest",
+        "zipfile"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-963"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "sklearn",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "numpy",
+        "pandas",
+        "sklearn"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-969"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "json",
+        "math",
+        "os",
+        "pandas",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "pandas"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-985"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "os",
+        "pathlib",
+        "re",
+        "tempfile",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-988"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "base64",
+        "binascii",
+        "codecs",
+        "unittest",
+        "urllib"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-990"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "hashlib",
+        "os",
+        "tarfile",
+        "unittest",
+        "urllib"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-998"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "collections",
+        "csv",
+        "os",
+        "unittest",
+        "urllib"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-999"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "collections",
+        "matplotlib",
+        "re",
+        "unittest",
+        "urllib"
+      ],
+      "missing_import_roots": [
+        "matplotlib"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1004"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "os",
+        "requests",
+        "shutil",
+        "unittest",
+        "zipfile"
+      ],
+      "missing_import_roots": [
+        "requests"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1006"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "pathlib",
+        "requests",
+        "shutil",
+        "unittest",
+        "zipfile"
+      ],
+      "missing_import_roots": [
+        "requests"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1012"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "bs4",
+        "csv",
+        "os",
+        "requests",
+        "unittest",
+        "urllib"
+      ],
+      "missing_import_roots": [
+        "bs4",
+        "requests"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1013"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "datetime",
+        "io",
+        "os",
+        "pandas",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "pandas"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1022"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "hashlib",
+        "os",
+        "ssl",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1039"
+    },
+    {
+      "evaluable_in_current_env": true,
+      "import_roots": [
+        "email",
+        "getpass",
+        "smtplib",
+        "unittest"
+      ],
+      "missing_import_roots": [],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1042"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "matplotlib",
+        "os",
+        "pandas",
+        "sklearn",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "matplotlib",
+        "pandas",
+        "sklearn"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1053"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "itertools",
+        "numpy",
+        "pandas",
+        "random",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "numpy",
+        "pandas"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1057"
+    },
+    {
+      "evaluable_in_current_env": false,
+      "import_roots": [
+        "collections",
+        "matplotlib",
+        "re",
+        "string",
+        "unittest"
+      ],
+      "missing_import_roots": [
+        "matplotlib"
+      ],
+      "source_file": "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json",
+      "task_id": "bigcodebench-hard-BigCodeBench-1085"
+    }
+  ]
+}

@@ -765,3 +765,11 @@ terminal trajectories and emit per-turn examples with worker, workflow, action,
 verifier, repair, stop, and memory-update heads. Do not train or promote a
 turn-level policy until task-level reliability improves and real multi-turn
 trajectories are available.
+
+The prompt-set evaluator now separates missing benchmark runtime dependencies
+from ordinary model test failures. A current-environment preflight manifest at
+`research/evals/20260628-current-env-evaluable-tasks.json` filters the 40-task
+comparison-source union down to 27 locally evaluable tasks. Use this manifest
+for the next live task-level acquisition run unless we first add a pinned
+benchmark environment with packages such as `pandas`, `matplotlib`, `numpy`,
+`requests`, `bs4`, and `sklearn`.
