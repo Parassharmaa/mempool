@@ -1,0 +1,18 @@
+{
+  "action_counts": {
+    "inspect": 1,
+    "test": 1
+  },
+  "output": "research/evals/20260628-turn-level-substrate-example.jsonl",
+  "record_count": 2,
+  "schema_version": "mempool.agentic_turn_substrate.v1",
+  "target_worker_counts": {
+    "qwen": 2
+  },
+  "training_status": "schema_ready_not_trained",
+  "trajectory_count": 1,
+  "trajectory_path": "research/evals/20260628-turn-level-trajectory-example.jsonl",
+  "worker_ids": [
+    "qwen"
+  ]
+}

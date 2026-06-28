@@ -57,3 +57,8 @@ Turn-level agentic training should come after this task-level checkpoint is
 stronger. The intended design is to predict each agentic turn's worker,
 workflow, verifier, stop/repair/switch action, and memory-update decision from
 trajectory state.
+
+The turn-level substrate builder is now code-ready as a deferred path:
+`tools/build_agentic_turn_substrate.py` converts sanitized trajectory summaries
+into per-turn examples, while rejecting raw terminal output. It should remain a
+data-contract scaffold until real multi-turn trajectories exist.

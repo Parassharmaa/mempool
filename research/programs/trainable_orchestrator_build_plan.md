@@ -758,3 +758,10 @@ It is publishable as a research checkpoint, but not promotable: leave-one-out
 target accuracy is 0.5606 and mean latency regret is 2463.5 ms. Finish public
 repo setup with this checkpoint, then continue improving task-level specialist
 coverage before starting turn-level agentic training.
+
+Turn-level substrate scaffolding is now allowed as preparation, but not as the
+active training track. The converter should accept only sanitized, summary-level
+terminal trajectories and emit per-turn examples with worker, workflow, action,
+verifier, repair, stop, and memory-update heads. Do not train or promote a
+turn-level policy until task-level reliability improves and real multi-turn
+trajectories are available.
