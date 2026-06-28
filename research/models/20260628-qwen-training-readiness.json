@@ -1,0 +1,25 @@
+{
+  "backend": "transformers",
+  "backend_ready": false,
+  "dependency_status": {
+    "mlx": false,
+    "mlx_lm": false,
+    "torch": false,
+    "transformers": false
+  },
+  "machine": "arm64",
+  "platform": "macOS-26.3-arm64-arm-64bit-Mach-O",
+  "python_supported_for_torch": false,
+  "python_version": "3.14.4",
+  "ready_for_local_head_training": false,
+  "reasons": [
+    "missing transformers backend dependencies: torch, transformers",
+    "current Python 3.14.4 may not have stable PyTorch wheels"
+  ],
+  "recommendations": [
+    "create a Python 3.11 or 3.12 environment and install `.[qwen-train]`",
+    "prefer Python 3.11 or 3.12 for the first Qwen-small training run"
+  ],
+  "require_gpu": false,
+  "schema_version": "mempool.qwen_training_readiness.v1"
+}

@@ -76,10 +76,13 @@ research/datasets/20260628-qwen-small-logits-orchestrator-rows.jsonl
 ```
 
 The plan currently reports `can_train_here: false` because this checkout does
-not have the ML training stack installed. To train the first frozen-backbone
-heads locally:
+not have the ML training stack installed. The current training-readiness audit
+also shows that the active Python is `3.14.4`, which may not have stable PyTorch
+wheels. Use Python 3.11 or 3.12 for the first local frozen-backbone head run:
 
 ```bash
+python3.12 -m venv .venv-qwen-train
+source .venv-qwen-train/bin/activate
 python3 -m pip install -e '.[qwen-train]'
 PYTHONPATH=src python3 tools/train_qwen_logits_orchestrator.py \
   --plan-output research/models/local-qwen-logits-plan.json \
@@ -91,6 +94,13 @@ PYTHONPATH=src python3 tools/train_qwen_logits_orchestrator.py \
 For a serious run, use GPU or Apple MLX access and keep the backbone frozen for
 the first pass. Only try LoRA/backbone updates after the logits heads beat the
 linear router on held-out task-level routing.
+
+To check the current machine:
+
+```bash
+PYTHONPATH=src python3 tools/audit_qwen_training_readiness.py \
+  --output research/models/local-qwen-training-readiness.json
+```
 
 For bounded autonomous improvement runs, see
 `.agents/skills/research-loop/SKILL.md` and
@@ -107,4 +117,5 @@ PYTHONPATH=src python3 tools/train_multi_head_orchestrator.py \
 PYTHONPATH=src python3 tools/train_qwen_logits_orchestrator.py \
   --plan-output research/models/local-qwen-logits-plan.json \
   --rows-output research/datasets/local-qwen-logits-rows.jsonl
+PYTHONPATH=src python3 tools/audit_qwen_training_readiness.py
 ```

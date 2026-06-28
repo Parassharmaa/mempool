@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import platform
+import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
@@ -40,6 +42,57 @@ def training_dependencies_available(backend: str) -> bool:
     if backend == "mlx":
         return bool(status["mlx"] and status["mlx_lm"])
     raise ValueError(f"unsupported backend: {backend}")
+
+
+def audit_qwen_training_readiness(
+    *,
+    backend: str = "transformers",
+    require_gpu: bool = False,
+) -> dict[str, Any]:
+    if backend not in {"transformers", "mlx"}:
+        raise ValueError(f"unsupported backend: {backend}")
+    dependency_status = optional_dependency_status()
+    python_version = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
+    python_supported = sys.version_info < (3, 13)
+    backend_ready = training_dependencies_available(backend)
+    reasons = []
+    recommendations = []
+
+    if backend == "transformers":
+        missing = [name for name in ["torch", "transformers"] if not dependency_status[name]]
+        if missing:
+            reasons.append(f"missing transformers backend dependencies: {', '.join(missing)}")
+            recommendations.append("create a Python 3.11 or 3.12 environment and install `.[qwen-train]`")
+        if not python_supported:
+            reasons.append(f"current Python {python_version} may not have stable PyTorch wheels")
+            recommendations.append("prefer Python 3.11 or 3.12 for the first Qwen-small training run")
+    else:
+        missing = [name for name in ["mlx", "mlx_lm"] if not dependency_status[name]]
+        if missing:
+            reasons.append(f"missing MLX backend dependencies: {', '.join(missing)}")
+            recommendations.append("install `.[mlx-train]` on Apple Silicon or use a GPU host")
+
+    if require_gpu:
+        reasons.append("GPU/accelerator availability was requested but is not verified by this lightweight audit")
+        recommendations.append("run the training job on a GPU or Apple MLX machine for practical turnaround")
+
+    if not reasons and not require_gpu:
+        recommendations.append("run a frozen-backbone head-training smoke before enabling LoRA or backbone updates")
+
+    return {
+        "schema_version": "mempool.qwen_training_readiness.v1",
+        "backend": backend,
+        "platform": platform.platform(),
+        "machine": platform.machine(),
+        "python_version": python_version,
+        "python_supported_for_torch": python_supported,
+        "dependency_status": dependency_status,
+        "backend_ready": backend_ready,
+        "require_gpu": require_gpu,
+        "ready_for_local_head_training": backend_ready and python_supported and not require_gpu,
+        "reasons": reasons,
+        "recommendations": recommendations,
+    }
 
 
 def decision_text(example: dict[str, Any]) -> str:

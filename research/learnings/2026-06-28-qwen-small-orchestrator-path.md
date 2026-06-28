@@ -59,3 +59,12 @@ Attempted real training locally with `--train`, but the environment is missing
 `torch` and `transformers`, so the guard stopped before model download or
 training. We need to install the ML stack here or use GPU/MLX access for the
 first real head-training run.
+
+Follow-up readiness audit:
+
+- `research/models/20260628-qwen-training-readiness.json`
+
+The active environment is macOS arm64 with Python `3.14.4`; it has no
+`torch`, `transformers`, `mlx`, or `mlx_lm`. For local training, create a
+Python 3.11 or 3.12 environment and install `.[qwen-train]`. For a serious run,
+prefer GPU or Apple MLX access.

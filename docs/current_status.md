@@ -159,6 +159,15 @@ currently have `torch`, `transformers`, `mlx`, or `mlx_lm` installed. The real
 training command is wired, but the first Qwen-small head training run needs the
 ML stack installed or GPU/MLX access.
 
+The Qwen training readiness audit is recorded at:
+
+- `research/models/20260628-qwen-training-readiness.json`
+
+It reports macOS arm64 with Python `3.14.4`, no `torch`, no `transformers`, no
+`mlx`, and no `mlx_lm`. The recommended local path is a Python 3.11 or 3.12
+environment with `.[qwen-train]`; the recommended serious path is GPU or Apple
+MLX access.
+
 A clean current-environment live comparison is now recorded:
 
 - `research/evals/20260628-evaluable-live-comparison-prompts.json`

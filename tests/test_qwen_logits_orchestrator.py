@@ -5,6 +5,7 @@ from pathlib import Path
 
 from mempool.qwen_logits_orchestrator import (
     QwenLogitsTrainingConfig,
+    audit_qwen_training_readiness,
     build_qwen_logits_training_plan,
     decision_text,
     target_summary,
@@ -63,6 +64,14 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
         self.assertEqual(rows[0]["text"], "route this task")
         self.assertIn("torch", plan["dependency_status"])
         self.assertIn("freeze Qwen-small backbone", plan["training_order"])
+
+    def test_audits_training_readiness(self) -> None:
+        report = audit_qwen_training_readiness(backend="transformers")
+
+        self.assertEqual(report["schema_version"], "mempool.qwen_training_readiness.v1")
+        self.assertIn("python_version", report)
+        self.assertIn("torch", report["dependency_status"])
+        self.assertIsInstance(report["recommendations"], list)
 
 
 if __name__ == "__main__":

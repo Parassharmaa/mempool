@@ -789,3 +789,8 @@ latency was much worse for the router. Keep this as clean specialist evidence,
 not a promotion signal. Since Qwen-small head training is blocked locally by
 missing ML dependencies, the next best progress is either installing
 `torch`/`transformers` or continuing clean task-level acquisition.
+
+The Qwen training readiness audit now records the exact local blocker:
+`research/models/20260628-qwen-training-readiness.json`. The active Python is
+3.14.4 and the ML stack is absent, so the first real head-training run should
+use Python 3.11/3.12 with `.[qwen-train]`, or move to a GPU/MLX machine.
