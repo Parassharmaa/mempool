@@ -197,6 +197,16 @@ epoch over 66 rows using `Qwen/Qwen2.5-0.5B-Instruct` as the frozen backbone.
 The final smoke loss was 4.53756536136974. This is a real training artifact,
 but not yet a promoted policy.
 
+The trained heads were reloaded and evaluated on the same 66 rows:
+
+- worker accuracy: 0.3181818181818182
+- workflow accuracy: 0.8636363636363636
+- mean worker loss: 1.4604794980788773
+- mean workflow loss: 0.41937757511605567
+
+The path works end to end, but the one-epoch head is weak and needs longer
+training plus held-out evaluation before it can compete with the linear router.
+
 Hugging Face export folders are prepared under
 `research/hf_export/qwen-logits-smoke/`. Remote dataset/model creation is
 pending Hugging Face authentication.

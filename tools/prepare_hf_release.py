@@ -51,8 +51,19 @@ def write_dataset_card(path: Path, *, rows_name: str, row_count: int) -> None:
     )
 
 
-def write_model_card(path: Path, *, checkpoint_name: str, report: dict) -> None:
+def write_model_card(path: Path, *, checkpoint_name: str, report: dict, eval_report: dict | None = None) -> None:
     worker_ids = "\n".join(f"- `{worker}`" for worker in report.get("worker_ids", []))
+    eval_lines = []
+    if eval_report:
+        eval_lines = [
+            "",
+            "Smoke evaluation:",
+            "",
+            f"- Worker accuracy: `{eval_report.get('worker_accuracy')}`",
+            f"- Workflow accuracy: `{eval_report.get('workflow_accuracy')}`",
+            f"- Mean worker loss: `{eval_report.get('mean_worker_loss')}`",
+            f"- Mean workflow loss: `{eval_report.get('mean_workflow_loss')}`",
+        ]
     path.write_text(
         "\n".join(
             [
@@ -83,6 +94,7 @@ def write_model_card(path: Path, *, checkpoint_name: str, report: dict) -> None:
                 "Worker labels:",
                 "",
                 worker_ids,
+                *eval_lines,
                 "",
                 "This is a smoke artifact, not a promoted production policy.",
                 "",
@@ -103,8 +115,10 @@ def prepare_hf_release(
     dataset_dir = output_root / "dataset"
     model_export_dir = output_root / "model"
     train_report_path = model_dir / "train_report.json"
+    eval_report_path = model_dir / "eval_report.json"
     checkpoint_path = model_dir / "qwen_logits_heads.pt"
     report = json.loads(train_report_path.read_text(encoding="utf-8"))
+    eval_report = json.loads(eval_report_path.read_text(encoding="utf-8")) if eval_report_path.exists() else None
     rows = [line for line in rows_path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
     copy_file(rows_path, dataset_dir / rows_path.name)
@@ -114,9 +128,16 @@ def prepare_hf_release(
 
     copy_file(checkpoint_path, model_export_dir / checkpoint_path.name)
     copy_file(train_report_path, model_export_dir / train_report_path.name)
+    if eval_report_path.exists():
+        copy_file(eval_report_path, model_export_dir / eval_report_path.name)
     copy_file(plan_path, model_export_dir / plan_path.name)
     copy_file(readiness_path, model_export_dir / readiness_path.name)
-    write_model_card(model_export_dir / "README.md", checkpoint_name=checkpoint_path.name, report=report)
+    write_model_card(
+        model_export_dir / "README.md",
+        checkpoint_name=checkpoint_path.name,
+        report=report,
+        eval_report=eval_report,
+    )
 
     manifest = {
         "schema_version": "mempool.hf_release_manifest.v1",
@@ -125,6 +146,7 @@ def prepare_hf_release(
         "row_count": len(rows),
         "checkpoint_bytes": checkpoint_path.stat().st_size,
         "train_report": report,
+        "eval_report": eval_report,
     }
     output_root.mkdir(parents=True, exist_ok=True)
     (output_root / "manifest.json").write_text(

@@ -22,6 +22,10 @@ class PrepareHfReleaseTest(unittest.TestCase):
                 json.dumps({"record_count": 1, "worker_ids": ["w"], "history": [{"loss": 1.0}]}),
                 encoding="utf-8",
             )
+            (model_dir / "eval_report.json").write_text(
+                json.dumps({"worker_accuracy": 1.0, "workflow_accuracy": 1.0}),
+                encoding="utf-8",
+            )
             (model_dir / "qwen_logits_heads.pt").write_bytes(b"heads")
 
             manifest = prepare_hf_release(
@@ -36,6 +40,7 @@ class PrepareHfReleaseTest(unittest.TestCase):
             self.assertEqual(manifest["checkpoint_bytes"], 5)
             self.assertTrue((Path(manifest["dataset_dir"]) / "README.md").exists())
             self.assertTrue((Path(manifest["model_dir"]) / "qwen_logits_heads.pt").exists())
+            self.assertTrue((Path(manifest["model_dir"]) / "eval_report.json").exists())
 
 
 if __name__ == "__main__":

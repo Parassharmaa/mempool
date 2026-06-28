@@ -9,6 +9,8 @@ from mempool.qwen_logits_orchestrator import (
     audit_qwen_training_readiness,
     build_qwen_logits_training_plan,
     decision_text,
+    run_transformers_evaluation,
+    training_dependencies_available,
     target_summary,
 )
 
@@ -90,6 +92,16 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
 
         self.assertIs(align_hidden_dtype(hidden, Weight()), hidden)
         self.assertEqual(hidden.requested_dtype, "float32")
+
+    def test_transformers_evaluation_requires_dependencies(self) -> None:
+        if training_dependencies_available("transformers"):
+            self.skipTest("transformers backend is installed in this interpreter")
+        with self.assertRaises(RuntimeError):
+            run_transformers_evaluation(
+                training_rows_path=Path("missing.jsonl"),
+                checkpoint_path=Path("missing.pt"),
+                output_path=Path("missing-report.json"),
+            )
 
 
 if __name__ == "__main__":

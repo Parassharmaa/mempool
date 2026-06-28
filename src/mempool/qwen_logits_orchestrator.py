@@ -325,3 +325,139 @@ def run_transformers_training(
         encoding="utf-8",
     )
     return report
+
+
+def run_transformers_evaluation(
+    *,
+    training_rows_path: Path,
+    checkpoint_path: Path,
+    output_path: Path,
+) -> dict[str, Any]:
+    if not training_dependencies_available("transformers"):
+        raise RuntimeError("transformers evaluation requires installed torch and transformers packages")
+
+    import torch  # type: ignore[import-not-found]
+    from torch import nn  # type: ignore[import-not-found]
+    from torch.utils.data import DataLoader  # type: ignore[import-not-found]
+    from transformers import AutoModel, AutoTokenizer  # type: ignore[import-not-found]
+
+    checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
+    config = QwenLogitsTrainingConfig(**checkpoint["config"])
+    rows = [
+        json.loads(line)
+        for line in training_rows_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    worker_ids = list(checkpoint["worker_ids"])
+    workflow_labels = list(checkpoint["workflow_labels"])
+
+    tokenizer = AutoTokenizer.from_pretrained(config.base_model)
+    backbone = AutoModel.from_pretrained(config.base_model)
+    for parameter in backbone.parameters():
+        parameter.requires_grad = False
+    hidden_size = int(backbone.config.hidden_size)
+
+    class HeadModel(nn.Module):
+        def __init__(self) -> None:
+            super().__init__()
+            self.backbone = backbone
+            self.worker_head = nn.Linear(hidden_size, len(worker_ids))
+            self.workflow_head = nn.Linear(hidden_size, len(workflow_labels))
+            self.verifier_head = nn.Linear(hidden_size, 1)
+            self.abstain_head = nn.Linear(hidden_size, 1)
+
+        def forward(self, input_ids: Any, attention_mask: Any) -> dict[str, Any]:
+            outputs = self.backbone(input_ids=input_ids, attention_mask=attention_mask)
+            lengths = attention_mask.sum(dim=1).clamp(min=1) - 1
+            hidden = outputs.last_hidden_state[torch.arange(input_ids.shape[0]), lengths]
+            hidden = align_hidden_dtype(hidden, self.worker_head.weight)
+            return {
+                "worker_logits": self.worker_head(hidden),
+                "workflow_logits": self.workflow_head(hidden),
+                "verifier_logits": self.verifier_head(hidden).squeeze(-1),
+                "abstain_logits": self.abstain_head(hidden).squeeze(-1),
+            }
+
+    def collate(batch: list[dict[str, Any]]) -> dict[str, Any]:
+        encoded = tokenizer(
+            [row["text"] for row in batch],
+            truncation=True,
+            max_length=config.max_length,
+            padding=True,
+            return_tensors="pt",
+        )
+        worker_targets = torch.tensor(
+            [
+                [float(row["target"]["worker_distribution"].get(worker_id, 0.0)) for worker_id in worker_ids]
+                for row in batch
+            ],
+            dtype=torch.float32,
+        )
+        workflow_targets = torch.tensor(
+            [
+                [float(row["target"]["workflow_distribution"].get(label, 0.0)) for label in workflow_labels]
+                for row in batch
+            ],
+            dtype=torch.float32,
+        )
+        return {
+            **encoded,
+            "worker_targets": worker_targets,
+            "workflow_targets": workflow_targets,
+        }
+
+    model = HeadModel()
+    model.load_state_dict(checkpoint["head_state_dict"], strict=False)
+    model.eval()
+    loader = DataLoader(rows, batch_size=config.batch_size, shuffle=False, collate_fn=collate)
+
+    worker_correct = 0
+    workflow_correct = 0
+    total = 0
+    worker_loss_total = 0.0
+    workflow_loss_total = 0.0
+    predictions = []
+    with torch.no_grad():
+        for batch in loader:
+            outputs = model(batch["input_ids"], batch["attention_mask"])
+            worker_probs = torch.softmax(outputs["worker_logits"], dim=-1)
+            workflow_probs = torch.softmax(outputs["workflow_logits"], dim=-1)
+            worker_targets = batch["worker_targets"]
+            workflow_targets = batch["workflow_targets"]
+            worker_loss = -(worker_targets * torch.log(worker_probs.clamp_min(1e-12))).sum(dim=-1)
+            workflow_loss = -(workflow_targets * torch.log(workflow_probs.clamp_min(1e-12))).sum(dim=-1)
+            worker_predicted = worker_probs.argmax(dim=-1)
+            worker_target = worker_targets.argmax(dim=-1)
+            workflow_predicted = workflow_probs.argmax(dim=-1)
+            workflow_target = workflow_targets.argmax(dim=-1)
+            worker_correct += int((worker_predicted == worker_target).sum().item())
+            workflow_correct += int((workflow_predicted == workflow_target).sum().item())
+            worker_loss_total += float(worker_loss.sum().item())
+            workflow_loss_total += float(workflow_loss.sum().item())
+            for index in range(worker_probs.shape[0]):
+                predictions.append(
+                    {
+                        "predicted_worker_id": worker_ids[int(worker_predicted[index].item())],
+                        "target_worker_id": worker_ids[int(worker_target[index].item())],
+                        "predicted_workflow": workflow_labels[int(workflow_predicted[index].item())],
+                        "target_workflow": workflow_labels[int(workflow_target[index].item())],
+                    }
+                )
+            total += int(worker_probs.shape[0])
+
+    report = {
+        "schema_version": "mempool.qwen_logits_orchestrator_eval_report.v1",
+        "checkpoint": str(checkpoint_path),
+        "rows": str(training_rows_path),
+        "record_count": total,
+        "worker_accuracy": worker_correct / total if total else 0.0,
+        "workflow_accuracy": workflow_correct / total if total else 0.0,
+        "mean_worker_loss": worker_loss_total / total if total else 0.0,
+        "mean_workflow_loss": workflow_loss_total / total if total else 0.0,
+        "worker_ids": worker_ids,
+        "workflow_labels": workflow_labels,
+        "prediction_sample": predictions[:10],
+    }
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return report

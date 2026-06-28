@@ -799,6 +799,7 @@ That local path now works: `.venv-qwen-train` uses Python 3.11.14 with PyTorch,
 Transformers, and Apple MPS available. The first Qwen-small frozen-head smoke
 trained one epoch over 66 rows and wrote
 `research/models/20260628-qwen-small-logits-orchestrator-smoke/qwen_logits_heads.pt`.
-Next, publish the prepared Hugging Face dataset/model artifacts once auth is
-available, then add held-out evaluation for the Qwen-head checkpoint before any
-promotion discussion.
+Reloading that checkpoint and evaluating it on the same rows gives worker
+accuracy 0.3182 and workflow accuracy 0.8636. Next, publish the prepared Hugging
+Face dataset/model artifacts once auth is available, then run longer training
+and held-out evaluation before any promotion discussion.

@@ -37,9 +37,20 @@ Result:
 - loss: 4.53756536136974
 - checkpoint: `research/models/20260628-qwen-small-logits-orchestrator-smoke/qwen_logits_heads.pt`
 - train report: `research/models/20260628-qwen-small-logits-orchestrator-smoke/train_report.json`
+- eval report: `research/models/20260628-qwen-small-logits-orchestrator-smoke/eval_report.json`
 
 The checkpoint stores only the explicit routing heads, not the Qwen base model
 weights.
+
+Smoke evaluation on the same 66 rows:
+
+- worker accuracy: 0.3181818181818182
+- workflow accuracy: 0.8636363636363636
+- mean worker loss: 1.4604794980788773
+- mean workflow loss: 0.41937757511605567
+
+This confirms the checkpoint is loadable and evaluable, but the one-epoch head
+is weak and should not be promoted.
 
 ## Hugging Face Export
 
