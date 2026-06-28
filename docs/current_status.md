@@ -115,3 +115,15 @@ This time the orchestrator selected `GLM`, `Kimi`, and `DeepSeek` once each,
 matching the selected non-Qwen target regions. The fixed Qwen baseline was still
 faster on this small live sample, so the result is routing-diversity evidence,
 not a promotion signal.
+
+That same non-Qwen comparison now has evaluator-backed pass/fail scoring:
+
+- `research/evals/20260628-nonqwen-promptset-comparison-evaluation.jsonl`
+- `research/evals/20260628-nonqwen-promptset-comparison-evaluation-report.json`
+
+The trained orchestrator solved 1/3 tasks while the fixed
+`ollama-cloud-qwen3-coder-480b` baseline solved 0/3. The positive row was
+`bigcodebench-hard-BigCodeBench-339`, where the orchestrator selected
+`ollama-cloud-glm-5.2` and passed all tests. The two remaining tasks failed in
+the current local evaluator because `matplotlib` and `pandas` were unavailable,
+so this is an encouraging quality signal but still not a promotion signal.

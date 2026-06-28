@@ -1,0 +1,27 @@
+{
+  "comparison": "research/evals/20260628-nonqwen-promptset-comparison.json",
+  "policy_summaries": [
+    {
+      "mean_latency_ms": 4052.0,
+      "pass_rate": 0.0,
+      "passed": 0,
+      "policy_id": "fixed-worker:ollama-cloud-qwen3-coder-480b",
+      "record_count": 3
+    },
+    {
+      "mean_latency_ms": 6955.0,
+      "pass_rate": 0.3333333333333333,
+      "passed": 1,
+      "policy_id": "trained-orchestrator",
+      "record_count": 3
+    }
+  ],
+  "record_count": 6,
+  "schema_version": "mempool.orchestrated_prompt_set_evaluation.v1",
+  "task_files": [
+    "research/evals/20260628-normal-offset316-eligible-tasks.json",
+    "research/evals/bigcodebench_hard_next_profile_offset115_tasks.json"
+  ],
+  "task_lookup_count": 40,
+  "timeout_seconds": 10
+}
