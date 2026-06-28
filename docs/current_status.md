@@ -207,9 +207,9 @@ The trained heads were reloaded and evaluated on the same 66 rows:
 The path works end to end, but the one-epoch head is weak and needs longer
 training plus held-out evaluation before it can compete with the linear router.
 
-Hugging Face export folders are prepared under
-`research/hf_export/qwen-logits-smoke/`. Remote dataset/model creation is
-pending Hugging Face authentication.
+The earlier smoke export was superseded by the v0 release under
+`research/hf_export/qwen-logits-v0/`, published to the Hugging Face dataset and
+model repos listed below.
 
 A deterministic held-out split for Qwen logits rows now exists:
 
@@ -220,3 +220,23 @@ A deterministic held-out split for Qwen logits rows now exists:
 The split is 53 train rows and 13 held-out rows. A one-epoch split smoke reached
 0.4717 worker accuracy on train and 0.3077 on held-out. This confirms the
 held-out gate works, but the Qwen head is not yet competitive.
+
+A 40-epoch Qwen logits-head v0 run has now completed on Lightning AI L40S GPU:
+
+- checkpoint: `research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt`
+- full manifest: `research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/full_run_manifest.json`
+- train worker accuracy: 0.7358
+- train workflow accuracy: 0.9434
+- held-out worker accuracy: 0.5385
+- held-out workflow accuracy: 0.7692
+
+The checkpoint is published as:
+
+- dataset: `https://huggingface.co/datasets/blazeofchi/mempool-qwen-logits-orchestrator-rows`
+- model: `https://huggingface.co/blazeofchi/mempool-qwen-logits-orchestrator-v0`
+
+The first HF dataset upload included auxiliary JSON files next to the row JSONL
+files, which made the Hub dataset viewer fail with a schema cast error. The
+dataset export now keeps only the train and held-out row JSONL files plus the
+dataset card; plan, readiness, eval, and sample-prediction JSON stay in the
+model repo.

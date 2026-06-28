@@ -62,6 +62,7 @@ def submit_lightning_job(
     user: str | None,
     teamspace: str | None,
     org: str | None,
+    persist_artifacts: bool,
 ) -> dict:
     if not os.environ.get("LIGHTNING_USER_ID"):
         raise RuntimeError("LIGHTNING_USER_ID must be set in the environment")
@@ -71,17 +72,22 @@ def submit_lightning_job(
     from lightning_sdk import Job
 
     artifacts_local.mkdir(parents=True, exist_ok=True)
+    run_kwargs = {}
+    if persist_artifacts:
+        run_kwargs = {
+            "artifacts_local": str(artifacts_local),
+            "artifacts_remote": "/artifacts",
+        }
     job = Job.run(
         name=name,
         machine=machine,
         image=image,
         command=command,
-        artifacts_local=str(artifacts_local),
-        artifacts_remote="/artifacts",
         max_runtime=max_runtime,
         user=user,
         teamspace=teamspace,
         org=org,
+        **run_kwargs,
     )
     result = {
         "schema_version": "mempool.lightning_qwen_full_job.v1",
@@ -117,6 +123,11 @@ def main() -> int:
     parser.add_argument("--teamspace")
     parser.add_argument("--org")
     parser.add_argument(
+        "--persist-artifacts",
+        action="store_true",
+        help="Use Lightning artifact persistence. Requires account data-connection syntax support.",
+    )
+    parser.add_argument(
         "--artifacts-local",
         type=Path,
         default=ROOT / "research/lightning_artifacts/qwen-full",
@@ -144,6 +155,7 @@ def main() -> int:
         user=args.user,
         teamspace=args.teamspace,
         org=args.org,
+        persist_artifacts=args.persist_artifacts,
     )
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0

@@ -78,6 +78,7 @@ def write_model_card(
     report: dict,
     train_eval_report: dict | None = None,
     heldout_eval_report: dict | None = None,
+    sample_prediction_name: str | None = None,
 ) -> None:
     worker_ids = "\n".join(f"- `{worker}`" for worker in report.get("worker_ids", []))
     eval_lines = []
@@ -103,6 +104,12 @@ def write_model_card(
                 f"- Mean workflow loss: `{heldout_eval_report.get('mean_workflow_loss')}`",
             ]
         )
+    sample_lines = []
+    if sample_prediction_name:
+        sample_lines = [
+            "",
+            f"A sample router prediction is included at `{sample_prediction_name}`.",
+        ]
     path.write_text(
         "\n".join(
             [
@@ -115,12 +122,12 @@ def write_model_card(
                 "- routing",
                 "- qwen",
                 "- logits-head",
-                "pretty_name: mempool Qwen Logits Orchestrator Smoke",
+                "pretty_name: mempool Qwen Logits Orchestrator v0",
                 "---",
                 "",
-                "# mempool Qwen Logits Orchestrator Split Smoke",
+                "# mempool Qwen Logits Orchestrator v0",
                 "",
-                "This repository contains a split-smoke checkpoint for the `mempool`",
+                "This repository contains the first usable checkpoint for the `mempool`",
                 "Qwen-small logits-head orchestrator path with a deterministic held-out gate.",
                 "",
                 "The checkpoint stores only the trained routing heads, not the Qwen base",
@@ -128,14 +135,16 @@ def write_model_card(
                 "",
                 f"- Checkpoint: `{checkpoint_name}`",
                 f"- Training rows: `{report.get('record_count')}`",
-                f"- Final smoke loss: `{(report.get('history') or [{}])[-1].get('loss')}`",
+                f"- Final training loss: `{(report.get('history') or [{}])[-1].get('loss')}`",
                 "",
                 "Worker labels:",
                 "",
                 worker_ids,
                 *eval_lines,
+                *sample_lines,
                 "",
-                "This is a smoke artifact, not a promoted production policy.",
+                "This is a v0 research artifact. It is usable for routing experiments,",
+                "but it is not yet a promoted production policy.",
                 "",
             ]
         ),
@@ -155,10 +164,15 @@ def prepare_hf_release(
 ) -> dict:
     dataset_dir = output_root / "dataset"
     model_export_dir = output_root / "model"
+    if dataset_dir.exists():
+        shutil.rmtree(dataset_dir)
+    if model_export_dir.exists():
+        shutil.rmtree(model_export_dir)
     train_report_path = model_dir / "train_report.json"
     eval_report_path = model_dir / "eval_report.json"
     train_eval_report_path = model_dir / "train_eval_report.json"
     heldout_eval_report_path = model_dir / "heldout_eval_report.json"
+    sample_prediction_path = model_dir / "sample_prediction.json"
     checkpoint_path = model_dir / "qwen_logits_heads.pt"
     report = json.loads(train_report_path.read_text(encoding="utf-8"))
     legacy_eval_report = json.loads(eval_report_path.read_text(encoding="utf-8")) if eval_report_path.exists() else None
@@ -182,10 +196,6 @@ def prepare_hf_release(
     copy_file(rows_path, dataset_dir / rows_path.name)
     if heldout_rows_path is not None:
         copy_file(heldout_rows_path, dataset_dir / heldout_rows_path.name)
-    if split_manifest_path is not None:
-        copy_file(split_manifest_path, dataset_dir / split_manifest_path.name)
-    copy_file(plan_path, dataset_dir / plan_path.name)
-    copy_file(readiness_path, dataset_dir / readiness_path.name)
     write_dataset_card(
         dataset_dir / "README.md",
         train_rows_name=rows_path.name,
@@ -203,14 +213,19 @@ def prepare_hf_release(
         copy_file(train_eval_report_path, model_export_dir / train_eval_report_path.name)
     if heldout_eval_report_path.exists():
         copy_file(heldout_eval_report_path, model_export_dir / heldout_eval_report_path.name)
+    if sample_prediction_path.exists():
+        copy_file(sample_prediction_path, model_export_dir / sample_prediction_path.name)
     copy_file(plan_path, model_export_dir / plan_path.name)
     copy_file(readiness_path, model_export_dir / readiness_path.name)
+    if split_manifest_path is not None:
+        copy_file(split_manifest_path, model_export_dir / split_manifest_path.name)
     write_model_card(
         model_export_dir / "README.md",
         checkpoint_name=checkpoint_path.name,
         report=report,
         train_eval_report=train_eval_report,
         heldout_eval_report=heldout_eval_report,
+        sample_prediction_name=sample_prediction_path.name if sample_prediction_path.exists() else None,
     )
 
     manifest = {
@@ -225,6 +240,7 @@ def prepare_hf_release(
         "eval_report": train_eval_report,
         "train_eval_report": train_eval_report,
         "heldout_eval_report": heldout_eval_report,
+        "sample_prediction": str(sample_prediction_path) if sample_prediction_path.exists() else None,
     }
     output_root.mkdir(parents=True, exist_ok=True)
     (output_root / "manifest.json").write_text(
@@ -254,7 +270,7 @@ def main() -> int:
     parser.add_argument(
         "--plan",
         type=Path,
-        default=ROOT / "research/models/20260628-qwen-small-logits-orchestrator-split-smoke-plan.json",
+        default=ROOT / "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s-plan.json",
     )
     parser.add_argument(
         "--readiness",
@@ -264,9 +280,9 @@ def main() -> int:
     parser.add_argument(
         "--model-dir",
         type=Path,
-        default=ROOT / "research/models/20260628-qwen-small-logits-orchestrator-split-smoke",
+        default=ROOT / "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s",
     )
-    parser.add_argument("--output-root", type=Path, default=ROOT / "research/hf_export/qwen-logits-smoke")
+    parser.add_argument("--output-root", type=Path, default=ROOT / "research/hf_export/qwen-logits-v0")
     args = parser.parse_args()
     manifest = prepare_hf_release(
         rows_path=args.rows,

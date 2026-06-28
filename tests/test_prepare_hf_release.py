@@ -39,6 +39,8 @@ class PrepareHfReleaseTest(unittest.TestCase):
             self.assertEqual(manifest["row_count"], 1)
             self.assertEqual(manifest["checkpoint_bytes"], 5)
             self.assertTrue((Path(manifest["dataset_dir"]) / "README.md").exists())
+            self.assertFalse((Path(manifest["dataset_dir"]) / "plan.json").exists())
+            self.assertFalse((Path(manifest["dataset_dir"]) / "readiness.json").exists())
             self.assertTrue((Path(manifest["model_dir"]) / "qwen_logits_heads.pt").exists())
             self.assertTrue((Path(manifest["model_dir"]) / "eval_report.json").exists())
 

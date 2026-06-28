@@ -349,6 +349,8 @@ def run_transformers_training(
         history.append({"epoch": epoch, "loss": total_loss / max(1, len(loader))})
 
     output_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint_config = asdict(config)
+    checkpoint_config["device"] = "auto"
     torch.save(
         {
             "schema_version": "mempool.qwen_logits_orchestrator_checkpoint.v1",
@@ -360,7 +362,7 @@ def run_transformers_training(
                 for key, value in model.state_dict().items()
                 if not key.startswith("backbone.")
             },
-            "config": asdict(config),
+            "config": checkpoint_config,
             "history": history,
         },
         output_dir / "qwen_logits_heads.pt",
@@ -521,3 +523,100 @@ def run_transformers_evaluation(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return report
+
+
+def run_transformers_prediction(
+    *,
+    checkpoint_path: Path,
+    texts: list[str],
+) -> dict[str, Any]:
+    if not training_dependencies_available("transformers"):
+        raise RuntimeError("transformers prediction requires installed torch and transformers packages")
+
+    import torch  # type: ignore[import-not-found]
+    from torch import nn  # type: ignore[import-not-found]
+    from transformers import AutoModel, AutoTokenizer  # type: ignore[import-not-found]
+
+    checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
+    config = QwenLogitsTrainingConfig(**checkpoint["config"])
+    device = resolve_torch_device(torch, config.device)
+    worker_ids = list(checkpoint["worker_ids"])
+    workflow_labels = list(checkpoint["workflow_labels"])
+
+    tokenizer = AutoTokenizer.from_pretrained(config.base_model)
+    backbone = AutoModel.from_pretrained(config.base_model)
+    for parameter in backbone.parameters():
+        parameter.requires_grad = False
+    hidden_size = int(backbone.config.hidden_size)
+
+    class HeadModel(nn.Module):
+        def __init__(self) -> None:
+            super().__init__()
+            self.backbone = backbone
+            self.worker_head = nn.Linear(hidden_size, len(worker_ids))
+            self.workflow_head = nn.Linear(hidden_size, len(workflow_labels))
+            self.verifier_head = nn.Linear(hidden_size, 1)
+            self.abstain_head = nn.Linear(hidden_size, 1)
+
+        def forward(self, input_ids: Any, attention_mask: Any) -> dict[str, Any]:
+            outputs = self.backbone(input_ids=input_ids, attention_mask=attention_mask)
+            lengths = attention_mask.sum(dim=1).clamp(min=1) - 1
+            hidden = outputs.last_hidden_state[torch.arange(input_ids.shape[0]), lengths]
+            hidden = align_hidden_dtype(hidden, self.worker_head.weight)
+            return {
+                "worker_logits": self.worker_head(hidden),
+                "workflow_logits": self.workflow_head(hidden),
+                "verifier_logits": self.verifier_head(hidden).squeeze(-1),
+                "abstain_logits": self.abstain_head(hidden).squeeze(-1),
+            }
+
+    model = HeadModel().to(device)
+    model.load_state_dict(checkpoint["head_state_dict"], strict=False)
+    model.eval()
+    encoded = tokenizer(
+        texts,
+        truncation=True,
+        max_length=config.max_length,
+        padding=True,
+        return_tensors="pt",
+    )
+    encoded = {
+        key: value.to(device) if hasattr(value, "to") else value
+        for key, value in encoded.items()
+    }
+    with torch.no_grad():
+        outputs = model(encoded["input_ids"], encoded["attention_mask"])
+        worker_probs = torch.softmax(outputs["worker_logits"], dim=-1).detach().cpu()
+        workflow_probs = torch.softmax(outputs["workflow_logits"], dim=-1).detach().cpu()
+        verifier_probs = torch.sigmoid(outputs["verifier_logits"]).detach().cpu()
+        abstain_probs = torch.sigmoid(outputs["abstain_logits"]).detach().cpu()
+
+    predictions = []
+    for index, text in enumerate(texts):
+        worker_distribution = {
+            worker_id: float(worker_probs[index, worker_index].item())
+            for worker_index, worker_id in enumerate(worker_ids)
+        }
+        workflow_distribution = {
+            label: float(workflow_probs[index, label_index].item())
+            for label_index, label in enumerate(workflow_labels)
+        }
+        predictions.append(
+            {
+                "text": text,
+                "worker_distribution": worker_distribution,
+                "workflow_distribution": workflow_distribution,
+                "predicted_worker_id": max(worker_distribution, key=worker_distribution.get),
+                "predicted_workflow": max(workflow_distribution, key=workflow_distribution.get),
+                "verifier_probability": float(verifier_probs[index].item()),
+                "abstain_probability": float(abstain_probs[index].item()),
+            }
+        )
+    return {
+        "schema_version": "mempool.qwen_logits_orchestrator_prediction.v1",
+        "checkpoint": str(checkpoint_path),
+        "device": device,
+        "worker_ids": worker_ids,
+        "workflow_labels": workflow_labels,
+        "predictions": predictions,
+    }

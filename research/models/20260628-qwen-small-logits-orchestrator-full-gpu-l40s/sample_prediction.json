@@ -1,0 +1,34 @@
+{
+  "checkpoint": "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+  "device": "mps",
+  "predictions": [
+    {
+      "abstain_probability": 0.5303195118904114,
+      "predicted_worker_id": "ollama-cloud-deepseek-v4-pro",
+      "predicted_workflow": "direct",
+      "text": "Write Python code to scrape the first HTML table from a URL into a pandas DataFrame, handling HTTP errors and empty tables.",
+      "verifier_probability": 0.9339272975921631,
+      "worker_distribution": {
+        "ollama-cloud-deepseek-v4-pro": 0.9990161657333374,
+        "ollama-cloud-glm-5.2": 0.0008307626703754067,
+        "ollama-cloud-kimi-k2.7-code": 9.308168955612928e-05,
+        "ollama-cloud-qwen3-coder-480b": 5.9906586102442816e-05
+      },
+      "workflow_distribution": {
+        "direct": 0.9992326498031616,
+        "verify_then_fallback": 0.0007673977524973452
+      }
+    }
+  ],
+  "schema_version": "mempool.qwen_logits_orchestrator_prediction.v1",
+  "worker_ids": [
+    "ollama-cloud-deepseek-v4-pro",
+    "ollama-cloud-glm-5.2",
+    "ollama-cloud-kimi-k2.7-code",
+    "ollama-cloud-qwen3-coder-480b"
+  ],
+  "workflow_labels": [
+    "direct",
+    "verify_then_fallback"
+  ]
+}

@@ -12,6 +12,7 @@ from mempool.qwen_logits_orchestrator import (
     decision_text,
     resolve_torch_device,
     run_transformers_evaluation,
+    run_transformers_prediction,
     training_dependencies_available,
     target_summary,
 )
@@ -136,6 +137,15 @@ class QwenLogitsOrchestratorTest(unittest.TestCase):
                 training_rows_path=Path("missing.jsonl"),
                 checkpoint_path=Path("missing.pt"),
                 output_path=Path("missing-report.json"),
+            )
+
+    def test_transformers_prediction_requires_dependencies(self) -> None:
+        if training_dependencies_available("transformers"):
+            self.skipTest("transformers backend is installed in this interpreter")
+        with self.assertRaises(RuntimeError):
+            run_transformers_prediction(
+                checkpoint_path=Path("missing.pt"),
+                texts=["route this"],
             )
 
 

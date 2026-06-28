@@ -1,0 +1,358 @@
+{
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "batch_size": 4,
+  "device": "cuda",
+  "epochs": 40,
+  "heldout_eval_report": {
+    "checkpoint": "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+    "device": "cuda",
+    "mean_worker_loss": 1.3366980185875525,
+    "mean_workflow_loss": 0.672384113073349,
+    "prediction_sample": [
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "verify_then_fallback"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-glm-5.2",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-glm-5.2",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      }
+    ],
+    "record_count": 13,
+    "rows": "research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl",
+    "schema_version": "mempool.qwen_logits_orchestrator_eval_report.v1",
+    "worker_accuracy": 0.5384615384615384,
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_accuracy": 0.7692307692307693,
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ]
+  },
+  "heldout_rows": "research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl",
+  "learning_rate": 0.0002,
+  "machine": "Lightning AI Studio jax-charlm, NVIDIA L40S",
+  "max_length": 1536,
+  "output_dir": "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s",
+  "plan_output": "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s-plan.json",
+  "schema_version": "mempool.qwen_full_orchestrator_run.v1",
+  "train_eval_report": {
+    "checkpoint": "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt",
+    "device": "cuda",
+    "mean_worker_loss": 1.124755915605797,
+    "mean_workflow_loss": 0.142171498247475,
+    "prediction_sample": [
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-kimi-k2.7-code",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-qwen3-coder-480b",
+        "target_workflow": "direct"
+      },
+      {
+        "predicted_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "predicted_workflow": "direct",
+        "target_worker_id": "ollama-cloud-deepseek-v4-pro",
+        "target_workflow": "direct"
+      }
+    ],
+    "record_count": 53,
+    "rows": "research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl",
+    "schema_version": "mempool.qwen_logits_orchestrator_eval_report.v1",
+    "worker_accuracy": 0.7358490566037735,
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_accuracy": 0.9433962264150944,
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ]
+  },
+  "train_result": {
+    "device": "cuda",
+    "history": [
+      {
+        "epoch": 0,
+        "loss": 4.668870312826974
+      },
+      {
+        "epoch": 1,
+        "loss": 3.560512134007045
+      },
+      {
+        "epoch": 2,
+        "loss": 3.273119338921138
+      },
+      {
+        "epoch": 3,
+        "loss": 3.096318347113473
+      },
+      {
+        "epoch": 4,
+        "loss": 2.871755446706499
+      },
+      {
+        "epoch": 5,
+        "loss": 2.9902492335864475
+      },
+      {
+        "epoch": 6,
+        "loss": 2.886969430106027
+      },
+      {
+        "epoch": 7,
+        "loss": 2.831721442086356
+      },
+      {
+        "epoch": 8,
+        "loss": 2.845917650631496
+      },
+      {
+        "epoch": 9,
+        "loss": 2.7882944686072215
+      },
+      {
+        "epoch": 10,
+        "loss": 2.73999228647777
+      },
+      {
+        "epoch": 11,
+        "loss": 2.7610760246004378
+      },
+      {
+        "epoch": 12,
+        "loss": 2.8626872641699657
+      },
+      {
+        "epoch": 13,
+        "loss": 2.54475006035396
+      },
+      {
+        "epoch": 14,
+        "loss": 2.577164743627821
+      },
+      {
+        "epoch": 15,
+        "loss": 2.4409775733947754
+      },
+      {
+        "epoch": 16,
+        "loss": 2.575380103928702
+      },
+      {
+        "epoch": 17,
+        "loss": 2.6568912523133412
+      },
+      {
+        "epoch": 18,
+        "loss": 2.7085645369121005
+      },
+      {
+        "epoch": 19,
+        "loss": 2.8356578860964095
+      },
+      {
+        "epoch": 20,
+        "loss": 2.4540705425398692
+      },
+      {
+        "epoch": 21,
+        "loss": 2.572358787059784
+      },
+      {
+        "epoch": 22,
+        "loss": 2.3995534351893832
+      },
+      {
+        "epoch": 23,
+        "loss": 2.540985039302281
+      },
+      {
+        "epoch": 24,
+        "loss": 2.26006087235042
+      },
+      {
+        "epoch": 25,
+        "loss": 2.5964779428073337
+      },
+      {
+        "epoch": 26,
+        "loss": 2.4571213892527988
+      },
+      {
+        "epoch": 27,
+        "loss": 2.3653977683612277
+      },
+      {
+        "epoch": 28,
+        "loss": 2.2759930406297957
+      },
+      {
+        "epoch": 29,
+        "loss": 2.273615445409502
+      },
+      {
+        "epoch": 30,
+        "loss": 2.1414122751780917
+      },
+      {
+        "epoch": 31,
+        "loss": 2.3408056667872836
+      },
+      {
+        "epoch": 32,
+        "loss": 2.3234308872904097
+      },
+      {
+        "epoch": 33,
+        "loss": 2.2955648558480397
+      },
+      {
+        "epoch": 34,
+        "loss": 2.191408165863582
+      },
+      {
+        "epoch": 35,
+        "loss": 2.2341184190341403
+      },
+      {
+        "epoch": 36,
+        "loss": 2.3798889943531583
+      },
+      {
+        "epoch": 37,
+        "loss": 2.2818061879702976
+      },
+      {
+        "epoch": 38,
+        "loss": 2.1292204516274587
+      },
+      {
+        "epoch": 39,
+        "loss": 2.1550024236951555
+      }
+    ],
+    "output_dir": "research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s",
+    "record_count": 53,
+    "schema_version": "mempool.qwen_logits_orchestrator_train_report.v1",
+    "worker_ids": [
+      "ollama-cloud-deepseek-v4-pro",
+      "ollama-cloud-glm-5.2",
+      "ollama-cloud-kimi-k2.7-code",
+      "ollama-cloud-qwen3-coder-480b"
+    ],
+    "workflow_labels": [
+      "direct",
+      "verify_then_fallback"
+    ]
+  },
+  "train_rows": "research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl"
+}

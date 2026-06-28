@@ -32,7 +32,29 @@ and future systems through the same interface.
 - `literature/` - paper notes, surveys, and outside context.
 - `external_repos/` - third-party references, kept out of the core project.
 
-## Current Status
+## What This Offers
+
+`mempool` now contains a first usable Qwen-based orchestration checkpoint:
+
+- A small Qwen-family coordinator representation.
+- Trained routing heads for worker selection, workflow selection, verifier
+  probability, and abstain/fallback probability.
+- A deterministic train/held-out split over measured BigCodeBench-Hard routing
+  rows.
+- A CLI that can route new task text into worker/workflow probabilities.
+- Reproducible local, Apple MPS, CUDA, and Lightning AI training launch paths.
+- Published Hugging Face dataset/model artifacts.
+
+Published artifacts:
+
+- Dataset: [blazeofchi/mempool-qwen-logits-orchestrator-rows](https://huggingface.co/datasets/blazeofchi/mempool-qwen-logits-orchestrator-rows)
+- Model: [blazeofchi/mempool-qwen-logits-orchestrator-v0](https://huggingface.co/blazeofchi/mempool-qwen-logits-orchestrator-v0)
+
+The v0 model stores only the trained routing heads. It uses
+`Qwen/Qwen2.5-0.5B-Instruct` as the frozen base model and attaches lightweight
+heads at inference time.
+
+## Current Results
 
 The repository now has an end-to-end measured-data loop:
 
@@ -43,58 +65,89 @@ The repository now has an end-to-end measured-data loop:
 5. Lightweight logits-router training and promotion gates.
 6. Multi-head task-level orchestrator substrate export.
 7. A trained local multi-head orchestrator candidate.
-8. Qwen-small logits-head orchestrator training plan and rows.
+8. Qwen-small logits-head orchestrator training and prediction.
 9. Adaptive refresh records with quarantine/rollback discipline.
 
-The current trained task-level orchestrator artifact is:
+The current Qwen v0 orchestrator artifact is:
 
 ```text
-research/models/20260628-m5-current-task-66task-multihead.json
+research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt
 ```
 
-Its source substrate is:
+It was trained for 40 epochs on a Lightning AI L40S GPU over 53 train rows and evaluated on 13
+held-out rows:
+
+| Split | Worker Accuracy | Workflow Accuracy | Mean Worker Loss | Mean Workflow Loss |
+| --- | ---: | ---: | ---: | ---: |
+| train | 0.7358 | 0.9434 | 1.1248 | 0.1422 |
+| held-out | 0.5385 | 0.7692 | 1.3367 | 0.6724 |
+
+The earlier one-epoch split smoke reached 0.3077 held-out worker accuracy, and
+the 20-epoch Apple MPS run reached 0.3846. The L40S v0 improves this to 0.5385,
+but it is still small-data and not a production policy.
+
+The source split is:
 
 ```text
-research/datasets/20260628-m5-current-task-66task-substrate.jsonl
+research/datasets/20260628-qwen-small-logits-orchestrator-split-train.jsonl
+research/datasets/20260628-qwen-small-logits-orchestrator-split-heldout.jsonl
+research/datasets/20260628-qwen-small-logits-orchestrator-split-manifest.json
 ```
 
-The model is a research checkpoint, not a promoted production policy. The
-latest leave-one-out result still shows that specialist target accuracy and
-latency regret need improvement before promotion.
+## Use The Orchestrator
 
-The intended neural orchestrator path is now explicit: use a small Qwen-family
-backbone as the fast coordinator representation, attach logits heads for worker
-selection, workflow selection, verifier probability, and abstention/fallback,
-then train those heads against measured soft routing targets. The current
-linear router remains the baseline, not the final architecture.
-
-Prepared Qwen-small artifacts:
-
-```text
-research/models/20260628-qwen-small-logits-orchestrator-plan.json
-research/datasets/20260628-qwen-small-logits-orchestrator-rows.jsonl
-research/models/20260628-qwen-small-logits-orchestrator-smoke/qwen_logits_heads.pt
-```
-
-The plan currently reports `can_train_here: false` because this checkout does
-not have the ML training stack installed. The current training-readiness audit
-also shows that the active Python is `3.14.4`, which may not have stable PyTorch
-wheels. Use Python 3.11 or 3.12 for the first local frozen-backbone head run:
+Create a Python 3.11 or 3.12 environment with the training extras:
 
 ```bash
 python3.12 -m venv .venv-qwen-train
 source .venv-qwen-train/bin/activate
 python3 -m pip install -e '.[qwen-train]'
-PYTHONPATH=src python3 tools/train_qwen_logits_orchestrator.py \
-  --plan-output research/models/local-qwen-logits-plan.json \
-  --rows-output research/datasets/local-qwen-logits-rows.jsonl \
-  --output-dir research/models/local-qwen-logits-heads \
-  --train
 ```
 
-For a serious run, use GPU or Apple MLX access and keep the backbone frozen for
-the first pass. Only try LoRA/backbone updates after the logits heads beat the
-linear router on held-out task-level routing.
+Route a task with the v0 checkpoint:
+
+```bash
+PYTHONPATH=src python3 tools/predict_qwen_logits_orchestrator.py \
+  --checkpoint research/models/20260628-qwen-small-logits-orchestrator-full-gpu-l40s/qwen_logits_heads.pt \
+  --text "Write Python code to scrape the first HTML table from a URL into a pandas DataFrame."
+```
+
+Example output includes:
+
+```text
+predicted_worker_id: ollama-cloud-deepseek-v4-pro
+predicted_workflow: direct
+verifier_probability: 0.9339
+```
+
+Train and evaluate a full local/MPS/CUDA run:
+
+```bash
+PYTHONPATH=src python3 tools/run_qwen_full_orchestrator.py \
+  --epochs 20 \
+  --batch-size 4 \
+  --device auto \
+  --output-dir research/models/local-qwen-full \
+  --plan-output research/models/local-qwen-full-plan.json
+```
+
+Submit the same run to Lightning AI after setting `LIGHTNING_USER_ID` and
+`LIGHTNING_API_KEY` in your shell:
+
+```bash
+python3 -m venv .venv-lightning
+.venv-lightning/bin/python -m pip install -U pip lightning-sdk
+.venv-lightning/bin/python tools/submit_lightning_qwen_full_run.py \
+  --machine L40S \
+  --epochs 40
+```
+
+Machine availability depends on the selected Lightning teamspace/cloud account.
+On the first attempt for this project, `L4`, `T4`, and `A100` batch jobs were
+rejected by the selected AWS cluster even though the global machine list showed
+those names. The v0 release was trained through a Lightning Studio on `L40S`;
+use the Studio UI or a matching cloud account if batch submission reports
+`accelerator ... not found`.
 
 To check the current machine:
 
@@ -103,8 +156,7 @@ PYTHONPATH=src python3 tools/audit_qwen_training_readiness.py \
   --output research/models/local-qwen-training-readiness.json
 ```
 
-The first local smoke checkpoint has been trained in `.venv-qwen-train`. To
-prepare Hugging Face upload folders:
+Prepare Hugging Face upload folders:
 
 ```bash
 PYTHONPATH=src python3 tools/prepare_hf_release.py
